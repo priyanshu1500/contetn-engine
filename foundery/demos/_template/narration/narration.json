@@ -1,0 +1,16 @@
+{
+  "_comment": "Template — 6 beats: hook / problem / build / demo / result / CTA. Copy to a real episode folder and fill in.",
+  "engine": "edge",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+6%",
+  "fps": 30,
+  "total_seconds": 45,
+  "cues": [
+    {"id": 1, "at": 0.4, "window": [0, 4], "text": "HOOK — name the exact pain, in the viewer's own words."},
+    {"id": 2, "at": 4.2, "window": [4, 9], "text": "PROBLEM — why this manual process actually costs time/money/errors."},
+    {"id": 3, "at": 9.2, "window": [9, 18], "text": "THE BUILD — what tool/agent you used and the core logic, plainly."},
+    {"id": 4, "at": 18.2, "window": [18, 30], "text": "DEMO WALKTHROUGH — narrate the screen recording as it plays, beat by beat."},
+    {"id": 5, "at": 30.2, "window": [30, 38], "text": "RESULT — the specific before-to-after number. Say the number out loud."},
+    {"id": 6, "at": 38.2, "window": [38, 45], "text": "CTA — the one specific next step, stated clearly, once."}
+  ]
+}

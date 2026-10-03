@@ -1,0 +1,793 @@
+<!-- LexIntent Format Codex -->
+<title>LexIntent Format Codex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  :root {
+    --paper:#f8f6f2; --paper-2:#f2efe8; --ink:#111111; --ink-soft:#4a4741;
+    --burgundy:#6a0f1a; --grey:#8a8a8a; --divider:#d8d3ca; --stamp:rgba(106,15,26,.14);
+    --f-head:"Newsreader",Georgia,"Times New Roman",serif;
+    --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --s-1:clamp(.76rem,.72rem+.16vw,.83rem);
+    --s0:clamp(.95rem,.9rem+.2vw,1.04rem);
+    --s1:clamp(1.15rem,1rem+.5vw,1.35rem);
+    --s2:clamp(1.5rem,1.3rem+1vw,2rem);
+    --s3:clamp(2rem,1.55rem+2.1vw,3.2rem);
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --paper:#14130f; --paper-2:#1b1a15; --ink:#ede8dd; --ink-soft:#a8a297;
+    --burgundy:#c14b52; --grey:#7f7a70; --divider:#38342c; --stamp:rgba(193,75,82,.16);
+  }}
+  :root[data-theme="dark"]{
+    --paper:#14130f; --paper-2:#1b1a15; --ink:#ede8dd; --ink-soft:#a8a297;
+    --burgundy:#c14b52; --grey:#7f7a70; --divider:#38342c; --stamp:rgba(193,75,82,.16);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:64rem;margin:0 auto;padding:clamp(1.5rem,1rem+3vw,4rem) clamp(1.1rem,.5rem+3vw,3rem) 6rem;}
+
+  .masthead{position:relative;border-bottom:2px solid var(--ink);padding-bottom:1rem;margin-bottom:2.2rem;}
+  .masthead::before{content:"INTERNAL · PRODUCTION USE";position:absolute;right:-.3rem;top:-.3rem;font-family:var(--f-body);font-weight:700;font-size:clamp(.65rem,2.4vw,1rem);letter-spacing:.28em;color:var(--stamp);transform:rotate(-4deg);pointer-events:none;user-select:none;}
+  .rule-top{border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);padding:.35rem 0;margin-bottom:.8rem;}
+  .rule-top span{font-family:var(--f-body);font-weight:600;font-size:var(--s-1);letter-spacing:.26em;text-transform:uppercase;color:var(--grey);}
+  h1{font-family:var(--f-head);font-weight:600;font-size:var(--s3);line-height:1.02;letter-spacing:.01em;text-transform:uppercase;margin:.2rem 0 .5rem;text-wrap:balance;}
+  .dateline{font-family:var(--f-body);font-size:var(--s-1);color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;}
+  .dateline b{color:var(--ink);font-weight:600;}
+
+  .intro{max-width:60ch;margin:0 0 2.4rem;}
+  .intro p{margin:0 0 .8rem;}
+  .intro .lede{font-family:var(--f-head);font-size:var(--s1);line-height:1.45;}
+  .legend{font-family:var(--f-body);font-size:var(--s-1);color:var(--ink-soft);border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);padding:.7rem 0;margin-top:1rem;}
+  .legend b{color:var(--ink);}
+
+  section{margin-top:3rem;}
+  .fam{display:flex;align-items:baseline;gap:.8rem;border-bottom:2px solid var(--ink);padding-bottom:.4rem;margin-bottom:1.2rem;}
+  .fam .n{font-family:var(--f-head);font-weight:600;color:var(--burgundy);font-size:var(--s1);font-variant-numeric:tabular-nums;}
+  .fam h2{font-family:var(--f-head);font-weight:500;font-size:var(--s2);line-height:1.1;margin:0;text-wrap:balance;}
+  .fam .cnt{margin-left:auto;font-family:var(--f-body);font-size:var(--s-1);color:var(--grey);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;}
+  .fam-note{max-width:60ch;color:var(--ink-soft);font-size:var(--s-1);margin:0 0 1.4rem;}
+
+  .grid{display:grid;gap:1rem;}
+  @media(min-width:52rem){.grid{grid-template-columns:1fr 1fr;}}
+  .fmt{border:1px solid var(--divider);background:var(--paper-2);padding:1rem 1.1rem;}
+  .fmt h3{font-family:var(--f-head);font-weight:600;font-size:1.05rem;line-height:1.2;margin:0 0 .1rem;}
+  .fmt .code{font-family:var(--f-body);font-weight:700;font-size:.66rem;letter-spacing:.14em;color:var(--burgundy);}
+  .fmt .move{margin:.4rem 0 .7rem;font-size:var(--s-1);line-height:1.5;}
+  .fmt dl{display:grid;grid-template-columns:5.4rem 1fr;gap:.2rem .6rem;margin:0;font-size:var(--s-1);line-height:1.4;}
+  .fmt dt{font-family:var(--f-body);font-weight:600;font-size:.62rem;letter-spacing:.09em;text-transform:uppercase;color:var(--grey);padding-top:.12rem;}
+  .fmt dd{margin:0;color:var(--ink-soft);}
+  .fmt dd b{color:var(--ink);font-weight:600;}
+  .pill{display:inline-block;font-family:var(--f-body);font-weight:600;font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--divider);padding:.05rem .35rem;color:var(--ink-soft);white-space:nowrap;}
+  .cx-low{color:var(--burgundy);border-color:var(--burgundy);}
+  .cx-med{color:var(--ink-soft);}
+
+  .close{margin-top:3.5rem;border-top:2px solid var(--ink);padding-top:1.1rem;max-width:62ch;}
+  .close h2{font-family:var(--f-head);font-weight:500;font-size:var(--s1);margin:0 0 .7rem;}
+  .close ol{padding-left:1.3rem;}
+  .close li{margin-bottom:.4rem;}
+  .note{font-size:var(--s-1);color:var(--grey);font-style:italic;border-top:1px solid var(--divider);padding-top:.9rem;margin-top:1.6rem;}
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="rule-top"><span>LexIntent Intelligence &nbsp;—&nbsp; Production System</span></div>
+    <h1>Format Codex</h1>
+    <div class="dateline">
+      <span><b>Filed</b> 31 Aug 2026</span>
+      <span><b>Contains</b> 51 repeatable reel formats</span>
+      <span><b>Built from</b> Dossier 01 + 4 reel teardowns on file + <code>viral-short-form-ideas</code></span>
+      <span><b>Rule</b> every format ships in ≤ 20 min once the OpenChatCut kit is built</span>
+    </div>
+  </header>
+
+  <div class="intro">
+    <p class="lede">Fifty structural moves, not fifty topics. Each one is a fill-in template: pick a resume line, a firm, a stat, a fear — the structure and the motion stay fixed.</p>
+    <p>Every format is tied to a fear from Dossier 01, a psychological trigger, a LexIntent column, and the exact OpenChatCut kit scenes that build it. Nothing here is rated High complexity — if a format needs a new animation, it belongs in Phase 4, not the calendar.</p>
+    <div class="legend">
+      <b>Fear #</b> = ranked cluster from Dossier 01 &nbsp;·&nbsp;
+      <b>Trigger</b> = the lever (gap / injustice / insider / loss-aversion / pattern-interrupt / proof / specificity) &nbsp;·&nbsp;
+      <b>Build</b> = kit scenes (Masthead · Red-pen · Score-card · Before/After · Flow · Number · Reorder · Calendar · Sheet) &nbsp;·&nbsp;
+      <b>Cx</b> = edit complexity &nbsp;·&nbsp; <b>Min</b> = produce time once templates exist
+    </div>
+  </div>
+
+  <!-- ============ FAMILY 1 ============ -->
+  <section>
+    <div class="fam"><span class="n">01</span><h2>Autopsy</h2><span class="cnt">7 formats · Resume Autopsy column</span></div>
+    <p class="fam-note">One real artifact on screen. Cursor scans it. Burgundy pen circles the failure, a margin note names it. The viewer&rsquo;s own document is implicated by the third second. Inspiration: the gregisenberg value-essay reel&rsquo;s "one screen, one idea" holds + the red-pen device from the brand bible.</p>
+    <div class="grid">
+
+      <article class="fmt">
+        <span class="code">AUT-01</span><h3>Resume Autopsy</h3>
+        <p class="move">A law student&rsquo;s CV, anonymised. Cursor lands on the experience section. Pen circles &ldquo;Interned at a law firm.&rdquo; Note: <em>&ldquo;Too generic. No drafting signal.&rdquo;</em> Cut to the fixed line.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Insider</b> + injustice — you see what the recruiter sees</dd>
+          <dt>Fear</dt><dd>#1 (rejected at stage one)</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen · Before/After</dd>
+          <dt>CTA</dt><dd>comment <b>AUTOPSY</b> → DM the 6-line CV check</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 12 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">AUT-02</span><h3>The Cold Email Autopsy</h3>
+        <p class="move">Screen-rec of an internship application email. Pen strikes the subject line &ldquo;Internship Application&rdquo;, the &ldquo;I am a hardworking student&rdquo; opener, the missing attachment. Rebuild it live.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Loss-aversion</b> — this is why you got no reply</dd>
+          <dt>Fear</dt><dd>#2 (no contacts, cold outreach ignored)</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen · Typewriter reveal</dd>
+          <dt>CTA</dt><dd>comment <b>EMAIL</b> → DM the cold-email skeleton</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 12 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">AUT-03</span><h3>LinkedIn Autopsy</h3>
+        <p class="move">A law-student LinkedIn headline + About. Pen circles &ldquo;Aspiring lawyer | Law student at&hellip;&rdquo;. Note: <em>&ldquo;Says nothing a recruiter can act on.&rdquo;</em> Rewrite to a practice-area signal.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> — the line everyone uses is the problem</dd>
+          <dt>Fear</dt><dd>#2 · #3</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen · Before/After</dd>
+          <dt>CTA</dt><dd>comment <b>PROFILE</b> → DM 5 headline formulas</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 10 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">AUT-04</span><h3>The Internship Section, Autopsied</h3>
+        <p class="move">Eight internship entries stacked. Pen strikes six that say &ldquo;observed proceedings / assisted the team.&rdquo; Keeps two. Note: <em>&ldquo;Volume isn&rsquo;t signal.&rdquo;</em></p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Gap</b> — you did the work, why doesn&rsquo;t it count</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Sheet · Reorder · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>SIGNAL</b> → DM the internship-bullet rewrite guide</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 14 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">AUT-05</span><h3>Publication List Autopsy</h3>
+        <p class="move">A &ldquo;Publications&rdquo; block: three blog posts on a portal, one &ldquo;forthcoming.&rdquo; Pen circles &ldquo;forthcoming.&rdquo; Note: <em>&ldquo;A recruiter reads this as zero.&rdquo;</em></p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Insider</b> — the gap between what you list and what lands</dd>
+          <dt>Fear</dt><dd>#1 · #5</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen · Number</dd>
+          <dt>CTA</dt><dd>comment <b>CITE</b> → DM what actually counts as a publication</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 11 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">AUT-06</span><h3>Moot Memo Autopsy</h3>
+        <p class="move">A CV line: &ldquo;Participated in 6 moot court competitions.&rdquo; Pen: <em>&ldquo;Participated ≠ placed. What did you draft?&rdquo;</em> Rewrite around the written submission.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> — the recruiter&rsquo;s exact question</dd>
+          <dt>Fear</dt><dd>#1 · #4 (litigation-track anxiety)</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen · Before/After</dd>
+          <dt>CTA</dt><dd>comment <b>MOOT</b> → DM the moot-to-bullet template</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 11 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">AUT-07</span><h3>The Objective Line Autopsy</h3>
+        <p class="move">Top of a CV: &ldquo;Objective: To secure a challenging role in a reputed law firm&hellip;&rdquo; Pen crosses it out in one stroke. Note: <em>&ldquo;Three inches of prime space, gone.&rdquo;</em></p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> — delete the thing you were told to write</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen (single strike) · Number</dd>
+          <dt>CTA</dt><dd>&ldquo;Part 2 tomorrow: what goes there instead&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 8 min</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ FAMILY 2 ============ -->
+  <section>
+    <div class="fam"><span class="n">02</span><h2>Two-Path</h2><span class="cnt">6 formats · Law Career Decode</span></div>
+    <p class="fam-note">Two things side by side, one variable changed. The gap between them <em>is</em> the hook. Inspiration: the "Two law students &mdash; same GPA &mdash; one gets Khaitan" model from the brand bible; the metromedia.house before/after cuts.</p>
+    <div class="grid">
+
+      <article class="fmt">
+        <span class="code">TWO-01</span><h3>Two Students</h3>
+        <p class="move">&ldquo;Two law students. Same university. Same GPA.&rdquo; → &ldquo;One gets a Khaitan interview. One never hears back.&rdquo; → reveal: the resumes.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Injustice</b> + gap — outcome split with no visible cause</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Masthead · kinetic text · Before/After</dd>
+          <dt>CTA</dt><dd>comment <b>SWAP</b> → DM the line-by-line diff</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 14 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">TWO-02</span><h3>Corporate vs Litigation Resume</h3>
+        <p class="move">Same four-week internship. Corporate framing vs litigation framing of the identical work. Score card: 78 / 61.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> — one internship, two readings</dd>
+          <dt>Fear</dt><dd>#4</dd>
+          <dt>Build</dt><dd>Masthead · Flow · Before/After · Score-card</dd>
+          <dt>CTA</dt><dd>comment your track → DM the swap for it</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 18 min <em>(reel already drafted)</em></dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">TWO-03</span><h3>One Line, Two Versions</h3>
+        <p class="move">&ldquo;Assisted with research&rdquo; vs &ldquo;Drafted 3 sections of a writ petition cited in the filing.&rdquo; Strike the first, underline the second.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> — same fact, opposite result</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Before/After · Red-pen · Score-card</dd>
+          <dt>CTA</dt><dd>comment <b>REWRITE</b> → DM 10 more before/afters</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 9 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">TWO-04</span><h3>2019 vs 2026</h3>
+        <p class="move">What got a Tier-1 callback in 2019 vs what it takes now (AI screening, more applicants, earlier cycles). Two columns, timeline motion.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Loss-aversion</b> — the goalposts moved and nobody told you</dd>
+          <dt>Fear</dt><dd>#6 (employability gap)</dd>
+          <dt>Build</dt><dd>Masthead · Calendar · Number · kinetic text</dd>
+          <dt>CTA</dt><dd>&ldquo;Follow &mdash; the 2026 checklist drops this week&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 16 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">TWO-05</span><h3>NLU vs Non-NLU (the real gap)</h3>
+        <p class="move">Two identical CVs, one from an NLU, one not. Where the shortlist actually diverges &mdash; and the three lines that close the gap.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Injustice</b> → then agency (it&rsquo;s narrower than you think)</dd>
+          <dt>Fear</dt><dd>#3</dd>
+          <dt>Build</dt><dd>Sheet ×2 · Flow · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>BRIDGE</b> → DM the non-NLU playbook</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 17 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">TWO-06</span><h3>The Firm That Called Back vs The One That Didn&rsquo;t</h3>
+        <p class="move">Same applicant, two firms, same week. One tailored the CV to the practice, one sent the master copy. Outcome overlay.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> — a controlled experiment the viewer can run</dd>
+          <dt>Fear</dt><dd>#1 · #2</dd>
+          <dt>Build</dt><dd>Two-column · Before/After · Number</dd>
+          <dt>CTA</dt><dd>comment <b>TAILOR</b> → DM the 15-min tailoring pass</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 13 min</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ FAMILY 3 ============ -->
+  <section>
+    <div class="fam"><span class="n">03</span><h2>Recruiter POV</h2><span class="cnt">7 formats · Recruiter&rsquo;s Desk column</span></div>
+    <p class="fam-note">Show the process the viewer never gets to see. The camera sits on the recruiter&rsquo;s side of the desk. Vertical "RECRUITER&rsquo;S DESK" margin label on every one of these. Inspiration: NotebookLM&rsquo;s calm reveal pacing + the "7 SECONDS" number beat.</p>
+    <div class="grid">
+
+      <article class="fmt">
+        <span class="code">RPV-01</span><h3>The 7-Second Scan</h3>
+        <p class="move">Number counts 0→7. A CV enters. An eye-path line traces where the recruiter actually looks &mdash; and what they never reach.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Insider</b> + specificity — a number you can&rsquo;t argue with</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Number · Sheet · scan-line overlay · margin label</dd>
+          <dt>CTA</dt><dd>comment <b>SCAN</b> → DM &ldquo;what to put in the top 3 inches&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 16 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">RPV-02</span><h3>The Shortlist</h3>
+        <p class="move">80 applications become 6. Show the cuts in order: wrong practice, no drafting signal, applied late, file named &ldquo;CV_final.pdf&rdquo;, generic email, no tailoring.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Loss-aversion</b> — watch yourself get cut in real time</dd>
+          <dt>Fear</dt><dd>#1 · #2</dd>
+          <dt>Build</dt><dd>Number (funnel) · Reorder · Red-pen strikes</dd>
+          <dt>CTA</dt><dd>comment <b>LIST</b> → DM the 6-point pre-send check</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 17 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">RPV-03</span><h3>The Reject Pile</h3>
+        <p class="move">A stack of CVs slides in. Each one flips, a single reason stamped in burgundy, slides to the reject pile. Rhythm: one every 1.5s.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> + rhythm — the 2-second rule made literal</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Page-flip · Stamp · paper-slide · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>PILE</b> → DM the 12 auto-reject triggers</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 18 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">RPV-04</span><h3>Inside the ATS</h3>
+        <p class="move">What a keyword search inside a firm&rsquo;s tracking system actually does &mdash; and why keyword-stuffing gets you filtered <em>out</em>, not in.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Insider</b> — debunk the myth with the real mechanic</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Sheet · scan-line · Red-pen · Number</dd>
+          <dt>CTA</dt><dd>comment <b>ATS</b> → DM &ldquo;natural keywords, real outcomes&rdquo; guide</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 13 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">RPV-05</span><h3>What They Read First</h3>
+        <p class="move">Corporate reads for transactional exposure. Litigation reads for court craft. Same CV, two reading orders, marked live.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> — the reader changes everything</dd>
+          <dt>Fear</dt><dd>#4</dd>
+          <dt>Build</dt><dd>Flow · Red-pen · margin label</dd>
+          <dt>CTA</dt><dd>comment your target → DM its read-order</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 12 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">RPV-06</span><h3>The Partner&rsquo;s One Question</h3>
+        <p class="move">Every CV line answered against the one thing a partner asks: &ldquo;Can this person do the work on day one?&rdquo; Lines that fail get struck.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Insider</b> — a single ruthless filter</dd>
+          <dt>Fear</dt><dd>#1 · #5</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen · Score-card (pass/fail)</dd>
+          <dt>CTA</dt><dd>comment <b>DAY ONE</b> → DM the day-one-signal list</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 11 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">RPV-07</span><h3>The Slot Was Filled in January</h3>
+        <p class="move">A calendar. The applicant applies in April. The firm decided in January. Continuous-follow-up pings mark the students who got in.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Loss-aversion</b> — you&rsquo;re not behind on effort, you&rsquo;re behind on the calendar</dd>
+          <dt>Fear</dt><dd>#2</dd>
+          <dt>Build</dt><dd>Calendar · Number (&ldquo;6&ndash;10 months&rdquo;) · ping dots</dd>
+          <dt>CTA</dt><dd>comment <b>TIMING</b> → DM the application calendar</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 12 min</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ FAMILY 4 ============ -->
+  <section>
+    <div class="fam"><span class="n">04</span><h2>Case File</h2><span class="cnt">6 formats · Case File column</span></div>
+    <p class="fam-note">Investigative narrative. Numbered case, evidence beats, a pattern revealed at the end. Feels like a leaked internal report. Inspiration: the metromedia.house archival-collage structure + the brand bible&rsquo;s "leaked case file" principle.</p>
+    <div class="grid">
+
+      <article class="fmt">
+        <span class="code">CAS-01</span><h3>Case File No. 001 — The Rejected 9-Pointer</h3>
+        <p class="move">A real forum post: 8 CGPA, publications, no callbacks; peers with worse CVs placed. Lay out the evidence, reveal the missing signal.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Injustice</b> — a documented case, not an opinion</dd>
+          <dt>Fear</dt><dd>#1 (verbatim source)</dd>
+          <dt>Build</dt><dd>Masthead · Sheet · Red-pen · Number</dd>
+          <dt>CTA</dt><dd>comment <b>FILE</b> → DM the full breakdown</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 18 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">CAS-02</span><h3>The Paper Trail</h3>
+        <p class="move">Follow one application through the firm: inbox → HR filter → associate skim → partner glance → decision. Where it died, marked.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Insider</b> — the journey nobody narrates</dd>
+          <dt>Fear</dt><dd>#1 · #2</dd>
+          <dt>Build</dt><dd>Flow · paper-slide · Stamp · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>TRAIL</b> → DM &ldquo;where applications die&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 17 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">CAS-03</span><h3>Exhibit A</h3>
+        <p class="move">A single CV line held up as evidence. Zoom, circle, annotate. &ldquo;This is what got the interview.&rdquo; Then: why.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Curiosity gap</b> — one line, withheld reason</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Sheet · slow push-in · Red-pen · Number</dd>
+          <dt>CTA</dt><dd>&ldquo;Exhibit B tomorrow&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 9 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">CAS-04</span><h3>Redacted</h3>
+        <p class="move">A recruiter&rsquo;s internal notes on a CV, most of it blacked out. Reveal one line at a time. The last reveal is the reject reason.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Curiosity gap</b> — forbidden document energy</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Sheet · redaction bars (paper) · Red-pen · Stamp</dd>
+          <dt>CTA</dt><dd>comment <b>NOTES</b> → DM the full note set</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 16 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">CAS-05</span><h3>The Timeline</h3>
+        <p class="move">One student&rsquo;s 18-month run to a Tier-1 offer, plotted month by month. The three moves that mattered, circled.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Proof</b> — a reconstructable path</dd>
+          <dt>Fear</dt><dd>#2 · #3</dd>
+          <dt>Build</dt><dd>Calendar · Timeline motion · Number · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>PATH</b> → DM the month-by-month template</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 17 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">CAS-06</span><h3>The Pattern</h3>
+        <p class="move">Ten rejected CVs. Show them fast. Freeze. The one thing all ten share, stamped across the frame.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> — a montage that resolves to one word</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Montage rhythm · Stamp · Number · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>PATTERN</b> → DM the fix</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 15 min</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ FAMILY 5 ============ -->
+  <section>
+    <div class="fam"><span class="n">05</span><h2>Myth / Reversal</h2><span class="cnt">7 formats · Law Signals column</span></div>
+    <p class="fam-note">Take a belief the audience holds and flip it with evidence in the first three seconds. The hook threatens something they&rsquo;re proud of. Inspiration: the metromedia.house contrarian-claim opener; highest 3-second-retention band.</p>
+    <div class="grid">
+
+      <article class="fmt">
+        <span class="code">MYT-01</span><h3>Your 8 Internships Are Hurting You</h3>
+        <p class="move">&ldquo;Eight internships on your CV. Zero Tier-1 callbacks. Here&rsquo;s why volume reads as no direction.&rdquo;</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> — threatens a point of pride</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Masthead · kinetic text · Reorder · Number</dd>
+          <dt>CTA</dt><dd>comment <b>CV</b> → DM the fix</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 12 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">MYT-02</span><h3>CGPA Isn&rsquo;t the Filter You Think It Is</h3>
+        <p class="move">Above a threshold, CGPA stops sorting. What sorts after that: drafting signal, practice fit, timing.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Loss-aversion</b> — you optimised the wrong variable</dd>
+          <dt>Fear</dt><dd>#1 · #3</dd>
+          <dt>Build</dt><dd>Number (threshold) · Score-card · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>FILTER</b> → DM what sorts instead</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 11 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">MYT-03</span><h3>Supreme Court Tunnel Vision</h3>
+        <p class="move">Interning under a judge every single break feels safe. To a corporate recruiter it reads as &ldquo;not interested in what we do.&rdquo;</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> — the prestige move backfires</dd>
+          <dt>Fear</dt><dd>#4</dd>
+          <dt>Build</dt><dd>Sheet · Reorder · Red-pen · margin label</dd>
+          <dt>CTA</dt><dd>comment <b>LANE</b> → DM how to build a directional CV</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 11 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">MYT-04</span><h3>&ldquo;Tailoring&rdquo; Doesn&rsquo;t Mean Rewriting</h3>
+        <p class="move">Tailoring a CV to a firm is 15 minutes: reorder three sections, swap five bullets, one line in the email. Show it.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> — removes the &ldquo;too much effort&rdquo; objection</dd>
+          <dt>Fear</dt><dd>#1 · #2</dd>
+          <dt>Build</dt><dd>Sheet · Reorder · Before/After · Number (15 min)</dd>
+          <dt>CTA</dt><dd>comment <b>TAILOR</b> → DM the 15-min pass</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 12 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">MYT-05</span><h3>A Portal Blog Post Is Not a Publication</h3>
+        <p class="move">What recruiters count as a publication vs what students list. The gap, and the two things that actually move the needle.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Insider</b> — a quiet correction</dd>
+          <dt>Fear</dt><dd>#5</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen · Score-card</dd>
+          <dt>CTA</dt><dd>comment <b>CITE</b> → DM what counts</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 10 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">MYT-06</span><h3>Going Viral With Your Launch Is a Trap</h3>
+        <p class="move">Adapted for law students chasing one big moot win: one prize doesn&rsquo;t build a CV; a directional through-line does.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> — the win you&rsquo;re chasing is the wrong metric</dd>
+          <dt>Fear</dt><dd>#1 · #4</dd>
+          <dt>Build</dt><dd>Masthead · kinetic text · Number · Flow</dd>
+          <dt>CTA</dt><dd>&ldquo;Follow &mdash; the through-line framework tomorrow&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 12 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">MYT-07</span><h3>Law Signals — This Week</h3>
+        <p class="move">A reactive reel on one legal-hiring or law-school story of the week (a firm&rsquo;s AI screening move, a placement-cell controversy, a stipend change, a CJI/NLU row). Masthead → the fact → what it means for applicants, in three lines. Added after @traceyourcase&rsquo;s news carousel outperformed her feed.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Timeliness</b> + insider — the news, decoded for your career</dd>
+          <dt>Fear</dt><dd>#6 · varies by story</dd>
+          <dt>Build</dt><dd>Masthead · kinetic text · divider · Number</dd>
+          <dt>CTA</dt><dd>&ldquo;Follow the Signal &mdash; next edition tomorrow&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 9 min</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ FAMILY 6 ============ -->
+  <section>
+    <div class="fam"><span class="n">06</span><h2>Signal Decode</h2><span class="cnt">6 formats · Recruiter&rsquo;s Desk / Resume Autopsy</span></div>
+    <p class="fam-note">Translate resume language into what a recruiter actually hears. Left column: what you wrote. Right column: what they read. The gap does the teaching. Inspiration: the brand bible&rsquo;s "phrase everything like an editor" rule.</p>
+    <div class="grid">
+
+      <article class="fmt">
+        <span class="code">SIG-01</span><h3>&ldquo;Assisted With Research&rdquo; → Nothing</h3>
+        <p class="move">The phrase enters. A translation panel resolves: &ldquo;I was in the room.&rdquo; Then the fix: &ldquo;Drafted 3 sections cited in the filing&rdquo; → &ldquo;can do the work.&rdquo;</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> — a decoder ring for your own CV</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Before/After · Red-pen · Score-card</dd>
+          <dt>CTA</dt><dd>comment <b>DECODE</b> → DM the 20-phrase translation table</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 9 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">SIG-02</span><h3>Duty vs Number</h3>
+        <p class="move">&ldquo;Responsible for legal research&rdquo; vs &ldquo;Researched 2 issues that made the written submission.&rdquo; One is a job description, one is a result.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> — swap duties for outcomes</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Before/After · Number · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>NUMBER</b> → DM the quantify-your-bullets guide</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 8 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">SIG-03</span><h3>The Drafting Signal</h3>
+        <p class="move">What &ldquo;drafting&rdquo; on a CV proves that &ldquo;observed&rdquo; and &ldquo;assisted&rdquo; never will &mdash; and the three verbs that carry it.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Insider</b> — the single word recruiters hunt for</dd>
+          <dt>Fear</dt><dd>#1 · #4</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen (circle the verb) · Number</dd>
+          <dt>CTA</dt><dd>comment <b>DRAFT</b> → DM the verb list</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 9 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">SIG-04</span><h3>Chamber Work, Decoded</h3>
+        <p class="move">&ldquo;Interned with a senior advocate&rdquo; → what a litigation recruiter needs to see under it: research memos, drafts, court days, matters named.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> — for the litigation-track viewer</dd>
+          <dt>Fear</dt><dd>#4</dd>
+          <dt>Build</dt><dd>Sheet · Flow · Red-pen · margin label</dd>
+          <dt>CTA</dt><dd>comment <b>CHAMBER</b> → DM the litigation-bullet template</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 10 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">SIG-05</span><h3>The Order Signal</h3>
+        <p class="move">Same three sections, two orders. Corporate: internship first, moots last. Litigation: flip it. Watch the &ldquo;fit&rdquo; read change.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Pattern-interrupt</b> — order is a message</dd>
+          <dt>Fear</dt><dd>#4</dd>
+          <dt>Build</dt><dd>Reorder · Red-pen · Score-card</dd>
+          <dt>CTA</dt><dd>comment your track → DM its order</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 9 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">SIG-06</span><h3>The Filename Signal</h3>
+        <p class="move">&ldquo;CV_final_v2 (1).pdf&rdquo; from &ldquo;coolguy.rahul@&hellip;&rdquo;. What a recruiter concludes before opening the file. 4-second reel.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Loss-aversion</b> — rejected before the first read</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>filename close-up · Stamp · Red-pen</dd>
+          <dt>CTA</dt><dd>&ldquo;Fix takes 10 seconds &mdash; do it now&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 6 min</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ FAMILY 7 ============ -->
+  <section>
+    <div class="fam"><span class="n">07</span><h2>Number Drop / Scorecard</h2><span class="cnt">6 formats · any column</span></div>
+    <p class="fam-note">A single figure or a score that reframes the whole problem. The number is the hook, the frame, and the thumbnail. Inspiration: NotebookLM&rsquo;s glowing "99/100" beat + the metromedia "2 Million" full-bleed card.</p>
+    <div class="grid">
+
+      <article class="fmt">
+        <span class="code">NUM-01</span><h3>98%</h3>
+        <p class="move">&ldquo;India&rsquo;s legal sector is booming. 98% of law grads are locked out of the top jobs.&rdquo; Then: the readiness gap, in three lines.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> — a macro stat that names the fear</dd>
+          <dt>Fear</dt><dd>#6</dd>
+          <dt>Build</dt><dd>Masthead · Number (full-bleed) · kinetic text</dd>
+          <dt>CTA</dt><dd>&ldquo;Follow &mdash; the readiness checklist this week&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 8 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">NUM-02</span><h3>The 3-Track Score</h3>
+        <p class="move">One CV, scored against Corporate / Litigation / Judiciary. Bars grow: 78 / 61 / 73. &ldquo;One resume can&rsquo;t score high everywhere.&rdquo;</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Curiosity gap</b> — what&rsquo;s your score?</dd>
+          <dt>Fear</dt><dd>#4</dd>
+          <dt>Build</dt><dd>Score-card · Masthead · margin label</dd>
+          <dt>CTA</dt><dd>comment your track → DM how to raise that score</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 10 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">NUM-03</span><h3>6&ndash;10 Months</h3>
+        <p class="move">How far ahead top firms actually recruit &mdash; and the follow-up count of students who landed those spots.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Loss-aversion</b> — behind on the calendar, not the effort</dd>
+          <dt>Fear</dt><dd>#2</dd>
+          <dt>Build</dt><dd>Number · Calendar · ping dots</dd>
+          <dt>CTA</dt><dd>comment <b>TIMING</b> → DM the calendar</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 9 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">NUM-04</span><h3>The Rejection Funnel</h3>
+        <p class="move">200 applied → 40 opened → 12 read past line 6 → 6 shortlisted → 2 offers. Where you actually fall out.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Loss-aversion</b> — locate yourself in the funnel</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Number (funnel) · Reorder · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>FUNNEL</b> → DM &ldquo;how to survive each stage&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 14 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">NUM-05</span><h3>2&ndash;4</h3>
+        <p class="move">The number of outcome bullets a recruiter reads per entry. Not eight lines of duties &mdash; two to four results.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> — a rule you can apply tonight</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Number · Sheet · Reorder · Red-pen</dd>
+          <dt>CTA</dt><dd>comment <b>BULLETS</b> → DM the 2&ndash;4 rewrite worksheet</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 8 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">NUM-06</span><h3>Score Your Own CV (live)</h3>
+        <p class="move">A 6-point rubric appears one line at a time; check or cross each on a sample CV; a score lands. &ldquo;Run yours &mdash; comment your number.&rdquo;</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Specificity</b> + proof — a tool in reel form</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Score-card · Sheet · Red-pen (check/cross)</dd>
+          <dt>CTA</dt><dd>comment your score → DM the full rubric (product tie-in)</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 15 min</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ FAMILY 8 ============ -->
+  <section>
+    <div class="fam"><span class="n">08</span><h2>Dispatch / AI &amp; Build</h2><span class="cnt">6 formats · AI Dispatch column</span></div>
+    <p class="fam-note">The AI-meets-hiring angle and the build-in-public thread. The product is the inevitable conclusion, never the hook. Inspiration: the Chatbase / NotebookLM product-reveal pacing (problem → mechanism → the tool, last).</p>
+    <div class="grid">
+
+      <article class="fmt">
+        <span class="code">DIS-01</span><h3>An AI Reads Your CV Like This</h3>
+        <p class="move">Screen-rec of a CV being parsed: what gets flagged, what gets ignored, where the &ldquo;no signal&rdquo; warning lands. The tool named only at the end.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Curiosity gap</b> — see the machine&rsquo;s read of your document</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Sheet · scan-line · Red-pen · Number · brand end-card</dd>
+          <dt>CTA</dt><dd>&ldquo;We&rsquo;re testing this live &mdash; comment <b>SCAN</b> for the waitlist&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 18 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">DIS-02</span><h3>A Firm Just Started Screening With AI</h3>
+        <p class="move">Law Signals beat: an Indian firm adds AI to first-round CV screening. What changes for applicants, in three points.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Loss-aversion</b> — the rules changed this week</dd>
+          <dt>Fear</dt><dd>#6</dd>
+          <dt>Build</dt><dd>Masthead · kinetic text · Number · divider</dd>
+          <dt>CTA</dt><dd>&ldquo;Follow the Dispatch &mdash; next edition tomorrow&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 10 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">DIS-03</span><h3>Day N of Building the Thing</h3>
+        <p class="move">Build-in-public: one honest number or lesson from the week (first users, a failed test, a metric). Handwritten note over a plain frame.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Proof</b> — authenticity, watch it get made</dd>
+          <dt>Fear</dt><dd>&mdash;</dd>
+          <dt>Build</dt><dd>Masthead · handwritten note · Number</dd>
+          <dt>CTA</dt><dd>&ldquo;Follow the build&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 7 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">DIS-04</span><h3>I Graded a Real Resume Like a Recruiter</h3>
+        <p class="move">Pre-product version of a live scan. A submitted CV, marked up manually on screen with the same rubric the tool will use. Score lands.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Curiosity gap</b> + proof — a public teardown</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Sheet · Red-pen · Score-card · brand end-card</dd>
+          <dt>CTA</dt><dd>&ldquo;Want yours done? Comment <b>GRADE</b>&rdquo; (feeds waitlist)</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-med">Med</span> · 18 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">DIS-05</span><h3>The Next Billion-Dollar Legal-AI Company</h3>
+        <p class="move">AI Company Breakdown, Greg-Isenberg style: a gap in legal work + who&rsquo;s positioned to take it. Positions LexIntent by association, not claim.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Insider</b> — a market read, not a pitch</dd>
+          <dt>Fear</dt><dd>&mdash;</dd>
+          <dt>Build</dt><dd>Masthead · kinetic text · Number · Flow</dd>
+          <dt>CTA</dt><dd>&ldquo;Follow the Dispatch&rdquo;</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 11 min</dd>
+        </dl>
+      </article>
+
+      <article class="fmt">
+        <span class="code">DIS-06</span><h3>What We Learned From 100 Law Resumes</h3>
+        <p class="move">Once enough CVs are graded: the five failures that showed up in most of them, ranked, as a scorecard. The product is why we have the data.</p>
+        <dl>
+          <dt>Trigger</dt><dd><b>Proof</b> — original data, earned authority</dd>
+          <dt>Fear</dt><dd>#1</dd>
+          <dt>Build</dt><dd>Score-card · Masthead · Reorder · Number</dd>
+          <dt>CTA</dt><dd>comment <b>DATA</b> → DM the full report</dd>
+          <dt>Cx / Min</dt><dd><span class="pill cx-low">Low</span> · 12 min</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="close">
+    <h2>How to use this codex</h2>
+    <ol>
+      <li><strong>The calendar (Phase 8) draws from here.</strong> Five reels a day = five codes pulled across families, weighted to the day&rsquo;s job (curiosity days lean Case File + Number; trust days lean Recruiter POV + Signal Decode; launch push leans Dispatch).</li>
+      <li><strong>Scripts (Phase 6) instantiate a code.</strong> Each script names its format code, fills the fixed structure with one real artifact/stat/fear, and gets scored on the quality rubric.</li>
+      <li><strong>Never two of the same code back-to-back.</strong> Rotate families so the feed doesn&rsquo;t feel like a template &mdash; it should feel like a publication with recurring columns.</li>
+      <li><strong>Every code&rsquo;s CTA is comment-to-DM or next-edition.</strong> The resource in the DM is a teardown, checklist, or the next Dispatch. The product enters only when someone replies.</li>
+    </ol>
+    <p class="note">All 50 build from the OpenChatCut kit scenes already designed (Masthead · Red-pen · Score-card · Before/After · Flow · Number · Reorder · Calendar · Sheet · Stamp · handwritten note · page-flip). The two new kit pieces these formats need &mdash; a scan-line overlay and a redaction-bar reveal &mdash; are the only Phase-4 additions, and both are one motion each. Render of the kit is still blocked on machine RAM (see Dossier 01, Phase 4).</p>
+  </div>
+
+</div>

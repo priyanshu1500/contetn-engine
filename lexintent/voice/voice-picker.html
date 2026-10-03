@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Voice Picker — Sarvam</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Newsreader:ital,wght@0,500;1,500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--paper:#f3efe4;--card:#fbfaf5;--ink:#1a1a1a;--muted:#8c8880;--oxblood:#7a1712;--rule:#d9d4c7;--rule-strong:#c3bda9;--kraft:#ab8a5f;--hard:6px 6px 0 rgba(20,18,16,.82)}
+  @media(prefers-color-scheme:dark){html:not([data-theme=light]){--paper:#161310;--card:#1e1a15;--ink:#f4f1ea;--muted:#9c978c;--oxblood:#c0473d;--rule:#39342b;--rule-strong:#4b4539}}
+  html[data-theme=dark]{--paper:#161310;--card:#1e1a15;--ink:#f4f1ea;--muted:#9c978c;--oxblood:#c0473d;--rule:#39342b;--rule-strong:#4b4539}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Inter",system-ui,sans-serif;line-height:1.55}
+  .wrap{max-width:44rem;margin:0 auto;padding:2rem 1.3rem 5rem}
+  h1{font-family:"Anton",sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(2rem,1.4rem+3vw,3rem);margin:.2rem 0 .3rem}
+  .eyebrow{font-weight:700;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oxblood)}
+  .sub{color:var(--muted);font-size:.9rem;max-width:52ch}
+  .script{font-family:"Newsreader",Georgia,serif;font-size:1.05rem;background:var(--card);border:1px solid var(--rule-strong);border-left:3px solid var(--oxblood);padding:.9rem 1.1rem;margin:1.2rem 0}
+  .v{border:1.5px solid var(--rule-strong);background:var(--card);box-shadow:var(--hard);padding:.9rem 1.1rem;margin:.9rem 0}
+  .v .name{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:1.3rem;letter-spacing:.02em}
+  .v .tag{font-size:.7rem;color:var(--muted);margin-left:.5rem}
+  .v audio{width:100%;margin-top:.6rem}
+  .note{font-size:.8rem;color:var(--muted);font-style:italic;border-top:1px solid var(--rule);padding-top:.9rem;margin-top:2rem}
+  .themebtn{float:right;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;background:none;border:1px solid var(--rule-strong);color:var(--muted);padding:.28rem .55rem;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <button class="themebtn" id="tb">Theme</button>
+  <div class="eyebrow">LexIntent — Voiceover</div>
+  <h1>Pick a voice</h1>
+  <div class="sub">Sarvam Bulbul v3, <code>en-IN</code>, pace 0.95. Eight candidates reading the same Case File 001 lines. Tell me the one (or two — a male + female for rotation) and I wire it into the pipeline.</div>
+  <div class="script">"Case file. Number, oh oh one. On paper, he was stronger than the classmates who got placed. So what did the recruiters see that he didn't? Every internship line said assisted, or observed. The verdict: a strong candidate, with a resume that couldn't prove it."</div>
+
+  <div class="v"><span class="name">Aditya</span><span class="tag">male · measured</span><audio controls preload="none" src="_refs/voices/sample_aditya.mp3"></audio></div>
+  <div class="v"><span class="name">Rahul</span><span class="tag">male · warm</span><audio controls preload="none" src="_refs/voices/sample_rahul.mp3"></audio></div>
+  <div class="v"><span class="name">Rohan</span><span class="tag">male · crisp</span><audio controls preload="none" src="_refs/voices/sample_rohan.mp3"></audio></div>
+  <div class="v"><span class="name">Varun</span><span class="tag">male · lower</span><audio controls preload="none" src="_refs/voices/sample_varun.mp3"></audio></div>
+  <div class="v"><span class="name">Kabir</span><span class="tag">male · documentary</span><audio controls preload="none" src="_refs/voices/sample_kabir.mp3"></audio></div>
+  <div class="v"><span class="name">Neha</span><span class="tag">female · clear</span><audio controls preload="none" src="_refs/voices/sample_neha.mp3"></audio></div>
+  <div class="v"><span class="name">Priya</span><span class="tag">female · calm</span><audio controls preload="none" src="_refs/voices/sample_priya.mp3"></audio></div>
+  <div class="v"><span class="name">Shreya</span><span class="tag">female · bright</span><audio controls preload="none" src="_refs/voices/sample_shreya.mp3"></audio></div>
+
+  <p class="note">Full v3 speaker list has 38 voices — if none of these land I can pull more. Sarvam free credit (₹1,000) covers hundreds of reels at this length.</p>
+</div>
+<script>
+  var tb=document.getElementById("tb");
+  tb.onclick=function(){var c=document.documentElement.getAttribute("data-theme");var n=c==="dark"?"light":c==="light"?"":"dark";document.documentElement.setAttribute("data-theme",n);try{localStorage.setItem("lexintent-theme",n)}catch(e){}};
+  try{var th=localStorage.getItem("lexintent-theme");if(th!==null)document.documentElement.setAttribute("data-theme",th)}catch(e){}
+</script>
+</body>
+</html>

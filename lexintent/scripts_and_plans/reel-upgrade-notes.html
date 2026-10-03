@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reel Upgrade Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#f3efe4;--card:#fbfaf5;--ink:#1a1a1a;--ink-soft:#40403b;--muted:#8c8880;
+    --rule:#d9d4c7;--rule-strong:#c3bda9;--oxblood:#7a1712;--oxblood-deep:#5f110d;
+    --kraft:#ab8a5f;--stamp:#e8c64d;
+    --f-display:"Anton","Arial Narrow",sans-serif;--f-doc:"Newsreader",Georgia,serif;
+    --f-hand:"Caveat",cursive;--f-ui:"Inter",system-ui,sans-serif;
+    --hard:6px 6px 0 rgba(20,18,16,0.82);
+  }
+  @media(prefers-color-scheme:dark){html:not([data-theme="light"]){
+    --paper:#161310;--card:#1e1a15;--ink:#f4f1ea;--ink-soft:#d8d3c6;--muted:#9c978c;
+    --rule:#39342b;--rule-strong:#4b4539;--oxblood:#c0473d;--kraft:#c39a68;
+  }}
+  html[data-theme="dark"]{
+    --paper:#161310;--card:#1e1a15;--ink:#f4f1ea;--ink-soft:#d8d3c6;--muted:#9c978c;
+    --rule:#39342b;--rule-strong:#4b4539;--oxblood:#c0473d;--kraft:#c39a68;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.58}
+  .wrap{max-width:62rem;margin:0 auto;padding:2rem 1.4rem 7rem}
+  a{color:var(--oxblood)}
+  header{border-bottom:3px solid var(--ink);padding-bottom:1rem;margin-bottom:1.6rem;position:relative}
+  .eyebrow{font-weight:700;font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oxblood)}
+  h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.3rem,1.5rem+3.6vw,3.8rem);line-height:.96;text-transform:uppercase;margin:.35rem 0 .4rem}
+  .sub{color:var(--ink-soft);max-width:60ch;font-size:.95rem}
+  .themebtn{position:absolute;top:.2rem;right:0;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;background:none;border:1px solid var(--rule-strong);color:var(--ink-soft);padding:.28rem .55rem;cursor:pointer}
+  h2{font-family:var(--f-display);font-weight:400;font-size:1.8rem;text-transform:uppercase;margin:2.6rem 0 .3rem;padding-top:1.1rem;border-top:2px solid var(--ink)}
+  h2 .n{color:var(--oxblood);margin-right:.5rem}
+  h3{font-weight:700;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:1.5rem 0 .5rem}
+  p{max-width:66ch}
+  .lede{font-family:var(--f-doc);font-size:1.13rem;line-height:1.5;color:var(--ink-soft);max-width:60ch}
+  .lede em{color:var(--oxblood);font-style:italic}
+  .score{display:flex;gap:1.4rem;align-items:baseline;flex-wrap:wrap;margin:1rem 0}
+  .score .big{font-family:var(--f-display);font-size:3.2rem;color:var(--oxblood);line-height:1}
+  .score .lbl{font-size:.8rem;color:var(--muted)}
+  table{border-collapse:collapse;width:100%;font-size:.85rem;margin:.8rem 0}
+  th,td{text-align:left;vertical-align:top;padding:.55rem .65rem;border-bottom:1px solid var(--rule)}
+  thead th{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink)}
+  td:first-child{font-weight:600;color:var(--ink);white-space:nowrap}
+  .fix{border:1.5px solid var(--rule-strong);box-shadow:var(--hard);background:var(--card);padding:1rem 1.2rem;margin:1rem 0}
+  .fix h4{margin:0 0 .3rem;font-family:var(--f-ui);font-weight:700;font-size:1.02rem}
+  .fix .p{font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid var(--oxblood);color:var(--oxblood);margin-left:.5rem}
+  .fix .now,.fix .to{font-size:.88rem;margin:.35rem 0}
+  .fix .now b,.fix .to b{font-family:var(--f-ui)}
+  .fix .now{color:var(--muted)}
+  .fix pre{background:var(--paper);border:1px solid var(--rule);padding:.6rem .8rem;font-family:var(--f-doc);font-size:1rem;white-space:pre-wrap;color:var(--ink);margin:.4rem 0}
+  .fix .how{font-size:.82rem;color:var(--ink-soft);margin-top:.5rem}
+  .fix .how b{color:var(--oxblood)}
+  .tmpl{border:1px solid var(--rule-strong);background:var(--card);margin:1rem 0}
+  .tmpl .row{display:grid;grid-template-columns:5.5rem 1fr;gap:1rem;padding:.55rem .9rem;border-bottom:1px dashed var(--rule-strong);font-size:.88rem}
+  .tmpl .row:last-child{border-bottom:0}
+  .tmpl .t{font-family:var(--f-display);color:var(--oxblood);font-size:1.15rem}
+  .tmpl .s b{font-family:var(--f-ui);font-weight:700}
+  .tmpl .s .pay{display:inline-block;font-size:.58rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--kraft);border:1px solid var(--kraft);padding:0 .35rem;margin-left:.4rem;vertical-align:middle}
+  .tool{border-left:4px solid var(--rule-strong);padding:.8rem 1.1rem;margin:.7rem 0;background:var(--card);border-top:1px solid var(--rule-strong);border-right:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong)}
+  .tool.key{border-left-color:var(--oxblood);box-shadow:var(--hard)}
+  .tool h4{margin:.1rem 0 .3rem;font-family:var(--f-ui);font-weight:700;font-size:.98rem}
+  .tool .meta{font-size:.75rem;color:var(--muted)}
+  .tool ul{margin:.35rem 0 .1rem;padding-left:1.1rem}.tool li{font-size:.86rem;margin-bottom:.25rem}
+  .lib{columns:2;column-gap:1.6rem;margin:.6rem 0}
+  @media(max-width:640px){.lib{columns:1}}
+  .lib .it{break-inside:avoid;border:1px solid var(--rule);background:var(--card);padding:.6rem .8rem;margin-bottom:.5rem;font-size:.85rem}
+  .lib .it b{font-family:var(--f-ui);display:block;color:var(--ink)}
+  ol.road{counter-reset:r;list-style:none;padding:0;margin:1rem 0}
+  ol.road li{position:relative;padding:.7rem 0 .7rem 3rem;border-bottom:1px solid var(--rule)}
+  ol.road li::before{counter-increment:r;content:counter(r,decimal-leading-zero);position:absolute;left:0;top:.6rem;font-family:var(--f-display);font-size:1.5rem;color:var(--oxblood);line-height:1}
+  ol.road b{font-weight:600}
+  ol.road .who{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .approve{border:2px solid var(--ink);padding:1rem 1.2rem;margin:2rem 0;background:var(--card)}
+  .approve label{display:flex;gap:.6rem;align-items:flex-start;padding:.38rem 0;font-size:.9rem;cursor:pointer}
+  .approve input{margin-top:.25rem;accent-color:var(--oxblood);width:1rem;height:1rem}
+  .approve .done{text-decoration:line-through;color:var(--muted)}
+  .stamp-note{font-family:var(--f-hand);font-size:1.5rem;color:var(--oxblood);transform:rotate(-3deg);display:inline-block}
+  code.tok{background:var(--card);border:1px solid var(--rule);padding:.03rem .3rem;font-size:.85em}
+  .note{font-size:.8rem;color:var(--muted);font-style:italic;border-top:1px solid var(--rule);padding-top:.9rem;margin-top:2.4rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">LexIntent Intelligence — v2 Review &amp; Upgrade Path</div>
+    <button class="themebtn" id="themebtn">Theme</button>
+    <h1>Reel Upgrade Notes</h1>
+    <p class="sub">Your frame-by-frame review of <code class="tok">LexIntent-CaseFile-001-v2.mp4</code>, turned into a fix list, a locked series template, the software to add, and a build order. For your review.</p>
+  </header>
+
+  <div class="score">
+    <div><div class="big">8.3</div><div class="lbl">v2 today</div></div>
+    <div style="font-size:1.6rem;color:var(--muted)">→</div>
+    <div><div class="big">10</div><div class="lbl">Greg Isenberg bar</div></div>
+    <div style="max-width:32ch;font-size:.9rem;color:var(--ink-soft)">The gap isn't animation quality. It's <b>psychological pacing</b>: no warm-up, the hook promising the whole story, a meaningful change every 2–3s, captions as a visual layer, and payoffs on a schedule instead of one long explanation.</div>
+  </div>
+
+  <h2><span class="n">01</span> The seven fixes</h2>
+
+  <div class="fix">
+    <h4>1 — Rebuild the hook <span class="p">0–3s · highest leverage</span></h4>
+    <div class="now"><b>Now:</b> white ground, calm type, eases into "Case File No. 001". A warm-up.</div>
+    <div class="to"><b>To:</b> four cuts, four seconds, the whole story stated before any context:</div>
+    <pre>Same GPA.
+Same law school.
+One got Khaitan.
+One got ignored.</pre>
+    <div class="how"><b>How:</b> 4 kinetic-Anton beats @ ~0.8s each, hard cuts, each with a paper-thud SFX. The masthead / CASE FILE card moves to a 1-second cold-open <em>before</em> this, not a 4-second reveal.</div>
+  </div>
+
+  <div class="fix">
+    <h4>2 — Make every animation informational <span class="p">3–8s</span></h4>
+    <div class="now"><b>Now:</b> circles animate nicely but decoratively — "something moved".</div>
+    <div class="to"><b>To:</b> every motion answers <em>"what changed?"</em> Forensic, not pretty.</div>
+    <div class="how"><b>Add:</b> a <b>red scan line</b> sweeping the CV, a <b>cursor</b> that travels to each weak phrase, a <b>ticking timer</b> (7→0), a <b>recruiter eye-path</b> dotted line. Motion reveals information.</div>
+  </div>
+
+  <div class="fix">
+    <h4>3 — The document is the actor <span class="p">18–30s · the plateau</span></h4>
+    <div class="now"><b>Now:</b> the rewrite is <em>told</em> ("better wording") over static text. Retention dips here.</div>
+    <div class="to"><b>To:</b> the resume edits itself <em>live</em> on screen.</div>
+    <div class="how"><b>Show:</b> words strike through, a red arrow points, a margin note writes itself in Caveat, the fixed sentence highlights. Compress the lesson to three insights in six seconds:</div>
+    <pre>Weak verb.
+No outcome.
+No drafting signal.</pre>
+  </div>
+
+  <div class="fix">
+    <h4>4 — Payoffs on a schedule <span class="p">whole reel</span></h4>
+    <div class="now"><b>Now:</b> one long payoff near the end.</div>
+    <div class="to"><b>To:</b> a concrete reward every 5–10 seconds — retention stepping-stones.</div>
+    <table>
+      <thead><tr><th>Time</th><th>Reward</th></tr></thead>
+      <tbody>
+        <tr><td>2s</td><td>Surprise — the two-outcome contrast</td></tr>
+        <tr><td>7s</td><td>Rule — "the first 7 seconds decide everything"</td></tr>
+        <tr><td>13s</td><td>Resume scan — the red line finds the weak lines</td></tr>
+        <tr><td>20s</td><td>Before / after — the line rewritten, meter jumps</td></tr>
+        <tr><td>30s</td><td>Hidden signal — the pattern named</td></tr>
+        <tr><td>40s</td><td>Final insight + next-case tease</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="fix">
+    <h4>5 — Louder headlines <span class="p">pattern interrupts</span></h4>
+    <div class="now"><b>Now:</b> "What they read first." — premium, but quiet.</div>
+    <div class="to"><b>To:</b> oversized headline moments that stop the scroll.</div>
+    <pre>THE FIRST 7 SECONDS
+DECIDE EVERYTHING</pre>
+    <div class="how"><b>How:</b> full-bleed Anton, 200–260px, oxblood underline drawing under it, paper-grain behind. 2–3 of these per reel as hard visual beats.</div>
+  </div>
+
+  <div class="fix">
+    <h4>6 — Captions as a primary layer <span class="p">the missing retention driver</span></h4>
+    <div class="now"><b>Now:</b> no burned-in captions at all. 80%+ watch on mute.</div>
+    <div class="to"><b>To:</b> word-level "karaoke" captions, 2–3 words at a time, bottom third, the key word flipping to oxblood as it's spoken.</div>
+    <div class="how"><b>How:</b> <code class="tok">faster-whisper</code> on our own <code class="tok">vo.mp3</code> → word timestamps → a caption track in the composition. Big Anton/Inter, hard-shadow, safe margins. This alone typically moves retention several points.</div>
+  </div>
+
+  <div class="fix">
+    <h4>7 — Series framing + unfinished loop <span class="p">30–45s</span></h4>
+    <div class="now"><b>Now:</b> ending is elegant but safe ("Not a better resume. The right one.").</div>
+    <div class="to"><b>To:</b> land on a bigger implication / identity shift, then open a loop.</div>
+    <pre>This is exactly what LexIntent catches
+before a recruiter ever sees it.
+
+Case File 002 tomorrow:
+the line that exposes an AI-written CV.</pre>
+    <div class="how">Every reel ends with a <b>next-case tease</b>. Viewers get a reason to come back — the reel stops being a standalone and becomes a chapter.</div>
+  </div>
+
+  <h2><span class="n">02</span> The flagship format — locked</h2>
+  <p>Stop making beautiful standalones. Every episode is the same skeleton; only the evidence changes. Repeatable, bingeable, recognisable in three frames, and easy to assemble.</p>
+  <div class="tmpl">
+    <div class="row"><div class="t">0–2s</div><div class="s"><b>CASE FILE 00N</b> — cold open. Number + <span class="pay">STATUS: REJECTED</span> stamp thud. <span class="pay">payoff</span></div></div>
+    <div class="row"><div class="t">2–6s</div><div class="s"><b>Hook</b> — 4 kinetic cuts, the whole story. <span class="pay">payoff</span></div></div>
+    <div class="row"><div class="t">6–12s</div><div class="s"><b>Evidence</b> — the CV enters as an exhibit; scan line + cursor find the weak lines. <span class="pay">payoff</span></div></div>
+    <div class="row"><div class="t">12–20s</div><div class="s"><b>Recruiter scan</b> — 7-second timer, eye-path, signal meter stays flat. <span class="pay">payoff</span></div></div>
+    <div class="row"><div class="t">20–32s</div><div class="s"><b>Redline replay</b> — the document edits itself live; meter jumps on the rewrite. <span class="pay">payoff</span></div></div>
+    <div class="row"><div class="t">32–42s</div><div class="s"><b>Verdict</b> — bordered card, FILED stamp, the one-line implication. <span class="pay">payoff</span></div></div>
+    <div class="row"><div class="t">42–45s</div><div class="s"><b>Next case tease</b> + comment-to-DM CTA. Unfinished loop.</div></div>
+  </div>
+  <p style="font-size:.85rem;color:var(--muted)">This is close to what v2 already does — the change is <b>sharper hook, informational motion, live editing, louder headlines, captions, and the tease</b>. Same render pipeline.</p>
+
+  <h2><span class="n">03</span> The recurring signature</h2>
+  <p>Three elements, every reel, no exceptions — recognisable as LexIntent within three frames:</p>
+  <div class="lib">
+    <div class="it"><b>Burgundy red-pen circle</b> — rough hand-drawn ellipse, DrawSVG stroke-on, always oxblood <code class="tok">#7a1712</code></div>
+    <div class="it"><b>Handwritten margin note</b> — Caveat, slight rotation, writes in beside the circled thing</div>
+    <div class="it"><b>Physical paper movement</b> — every scene change is a sheet sliding / a page turning, never a fade</div>
+  </div>
+  <p style="font-size:.85rem;color:var(--muted)">Plus the locked cold-open card (CASE FILE 00N / STATUS) and the two stamps (REJECTED red, FILED oxblood).</p>
+
+  <h2><span class="n">04</span> Software &amp; integrations to add</h2>
+
+  <div class="tool key">
+    <h4>Captions — faster-whisper <span class="meta">· free · pip · CPU</span></h4>
+    <ul>
+      <li>Runs on our own <code class="tok">vo.mp3</code>, returns word-level timestamps in seconds.</li>
+      <li>Feeds a karaoke caption track (2–3 words, key word → oxblood). The single biggest retention upgrade for mute viewers.</li>
+      <li>OpenChatCut also ships a <code class="tok">whisper-cli.exe</code> + has a built-in caption panel — usable if we build in OCC.</li>
+    </ul>
+  </div>
+
+  <div class="tool key">
+    <h4>Voice — Sarvam Bulbul v3 <span class="meta">· free 10k/mo + ₹1,000 credit · then ₹30/10k</span></h4>
+    <ul>
+      <li>India-built, 35+ genuinely-Indian voices. Wire into <code class="tok">narrate.py</code>.</li>
+      <li>Fallback: ElevenLabs Starter $5/mo (best quality + voice clone). Kokoro (now installed locally, needs a 350 MB model) is the free-local option.</li>
+    </ul>
+  </div>
+
+  <div class="tool">
+    <h4>Beat map — faster-whisper + <code class="tok">librosa</code> / <code class="tok">aubio</code> <span class="meta">· free · pip</span></h4>
+    <ul><li>Detect the music bed's transients → snap every cut, headline and caption reveal to the grid. This is what makes elite reels feel "locked".</li></ul>
+  </div>
+
+  <div class="tool">
+    <h4>Micro-animations — Lottie <span class="meta">· free tier · @remotion/lottie or inline</span></h4>
+    <ul><li>Polished pre-made arrows, checkmarks, loaders, redaction reveals for the forensic layer — faster than hand-animating each one.</li></ul>
+  </div>
+
+  <div class="tool">
+    <h4>Illustration layer — DiceBear API + Humaaans <span class="meta">· CC0 / MIT · free</span></h4>
+    <ul><li>For the reference-2 opening look — flat characters recoloured to tokens, parallax depth. (Detailed in the system plan.)</li></ul>
+  </div>
+
+  <div class="tool">
+    <h4>DaVinci Resolve <span class="meta">· free · optional NLE</span></h4>
+    <ul><li>If you ever want a real timeline for final colour, caption polish, or Fusion motion graphics on top of the HyperFrames render. Not required — nice to have.</li></ul>
+  </div>
+
+  <div class="tool">
+    <h4>Phase 2 — Blender <span class="meta">· free · deferred</span></h4>
+    <ul><li>Real 3D depth for the "evidence on a desk" look (Greg-tier). Blocked on RAM/time today; revisit after the format is proven.</li></ul>
+  </div>
+
+  <h2><span class="n">05</span> Motion library — build once, reuse</h2>
+  <p>Eight components, authored as HyperFrames + OpenChatCut modules. After this, a reel is assembly.</p>
+  <div class="lib">
+    <div class="it"><b>Paper slide</b> — sheet enters/exits with a cast shadow; the default transition</div>
+    <div class="it"><b>Red-pen draw</b> — DrawSVG rough ellipse / underline / strike, oxblood</div>
+    <div class="it"><b>Page flip</b> — 3D-ish corner lift between exhibits</div>
+    <div class="it"><b>Ink spread</b> — a stamp or highlight blooming into place</div>
+    <div class="it"><b>Rubber stamp</b> — scale-overshoot + settle + thud (REJECTED / FILED)</div>
+    <div class="it"><b>Cursor highlight</b> — a pointer travelling a path, pausing to select text</div>
+    <div class="it"><b>Score / signal counter</b> — the meter + a numeric tick</div>
+    <div class="it"><b>Redaction bar</b> — black bar wipes on, then retracts to reveal</div>
+  </div>
+
+  <h2><span class="n">06</span> Sound — feedback on every transition</h2>
+  <p>Top documentary reels use tiny sounds <em>constantly</em>. Rule: no cut without a sound.</p>
+  <ul>
+    <li>Per-transition: paper rustle · pen scratch · page flip · stamp thud · subtle sub-bass.</li>
+    <li>A continuous low room-tone bed under everything so silence never feels dead.</li>
+    <li>Source: local video-shotcraft pack (154 SFX) first; Freesound CC0 for gaps. All beat-mapped.</li>
+  </ul>
+
+  <h2><span class="n">07</span> The Asset Sweep — locked per-reel rule</h2>
+  <p><b>Rule:</b> no reel gets built without a fresh asset sweep first. Every episode begins by pulling topic-matched b-roll, textures, stills and archival footage from the free libraries, then using everything that reads aesthetic and on-brand to lift the production feel above pure motion-graphics.</p>
+  <h3>The sweep — runs at the start of every reel</h3>
+  <div class="tmpl">
+    <div class="row"><div class="t">1</div><div class="s"><b>Derive queries from the script.</b> 6–10 phrases from the hook + evidence + verdict — e.g. "law library", "signing contract", "rejection letter", "typewriter close up", "courthouse steps", "hands sorting paper".</div></div>
+    <div class="row"><div class="t">2</div><div class="s"><b>Pull from every free source</b> via <code class="tok">pull_assets.py</code> (topic mode): <b>Pexels</b> + <b>Pixabay</b> video &amp; photo, <b>Prelinger / Internet Archive</b> PD film, <b>Openverse</b> CC0, <b>The Met</b> CC0, <b>Coverr</b>, <b>Mixkit</b>. ~3–4 candidates per query.</div></div>
+    <div class="row"><div class="t">3</div><div class="s"><b>Curate on a contact sheet.</b> Keep only clips/stills that: match the warm-cream/oxblood palette or take a grade to get there; are slow / textural / documentary (no stocky smiles, no logos, no motion that fights the type); add atmosphere behind headlines, under paper, or as an exhibit.</div></div>
+    <div class="row"><div class="t">4</div><div class="s"><b>Grade to brand.</b> Desaturate ~40–70%, warm the whites toward <code class="tok">#f3efe4</code>, crush blacks slightly, add grain. B-roll usually rides at 8–18% opacity behind type or full-bleed for a 1–2s texture beat — never as the literal subject.</div></div>
+    <div class="row"><div class="t">5</div><div class="s"><b>Place</b> — one atmospheric clip behind the cold-open and the verdict; archival stills as physical evidence on the desk; a paper/ink texture layer on every card; a grain-video overlay on the whole reel at ~8%.</div></div>
+    <div class="row"><div class="t">6</div><div class="s"><b>Log</b> every file used in <code class="tok">assets\LICENSES.csv</code> (CC0 / free-commercial only — nothing non-commercial).</div></div>
+  </div>
+  <p style="font-size:.85rem;color:var(--muted)">Already wired: Pexels + Pixabay API keys in <code class="tok">assets\.env</code>, <code class="tok">pull_assets.py</code> and <code class="tok">pull_prelinger.py</code> in the scratchpad, ~150 clips/stills already banked in <code class="tok">D:\agency content\assets\</code>. This step adds a <b>topic mode</b> so the pull is scoped to each reel, plus the contact-sheet + grade pass.</p>
+
+  <h3>Per-reel production checklist (the locked SOP)</h3>
+  <div class="tmpl">
+    <div class="row"><div class="t">A</div><div class="s"><b>Hook</b> from the Bank → fill the 5-part script → write caption (Hinglish option) → compress to "3 things in N seconds".</div></div>
+    <div class="row"><div class="t">B</div><div class="s"><b>Asset sweep</b> (section above) → contact sheet → grade → placement list.</div></div>
+    <div class="row"><div class="t">C</div><div class="s"><b>Voice</b> — Sarvam / your recording → post chain → beat-detect the bed → frame-snap grid.</div></div>
+    <div class="row"><div class="t">D</div><div class="s"><b>Assemble</b> on the CASE FILE template + Motion Library, swap text / evidence / b-roll. Signature elements in place (red-pen circle, Caveat note, paper slides).</div></div>
+    <div class="row"><div class="t">E</div><div class="s"><b>Captions</b> — faster-whisper on the VO → karaoke track.</div></div>
+    <div class="row"><div class="t">F</div><div class="s"><b>Sound</b> — a cue on every cut + room-tone bed, all on the grid.</div></div>
+    <div class="row"><div class="t">G</div><div class="s"><b>Render</b> (HyperFrames low-mem) → mux → −14 LUFS → contact-sheet QC vs the 7 fixes.</div></div>
+    <div class="row"><div class="t">H</div><div class="s"><b>Post</b> with comment-to-DM + next-case tease. Pin the payoff comment. Log the 48h data.</div></div>
+  </div>
+
+  <h2><span class="n">08</span> Build order</h2>
+  <ol class="road">
+    <li><span class="who">Day 1 · me</span><br><b>Re-script Case File 001</b> to the locked template — sharper hook (4 cuts), 3-insight compression, next-case tease. Plus the delivery notes.</li>
+    <li><span class="who">Day 1 · me</span><br><b>Asset-sweep topic mode</b> — add query-scoped pulls + auto contact-sheet + a brand-grade ffmpeg preset to <code class="tok">pull_assets.py</code>.</li>
+    <li><span class="who">Day 1–2 · me</span><br><b>Motion library</b> — the 8 components above, as reusable modules.</li>
+    <li><span class="who">Day 2 · me</span><br><b>Caption pipeline</b> — <code class="tok">faster-whisper</code> on vo.mp3 → karaoke caption track component.</li>
+    <li><span class="who">Day 2 · you</span><br><b>Voice</b> — Sarvam sign-up + key, or "$5 ElevenLabs", or "I'll record". (Kokoro model I can pull regardless as fallback.)</li>
+    <li><span class="who">Day 3–4 · me</span><br><b>Case File 001 v3</b> — locked template, asset sweep applied, informational motion, live redline, louder headlines, captions, beat-mapped, Indian VO. Side-by-side with Greg + v2 for review.</li>
+    <li><span class="who">Day 5 · you</span><br><b>Review v3.</b> One revision pass.</li>
+    <li><span class="who">Day 6+ · me</span><br><b>Batch Case File 002–004</b> on the locked template + library + per-reel asset sweep. Then the daily loop.</li>
+  </ol>
+
+  <div class="approve">
+    <div class="stamp-note">approve to proceed →</div>
+    <label><input type="checkbox" data-k="c1"> <span>Lock the CASE FILE 7-scene template as the flagship series format. Every reel follows it.</span></label>
+    <label><input type="checkbox" data-k="c2"> <span>Build the 8-part Motion Library as reusable modules.</span></label>
+    <label><input type="checkbox" data-k="c3"> <span>Add the karaoke caption layer (faster-whisper) to every reel.</span></label>
+    <label><input type="checkbox" data-k="c4"> <span>Adopt the 7 fixes — sharper hook, informational motion, live redline, scheduled payoffs, louder headlines, captions, next-case tease.</span></label>
+    <label><input type="checkbox" data-k="c5"> <span>Lock the recurring signature: red-pen circle + Caveat margin note + paper-slide transition, every reel.</span></label>
+    <label><input type="checkbox" data-k="c8"> <span><b>Lock the Asset Sweep as a per-reel rule</b> — topic-scoped pull from Pexels / Pixabay / Prelinger / Openverse / Met, curate on a contact sheet, grade to brand, use everything aesthetic. No reel without it.</span></label>
+    <label><input type="checkbox" data-k="c6"> <span>Voice: <b>Sarvam free</b> / <b>ElevenLabs $5</b> / <b>I'll record</b> — (pick one)</span></label>
+    <label><input type="checkbox" data-k="c7"> <span>Rebuild Case File 001 as v3 on all of the above before batching 002–004.</span></label>
+  </div>
+
+  <p class="note">Review credited to your frame-by-frame notes + faceless-creator retention research (Greg Isenberg, documentary/Vox pacing, Ariyan Khan and others). Companion docs: <a href="reel-quality-plan.html">reel-quality-plan.html</a> (v1/v2/Greg), <a href="reel-system-plan.html">reel-system-plan.html</a> (script formula + Indian VO + illustrations).</p>
+</div>
+<script>
+  var KEY="lexintent-upgrade-v1"; var st={};
+  try{st=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+  document.querySelectorAll(".approve input").forEach(function(i){
+    if(st[i.dataset.k]){i.checked=true;i.closest("label").querySelector("span").classList.add("done");}
+    i.addEventListener("change",function(){
+      st[i.dataset.k]=i.checked; try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}
+      i.closest("label").querySelector("span").classList.toggle("done",i.checked);
+    });
+  });
+  var tb=document.getElementById("themebtn");
+  tb.addEventListener("click",function(){
+    var c=document.documentElement.getAttribute("data-theme");
+    var n=c==="dark"?"light":c==="light"?"":"dark";
+    document.documentElement.setAttribute("data-theme",n);
+    try{localStorage.setItem("lexintent-theme",n)}catch(e){}
+  });
+  try{var th=localStorage.getItem("lexintent-theme");if(th!==null)document.documentElement.setAttribute("data-theme",th)}catch(e){}
+</script>
+</body>
+</html>

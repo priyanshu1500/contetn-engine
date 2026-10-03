@@ -1,0 +1,2294 @@
+{
+ "duration": 71.42,
+ "specks": true,
+ "shots": [
+  {
+   "id": "s01",
+   "t0": 0.0,
+   "t1": 2.45,
+   "kind": "statchips",
+   "energy": "hook",
+   "statchips": {
+    "prefix": "$",
+    "suffix": "B",
+    "from": 0,
+    "to": 1.2,
+    "decimals": 1,
+    "roll": [
+     0.28,
+     1.75
+    ],
+    "early": true,
+    "sub": "AMAZON \u00b7 2009 \u00b7 REPORTED AT CLOSE"
+   },
+   "job": "hook: the number"
+  },
+  {
+   "id": "s02",
+   "t0": 2.45,
+   "t1": 3.45,
+   "kind": "evidence",
+   "src": "img/zappos_card.png",
+   "scale": 1.55,
+   "pos": [
+    371,
+    64
+   ],
+   "imgSize": [
+    760,
+    430
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "energy": "evidence",
+   "source": "ZAPPOS.COM \u00b7 27 NOV 1999 \u00b7 VIA WAYBACK MACHINE",
+   "label": [
+    2.6,
+    2.8
+   ],
+   "job": "a shoe company (real 1999 site)"
+  },
+  {
+   "id": "s03",
+   "t0": 3.45,
+   "t1": 5.0,
+   "kind": "evidence",
+   "src": "img/shoesite_card.png",
+   "scale": 1.55,
+   "pos": [
+    371,
+    64
+   ],
+   "imgSize": [
+    760,
+    430
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "energy": "evidence",
+   "dir": "L",
+   "source": "SHOESITE.COM \u00b7 24 APR 1999 \u00b7 VIA WAYBACK MACHINE \u00b7 NO PHOTOS, NO STOCK",
+   "label": [
+    3.5,
+    3.7
+   ],
+   "job": "started with no shoes (real 1999 page)"
+  },
+  {
+   "id": "s04",
+   "t0": 5.0,
+   "t1": 6.4,
+   "kind": "year",
+   "year": {
+    "from": 1979,
+    "to": 1999,
+    "roll": [
+     5.05,
+     5.6
+    ],
+    "label": "SHOESITE.COM GOES ONLINE"
+   },
+   "energy": "movie",
+   "job": "year"
+  },
+  {
+   "id": "s05",
+   "t0": 6.4,
+   "t1": 8.7,
+   "kind": "video",
+   "src": "clips/nick.mp4",
+   "from": 5.0,
+   "push": 0.06,
+   "dir": "R",
+   "whip": true,
+   "energy": "movie",
+   "job": "Nick on camera",
+   "scrim": true,
+   "grade": "saturate(0.86) contrast(1.07) brightness(0.9)"
+  },
+  {
+   "id": "s06",
+   "t0": 8.7,
+   "t1": 11.0,
+   "kind": "bigtext",
+   "energy": "escalation",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "VENTURE CAPITALISTS",
+      "t": 8.8,
+      "size": 118,
+      "color": "ink"
+     },
+     {
+      "text": "NO.",
+      "t": 9.9,
+      "size": 420,
+      "color": "warn"
+     }
+    ]
+   },
+   "job": "VCs said no"
+  },
+  {
+   "id": "s07",
+   "t0": 11.0,
+   "t1": 14.8,
+   "kind": "bigtext",
+   "energy": "pause",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "NOBODY BUYS SHOES",
+      "t": 11.06,
+      "size": 190,
+      "color": "ink"
+     },
+     {
+      "text": "WITHOUT TRYING",
+      "t": 12.62,
+      "size": 190,
+      "color": "ink"
+     },
+     {
+      "text": "THEM ON.",
+      "t": 13.9,
+      "size": 250,
+      "color": "evidence"
+     }
+    ],
+    "label": "THE VC RESPONSE \u00b7 AS RECALLED BY SWINMURN \u00b7 FORTUNE, 2012",
+    "labelT": 11.0,
+    "lift": 60
+   },
+   "job": "the objection"
+  },
+  {
+   "id": "s08",
+   "t0": 14.8,
+   "t1": 18.3,
+   "kind": "bigtext",
+   "energy": "escalation",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "NO INVENTORY.",
+      "t": 15.35,
+      "size": 250,
+      "color": "ink"
+     },
+     {
+      "text": "NO MONEY.",
+      "t": 16.5,
+      "size": 250,
+      "color": "warn"
+     }
+    ]
+   },
+   "job": "constraints"
+  },
+  {
+   "id": "s09",
+   "t0": 18.3,
+   "t1": 20.141,
+   "kind": "video",
+   "src": "clips/nick.mp4",
+   "from": 13.5,
+   "push": 0.07,
+   "dir": "L",
+   "energy": "pause",
+   "job": "so he did the one thing he could",
+   "scrim": true,
+   "grade": "saturate(0.86) contrast(1.07) brightness(0.9)"
+  },
+  {
+   "id": "s10",
+   "t0": 20.141,
+   "t1": 21.091,
+   "kind": "video",
+   "src": "clips/nick.mp4",
+   "from": 9.55,
+   "push": 0.02,
+   "dir": "R",
+   "energy": "proof",
+   "job": "Nick: soundbite A",
+   "scrim": true,
+   "grade": "saturate(0.86) contrast(1.07) brightness(0.9)"
+  },
+  {
+   "id": "s11",
+   "t0": 21.091,
+   "t1": 23.15,
+   "kind": "video",
+   "src": "clips/nick.mp4",
+   "from": 11.4,
+   "push": 0.03,
+   "zoom": 1.16,
+   "dir": "L",
+   "energy": "movie",
+   "job": "Nick: soundbite B (jump cut)",
+   "scrim": true,
+   "grade": "saturate(0.86) contrast(1.07) brightness(0.9)"
+  },
+  {
+   "id": "s12",
+   "t0": 23.15,
+   "t1": 28.0,
+   "kind": "mech",
+   "energy": "proof",
+   "mech": {
+    "scene": "deal",
+    "t": [
+     24.05,
+     25.55,
+     27.05
+    ],
+    "label": "THE DEAL"
+   },
+   "job": "animated: online order -> store, full price"
+  },
+  {
+   "id": "s13",
+   "t0": 28.0,
+   "t1": 29.4,
+   "kind": "bigtext",
+   "energy": "pause",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "\"OKAY.\"",
+      "t": 28.3,
+      "size": 340,
+      "color": "ink"
+     }
+    ],
+    "label": "THE OWNER HUMORED HIM",
+    "labelT": 28.0
+   },
+   "job": "he said okay"
+  },
+  {
+   "id": "s14",
+   "t0": 29.4,
+   "t1": 33.2,
+   "kind": "mech",
+   "energy": "proof",
+   "mech": {
+    "scene": "shelf",
+    "t": [
+     29.55,
+     30.75,
+     31.98
+    ],
+    "label": "THE WHOLE WAREHOUSE"
+   },
+   "job": "animated: someone else's shelves"
+  },
+  {
+   "id": "s15",
+   "t0": 33.2,
+   "t1": 38.4,
+   "kind": "mech",
+   "energy": "proof",
+   "mech": {
+    "scene": "loop",
+    "t": [
+     33.4,
+     34.65,
+     36.05,
+     37.05
+    ],
+    "label": "ORDER \u2192 STORE \u2192 CUSTOMER"
+   },
+   "job": "animated: order, drive, pay retail, ship"
+  },
+  {
+   "id": "s16",
+   "t0": 38.4,
+   "t1": 43.35,
+   "kind": "statchips",
+   "energy": "escalation",
+   "statchips": {
+    "prefix": "$",
+    "from": 0,
+    "to": 150000,
+    "roll": [
+     38.85,
+     40.0
+    ],
+    "sub": "RAISED \u00b7 1999",
+    "size": 320,
+    "chips": [
+     {
+      "text": "FRIENDS",
+      "t": 40.55
+     },
+     {
+      "text": "CO-WORKERS",
+      "t": 41.45
+     },
+     {
+      "text": "HIS CHIROPRACTOR",
+      "t": 42.4
+     }
+    ]
+   },
+   "job": "raised $150k"
+  },
+  {
+   "id": "s17",
+   "t0": 43.35,
+   "t1": 46.25,
+   "kind": "video",
+   "src": "clips/tony.mp4",
+   "from": 1.0,
+   "push": 0.05,
+   "dir": "R",
+   "whip": true,
+   "energy": "pause",
+   "job": "Tony Hsieh",
+   "scrim": true,
+   "grade": "saturate(0.86) contrast(1.07) brightness(0.9)"
+  },
+  {
+   "id": "s18",
+   "t0": 46.25,
+   "t1": 50.3,
+   "kind": "statchips",
+   "energy": "escalation",
+   "statchips": {
+    "prefix": "$",
+    "suffix": "M",
+    "from": 0,
+    "to": 1.6,
+    "decimals": 1,
+    "roll": [
+     46.3,
+     47.6
+    ],
+    "early": true,
+    "sub": "GROSS SALES \u00b7 FIRST TWO YEARS"
+   },
+   "job": "$1.6M"
+  },
+  {
+   "id": "s19",
+   "t0": 50.3,
+   "t1": 53.3,
+   "kind": "statchips",
+   "energy": "payoff",
+   "statchips": {
+    "prefix": "$",
+    "from": 0,
+    "to": 1000000000,
+    "roll": [
+     50.45,
+     51.95
+    ],
+    "early": true,
+    "size": 205,
+    "sub": "ANNUAL SALES \u00b7 2008"
+   },
+   "job": "$1B"
+  },
+  {
+   "id": "s20",
+   "t0": 53.3,
+   "t1": 56.35,
+   "kind": "video",
+   "src": "clips/wh.mp4",
+   "from": 20.0,
+   "push": 0.05,
+   "dir": "L",
+   "zoom": 1.0,
+   "whip": true,
+   "energy": "payoff",
+   "job": "only later: own inventory (real warehouse)",
+   "scrim": true,
+   "grade": "saturate(0.86) contrast(1.07) brightness(0.9)"
+  },
+  {
+   "id": "s21",
+   "t0": 56.35,
+   "t1": 59.4,
+   "kind": "video",
+   "src": "clips/wh.mp4",
+   "from": 7.6,
+   "push": 0.05,
+   "dir": "R",
+   "zoom": 1.1,
+   "energy": "movie",
+   "job": "real packing station",
+   "scrim": true,
+   "grade": "saturate(0.86) contrast(1.07) brightness(0.9)"
+  },
+  {
+   "id": "s22",
+   "t0": 59.4,
+   "t1": 61.1,
+   "kind": "bigtext",
+   "energy": "payoff",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "FOUND OUT",
+      "t": 59.48,
+      "size": 190,
+      "color": "ink"
+     },
+     {
+      "text": "FIRST.",
+      "t": 59.98,
+      "size": 340,
+      "color": "evidence"
+     }
+    ]
+   },
+   "job": "found out first"
+  },
+  {
+   "id": "s23",
+   "t0": 61.1,
+   "t1": 62.5,
+   "kind": "bigtext",
+   "energy": "payoff",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "THEN",
+      "t": 61.15,
+      "size": 190,
+      "color": "ink"
+     },
+     {
+      "text": "BUILT IT.",
+      "t": 61.78,
+      "size": 340,
+      "color": "evidence"
+     }
+    ]
+   },
+   "job": "then built it"
+  },
+  {
+   "id": "s24",
+   "t0": 62.5,
+   "t1": 65.1,
+   "kind": "bigtext",
+   "energy": "escalation",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "AUTOMATE FIRST.",
+      "t": 62.6,
+      "size": 180,
+      "color": "ink",
+      "strike": 63.8
+     },
+     {
+      "text": "BACKWARDS.",
+      "t": 63.86,
+      "size": 300,
+      "color": "warn"
+     }
+    ]
+   },
+   "job": "most businesses do it backwards"
+  },
+  {
+   "id": "s25",
+   "t0": 65.1,
+   "t1": 67.45,
+   "kind": "bigtext",
+   "energy": "pause",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "AUTOMATE",
+      "t": 65.5,
+      "size": 260,
+      "color": "ink"
+     },
+     {
+      "text": "BEFORE IT WORKS",
+      "t": 66.4,
+      "size": 150,
+      "color": "warn"
+     }
+    ]
+   },
+   "job": "before they know it works"
+  },
+  {
+   "id": "s26",
+   "t0": 67.45,
+   "t1": 69.35,
+   "kind": "bigtext",
+   "energy": "payoff",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "BY HAND",
+      "t": 67.55,
+      "size": 300,
+      "color": "ink"
+     },
+     {
+      "text": "FIRST.",
+      "t": 68.14,
+      "size": 300,
+      "color": "evidence"
+     }
+    ]
+   },
+   "job": "do it by hand first"
+  },
+  {
+   "id": "s27",
+   "t0": 69.35,
+   "t1": 71.42,
+   "kind": "bigtext",
+   "energy": "payoff",
+   "bigtext": {
+    "lines": [
+     {
+      "text": "THEN AUTOMATE",
+      "t": 69.45,
+      "size": 190,
+      "color": "ink"
+     },
+     {
+      "text": "WHAT'S PROVEN.",
+      "t": 70.45,
+      "size": 230,
+      "color": "evidence"
+     }
+    ]
+   },
+   "job": "close"
+  }
+ ],
+ "text": [
+  {
+   "t0": 0.0,
+   "t1": 0.7,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Amazon",
+     "t": 0.0
+    },
+    {
+     "w": "paid",
+     "t": 0.32
+    }
+   ]
+  },
+  {
+   "t0": 0.7,
+   "t1": 1.72,
+   "mode": "word",
+   "words": [
+    {
+     "w": "about",
+     "t": 0.7
+    },
+    {
+     "w": "$1.2",
+     "t": 0.92
+    }
+   ]
+  },
+  {
+   "t0": 1.72,
+   "t1": 2.0,
+   "mode": "word",
+   "words": [
+    {
+     "w": "billion",
+     "t": 1.72,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 2.0,
+   "t1": 2.7,
+   "mode": "word",
+   "words": [
+    {
+     "w": "for",
+     "t": 2.0
+    },
+    {
+     "w": "a",
+     "t": 2.6
+    }
+   ]
+  },
+  {
+   "t0": 2.7,
+   "t1": 3.22,
+   "mode": "word",
+   "words": [
+    {
+     "w": "shoe",
+     "t": 2.7
+    },
+    {
+     "w": "company",
+     "t": 2.88
+    }
+   ]
+  },
+  {
+   "t0": 3.22,
+   "t1": 3.72,
+   "mode": "word",
+   "words": [
+    {
+     "w": "that",
+     "t": 3.22
+    },
+    {
+     "w": "started",
+     "t": 3.42
+    }
+   ]
+  },
+  {
+   "t0": 3.72,
+   "t1": 4.12,
+   "mode": "word",
+   "words": [
+    {
+     "w": "with",
+     "t": 3.72
+    },
+    {
+     "w": "no",
+     "t": 3.94
+    }
+   ]
+  },
+  {
+   "t0": 4.12,
+   "t1": 4.68,
+   "mode": "word",
+   "words": [
+    {
+     "w": "shoes.",
+     "t": 4.12,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 4.96,
+   "t1": 6.06,
+   "mode": "word",
+   "words": [
+    {
+     "w": "In",
+     "t": 4.96
+    },
+    {
+     "w": "1999,",
+     "t": 5.08
+    }
+   ]
+  },
+  {
+   "t0": 6.42,
+   "t1": 6.9,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Nick",
+     "t": 6.42
+    },
+    {
+     "w": "Swinmurn",
+     "t": 6.52
+    }
+   ]
+  },
+  {
+   "t0": 6.9,
+   "t1": 7.38,
+   "mode": "word",
+   "words": [
+    {
+     "w": "wanted",
+     "t": 6.9
+    },
+    {
+     "w": "to",
+     "t": 7.18
+    }
+   ]
+  },
+  {
+   "t0": 7.38,
+   "t1": 7.82,
+   "mode": "word",
+   "words": [
+    {
+     "w": "sell",
+     "t": 7.38
+    },
+    {
+     "w": "shoes",
+     "t": 7.6
+    }
+   ]
+  },
+  {
+   "t0": 7.82,
+   "t1": 9.08,
+   "mode": "word",
+   "words": [
+    {
+     "w": "online.",
+     "t": 7.82
+    },
+    {
+     "w": "Venture",
+     "t": 8.78
+    }
+   ]
+  },
+  {
+   "t0": 9.08,
+   "t1": 9.92,
+   "mode": "word",
+   "words": [
+    {
+     "w": "capitalists",
+     "t": 9.08
+    },
+    {
+     "w": "said",
+     "t": 9.66
+    }
+   ]
+  },
+  {
+   "t0": 9.92,
+   "t1": 10.38,
+   "mode": "word",
+   "words": [
+    {
+     "w": "no.",
+     "t": 9.92,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 11.06,
+   "t1": 11.94,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Nobody,",
+     "t": 11.06
+    },
+    {
+     "w": "they",
+     "t": 11.82
+    }
+   ]
+  },
+  {
+   "t0": 11.94,
+   "t1": 12.62,
+   "mode": "word",
+   "words": [
+    {
+     "w": "told",
+     "t": 11.94
+    },
+    {
+     "w": "him,",
+     "t": 12.14
+    }
+   ]
+  },
+  {
+   "t0": 12.62,
+   "t1": 12.9,
+   "mode": "word",
+   "words": [
+    {
+     "w": "is",
+     "t": 12.62
+    },
+    {
+     "w": "going",
+     "t": 12.72
+    }
+   ]
+  },
+  {
+   "t0": 12.9,
+   "t1": 13.2,
+   "mode": "word",
+   "words": [
+    {
+     "w": "to",
+     "t": 12.9
+    },
+    {
+     "w": "buy",
+     "t": 13.04
+    }
+   ]
+  },
+  {
+   "t0": 13.2,
+   "t1": 13.8,
+   "mode": "word",
+   "words": [
+    {
+     "w": "shoes",
+     "t": 13.2
+    },
+    {
+     "w": "without",
+     "t": 13.46
+    }
+   ]
+  },
+  {
+   "t0": 13.8,
+   "t1": 14.32,
+   "mode": "word",
+   "words": [
+    {
+     "w": "trying",
+     "t": 13.8
+    },
+    {
+     "w": "them",
+     "t": 14.16
+    }
+   ]
+  },
+  {
+   "t0": 14.32,
+   "t1": 15.0,
+   "mode": "word",
+   "words": [
+    {
+     "w": "on.",
+     "t": 14.32
+    },
+    {
+     "w": "He",
+     "t": 14.86
+    }
+   ]
+  },
+  {
+   "t0": 15.0,
+   "t1": 15.38,
+   "mode": "word",
+   "words": [
+    {
+     "w": "had",
+     "t": 15.0
+    },
+    {
+     "w": "no",
+     "t": 15.18
+    }
+   ]
+  },
+  {
+   "t0": 15.38,
+   "t1": 16.46,
+   "mode": "word",
+   "words": [
+    {
+     "w": "inventory,",
+     "t": 15.38
+    },
+    {
+     "w": "and",
+     "t": 16.34
+    }
+   ]
+  },
+  {
+   "t0": 16.46,
+   "t1": 16.88,
+   "mode": "word",
+   "words": [
+    {
+     "w": "no",
+     "t": 16.46
+    },
+    {
+     "w": "money",
+     "t": 16.64
+    }
+   ]
+  },
+  {
+   "t0": 16.88,
+   "t1": 17.24,
+   "mode": "word",
+   "words": [
+    {
+     "w": "to",
+     "t": 16.88
+    },
+    {
+     "w": "buy",
+     "t": 17.08
+    }
+   ]
+  },
+  {
+   "t0": 17.24,
+   "t1": 18.64,
+   "mode": "word",
+   "words": [
+    {
+     "w": "any.",
+     "t": 17.24
+    },
+    {
+     "w": "So",
+     "t": 18.28
+    }
+   ]
+  },
+  {
+   "t0": 18.68,
+   "t1": 18.98,
+   "mode": "word",
+   "words": [
+    {
+     "w": "he",
+     "t": 18.68
+    },
+    {
+     "w": "did",
+     "t": 18.84
+    }
+   ]
+  },
+  {
+   "t0": 18.98,
+   "t1": 19.28,
+   "mode": "word",
+   "words": [
+    {
+     "w": "the",
+     "t": 18.98
+    },
+    {
+     "w": "one",
+     "t": 19.12
+    }
+   ]
+  },
+  {
+   "t0": 19.28,
+   "t1": 19.68,
+   "mode": "word",
+   "words": [
+    {
+     "w": "thing",
+     "t": 19.28
+    },
+    {
+     "w": "he",
+     "t": 19.48
+    }
+   ]
+  },
+  {
+   "t0": 19.68,
+   "t1": 20.241,
+   "mode": "word",
+   "words": [
+    {
+     "w": "could.",
+     "t": 19.68
+    },
+    {
+     "w": "I",
+     "t": 20.141
+    }
+   ]
+  },
+  {
+   "t0": 20.241,
+   "t1": 20.481,
+   "mode": "word",
+   "words": [
+    {
+     "w": "just",
+     "t": 20.241
+    },
+    {
+     "w": "went",
+     "t": 20.361
+    }
+   ]
+  },
+  {
+   "t0": 20.481,
+   "t1": 20.701,
+   "mode": "word",
+   "words": [
+    {
+     "w": "down",
+     "t": 20.481
+    },
+    {
+     "w": "to",
+     "t": 20.601
+    }
+   ]
+  },
+  {
+   "t0": 20.701,
+   "t1": 20.921,
+   "mode": "word",
+   "words": [
+    {
+     "w": "a",
+     "t": 20.701
+    },
+    {
+     "w": "shoe",
+     "t": 20.781
+    }
+   ]
+  },
+  {
+   "t0": 20.921,
+   "t1": 21.091,
+   "mode": "word",
+   "words": [
+    {
+     "w": "store,",
+     "t": 20.921,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 21.091,
+   "t1": 21.351,
+   "mode": "word",
+   "words": [
+    {
+     "w": "took",
+     "t": 21.091
+    },
+    {
+     "w": "a",
+     "t": 21.211
+    }
+   ]
+  },
+  {
+   "t0": 21.351,
+   "t1": 21.651,
+   "mode": "word",
+   "words": [
+    {
+     "w": "camera.",
+     "t": 21.351,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 21.651,
+   "t1": 21.831,
+   "mode": "word",
+   "words": [
+    {
+     "w": "I",
+     "t": 21.651
+    },
+    {
+     "w": "said,",
+     "t": 21.711
+    }
+   ]
+  },
+  {
+   "t0": 21.831,
+   "t1": 22.031,
+   "mode": "word",
+   "words": [
+    {
+     "w": "hey,",
+     "t": 21.831
+    },
+    {
+     "w": "can",
+     "t": 21.931
+    }
+   ]
+  },
+  {
+   "t0": 22.031,
+   "t1": 22.211,
+   "mode": "word",
+   "words": [
+    {
+     "w": "I",
+     "t": 22.031
+    },
+    {
+     "w": "take",
+     "t": 22.091
+    }
+   ]
+  },
+  {
+   "t0": 22.211,
+   "t1": 22.631,
+   "mode": "word",
+   "words": [
+    {
+     "w": "pictures",
+     "t": 22.211
+    },
+    {
+     "w": "of",
+     "t": 22.491
+    }
+   ]
+  },
+  {
+   "t0": 22.631,
+   "t1": 23.12,
+   "mode": "word",
+   "words": [
+    {
+     "w": "these",
+     "t": 22.631
+    },
+    {
+     "w": "shoes?",
+     "t": 22.711,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 23.12,
+   "t1": 23.76,
+   "mode": "word",
+   "words": [
+    {
+     "w": "The",
+     "t": 23.12
+    },
+    {
+     "w": "deal,",
+     "t": 23.28
+    }
+   ]
+  },
+  {
+   "t0": 23.9,
+   "t1": 24.34,
+   "mode": "word",
+   "words": [
+    {
+     "w": "if",
+     "t": 23.9
+    },
+    {
+     "w": "anyone",
+     "t": 24.04
+    }
+   ]
+  },
+  {
+   "t0": 24.34,
+   "t1": 25.34,
+   "mode": "word",
+   "words": [
+    {
+     "w": "ordered",
+     "t": 24.34
+    },
+    {
+     "w": "online,",
+     "t": 24.64
+    }
+   ]
+  },
+  {
+   "t0": 25.48,
+   "t1": 25.74,
+   "mode": "word",
+   "words": [
+    {
+     "w": "he'd",
+     "t": 25.48
+    },
+    {
+     "w": "buy",
+     "t": 25.66
+    }
+   ]
+  },
+  {
+   "t0": 25.74,
+   "t1": 26.08,
+   "mode": "word",
+   "words": [
+    {
+     "w": "the",
+     "t": 25.74
+    },
+    {
+     "w": "pair",
+     "t": 25.88
+    }
+   ]
+  },
+  {
+   "t0": 26.08,
+   "t1": 26.38,
+   "mode": "word",
+   "words": [
+    {
+     "w": "from",
+     "t": 26.08
+    },
+    {
+     "w": "the",
+     "t": 26.26
+    }
+   ]
+  },
+  {
+   "t0": 26.38,
+   "t1": 26.84,
+   "mode": "word",
+   "words": [
+    {
+     "w": "store,",
+     "t": 26.38,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 27.0,
+   "t1": 27.32,
+   "mode": "word",
+   "words": [
+    {
+     "w": "at",
+     "t": 27.0
+    },
+    {
+     "w": "full",
+     "t": 27.12
+    }
+   ]
+  },
+  {
+   "t0": 27.32,
+   "t1": 27.88,
+   "mode": "word",
+   "words": [
+    {
+     "w": "price.",
+     "t": 27.32,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 28.02,
+   "t1": 28.36,
+   "mode": "word",
+   "words": [
+    {
+     "w": "The",
+     "t": 28.02
+    },
+    {
+     "w": "owner",
+     "t": 28.12
+    }
+   ]
+  },
+  {
+   "t0": 28.36,
+   "t1": 29.02,
+   "mode": "word",
+   "words": [
+    {
+     "w": "humored",
+     "t": 28.36
+    },
+    {
+     "w": "him.",
+     "t": 28.8
+    }
+   ]
+  },
+  {
+   "t0": 29.02,
+   "t1": 29.68,
+   "mode": "word",
+   "words": [
+    {
+     "w": "That",
+     "t": 29.02
+    },
+    {
+     "w": "was",
+     "t": 29.52
+    }
+   ]
+  },
+  {
+   "t0": 29.68,
+   "t1": 30.04,
+   "mode": "word",
+   "words": [
+    {
+     "w": "the",
+     "t": 29.68
+    },
+    {
+     "w": "whole",
+     "t": 29.84
+    }
+   ]
+  },
+  {
+   "t0": 30.04,
+   "t1": 30.7,
+   "mode": "word",
+   "words": [
+    {
+     "w": "warehouse.",
+     "t": 30.04,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 31.42,
+   "t1": 32.4,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Someone",
+     "t": 31.42
+    },
+    {
+     "w": "else's",
+     "t": 31.98
+    }
+   ]
+  },
+  {
+   "t0": 32.4,
+   "t1": 33.02,
+   "mode": "word",
+   "words": [
+    {
+     "w": "shelves.",
+     "t": 32.4,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 33.3,
+   "t1": 33.52,
+   "mode": "word",
+   "words": [
+    {
+     "w": "When",
+     "t": 33.3
+    },
+    {
+     "w": "an",
+     "t": 33.42
+    }
+   ]
+  },
+  {
+   "t0": 33.52,
+   "t1": 34.0,
+   "mode": "word",
+   "words": [
+    {
+     "w": "order",
+     "t": 33.52
+    },
+    {
+     "w": "came",
+     "t": 33.72
+    }
+   ]
+  },
+  {
+   "t0": 34.0,
+   "t1": 34.66,
+   "mode": "word",
+   "words": [
+    {
+     "w": "in,",
+     "t": 34.0
+    },
+    {
+     "w": "Nick",
+     "t": 34.6
+    }
+   ]
+  },
+  {
+   "t0": 34.66,
+   "t1": 35.04,
+   "mode": "word",
+   "words": [
+    {
+     "w": "went",
+     "t": 34.66
+    },
+    {
+     "w": "back",
+     "t": 34.82
+    }
+   ]
+  },
+  {
+   "t0": 35.04,
+   "t1": 35.34,
+   "mode": "word",
+   "words": [
+    {
+     "w": "to",
+     "t": 35.04
+    },
+    {
+     "w": "the",
+     "t": 35.22
+    }
+   ]
+  },
+  {
+   "t0": 35.34,
+   "t1": 35.8,
+   "mode": "word",
+   "words": [
+    {
+     "w": "store,",
+     "t": 35.34,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 36.0,
+   "t1": 36.78,
+   "mode": "word",
+   "words": [
+    {
+     "w": "paid",
+     "t": 36.0
+    },
+    {
+     "w": "retail,",
+     "t": 36.14
+    }
+   ]
+  },
+  {
+   "t0": 36.94,
+   "t1": 37.26,
+   "mode": "word",
+   "words": [
+    {
+     "w": "and",
+     "t": 36.94
+    },
+    {
+     "w": "shipped",
+     "t": 37.04
+    }
+   ]
+  },
+  {
+   "t0": 37.26,
+   "t1": 37.64,
+   "mode": "word",
+   "words": [
+    {
+     "w": "the",
+     "t": 37.26
+    },
+    {
+     "w": "shoes",
+     "t": 37.46
+    }
+   ]
+  },
+  {
+   "t0": 37.64,
+   "t1": 38.3,
+   "mode": "word",
+   "words": [
+    {
+     "w": "himself.",
+     "t": 37.64,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 38.44,
+   "t1": 38.88,
+   "mode": "word",
+   "words": [
+    {
+     "w": "He",
+     "t": 38.44
+    },
+    {
+     "w": "raised",
+     "t": 38.56
+    }
+   ]
+  },
+  {
+   "t0": 38.88,
+   "t1": 40.28,
+   "mode": "word",
+   "words": [
+    {
+     "w": "$150,000",
+     "t": 38.88
+    },
+    {
+     "w": "from",
+     "t": 40.08
+    }
+   ]
+  },
+  {
+   "t0": 40.56,
+   "t1": 41.96,
+   "mode": "word",
+   "words": [
+    {
+     "w": "friends,",
+     "t": 40.56
+    },
+    {
+     "w": "co-workers,",
+     "t": 41.36
+    }
+   ]
+  },
+  {
+   "t0": 42.16,
+   "t1": 42.44,
+   "mode": "word",
+   "words": [
+    {
+     "w": "and",
+     "t": 42.16
+    },
+    {
+     "w": "his",
+     "t": 42.3
+    }
+   ]
+  },
+  {
+   "t0": 42.44,
+   "t1": 43.3,
+   "mode": "word",
+   "words": [
+    {
+     "w": "chiropractor.",
+     "t": 42.44,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 43.44,
+   "t1": 43.88,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Then",
+     "t": 43.44
+    },
+    {
+     "w": "Tony",
+     "t": 43.58
+    }
+   ]
+  },
+  {
+   "t0": 43.88,
+   "t1": 44.48,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Hsieh",
+     "t": 43.88
+    },
+    {
+     "w": "and",
+     "t": 44.26
+    }
+   ]
+  },
+  {
+   "t0": 44.48,
+   "t1": 44.98,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Alfred",
+     "t": 44.48
+    },
+    {
+     "w": "Lin",
+     "t": 44.74
+    }
+   ]
+  },
+  {
+   "t0": 44.98,
+   "t1": 45.38,
+   "mode": "word",
+   "words": [
+    {
+     "w": "put",
+     "t": 44.98
+    },
+    {
+     "w": "in",
+     "t": 45.26
+    }
+   ]
+  },
+  {
+   "t0": 45.38,
+   "t1": 45.72,
+   "mode": "word",
+   "words": [
+    {
+     "w": "half",
+     "t": 45.38
+    },
+    {
+     "w": "a",
+     "t": 45.56
+    }
+   ]
+  },
+  {
+   "t0": 45.72,
+   "t1": 46.18,
+   "mode": "word",
+   "words": [
+    {
+     "w": "million,",
+     "t": 45.72,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 46.3,
+   "t1": 47.44,
+   "mode": "word",
+   "words": [
+    {
+     "w": "$1.6",
+     "t": 46.3
+    },
+    {
+     "w": "million",
+     "t": 47.12
+    }
+   ]
+  },
+  {
+   "t0": 47.44,
+   "t1": 48.24,
+   "mode": "word",
+   "words": [
+    {
+     "w": "in",
+     "t": 47.44
+    },
+    {
+     "w": "sales",
+     "t": 47.96
+    }
+   ]
+  },
+  {
+   "t0": 48.24,
+   "t1": 48.58,
+   "mode": "word",
+   "words": [
+    {
+     "w": "in",
+     "t": 48.24
+    },
+    {
+     "w": "the",
+     "t": 48.52
+    }
+   ]
+  },
+  {
+   "t0": 48.58,
+   "t1": 49.08,
+   "mode": "word",
+   "words": [
+    {
+     "w": "first",
+     "t": 48.58
+    },
+    {
+     "w": "two",
+     "t": 48.78
+    }
+   ]
+  },
+  {
+   "t0": 49.08,
+   "t1": 50.48,
+   "mode": "word",
+   "words": [
+    {
+     "w": "years.",
+     "t": 49.08
+    },
+    {
+     "w": "By",
+     "t": 50.36
+    }
+   ]
+  },
+  {
+   "t0": 50.56,
+   "t1": 51.8,
+   "mode": "word",
+   "words": [
+    {
+     "w": "2008,",
+     "t": 50.56
+    },
+    {
+     "w": "a",
+     "t": 51.72
+    }
+   ]
+  },
+  {
+   "t0": 51.8,
+   "t1": 52.1,
+   "mode": "word",
+   "words": [
+    {
+     "w": "billion",
+     "t": 51.8,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 52.1,
+   "t1": 52.66,
+   "mode": "word",
+   "words": [
+    {
+     "w": "dollars",
+     "t": 52.1
+    },
+    {
+     "w": "a",
+     "t": 52.46
+    }
+   ]
+  },
+  {
+   "t0": 52.66,
+   "t1": 53.12,
+   "mode": "word",
+   "words": [
+    {
+     "w": "year.",
+     "t": 52.66,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 53.32,
+   "t1": 53.84,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Only",
+     "t": 53.32
+    },
+    {
+     "w": "later",
+     "t": 53.54
+    }
+   ]
+  },
+  {
+   "t0": 53.84,
+   "t1": 54.52,
+   "mode": "word",
+   "words": [
+    {
+     "w": "did",
+     "t": 53.84
+    },
+    {
+     "w": "Zappos",
+     "t": 54.08
+    }
+   ]
+  },
+  {
+   "t0": 54.52,
+   "t1": 55.3,
+   "mode": "word",
+   "words": [
+    {
+     "w": "start",
+     "t": 54.52
+    },
+    {
+     "w": "stocking",
+     "t": 54.88
+    }
+   ]
+  },
+  {
+   "t0": 55.3,
+   "t1": 55.68,
+   "mode": "word",
+   "words": [
+    {
+     "w": "its",
+     "t": 55.3
+    },
+    {
+     "w": "own",
+     "t": 55.46
+    }
+   ]
+  },
+  {
+   "t0": 55.68,
+   "t1": 56.14,
+   "mode": "word",
+   "words": [
+    {
+     "w": "shoes.",
+     "t": 55.68,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 56.46,
+   "t1": 57.02,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Nick",
+     "t": 56.46
+    },
+    {
+     "w": "didn't",
+     "t": 56.72
+    }
+   ]
+  },
+  {
+   "t0": 57.02,
+   "t1": 57.38,
+   "mode": "word",
+   "words": [
+    {
+     "w": "build",
+     "t": 57.02
+    },
+    {
+     "w": "a",
+     "t": 57.24
+    }
+   ]
+  },
+  {
+   "t0": 57.38,
+   "t1": 57.98,
+   "mode": "word",
+   "words": [
+    {
+     "w": "warehouse",
+     "t": 57.38
+    },
+    {
+     "w": "to",
+     "t": 57.72
+    }
+   ]
+  },
+  {
+   "t0": 57.98,
+   "t1": 58.38,
+   "mode": "word",
+   "words": [
+    {
+     "w": "find",
+     "t": 57.98
+    },
+    {
+     "w": "out",
+     "t": 58.16
+    }
+   ]
+  },
+  {
+   "t0": 58.38,
+   "t1": 58.72,
+   "mode": "word",
+   "words": [
+    {
+     "w": "if",
+     "t": 58.38
+    },
+    {
+     "w": "people",
+     "t": 58.52
+    }
+   ]
+  },
+  {
+   "t0": 58.72,
+   "t1": 59.46,
+   "mode": "word",
+   "words": [
+    {
+     "w": "wanted",
+     "t": 58.72
+    },
+    {
+     "w": "it.",
+     "t": 59.08,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 59.46,
+   "t1": 59.76,
+   "mode": "word",
+   "words": [
+    {
+     "w": "He",
+     "t": 59.46
+    },
+    {
+     "w": "found",
+     "t": 59.54
+    }
+   ]
+  },
+  {
+   "t0": 59.76,
+   "t1": 60.52,
+   "mode": "word",
+   "words": [
+    {
+     "w": "out",
+     "t": 59.76
+    },
+    {
+     "w": "first.",
+     "t": 59.98,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 61.18,
+   "t1": 61.76,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Then",
+     "t": 61.18
+    },
+    {
+     "w": "he",
+     "t": 61.56
+    }
+   ]
+  },
+  {
+   "t0": 61.76,
+   "t1": 62.46,
+   "mode": "word",
+   "words": [
+    {
+     "w": "built",
+     "t": 61.76
+    },
+    {
+     "w": "it.",
+     "t": 61.98,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 62.54,
+   "t1": 63.36,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Most",
+     "t": 62.54
+    },
+    {
+     "w": "businesses",
+     "t": 62.86
+    }
+   ]
+  },
+  {
+   "t0": 63.36,
+   "t1": 63.86,
+   "mode": "word",
+   "words": [
+    {
+     "w": "do",
+     "t": 63.36
+    },
+    {
+     "w": "this",
+     "t": 63.66
+    }
+   ]
+  },
+  {
+   "t0": 63.86,
+   "t1": 64.48,
+   "mode": "word",
+   "words": [
+    {
+     "w": "backwards.",
+     "t": 63.86,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 65.24,
+   "t1": 65.86,
+   "mode": "word",
+   "words": [
+    {
+     "w": "They",
+     "t": 65.24
+    },
+    {
+     "w": "automate",
+     "t": 65.52
+    }
+   ]
+  },
+  {
+   "t0": 65.86,
+   "t1": 66.46,
+   "mode": "word",
+   "words": [
+    {
+     "w": "before",
+     "t": 65.86
+    },
+    {
+     "w": "they",
+     "t": 66.22
+    }
+   ]
+  },
+  {
+   "t0": 66.46,
+   "t1": 66.76,
+   "mode": "word",
+   "words": [
+    {
+     "w": "know",
+     "t": 66.46
+    },
+    {
+     "w": "it",
+     "t": 66.6
+    }
+   ]
+  },
+  {
+   "t0": 66.76,
+   "t1": 67.34,
+   "mode": "word",
+   "words": [
+    {
+     "w": "works.",
+     "t": 66.76,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 67.48,
+   "t1": 67.76,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Do",
+     "t": 67.48
+    },
+    {
+     "w": "it",
+     "t": 67.58
+    }
+   ]
+  },
+  {
+   "t0": 67.76,
+   "t1": 68.14,
+   "mode": "word",
+   "words": [
+    {
+     "w": "by",
+     "t": 67.76
+    },
+    {
+     "w": "hand",
+     "t": 67.86,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 68.14,
+   "t1": 68.68,
+   "mode": "word",
+   "words": [
+    {
+     "w": "first.",
+     "t": 68.14,
+     "em": true
+    }
+   ]
+  },
+  {
+   "t0": 69.44,
+   "t1": 70.12,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Then",
+     "t": 69.44
+    },
+    {
+     "w": "automate",
+     "t": 69.74
+    }
+   ]
+  },
+  {
+   "t0": 70.12,
+   "t1": 70.48,
+   "mode": "word",
+   "words": [
+    {
+     "w": "the",
+     "t": 70.12
+    },
+    {
+     "w": "part",
+     "t": 70.32
+    }
+   ]
+  },
+  {
+   "t0": 70.48,
+   "t1": 71.3,
+   "mode": "word",
+   "words": [
+    {
+     "w": "that's",
+     "t": 70.48
+    },
+    {
+     "w": "proven.",
+     "t": 70.82,
+     "em": true
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "t0": 6.5,
+   "t1": 8.6,
+   "text": "NICK SWINMURN \u00b7 ZAPPOS FOUNDER"
+  },
+  {
+   "t0": 20.19,
+   "t1": 23.09,
+   "text": "NICK SWINMURN \u00b7 THE BUSTER SHOW"
+  },
+  {
+   "t0": 43.45,
+   "t1": 46.15,
+   "text": "TONY HSIEH \u00b7 ZAPPOS CEO"
+  },
+  {
+   "t0": 53.4,
+   "t1": 56.25,
+   "text": "ZAPPOS DISTRIBUTION CENTER \u00b7 KENTUCKY"
+  }
+ ],
+ "overlays": [],
+ "flashes": [],
+ "fadeOut": [
+  70.72,
+  71.42
+ ]
+}

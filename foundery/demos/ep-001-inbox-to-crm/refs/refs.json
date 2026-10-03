@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "episode": "Ep.001 — Inbox-to-CRM agent",
+    "researched": "2026-09-12 via WebSearch — hex confirmed against brand-color reference sites, cross-checked two sources per tool",
+    "note": "House palette (ai-agency/brand.md: bg #0B0D10, accent #5EF2C4) is the connective tissue — kicker, captions, CTA card, before/after color language. Tool-brand colors below own only the segment where that tool is genuinely on screen."
+  },
+  "gmail": {
+    "accent": "#EA4335",
+    "bg": "#FFFFFF",
+    "note": "Google red — used only in the cue-2 'inbox' establishing shot"
+  },
+  "n8n": {
+    "accent": "#EA4B71",
+    "bg": "#101330",
+    "note": "n8n Mandy pink on near-black canvas — used in cue-3 'the build' segment"
+  },
+  "hubspot": {
+    "accent": "#FF7A59",
+    "bg": "#FFFFFF",
+    "note": "HubSpot orange — used in cue-4 'CRM row appears' payoff shot"
+  },
+  "concept:before-pain": {
+    "accent": "#FF6B5E",
+    "bg": "#1A1416",
+    "note": "brand.md 'warn' token — manual/broken state, cue 2"
+  },
+  "concept:after-automated": {
+    "accent": "#5EF2C4",
+    "bg": "#0B0D10",
+    "note": "brand.md 'accent' token — automated/working state, cues 4-6"
+  }
+}

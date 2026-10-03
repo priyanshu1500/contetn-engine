@@ -1,0 +1,38 @@
+/* LexIntent self-hosted fonts — reference from HyperFrames / HTML scenes.
+   Paths are relative to this file (D:\agency content\assets\fonts\).
+   Editorial serif = Newsreader (headlines) + Source Serif 4 (secondary).
+   Display serif = Zodiak / Gambetta (Fontshare — Canela-class, free commercial).
+   Body / labels = Inter. */
+
+/* ---- Newsreader (Google, OFL) ---- */
+@font-face{font-family:"Newsreader";src:url("google/newsreader-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:"Newsreader";src:url("google/newsreader-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:"Newsreader";src:url("google/newsreader-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap;}
+@font-face{font-family:"Newsreader";src:url("google/newsreader-400-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap;}
+
+/* ---- Source Serif 4 (Google, OFL) ---- */
+@font-face{font-family:"Source Serif 4";src:url("google/source-serif-4-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:"Source Serif 4";src:url("google/source-serif-4-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap;}
+
+/* ---- Inter (Google, OFL) ---- */
+@font-face{font-family:"Inter";src:url("google/inter-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:"Inter";src:url("google/inter-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:"Inter";src:url("google/inter-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap;}
+@font-face{font-family:"Inter";src:url("google/inter-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap;}
+
+/* ---- Zodiak (Fontshare FFL — free commercial). Variable file. ---- */
+@font-face{font-family:"Zodiak";src:url("zodiak/Zodiak-Variable.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;}
+@font-face{font-family:"Zodiak";src:url("zodiak/Zodiak-VariableItalic.woff2") format("woff2");font-weight:100 900;font-style:italic;font-display:swap;}
+
+/* ---- Gambetta (Fontshare FFL — free commercial). Variable file. ---- */
+@font-face{font-family:"Gambetta";src:url("gambetta/Gambetta-Variable.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;}
+@font-face{font-family:"Gambetta";src:url("gambetta/Gambetta-VariableItalic.woff2") format("woff2");font-weight:100 900;font-style:italic;font-display:swap;}
+
+/* ---- Sentient (Fontshare FFL — free commercial). Variable file. ---- */
+@font-face{font-family:"Sentient";src:url("sentient/Sentient-Variable.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;}
+
+/* stacks
+   --f-head: "Newsreader", Georgia, "Times New Roman", serif;
+   --f-display: "Zodiak", "Newsreader", Georgia, serif;
+   --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+*/

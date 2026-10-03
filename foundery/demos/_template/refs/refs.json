@@ -1,0 +1,9 @@
+{
+  "_meta": {
+    "episode": "TEMPLATE",
+    "note": "House palette (ai-agency/brand.md) is the connective tissue — kickers, captions, CTA card. Tool-brand colors below own only the segment where that tool is on screen."
+  },
+  "gmail": { "accent": "#EA4335", "bg": "#FFFFFF", "logo": "logos/gmail.svg" },
+  "n8n": { "accent": "#EA4B71", "bg": "#0F0F0F", "logo": "logos/n8n.svg" },
+  "slack": { "accent": "#4A154B", "bg": "#FFFFFF", "logo": "logos/slack.svg" }
+}

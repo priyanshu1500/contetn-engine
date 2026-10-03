@@ -1,0 +1,32 @@
+# Dependency directories
+node_modules/
+.npm/
+
+# Remotion & Chrome cache
+.remotion/
+.cache/
+
+# Large render outputs (generated via build scripts)
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wav
+!assets/elements/sfx/*.mp3
+!assets/music/*.mp3
+!references/*.mp4
+!**/build/public/clips/*.mp4
+
+# Environment & API keys (STRICT SECURITY)
+.env
+.env.local
+.env.*
+!.env.example
+
+# Temporary files & logs
+tmp/
+temp/
+*.log
+.DS_Store
+Thumbs.db
+

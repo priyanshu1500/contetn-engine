@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reel Quality Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* palette lifted verbatim from the live product — lawanalyser.vercel.app CSS tokens */
+  :root{
+    --paper:#f3efe4; --card:#fbfaf5; --ink:#1a1a1a; --ink-soft:#40403b; --muted:#8c8880;
+    --rule:#d9d4c7; --rule-strong:#c3bda9; --oxblood:#7a1712; --oxblood-deep:#5f110d;
+    --kraft:#ab8a5f; --stamp:#e8c64d; --charcoal:#161310;
+    --f-display:"Anton","Arial Narrow",sans-serif;
+    --f-doc:"Newsreader",Georgia,serif;
+    --f-hand:"Caveat",cursive;
+    --f-ui:"Inter",system-ui,sans-serif;
+    --shadow-hard:6px 6px 0 #141210d9;
+  }
+  @media(prefers-color-scheme:dark){html:not([data-theme="light"]){
+    --paper:#161310; --card:#1e1a15; --ink:#f4f1ea; --ink-soft:#d8d3c6; --muted:#9c978c;
+    --rule:#39342b; --rule-strong:#4b4539; --oxblood:#c0473d; --oxblood-deep:#a5382f; --kraft:#c39a68;
+  }}
+  html[data-theme="dark"]{
+    --paper:#161310; --card:#1e1a15; --ink:#f4f1ea; --ink-soft:#d8d3c6; --muted:#9c978c;
+    --rule:#39342b; --rule-strong:#4b4539; --oxblood:#c0473d; --oxblood-deep:#a5382f; --kraft:#c39a68;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.58}
+  .wrap{max-width:60rem;margin:0 auto;padding:2rem 1.4rem 7rem}
+  a{color:var(--oxblood)}
+  header{border-bottom:3px solid var(--ink);padding-bottom:1.1rem;margin-bottom:1.8rem;position:relative}
+  .eyebrow{font-family:var(--f-ui);font-weight:700;font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oxblood)}
+  h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.4rem,1.6rem+3.6vw,4rem);line-height:.98;letter-spacing:.005em;text-transform:uppercase;margin:.35rem 0 .4rem}
+  .sub{color:var(--ink-soft);max-width:56ch;font-size:.95rem}
+  .themebtn{position:absolute;top:.2rem;right:0;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;background:none;border:1px solid var(--rule-strong);color:var(--ink-soft);padding:.28rem .55rem;cursor:pointer}
+  h2{font-family:var(--f-display);font-weight:400;font-size:1.9rem;letter-spacing:.01em;text-transform:uppercase;margin:2.8rem 0 .3rem;padding-top:1.2rem;border-top:2px solid var(--ink)}
+  h2 .n{color:var(--oxblood);margin-right:.5rem}
+  h3{font-family:var(--f-ui);font-weight:700;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:1.6rem 0 .6rem}
+  p{max-width:64ch}
+  .lede{font-family:var(--f-doc);font-size:1.15rem;line-height:1.5;color:var(--ink-soft);max-width:58ch}
+  .lede em{color:var(--oxblood);font-style:italic}
+
+  .vids{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.2rem 0}
+  @media(max-width:720px){.vids{grid-template-columns:1fr}}
+  .vids figure{margin:0}
+  .vids video{width:100%;border:1px solid var(--rule-strong);background:#000;box-shadow:var(--shadow-hard)}
+  .vids figcaption{font-size:.76rem;color:var(--muted);margin-top:.5rem}
+  .vids b{color:var(--ink);font-family:var(--f-ui);font-weight:600}
+  details.sheet{margin:.6rem 0 1.4rem}
+  details.sheet summary{cursor:pointer;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--oxblood);font-weight:700}
+  details.sheet img{width:100%;max-width:520px;margin-top:.7rem;border:1px solid var(--rule-strong)}
+
+  table{border-collapse:collapse;width:100%;font-size:.86rem;margin:.8rem 0}
+  th,td{text-align:left;vertical-align:top;padding:.6rem .7rem;border-bottom:1px solid var(--rule)}
+  thead th{font-family:var(--f-ui);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink)}
+  td:first-child{font-weight:600;color:var(--ink);white-space:nowrap}
+  .bad{color:var(--oxblood-deep)}
+  .fix{color:var(--ink-soft)}
+
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(9rem,1fr));gap:.6rem;margin:1rem 0}
+  .sw{border:1px solid var(--rule-strong);font-size:.7rem}
+  .sw .chip{height:56px}
+  .sw .lab{padding:.35rem .5rem;background:var(--card)}
+  .sw .lab b{display:block;font-family:var(--f-ui);font-weight:600;color:var(--ink);font-size:.72rem}
+  .sw .lab code{font-size:.68rem;color:var(--muted)}
+
+  .typ{border:1px solid var(--rule-strong);padding:1rem 1.2rem;margin:.8rem 0;background:var(--card)}
+  .typ .row{display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap;padding:.4rem 0;border-bottom:1px dashed var(--rule-strong)}
+  .typ .row:last-child{border-bottom:0}
+  .typ .k{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);min-width:8rem}
+  .s-display{font-family:var(--f-display);font-size:2rem;text-transform:uppercase}
+  .s-doc{font-family:var(--f-doc);font-size:1.4rem}
+  .s-doc-i{font-family:var(--f-doc);font-style:italic;font-size:1.4rem;color:var(--oxblood)}
+  .s-hand{font-family:var(--f-hand);font-size:1.8rem;color:var(--oxblood);font-weight:600}
+  .s-ui{font-family:var(--f-ui);font-size:1rem}
+
+  .tier{border:1px solid var(--rule-strong);border-left:4px solid var(--rule-strong);padding:1rem 1.2rem;margin:.9rem 0;background:var(--card)}
+  .tier.pick{border-left-color:var(--oxblood);box-shadow:var(--shadow-hard)}
+  .tier h4{margin:.1rem 0 .4rem;font-family:var(--f-ui);font-weight:700;font-size:1rem}
+  .tier .tag{display:inline-block;font-size:.58rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.12rem .5rem;border:1px solid currentColor;margin-left:.5rem;vertical-align:middle}
+  .tier.pick .tag{color:var(--oxblood)}
+  .tier ul{margin:.5rem 0 .2rem;padding-left:1.1rem}
+  .tier li{margin-bottom:.3rem;font-size:.88rem}
+  .tier .meta{font-size:.76rem;color:var(--muted);margin-top:.5rem}
+
+  ol.road{counter-reset:r;list-style:none;padding:0;margin:1rem 0}
+  ol.road li{position:relative;padding:.7rem 0 .7rem 3rem;border-bottom:1px solid var(--rule)}
+  ol.road li::before{counter-increment:r;content:counter(r,decimal-leading-zero);position:absolute;left:0;top:.6rem;font-family:var(--f-display);font-size:1.6rem;color:var(--oxblood);line-height:1}
+  ol.road b{font-family:var(--f-ui);font-weight:600}
+  ol.road .when{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+  .approve{border:2px solid var(--ink);padding:1.1rem 1.3rem;margin:2rem 0;background:var(--card)}
+  .approve label{display:flex;gap:.6rem;align-items:flex-start;padding:.4rem 0;font-size:.9rem;cursor:pointer}
+  .approve input{margin-top:.25rem;accent-color:var(--oxblood);width:1rem;height:1rem}
+  .approve .done{text-decoration:line-through;color:var(--muted)}
+  .stamp-note{font-family:var(--f-hand);font-size:1.5rem;color:var(--oxblood);transform:rotate(-3deg);display:inline-block;margin:.3rem 0}
+  .note{font-size:.8rem;color:var(--muted);font-style:italic;border-top:1px solid var(--rule);padding-top:.9rem;margin-top:2.4rem}
+  code.tok{background:var(--card);border:1px solid var(--rule);padding:.03rem .3rem;font-size:.85em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">LexIntent Intelligence — Production Review</div>
+    <button class="themebtn" id="themebtn">Theme</button>
+    <h1>Reel Quality Plan</h1>
+    <p class="sub">Where Case File 001 sits against the Greg Isenberg benchmark, the corrected design system pulled from the live product, and a costed route to close the gap — visual, voice, and everything in between. For your approval.</p>
+  </header>
+
+  <p class="lede">The honest read: our first reel is <em>structurally right</em> and <em>visually thin</em>. The script, the beat order, the comment-to-DM CTA — all correct. But next to Greg's reels it looks like a wireframe next to a finished film: flat 2D text on flat cream, almost no depth, almost no motion, and a palette that drifted cool and grey instead of the warm oxblood-on-cream the product actually uses.</p>
+
+  <h2><span class="n">01</span> The benchmark</h2>
+  <p>Both reference reels are <b>Greg Isenberg</b> — the exact account the research names as the storytelling bar. Same maker, same style: 3D-rendered editorial illustration, a disciplined 2–3 colour palette, kinetic serif type landing word-by-word on the voiceover, and physical metaphors (a crowd of bots, a Build→Sell conveyor, a staircase) instead of floating abstract shapes.</p>
+  <div class="vids">
+    <figure>
+      <video controls preload="metadata" src="http://localhost:8123/_refs/greg-dynamic-workflows.mp4"></video>
+      <figcaption><b>Greg — Dynamic Workflows</b><br>55s · 3D depth, sage+coral+cream, mono node labels, DoF, match-cut morphs. 1,276 likes.</figcaption>
+    </figure>
+    <figure>
+      <video controls preload="metadata" src="http://localhost:8123/_refs/greg-ai-skills.mp4"></video>
+      <figcaption><b>Greg — AI-era skills</b><br>55s · flat illustration + 3D extrude, pine+coral+cream, kinetic serif, dashed rules, same comment→DM CTA.</figcaption>
+    </figure>
+    <figure>
+      <video controls preload="metadata" src="http://localhost:8123/_refs/case-file-001-final.mp4"></video>
+      <figcaption><b>Ours — v1</b><br>46s · flat 2D text on cream, one stock photo at 10%, thin underlines, hard cuts.</figcaption>
+    </figure>
+  </div>
+  <div class="vids" style="grid-template-columns:1fr">
+    <figure>
+      <video controls preload="metadata" src="http://localhost:8123/_refs/case-file-001-v2.mp4" style="max-width:340px;margin:0 auto;display:block"></video>
+      <figcaption style="text-align:center"><b>Ours — v2 (Tier A upgrade)</b><br>45s · product tokens (warm cream + oxblood + kraft), Anton kinetic type, hard-shadow paper cards, 7-second scan bar, <b>signal meter</b> that stays flat on weak lines and jumps on the rewrite, red-pen circles + Caveat notes, REJECTED/FILED stamps, camera push every scene. edge-tts VO (interim) + CC0 bed + 28 SFX, −14 LUFS.</figcaption>
+    </figure>
+  </div>
+  <details class="sheet"><summary>Contact sheets — frame-by-frame, all three</summary>
+    <img src="http://localhost:8123/_refs/greg-dynamic-workflows-sheet.png" alt="Greg reel 1 frames" />
+    <img src="http://localhost:8123/_refs/greg-ai-skills-sheet.png" alt="Greg reel 2 frames" />
+    <img src="http://localhost:8123/_refs/case-file-001-sheet.png" alt="our reel frames" />
+  </details>
+
+  <h2><span class="n">02</span> The gap, line by line</h2>
+  <table>
+    <thead><tr><th>Dimension</th><th>Greg's reels</th><th>Case File 001</th><th>The fix</th></tr></thead>
+    <tbody>
+      <tr><td>Depth</td><td class="bad">Real 3D perspective, soft contact shadows, beveled materials, depth-of-field</td><td class="bad">Flat. One stock photo at 10%. Everything on one plane.</td><td class="fix">Layered parallax + the product's own <code class="tok">6px 6px 0</code> hard shadow on every card; a 2–3 layer paper stack with cast shadows; subtle 2–4% camera push on every scene.</td></tr>
+      <tr><td>Motion density</td><td class="bad">Something transforms every ~0.8s; elements persist and morph across cuts</td><td class="bad">Long static holds — the CV sheet sits ~8s with a 3% scale and nothing else</td><td class="fix">Golden rule enforced: nothing static &gt;1s. Kinetic type, a signal meter that fills, page edges that lift, stamps that thud in.</td></tr>
+      <tr><td>Palette</td><td class="bad">2 accents + neutral, disciplined and warm</td><td class="bad">Cool grey-white <code class="tok">#F8F6F2</code>, near-black text, burgundy barely visible</td><td class="fix">Adopt the product tokens verbatim (§03): warm <code class="tok">#f3efe4</code> paper, <code class="tok">#7a1712</code> oxblood, <code class="tok">#ab8a5f</code> kraft, <code class="tok">#e8c64d</code> stamp gold.</td></tr>
+      <tr><td>Typography</td><td class="bad">Heavy display face + serif + kinetic word-by-word reveal on the VO</td><td class="bad">Newsreader + IBM Plex Mono; facts look like code, not a case file</td><td class="fix">Add <b>Anton</b> for display / drop-numbers, <b>Caveat</b> for the red-pen hand, keep Newsreader for the document, Inter for labels. Reveal words on VO stress beats.</td></tr>
+      <tr><td>Concept shown</td><td class="bad">The idea is <em>drawn</em> — conveyor, staircase, crowd</td><td class="bad">The idea is only <em>told</em> — a CV with two underlines</td><td class="fix">Visualise "signal vs noise": a recruiter's 7-second scan bar, a signal meter that stays flat on weak lines and jumps on strong ones, a side-by-side rewrite.</td></tr>
+      <tr><td>Transitions</td><td class="bad">Match-cuts, persistent-element morphs, one shader accent</td><td class="bad">All hard cuts + one generic shader</td><td class="fix">Carry one element through each cut (the CV, the pen, the meter). Reserve the shader for the verdict only.</td></tr>
+      <tr><td>Voice</td><td class="bad">Near-human, tight, consonants land on the beat ("accurate drops")</td><td class="bad">edge-tts Andrew — serviceable, slightly flat, not beat-locked</td><td class="fix">§04 — upgrade the voice and beat-map the edit to a chosen music bed so cuts and reveals land on transients.</td></tr>
+    </tbody>
+  </table>
+
+  <h2><span class="n">03</span> Corrected design system</h2>
+  <p>These aren't guesses — they're the CSS custom properties from <a href="https://lawanalyser.vercel.app/" target="_blank">lawanalyser.vercel.app</a>, the tool interface as it's being built. The reel should share this system exactly, so the feed and the product feel like one brand.</p>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#f3efe4"></div><div class="lab"><b>Paper</b><code>#f3efe4</code></div></div>
+    <div class="sw"><div class="chip" style="background:#fbfaf5"></div><div class="lab"><b>Card</b><code>#fbfaf5</code></div></div>
+    <div class="sw"><div class="chip" style="background:#1a1a1a"></div><div class="lab"><b>Ink</b><code>#1a1a1a</code></div></div>
+    <div class="sw"><div class="chip" style="background:#40403b"></div><div class="lab"><b>Ink soft</b><code>#40403b</code></div></div>
+    <div class="sw"><div class="chip" style="background:#8c8880"></div><div class="lab"><b>Muted</b><code>#8c8880</code></div></div>
+    <div class="sw"><div class="chip" style="background:#7a1712"></div><div class="lab"><b>Oxblood</b><code>#7a1712</code></div></div>
+    <div class="sw"><div class="chip" style="background:#5f110d"></div><div class="lab"><b>Oxblood deep</b><code>#5f110d</code></div></div>
+    <div class="sw"><div class="chip" style="background:#ab8a5f"></div><div class="lab"><b>Kraft</b><code>#ab8a5f</code></div></div>
+    <div class="sw"><div class="chip" style="background:#e8c64d"></div><div class="lab"><b>Stamp gold</b><code>#e8c64d</code></div></div>
+    <div class="sw"><div class="chip" style="background:#d9d4c7"></div><div class="lab"><b>Rule</b><code>#d9d4c7</code></div></div>
+  </div>
+  <div class="typ">
+    <div class="row"><span class="k">Display / drop-num</span><span class="s-display">Case File No. 001</span><span style="color:var(--muted);font-size:.75rem">Anton</span></div>
+    <div class="row"><span class="k">Document</span><span class="s-doc">Curriculum Vitae — the evidence</span><span style="color:var(--muted);font-size:.75rem">Newsreader</span></div>
+    <div class="row"><span class="k">Pull-quote</span><span class="s-doc-i">written as a signal, not a list</span><span style="color:var(--muted);font-size:.75rem">Newsreader italic</span></div>
+    <div class="row"><span class="k">Hand / red pen</span><span class="s-hand">no ownership here</span><span style="color:var(--muted);font-size:.75rem">Caveat</span></div>
+    <div class="row"><span class="k">Label / UI</span><span class="s-ui">RECRUITER'S DESK &nbsp;·&nbsp; ON THE RECORD</span><span style="color:var(--muted);font-size:.75rem">Inter</span></div>
+  </div>
+  <p style="font-size:.85rem;color:var(--ink-soft)">Also from the product: <b>hard offset shadows</b> (<code class="tok">6px 6px 0</code>, no blur), <b>dashed rules</b>, and the eyebrow style — uppercase, <code class="tok">letter-spacing .16em</code>, oxblood, 700, 11px. This page is built in those exact tokens so you can see them living.</p>
+
+  <h2><span class="n">04</span> Voiceover</h2>
+  <p>Three routes, best-sounding first. All three end with the same post chain and a beat-map so consonants land on the music.</p>
+
+  <div class="tier pick">
+    <h4>A. Your own voice + free cleanup <span class="tag">recommended</span></h4>
+    <p style="font-size:.88rem">A real founder voice reading a case file beats any TTS for a documentary brand — and it's the one thing competitors can't copy. Record on a phone in a quiet room (or a $30 lav mic), then run the free chain below.</p>
+    <ul>
+      <li><b>Record:</b> Audacity (free, MIT-ish) or your phone's voice memo. One take per scene, plus 5 seconds of silent "room tone".</li>
+      <li><b>Clean (Audacity, all built-in):</b> Noise Reduction (sample the room tone) → High-pass 80&nbsp;Hz → gentle EQ presence bump +3&nbsp;dB around 4&nbsp;kHz → De-esser → Compressor 3:1, −18&nbsp;dB threshold → Limiter −1&nbsp;dB → Loudness Normalize to −16&nbsp;LUFS.</li>
+      <li><b>Cost:</b> $0. <b>Time:</b> ~20 min per reel once the chain is saved as a macro.</li>
+    </ul>
+    <div class="meta">Fallback if the room is noisy: record the same take and also generate option B, pick per-line.</div>
+  </div>
+
+  <div class="tier">
+    <h4>B. Local neural TTS — free &amp; commercial-safe</h4>
+    <ul>
+      <li><b>Kokoro-82M</b> (Apache-2.0) — currently the best open TTS for its size; near-ElevenLabs on clean reads, runs on CPU at ~real-time, ~350&nbsp;MB. Commercial use allowed, no attribution.</li>
+      <li><b>Piper</b> (MIT) — lighter, very fast, a notch below Kokoro; good for scratch tracks.</li>
+      <li>Both install locally, no key, no quota. I can wire either into the existing <code class="tok">narrate.py</code> pipeline.</li>
+    </ul>
+    <div class="meta">This is the straight upgrade from edge-tts Andrew at zero cost.</div>
+  </div>
+
+  <div class="tier">
+    <h4>C. ElevenLabs — $5/mo (not free, but negligible)</h4>
+    <ul>
+      <li>Free tier = 10k credits/mo (~10 min) but <b>no commercial rights</b> (attribution required) — fine for testing only.</li>
+      <li><b>Starter $5/mo</b> = 30k credits + full commercial licence + voice cloning (clone your own voice once, generate forever).</li>
+      <li>OpenChatCut already has an <code class="tok">ELEVENLABS_API_KEY</code> slot — drop the key in and it's a menu option in the editor.</li>
+    </ul>
+    <div class="meta">The pragmatic pick if you don't want to record. Sources: <a href="https://elevenlabs.io/pricing" target="_blank">elevenlabs.io/pricing</a>, <a href="https://smallest.ai/blog/elevenlabs-pricing-plans-cost-what-you-get-in-2026" target="_blank">smallest.ai</a>, <a href="https://bigvu.tv/blog/elevenlabs-pricing-2026-plans-credits-commercial-rights-api-costs/" target="_blank">bigvu.tv</a>.</div>
+  </div>
+
+  <h3>"Accurate drops" — the beat-map</h3>
+  <p style="font-size:.88rem">This is what makes Greg's edits feel tight: cuts, word reveals and SFX land on the music's transients, not on round seconds. Method: pick the bed first → detect its onsets (<code class="tok">librosa</code> / <code class="tok">aubio</code>, free) → export a frame list → snap every scene cut and every kinetic-word reveal to the nearest onset → SFX ride the same grid. I can automate this end-to-end from a chosen bed.</p>
+
+  <h2><span class="n">05</span> Production approach</h2>
+  <div class="tier pick">
+    <h4>Tier A — Upgrade the current pipeline <span class="tag">do now · $0</span></h4>
+    <p style="font-size:.88rem">Stay in HTML/CSS/GSAP (renders reliably here), but rebuild the visual layer to the product system. Gets ~70% of Greg's polish without a new tool.</p>
+    <ul>
+      <li>Retokenise to §03 palette + Anton/Newsreader/Caveat/Inter.</li>
+      <li>Build a reusable <b>LexIntent Motion Kit</b>: kinetic-word component (Anton, VO-synced), signal-meter gauge, red-pen circle (Caveat + rough SVG stroke), rubber-stamp thud, dashed-rule divider, hard-shadow paper card, 2–3 layer parallax stack.</li>
+      <li>Rebuild Case File 001 on the kit: real paper texture at full strength, cast shadows, 7-second recruiter-scan bar, signal meter that visualises weak vs strong lines, side-by-side rewrite reveal, camera push on every scene, cut rhythm 1.2–1.8s.</li>
+      <li>Beat-map to a chosen bed; new voice from §04.</li>
+    </ul>
+    <div class="meta">Effort: ~1 build day for the kit, then ~2–3 hrs per reel. This is the recommended next move.</div>
+  </div>
+  <div class="tier">
+    <h4>Tier B — True 3D depth <span class="tag">phase 2</span></h4>
+    <ul>
+      <li><b>Blender</b> (free) — a small reusable scene kit (paper planes, desk, stamp, meter) rendered with real light + DoF, composited over the HTML type layer. This is how you actually match Greg.</li>
+      <li>Or <b>Jitter Pro</b> (~$16/mo) / <b>Cavalry</b> (free tier) — browser/desktop motion tools with real 3D, far faster than Blender for this style.</li>
+      <li>Blocked today by RAM/time; revisit once the machine has headroom or on a cloud render box.</li>
+    </ul>
+    <div class="meta">Do this only after Tier A ships 2–3 reels and the format is proven.</div>
+  </div>
+  <div class="tier">
+    <h4>Tier C — Buy the look <span class="tag">optional</span></h4>
+    <ul>
+      <li>Adapt a premium editorial-motion template (Jitter community, Envato) to the brand tokens. Fastest path to a Greg-tier frame; least control; small one-off cost.</li>
+    </ul>
+  </div>
+
+  <h2><span class="n">06</span> Execution roadmap</h2>
+  <ol class="road">
+    <li><span class="when">Day 1 · me</span><br><b>Retokenise + rebuild the design layer.</b> New palette, Anton/Caveat wired, paper texture + hard shadows + dashed rules. Ship a still "brand frame" for your sign-off before animating.</li>
+    <li><span class="when">Day 1–2 · me</span><br><b>Build the LexIntent Motion Kit</b> (7 reusable components above) as HyperFrames + OpenChatCut modules.</li>
+    <li><span class="when">Day 2 · you</span><br><b>Voice decision:</b> record the Case File 001 script yourself (I'll send a teleprompter sheet), or say "use Kokoro" / "I'll get the $5 ElevenLabs key".</li>
+    <li><span class="when">Day 2–3 · me</span><br><b>Rebuild Case File 001 v2</b> on the kit: signal meter, scan bar, side-by-side rewrite, depth, beat-mapped to a bed you pick from 3 options.</li>
+    <li><span class="when">Day 3 · you</span><br><b>Review v2</b> against Greg side-by-side. One revision pass.</li>
+    <li><span class="when">Day 4–5 · me</span><br><b>Batch RPV-02 "Shortlist" + AUT-01 "Resume Autopsy"</b> on the same kit — script + VO swap only. Three reels = a launch week.</li>
+    <li><span class="when">Later</span><br><b>Phase 2:</b> Blender depth kit; migrate the meter/stamp/paper to real 3D renders composited under the type.</li>
+  </ol>
+
+  <div class="approve">
+    <div class="stamp-note">approve to proceed →</div>
+    <label><input type="checkbox" data-k="a1"> <span>Adopt the product design tokens (§03) as the reel system — warm cream + oxblood + kraft + stamp gold, Anton/Newsreader/Caveat/Inter.</span></label>
+    <label><input type="checkbox" data-k="a2"> <span>Tier A now (upgrade current pipeline + Motion Kit). Tier B (Blender 3D) deferred to phase 2.</span></label>
+    <label><input type="checkbox" data-k="a3"> <span>Voice route: <b>A</b> I'll record my own &nbsp;/&nbsp; <b>B</b> local Kokoro TTS &nbsp;/&nbsp; <b>C</b> I'll get the $5 ElevenLabs key &nbsp;— (tell me which)</span></label>
+    <label><input type="checkbox" data-k="a4"> <span>Beat-map every edit to a chosen music bed (I'll send 3 CC0/CC-BY options to pick from).</span></label>
+    <label><input type="checkbox" data-k="a5"> <span>Rebuild Case File 001 as v2 first; then batch RPV-02 + AUT-01 on the kit.</span></label>
+  </div>
+
+  <p class="note">Refs downloaded for study only (Greg Isenberg / gregisenberg). Product tokens read from the live site's public CSS. This page is rendered in the corrected palette and type so it doubles as the brand-frame reference.</p>
+</div>
+<script>
+  var KEY="lexintent-qplan-v1";
+  var st={}; try{st=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+  document.querySelectorAll(".approve input").forEach(function(i){
+    if(st[i.dataset.k]){ i.checked=true; i.closest("label").querySelector("span").classList.add("done"); }
+    i.addEventListener("change",function(){
+      st[i.dataset.k]=i.checked;
+      try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}
+      i.closest("label").querySelector("span").classList.toggle("done",i.checked);
+    });
+  });
+  var tb=document.getElementById("themebtn");
+  tb.addEventListener("click",function(){
+    var c=document.documentElement.getAttribute("data-theme");
+    var n=c==="dark"?"light":c==="light"?"":"dark";
+    document.documentElement.setAttribute("data-theme",n);
+    try{localStorage.setItem("lexintent-theme",n)}catch(e){}
+  });
+  try{var th=localStorage.getItem("lexintent-theme");if(th!==null)document.documentElement.setAttribute("data-theme",th)}catch(e){}
+</script>
+</body>
+</html>

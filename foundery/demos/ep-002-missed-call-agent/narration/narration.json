@@ -1,0 +1,22 @@
+{
+  "_comment": "Ep.002 — 'The Fourteen Minutes'. REWRITTEN 2026-09-16 as a story-driven script (specific loss -> universal reframe -> mechanism -> proof -> punch -> indicting CTA) rather than a stat-listicle. Still hits every beat in ai-agency/docs/SCRIPT_FORMULA.md, just told as a scene first. Real estate vertical (see SCRIPT.md for why one vertical, not four). Numbers are placeholders — replace with real data before recording.",
+  "engine": "edge",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+6%",
+  "fps": 30,
+  "total_seconds": 46,
+  "cues": [
+    {"id": 1, "at": 0.4, "window": [0, 5.3],
+     "text": "A six hundred fifty thousand dollar buyer called this agency. Nobody picked up."},
+    {"id": 2, "at": 5.55, "window": [5.55, 12.73],
+     "text": "Fourteen minutes later, he called the office next door instead. Seventy-eight percent of buyers go with whoever answers first."},
+    {"id": 3, "at": 12.98, "window": [12.98, 19.99],
+     "text": "So instead of hiring someone to sit by the phone all day, we gave the phone a brain. The second a call is missed, it acts."},
+    {"id": 4, "at": 20.29, "window": [20.29, 30.51],
+     "text": "Watch. It texts back in under ten seconds, asks the two questions that actually matter, budget and timeline, and locks in a showing before he even thinks about calling anyone else."},
+    {"id": 5, "at": 30.81, "window": [30.81, 39.21],
+     "text": "That's a full-time coordinator's job, done before your coffee gets cold. Six showings a week that used to just evaporate, booked automatically."},
+    {"id": 6, "at": 39.51, "window": [39.51, 46],
+     "text": "Still paying someone to sit by the phone and hope? Comment SYSTEM. I'll send you the exact blueprint."}
+  ]
+}

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Influencer Reel System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#f3efe4;--card:#fbfaf5;--ink:#1a1a1a;--ink-soft:#40403b;--muted:#8c8880;
+    --rule:#d9d4c7;--rule-strong:#c3bda9;--oxblood:#7a1712;--oxblood-deep:#5f110d;
+    --kraft:#ab8a5f;--stamp:#e8c64d;
+    --f-display:"Anton","Arial Narrow",sans-serif;--f-doc:"Newsreader",Georgia,serif;
+    --f-hand:"Caveat",cursive;--f-ui:"Inter",system-ui,sans-serif;
+    --hard:6px 6px 0 rgba(20,18,16,0.82);
+  }
+  @media(prefers-color-scheme:dark){html:not([data-theme="light"]){
+    --paper:#161310;--card:#1e1a15;--ink:#f4f1ea;--ink-soft:#d8d3c6;--muted:#9c978c;
+    --rule:#39342b;--rule-strong:#4b4539;--oxblood:#c0473d;--kraft:#c39a68;
+  }}
+  html[data-theme="dark"]{
+    --paper:#161310;--card:#1e1a15;--ink:#f4f1ea;--ink-soft:#d8d3c6;--muted:#9c978c;
+    --rule:#39342b;--rule-strong:#4b4539;--oxblood:#c0473d;--kraft:#c39a68;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.58}
+  .wrap{max-width:60rem;margin:0 auto;padding:2rem 1.4rem 7rem}
+  a{color:var(--oxblood)}
+  header{border-bottom:3px solid var(--ink);padding-bottom:1rem;margin-bottom:1.6rem;position:relative}
+  .eyebrow{font-family:var(--f-ui);font-weight:700;font-size:.6875rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oxblood)}
+  h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.3rem,1.6rem+3.4vw,3.8rem);line-height:.98;text-transform:uppercase;margin:.35rem 0 .4rem}
+  .sub{color:var(--ink-soft);max-width:58ch;font-size:.95rem}
+  .themebtn{position:absolute;top:.2rem;right:0;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;background:none;border:1px solid var(--rule-strong);color:var(--ink-soft);padding:.28rem .55rem;cursor:pointer}
+  h2{font-family:var(--f-display);font-weight:400;font-size:1.85rem;text-transform:uppercase;margin:2.6rem 0 .3rem;padding-top:1.1rem;border-top:2px solid var(--ink)}
+  h2 .n{color:var(--oxblood);margin-right:.5rem}
+  h3{font-family:var(--f-ui);font-weight:700;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:1.5rem 0 .5rem}
+  p{max-width:64ch}
+  .lede{font-family:var(--f-doc);font-size:1.13rem;line-height:1.5;color:var(--ink-soft);max-width:58ch}
+  .lede em{color:var(--oxblood);font-style:italic}
+  table{border-collapse:collapse;width:100%;font-size:.85rem;margin:.8rem 0}
+  th,td{text-align:left;vertical-align:top;padding:.55rem .65rem;border-bottom:1px solid var(--rule)}
+  thead th{font-family:var(--f-ui);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink)}
+  td:first-child{font-weight:600;color:var(--ink)}
+  .pick{background:color-mix(in srgb, var(--stamp) 14%, transparent)}
+  .formula{border:1.5px solid var(--rule-strong);box-shadow:var(--hard);background:var(--card);padding:1.1rem 1.3rem;margin:1rem 0}
+  .formula ol{counter-reset:f;list-style:none;padding:0;margin:0}
+  .formula li{position:relative;padding:.55rem 0 .55rem 2.6rem;border-bottom:1px dashed var(--rule-strong)}
+  .formula li:last-child{border-bottom:0}
+  .formula li::before{counter-increment:f;content:counter(f);position:absolute;left:0;top:.5rem;font-family:var(--f-display);font-size:1.4rem;color:var(--oxblood);line-height:1}
+  .formula b{font-family:var(--f-ui);font-weight:700}
+  .ex{border-left:3px solid var(--oxblood);background:var(--card);padding:.8rem 1rem;margin:.6rem 0;font-size:.9rem}
+  .ex .q{font-family:var(--f-doc);font-size:1.02rem;color:var(--ink)}
+  .ex .lbl{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:.2rem}
+  .hookbank{margin:.8rem 0}
+  .hook{border:1px solid var(--rule);background:var(--card);padding:.7rem .9rem;margin:.4rem 0;position:relative;font-family:var(--f-doc);font-size:1rem;color:var(--ink)}
+  .hook .copybtn{position:absolute;top:.45rem;right:.45rem;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;background:var(--paper);border:1px solid var(--rule-strong);color:var(--ink-soft);padding:.18rem .42rem;cursor:pointer}
+  .hook .copybtn.done{color:var(--oxblood);border-color:var(--oxblood)}
+  .tier{border:1px solid var(--rule-strong);border-left:4px solid var(--rule-strong);padding:.9rem 1.1rem;margin:.8rem 0;background:var(--card)}
+  .tier.rec{border-left-color:var(--oxblood);box-shadow:var(--hard)}
+  .tier h4{margin:.1rem 0 .35rem;font-family:var(--f-ui);font-weight:700;font-size:1rem}
+  .tier .tag{font-size:.56rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;margin-left:.5rem}
+  .tier.rec .tag{color:var(--oxblood)}
+  .tier ul{margin:.4rem 0 .1rem;padding-left:1.1rem}.tier li{margin-bottom:.28rem;font-size:.87rem}
+  .tier .meta{font-size:.75rem;color:var(--muted);margin-top:.4rem}
+  ol.road{counter-reset:r;list-style:none;padding:0;margin:1rem 0}
+  ol.road li{position:relative;padding:.7rem 0 .7rem 3rem;border-bottom:1px solid var(--rule)}
+  ol.road li::before{counter-increment:r;content:counter(r,decimal-leading-zero);position:absolute;left:0;top:.6rem;font-family:var(--f-display);font-size:1.5rem;color:var(--oxblood);line-height:1}
+  ol.road b{font-weight:600}
+  ol.road .who{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .approve{border:2px solid var(--ink);padding:1rem 1.2rem;margin:2rem 0;background:var(--card)}
+  .approve label{display:flex;gap:.6rem;align-items:flex-start;padding:.38rem 0;font-size:.9rem;cursor:pointer}
+  .approve input{margin-top:.25rem;accent-color:var(--oxblood);width:1rem;height:1rem}
+  .approve .done{text-decoration:line-through;color:var(--muted)}
+  .stamp-note{font-family:var(--f-hand);font-size:1.5rem;color:var(--oxblood);transform:rotate(-3deg);display:inline-block;margin:.2rem 0}
+  code.tok{background:var(--card);border:1px solid var(--rule);padding:.03rem .3rem;font-size:.85em}
+  .note{font-size:.8rem;color:var(--muted);font-style:italic;border-top:1px solid var(--rule);padding-top:.9rem;margin-top:2.4rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">LexIntent Intelligence — Reel Production System</div>
+    <button class="themebtn" id="themebtn">Theme</button>
+    <h1>Influencer Reel System</h1>
+    <p class="sub">The gap you named is real: script writing and delivery. This is the system to close it — a decoded hook formula from a 61k Indian legal page, an illustration pipeline for the reference look, the Indian-voice options ranked, and one repeatable loop. For approval.</p>
+  </header>
+
+  <p class="lede">Three things separate a reel that gets 3k views from one that gets 300k, and none of them is the render engine. They are: a <em>hook that stops the thumb in the first second</em>, a <em>script that reads like a person warning a friend</em>, and a <em>delivery voice that sounds like it belongs to this audience</em>. We now have a working visual pipeline (v2). This plan fixes the other three.</p>
+
+  <h2><span class="n">01</span> The script formula — decoded from @adityamultiservices_pune</h2>
+  <p><b>AdityaMultiServices</b> — Pune labour-law consultancy, verified, <b>61,465 followers on 65 posts</b>. Recent reels: 99k / 87k / 63k / 19k likes; comment counts <b>1,295 · 2,521 · 2,004 · 1,274</b>. A tiny catalogue doing influencer numbers. Here is exactly how they write, pulled from their live captions:</p>
+
+  <div class="formula">
+    <ol>
+      <li><b>Hook (0–3s) — second person + specific + high stakes.</b> A named workplace threat, stated as a question or a <span class="ox">STOP / Wait / Don't</span> command. A number if one fits.</li>
+      <li><b>Language — Hinglish, protective, urgent.</b> Short sentences. "Agar … toh …". Constant <span class="ox">you / your / tumhari</span>.</li>
+      <li><b>Turn (3–8s) — the reframe.</b> "They are <span class="ox">legally wrong</span>." / "You are legally <span class="ox">obligated</span> to…" / "<span class="ox">Nobody</span> can force you." The moment the viewer realises they have power.</li>
+      <li><b>Payload (8–25s) — the exact right + the exact action.</b> Cite the act or rule, then tell them the one move to make. Numbered if there are several.</li>
+      <li><b>CTA — comment-driven.</b> "Comment [word]" / a phone number / "check bio". Their comments run 1,000–2,500 per post because the value is gated behind the reply.</li>
+      <li><b>Emotion — injustice → armour.</b> "They are quietly taking advantage of you." → "Here is your shield."</li>
+    </ol>
+  </div>
+
+  <h3>Their actual hooks (verbatim)</h3>
+  <div class="ex"><span class="lbl">threat + command</span><span class="q">"Fired on the spot? Wait. Don't sign anything and don't just walk away."</span></div>
+  <div class="ex"><span class="lbl">threat + consequence</span><span class="q">"The moment you resign, your company can lock you out of your laptop and the HR portal."</span></div>
+  <div class="ex"><span class="lbl">question + number</span><span class="q">"Is your company stealing your hard-earned money every year through these 3 leave scams?"</span></div>
+  <div class="ex"><span class="lbl">condition + STOP</span><span class="q">"If you just got an offer letter and you're about to resign — STOP."</span></div>
+
+  <h3>The same formula, re-pointed at law students (LexIntent)</h3>
+  <p>Swap "employee vs company" for "student vs the placement system / the recruiter's 7 seconds". Same six beats.</p>
+  <div class="hookbank" id="hookbank">
+    <div class="hook">Rejected at the first round with a stronger CV than the people who got in? Don't blame your college.</div>
+    <div class="hook">Your internship certificate is quietly costing you Tier-1 shortlists. Here's the line that does it.</div>
+    <div class="hook">Three lines on your CV are telling recruiters you're not ready. You wrote all three yourself.</div>
+    <div class="hook">"Assisted with research" is the most expensive phrase on your resume. Stop using it.</div>
+    <div class="hook">If your CV says "moot court" without a result, a recruiter reads it as "nothing". Fix it in one line.</div>
+    <div class="hook">Non-NLU and getting screened out before the interview? It's not the tag. It's four words in your experience section.</div>
+    <div class="hook">Agar aapka resume "hardworking and dedicated" se shuru hota hai, toh recruiter already scroll kar chuka hai.</div>
+    <div class="hook">You have 7 seconds of a recruiter's attention. Your CV spends 4 of them on your school address.</div>
+    <div class="hook">The publication on your CV is helping the person who didn't publish. Here's why.</div>
+    <div class="hook">Before you send that CV to a Tier-1 firm tomorrow — STOP. Read line 3 of your experience out loud.</div>
+  </div>
+  <p style="font-size:.85rem;color:var(--muted)">Starter set of 10. The full <b>Hook Bank = 50</b>, tagged by fear (from the research) and by format, is step 1 of the roadmap.</p>
+
+  <h3>Script template (5 parts, ~40–50s)</h3>
+  <div class="formula">
+    <ol>
+      <li><b>HOOK</b> — one of the above, on screen as kinetic Anton text + spoken. Nothing else moves.</li>
+      <li><b>TURN</b> — "It's not [what they think]. It's [the real reason]." One sentence.</li>
+      <li><b>PAYLOAD</b> — the signal rewrite / the right / the rule, shown on the CV card + signal meter. 2–3 beats, numbered.</li>
+      <li><b>PROOF</b> — the before→after line, meter jump, or a one-line recruiter quote.</li>
+      <li><b>CTA</b> — "Comment FILE and I'll DM you the full breakdown + the annotated rewrite."</li>
+    </ol>
+  </div>
+  <h3>Delivery notes (this is the "same-to-same" bit)</h3>
+  <ul>
+    <li>One idea per line. If a sentence has two clauses, it's two lines and two cuts.</li>
+    <li>Read <b>0.9×</b> speed on the hook, snap to <b>1.05×</b> on the payload, drop to <b>0.85×</b> on the verdict.</li>
+    <li>Hard stop — a real 0.4s silence — before the CTA.</li>
+    <li>Every number and every "you" lands on a music transient (the beat-map).</li>
+    <li>Caption = the hook + the payload rewritten as text, ending in the comment prompt. This is where Hinglish reach lives even if the VO stays English.</li>
+  </ul>
+
+  <h2><span class="n">02</span> Illustrations — the reference-2 opening look</h2>
+  <p>Greg's reel 2 opens with flat editorial characters (a worried person at a laptop, robots at desks) on a flat-colour room, with 3D-extruded props and hard shadows, in a 2–3 colour palette. That lineage is <b>Pablo Stanley</b> (Humaaans / Open Peeps). All free:</p>
+  <table>
+    <thead><tr><th>Source</th><th>What</th><th>Licence</th><th>How to use</th></tr></thead>
+    <tbody>
+      <tr class="pick"><td>DiceBear API</td><td><code class="tok">open-peeps</code> &amp; <code class="tok">notionists</code> styles — programmatic SVG characters, verified working: <code class="tok">api.dicebear.com/9.x/open-peeps/svg?seed=x&amp;backgroundColor=f3efe4</code></td><td>CC0 / MIT</td><td>Fetch, recolour strokes to oxblood/ink, drop onto a flat room bg. Scriptable — I can batch a cast.</td></tr>
+      <tr><td>Humaaans</td><td>humaaans.com — full-body, mix-and-match poses (sitting, pointing, holding paper)</td><td>CC0</td><td>Best for the "student at desk" / "recruiter reviewing" scenes. Download, recolour.</td></tr>
+      <tr><td>Open Peeps</td><td>openpeeps.com + Figma Community — hand-drawn heads/bodies/accessories</td><td>CC0</td><td>Portrait cutaways, the "reject pile" crowd.</td></tr>
+      <tr><td>unDraw</td><td>undraw.co — scene illustrations (hiring, resume, court, research); set the accent colour before download</td><td>MIT, no attribution</td><td>Set accent = <code class="tok">#7a1712</code>, use as full-scene backdrops.</td></tr>
+      <tr><td>Storyset</td><td>storyset.com — editorial scenes with <b>animated</b> (Lottie/GIF) versions</td><td>Free w/ attribution</td><td>When a scene needs built-in motion; credit in caption.</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.9rem"><b>The method (matches the reference):</b> one character style, everything recoloured to the product tokens, each character on a flat oxblood/kraft room with the <code class="tok">6px 6px 0</code> hard shadow. Animate as <b>parallax depth layers</b> — character / desk / window / floating props on separate planes, each drifting at a different rate — plus a slow camera push. Build once as the <b>LexIntent Illustration Kit</b>: 8 scene templates (student at desk, recruiter's 7-second scan, the reject pile, the shortlist, the interview, the rewrite, the verdict desk, the DM). Then every reel is a character swap + text swap.</p>
+
+  <h2><span class="n">03</span> Indian voiceover</h2>
+  <table>
+    <thead><tr><th>Option</th><th>Cost</th><th>Indian voice quality</th><th>Verdict</th></tr></thead>
+    <tbody>
+      <tr class="pick"><td><b>Sarvam AI — Bulbul v3</b></td><td>Free: 10k chars/mo <b>+ ₹1,000 signup credit</b> (~100+ reels). Then ₹30 / 10k chars (~$0.36).</td><td>India-built. 35+ Indian voices, 11 languages incl. Hindi, Marathi, Tamil. Genuinely Indian, not "TTS-Indian".</td><td><b>Start here.</b> Free credit covers months. Best India-specific option. <a href="https://docs.sarvam.ai/api-reference-docs/pricing" target="_blank">pricing</a> · <a href="https://www.sarvam.ai/text-to-speech" target="_blank">voices</a></td></tr>
+      <tr><td>ElevenLabs — Starter</td><td>$5/mo · 30k credits · commercial licence · voice cloning</td><td>Best overall. Strong Indian-English + Hindi (v3). Voice library has Indian creators.</td><td>The pick if you want the single best voice and don't mind $5. Clone your own once, generate forever.</td></tr>
+      <tr><td>Kokoro-82M (local)</td><td>Free, Apache-2.0, runs on CPU</td><td>Has Hindi voices (<code class="tok">hf_*</code>, <code class="tok">hm_*</code>). Clean but not distinctly Indian-English.</td><td>Zero-cost upgrade from edge-tts. Good scratch track; install pending on this box.</td></tr>
+      <tr><td>Google Cloud TTS</td><td>Free: 100k chars/mo (Neural2), 1M (Standard)</td><td><code class="tok">en-IN</code> Neural2 / Chirp3-HD — decent, a bit corporate.</td><td>Generous free tier, reliable, but flatter than Sarvam.</td></tr>
+      <tr><td>edge-tts <code class="tok">en-IN</code></td><td>Free</td><td>Neerja / Prabhat — you already rejected these as "unpolished, desi".</td><td>Skip.</td></tr>
+      <tr><td>Human — Fiverr / you</td><td>$5–15 per reel · or free (your voice)</td><td>Real. <b>Your own voice</b> is the one thing no competitor can clone.</td><td>Best for a documentary brand. Record on a phone, clean in Audacity (free chain).</td></tr>
+      <tr><td>No VO — trending audio</td><td>Free</td><td>n/a — kinetic text carries it</td><td>How many large Indian pages actually operate. Worth 1–2 tests per week.</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.9rem"><b>Recommendation:</b> sign up for <b>Sarvam free</b> today (₹1,000 credit = plenty), I wire it into <code class="tok">narrate.py</code>, we A/B its top 3 Indian voices against a phone recording of your own voice on the Case File 001 script. Pick per-brand. ElevenLabs $5/mo is the fallback if Sarvam's voices don't land.</p>
+  <p style="font-size:.85rem;color:var(--muted)">Sources: <a href="https://docs.sarvam.ai/api-reference-docs/pricing" target="_blank">Sarvam pricing</a>, <a href="https://invideo.io/blog/sarvam-bulbul-indian-tts/" target="_blank">Bulbul v3 overview</a>, <a href="https://elevenlabs.io/pricing" target="_blank">ElevenLabs pricing</a>, <a href="https://caller.digital/blog/open-source-voice-ai-india-sarvam-ai4bharat-bhasini-2026" target="_blank">open Indian voice AI 2026</a>.</p>
+
+  <h2><span class="n">04</span> The production loop</h2>
+  <p>Once the three kits exist, a reel is an assembly job, not a build. Target: <b>1 reel/day, 5/week</b>, every one ending in comment-to-DM.</p>
+  <div class="formula">
+    <ol>
+      <li><b>Pick</b> a hook from the Hook Bank (tagged by fear + format).</li>
+      <li><b>Fill</b> the 5-part script template. Write the caption (hook + payload + comment prompt; Hinglish if the topic suits).</li>
+      <li><b>Voice</b> — Sarvam / your recording → the Audacity/ffmpeg post chain → beat-map to a bed.</li>
+      <li><b>Assemble</b> — Illustration Kit scene templates + Motion Kit type/meter/stamps, text + character swapped.</li>
+      <li><b>Render</b> (HyperFrames low-mem) → mux audio → −14 LUFS.</li>
+      <li><b>Post</b> with the comment CTA. Pin the payoff comment.</li>
+      <li><b>Read the 48-hour data</b> (retention, comments, DMs) → the winning hook shape gets 3 re-angles next week.</li>
+    </ol>
+  </div>
+
+  <h2><span class="n">05</span> Roadmap</h2>
+  <ol class="road">
+    <li><span class="who">Day 1 · me</span><br><b>Hook Bank — 50 hooks</b> in the Aditya formula, LexIntent topics, tagged by fear + format. Interactive, copy-to-clipboard.</li>
+    <li><span class="who">Day 1–2 · me</span><br><b>Script template + delivery-notes doc</b>, plus 5 finished scripts (Case File 001 re-scripted to the formula + RPV-02, AUT-01, SIG-01, NUM-01).</li>
+    <li><span class="who">Day 2 · you</span><br><b>Sign up Sarvam free</b> (₹1,000 credit) and paste the key — or say "ElevenLabs, I'll get the $5 key" / "I'll record my own".</li>
+    <li><span class="who">Day 2–3 · me</span><br><b>Illustration Kit</b> — DiceBear/Humaaans cast recoloured to tokens, 8 parallax scene templates.</li>
+    <li><span class="who">Day 3–4 · me</span><br><b>Case File 001 v3</b> — new script + Indian VO + illustration layer + beat-map. Side-by-side with Greg for your review.</li>
+    <li><span class="who">Day 5+ · me</span><br><b>Batch 3 reels</b> on the kits. Then the daily loop.</li>
+  </ol>
+
+  <div class="approve">
+    <div class="stamp-note">approve to proceed →</div>
+    <label><input type="checkbox" data-k="b1"> <span>Adopt the @adityamultiservices hook formula + 5-part script template as the LexIntent script system. Build the 50-hook Bank.</span></label>
+    <label><input type="checkbox" data-k="b2"> <span>Illustration Kit via DiceBear/Humaaans/unDraw, recoloured to product tokens, parallax depth — 8 scene templates.</span></label>
+    <label><input type="checkbox" data-k="b3"> <span>Voice: <b>Sarvam free</b> (I'll sign up + paste key) &nbsp;/&nbsp; <b>ElevenLabs $5</b> &nbsp;/&nbsp; <b>I'll record my own</b> — (pick one)</span></label>
+    <label><input type="checkbox" data-k="b4"> <span>Write captions with a Hinglish option where the topic suits, for reach.</span></label>
+    <label><input type="checkbox" data-k="b5"> <span>Rebuild Case File 001 as v3 on all three kits before batching RPV-02 / AUT-01 / SIG-01.</span></label>
+    <label><input type="checkbox" data-k="b6"> <span>Run the daily loop: 1 reel/day, comment-to-DM every time, 48-hour data review, re-angle winners.</span></label>
+  </div>
+
+  <p class="note">Research: @adityamultiservices_pune read via authenticated Instagram (OpenCLI). Illustration APIs and VO pricing verified this session. Reels stay in the LexIntent editorial brand; the Aditya formula is the <em>structure</em>, not the visual style.</p>
+</div>
+<script>
+  document.addEventListener("click",function(e){
+    var b=e.target.closest(".copybtn"); if(!b)return;
+    var h=b.closest(".hook"); var t=h.cloneNode(true); t.querySelector(".copybtn").remove();
+    navigator.clipboard.writeText(t.textContent.trim()).then(function(){
+      b.textContent="Copied"; b.classList.add("done");
+      setTimeout(function(){b.textContent="Copy";b.classList.remove("done")},1300);
+    });
+  });
+  document.querySelectorAll("#hookbank .hook").forEach(function(h){
+    var b=document.createElement("button"); b.className="copybtn"; b.textContent="Copy"; h.appendChild(b);
+  });
+  var KEY="lexintent-sysplan-v1"; var st={};
+  try{st=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+  document.querySelectorAll(".approve input").forEach(function(i){
+    if(st[i.dataset.k]){i.checked=true;i.closest("label").querySelector("span").classList.add("done");}
+    i.addEventListener("change",function(){
+      st[i.dataset.k]=i.checked; try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}
+      i.closest("label").querySelector("span").classList.toggle("done",i.checked);
+    });
+  });
+  var tb=document.getElementById("themebtn");
+  tb.addEventListener("click",function(){
+    var c=document.documentElement.getAttribute("data-theme");
+    var n=c==="dark"?"light":c==="light"?"":"dark";
+    document.documentElement.setAttribute("data-theme",n);
+    try{localStorage.setItem("lexintent-theme",n)}catch(e){}
+  });
+  try{var th=localStorage.getItem("lexintent-theme");if(th!==null)document.documentElement.setAttribute("data-theme",th)}catch(e){}
+</script>
+</body>
+</html>

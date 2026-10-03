@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { width:1080px; height:1500px; background:#F5EBDD;
+         font-family:-apple-system,Segoe UI,Arial,sans-serif; overflow:hidden; }
+  .wrap { padding:56px 52px; height:100%; }
+  .label { color:#8A7F6E; font-size:20px; letter-spacing:3px; text-transform:uppercase; margin-bottom:20px; font-weight:700; }
+  .panel { background:#FFFFFF; border:2px solid #E5D9C4; border-radius:22px; padding:32px;
+           box-shadow:0 10px 0 #E5D9C4; }
+  .panel-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:26px; }
+  .brand { display:flex; align-items:center; gap:12px; }
+  .brand .dot { width:34px; height:34px; border-radius:10px; background:#413333; position:relative; }
+  .brand .dot::after { content:''; position:absolute; top:12px; left:12px; width:10px; height:10px; border-radius:50%;
+                        background:#8CD2FF; box-shadow:0 0 8px #8CD2FF; }
+  .brand .name { color:#413333; font-size:22px; font-weight:800; }
+  .range { color:#8A7F6E; font-size:15px; font-weight:600; background:#F5EBDD; padding:8px 16px; border-radius:999px; }
+  .kpis { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:24px; }
+  .kpi { background:#F9F3E9; border:2px solid #EEE3D2; border-radius:16px; padding:20px 22px; }
+  .kpi .k { color:#8A7F6E; font-size:15px; font-weight:700; letter-spacing:.5px; text-transform:uppercase; margin-bottom:8px; }
+  .kpi .v { font-size:38px; font-weight:800; color:#413333; }
+  .kpi.blue .v { color:#4E71FF; }
+  .kpi.orange .v { color:#F2765E; }
+  .kpi.green .v { color:#2ECC71; }
+  .kpi .sub { color:#8A7F6E; font-size:14px; margin-top:4px; }
+  .chart-label { color:#413333; font-size:17px; font-weight:700; margin-bottom:14px; }
+  .chart { display:flex; align-items:flex-end; gap:14px; height:150px; padding:0 4px; margin-bottom:26px; }
+  .bar-wrap { flex:1; display:flex; flex-direction:column; align-items:center; gap:8px; }
+  .bar { width:100%; background:#4E71FF; border-radius:8px 8px 0 0; }
+  .bar.hot { background:#F2765E; }
+  .bar-day { color:#8A7F6E; font-size:13px; font-weight:600; }
+  .activity { border-top:2px solid #EEE3D2; padding-top:20px; }
+  .activity .h { color:#413333; font-size:17px; font-weight:700; margin-bottom:14px; }
+  .row { display:flex; align-items:center; gap:14px; padding:10px 0; }
+  .row .check { width:22px; height:22px; border-radius:50%; background:rgba(46,204,113,.18); color:#1F9D57;
+                display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; flex-shrink:0; }
+  .row .txt { color:#413333; font-size:17px; }
+  .row .time { color:#8A7F6E; font-size:14px; margin-left:auto; }
+</style></head>
+<body>
+  <div class="wrap">
+    <div class="label">the system · live dashboard</div>
+    <div class="panel">
+      <div class="panel-top">
+        <div class="brand"><div class="dot"></div><div class="name">Agency Control</div></div>
+        <div class="range">Last 7 days</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi blue"><div class="k">Avg Response Time</div><div class="v">8s</div><div class="sub">was 45+ min manual</div></div>
+        <div class="kpi orange"><div class="k">Showings Booked</div><div class="v">6</div><div class="sub">auto-scheduled</div></div>
+        <div class="kpi green"><div class="k">Revenue Protected</div><div class="v">$1,100</div><div class="sub">per week</div></div>
+        <div class="kpi"><div class="k">Calls Caught</div><div class="v">100%</div><div class="sub">zero missed</div></div>
+      </div>
+      <div class="chart-label">Showings booked / day</div>
+      <div class="chart">
+        <div class="bar-wrap"><div class="bar" style="height:38px"></div><div class="bar-day">Mon</div></div>
+        <div class="bar-wrap"><div class="bar" style="height:60px"></div><div class="bar-day">Tue</div></div>
+        <div class="bar-wrap"><div class="bar" style="height:22px"></div><div class="bar-day">Wed</div></div>
+        <div class="bar-wrap"><div class="bar hot" style="height:110px"></div><div class="bar-day">Thu</div></div>
+        <div class="bar-wrap"><div class="bar" style="height:80px"></div><div class="bar-day">Fri</div></div>
+        <div class="bar-wrap"><div class="bar" style="height:45px"></div><div class="bar-day">Sat</div></div>
+        <div class="bar-wrap"><div class="bar" style="height:15px"></div><div class="bar-day">Sun</div></div>
+      </div>
+      <div class="activity">
+        <div class="h">Recent activity</div>
+        <div class="row"><div class="check">✓</div><div class="txt">Buyer qualified — 42 Birchwood Ave</div><div class="time">2m ago</div></div>
+        <div class="row"><div class="check">✓</div><div class="txt">Showing booked — Fri 10am</div><div class="time">2m ago</div></div>
+        <div class="row"><div class="check">✓</div><div class="txt">Missed call texted back — 8s</div><div class="time">14m ago</div></div>
+      </div>
+    </div>
+  </div>
+</body></html>

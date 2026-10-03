@@ -1,0 +1,46 @@
+{
+  "_comment": "Ep.003 — 'The Creative Velocity Engine' (Gamified NoCodeAlex Style targeting Marketing Agencies)",
+  "engine": "edge",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+6%",
+  "fps": 60,
+  "total_seconds": 38,
+  "cues": [
+    {
+      "id": 1,
+      "header_1": "✦ THE AD FATIGUE DEATH SPIRAL",
+      "header_2": "WHY CLIENTS CANCEL PERFORMANCE RETAINERS",
+      "progress_state": 0,
+      "text": "Your clients aren’t firing your marketing agency because Facebook Ads is broken. They’re firing you because your creatives die after six days and you’re too slow to test new hooks."
+    },
+    {
+      "id": 2,
+      "header_1": "✦ THE 4-DAY CREATIVE BOTTLENECK",
+      "header_2": "MANUAL BRIEFS & VIDEO EDITOR BACKLOG",
+      "progress_state": 1,
+      "text": "In 2026, winning paid media requires testing twenty to thirty new hooks every week. But your creative strategist takes four days to write three briefs, and your video editor is backlogged for a week. By the time new ads launch, your CPA has already tripled."
+    },
+    {
+      "id": 3,
+      "header_1": "✦ STEP 01 / 30 PSYCHOLOGICAL ANGLES",
+      "header_2": "AUTONOMOUS CLAUDE HOOK MULTIPLIER",
+      "progress_state": 2,
+      "text": "The top one percent of performance agencies use an autonomous creative engine. It monitors the top fifty scaling ads in the client's niche daily, Claude breaks down the viral hook mechanics, and generates thirty psychological script variations in sixty seconds."
+    },
+    {
+      "id": 4,
+      "header_1": "✦ STEP 02 / BATCH TEMPLATE EXPORT",
+      "header_2": "30 WINNING HOOKS A WEEK & ROAS REBOUND",
+      "progress_state": 3,
+      "text": "Those scripts automatically assemble with B-roll into branded vertical video templates for one-click export. You go from testing three creatives a month to thirty winning hooks a week."
+    },
+    {
+      "id": 5,
+      "header_1": "✦ GET THE BLUEPRINT / 30-HOOK ENGINE",
+      "header_2": "COMMENT 'CREATIVE' TO UNLOCK ROADMAP",
+      "progress_state": 4,
+      "text": "Stop letting creative fatigue kill your agency retainers. Comment 'CREATIVE' below, and I’ll DM you the complete automated hook engine and script templates."
+    }
+  ]
+}
+

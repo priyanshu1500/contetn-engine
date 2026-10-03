@@ -1,0 +1,65 @@
+{
+  "total_duration": 67.5,
+  "cues": [
+    {
+      "id": 1,
+      "header_1": "\u2726 THE AD FATIGUE DEATH SPIRAL",
+      "header_2": "WHY CLIENTS CANCEL PERFORMANCE RETAINERS",
+      "progress_state": 0,
+      "text": "Your clients aren\u2019t firing your marketing agency because Facebook Ads is broken. They\u2019re firing you because your creatives die after six days and you\u2019re too slow to test new hooks.",
+      "start": 0.25,
+      "end": 11.07,
+      "duration": 10.82,
+      "mp3": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_01.mp3",
+      "vtt": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_01.vtt"
+    },
+    {
+      "id": 2,
+      "header_1": "\u2726 THE 4-DAY CREATIVE BOTTLENECK",
+      "header_2": "MANUAL BRIEFS & VIDEO EDITOR BACKLOG",
+      "progress_state": 1,
+      "text": "In 2026, winning paid media requires testing twenty to thirty new hooks every week. But your creative strategist takes four days to write three briefs, and your video editor is backlogged for a week. By the time new ads launch, your CPA has already tripled.",
+      "start": 11.37,
+      "end": 28.7,
+      "duration": 17.33,
+      "mp3": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_02.mp3",
+      "vtt": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_02.vtt"
+    },
+    {
+      "id": 3,
+      "header_1": "\u2726 STEP 01 / 30 PSYCHOLOGICAL ANGLES",
+      "header_2": "AUTONOMOUS CLAUDE HOOK MULTIPLIER",
+      "progress_state": 2,
+      "text": "The top one percent of performance agencies use an autonomous creative engine. It monitors the top fifty scaling ads in the client's niche daily, Claude breaks down the viral hook mechanics, and generates thirty psychological script variations in sixty seconds.",
+      "start": 29.0,
+      "end": 45.18,
+      "duration": 16.18,
+      "mp3": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_03.mp3",
+      "vtt": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_03.vtt"
+    },
+    {
+      "id": 4,
+      "header_1": "\u2726 STEP 02 / BATCH TEMPLATE EXPORT",
+      "header_2": "30 WINNING HOOKS A WEEK & ROAS REBOUND",
+      "progress_state": 3,
+      "text": "Those scripts automatically assemble with B-roll into branded vertical video templates for one-click export. You go from testing three creatives a month to thirty winning hooks a week.",
+      "start": 45.48,
+      "end": 57.12,
+      "duration": 11.64,
+      "mp3": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_04.mp3",
+      "vtt": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_04.vtt"
+    },
+    {
+      "id": 5,
+      "header_1": "\u2726 GET THE BLUEPRINT / 30-HOOK ENGINE",
+      "header_2": "COMMENT 'CREATIVE' TO UNLOCK ROADMAP",
+      "progress_state": 4,
+      "text": "Stop letting creative fatigue kill your agency retainers. Comment 'CREATIVE' below, and I\u2019ll DM you the complete automated hook engine and script templates.",
+      "start": 57.42,
+      "end": 67.5,
+      "duration": 10.08,
+      "mp3": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_05.mp3",
+      "vtt": "D:\\agency content\\ai-agency\\demos\\ep-003-creative-velocity-engine\\narration\\lines\\line_05.vtt"
+    }
+  ]
+}

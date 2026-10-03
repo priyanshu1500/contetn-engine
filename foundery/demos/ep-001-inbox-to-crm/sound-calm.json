@@ -1,0 +1,31 @@
+{
+  "video": "ep001-visual.mp4",
+  "vo": "narration/vo.mp3",
+  "bed": "D:/agency content/assets/music/bed-cc0-540456.mp3",
+  "bed_trim_start": 24,
+  "bed_gain_db": -20,
+  "room_tone": true,
+  "room_tone_db": -36,
+  "total": 43.56,
+  "cuts": [],
+  "sfx": [
+    [0.3, "transition/transition-soft", -19],
+    [0.6, "ui/pop.mp3", -20],
+    [4.4, "transition/transition-soft", -19],
+    [4.9, "ui/ui-notify-tech.mp3", -18],
+    [9.6, "transition/swoosh-slow", -20],
+    [10.3, "ui/pop-electric.mp3", -19],
+    [10.4, "transition/transition-soft", -19],
+    [10.8, "ui/switch-tap.mp3", -24],
+    [19.4, "transition/transition-soft", -19],
+    [20.6, "ui/ui-select-click.mp3", -21],
+    [20.9, "ui/ui-select-click.mp3", -21],
+    [21.2, "ui/ui-confirm-bleep.mp3", -19],
+    [31.4, "transition/air-woosh-deep", -21],
+    [31.8, "ui/pop.mp3", -21],
+    [35.5, "ui/ui-success-soft.mp3", -18],
+    [36.96, "riser/riser-cine", -18],
+    [37.76, "ui/switch-click-quick.mp3", -22],
+    [37.96, "ui/switch-click-quick.mp3", -22]
+  ]
+}

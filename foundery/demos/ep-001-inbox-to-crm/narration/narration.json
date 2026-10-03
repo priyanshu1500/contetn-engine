@@ -1,0 +1,22 @@
+{
+  "_comment": "Ep.001 — Gmail-to-CRM lead capture agent. Numbers are placeholders from _ideas.md row 001 — replace with your real before/after before recording.",
+  "engine": "edge",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+6%",
+  "fps": 30,
+  "total_seconds": 46,
+  "cues": [
+    {"id": 1, "at": 0.4, "window": [0, 4],
+     "text": "This ran my inbox for three weeks. I didn't touch it once."},
+    {"id": 2, "at": 4.4, "window": [4, 10],
+     "text": "Every lead email, copied into the C-R-M by hand. Forty-five minutes a day, gone."},
+    {"id": 3, "at": 10.4, "window": [10, 19],
+     "text": "So I built an agent that reads the email, pulls out the contact and what they actually want, and drops a clean row straight into the C-R-M."},
+    {"id": 4, "at": 19.4, "window": [19, 31],
+     "text": "Watch — email comes in, the agent reads it, tags the intent, and the C-R-M row appears with the contact already filled in. It even drafts the first reply for me to approve."},
+    {"id": 5, "at": 31.4, "window": [31, 39],
+     "text": "Forty-five minutes a day down to about two minutes of review. That's four hours a week back."},
+    {"id": 6, "at": 39.4, "window": [39, 46],
+     "text": "If your inbox looks like mine did — comment AUTOMATE and I'll send you the workflow breakdown."}
+  ]
+}

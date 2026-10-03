@@ -1,0 +1,8 @@
+[
+  {"name": "gmail-badge", "type": "logo", "domain": "gmail.com", "badge": "1", "badge_color": "#FF3B30"},
+  {"name": "check", "type": "icon", "icon": "mdi:check-circle", "color": "#5EF2C4"},
+  {"name": "bell", "type": "icon", "icon": "mdi:bell", "color": "#FF6B5E"},
+  {"name": "arrow-up", "type": "icon", "icon": "mdi:arrow-up-bold", "color": "#5EF2C4"},
+  {"name": "n8n", "type": "logo", "domain": "n8n.io"},
+  {"name": "hubspot", "type": "logo", "domain": "hubspot.com"}
+]

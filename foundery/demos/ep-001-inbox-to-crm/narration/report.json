@@ -1,0 +1,50 @@
+[
+  {
+    "cue": 1,
+    "line_s": 3.89,
+    "at": 0.4,
+    "ends": 4.29,
+    "win_end": 4,
+    "overrun_s": 0.29
+  },
+  {
+    "cue": 2,
+    "line_s": 5.45,
+    "at": 4.4,
+    "ends": 9.85,
+    "win_end": 10,
+    "overrun_s": -0.15
+  },
+  {
+    "cue": 3,
+    "line_s": 7.78,
+    "at": 10.4,
+    "ends": 18.18,
+    "win_end": 19,
+    "overrun_s": -0.82
+  },
+  {
+    "cue": 4,
+    "line_s": 11.59,
+    "at": 19.4,
+    "ends": 30.99,
+    "win_end": 31,
+    "overrun_s": -0.01
+  },
+  {
+    "cue": 5,
+    "line_s": 5.47,
+    "at": 31.4,
+    "ends": 36.87,
+    "win_end": 39,
+    "overrun_s": -2.13
+  },
+  {
+    "cue": 6,
+    "line_s": 5.02,
+    "at": 39.4,
+    "ends": 44.42,
+    "win_end": 46,
+    "overrun_s": -1.58
+  }
+]

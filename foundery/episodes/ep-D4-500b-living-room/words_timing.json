@@ -1,0 +1,1232 @@
+[
+  {
+    "word": "In",
+    "start": 0.0,
+    "end": 0.3,
+    "prob": 0.743
+  },
+  {
+    "word": "June",
+    "start": 0.3,
+    "end": 0.52,
+    "prob": 0.994
+  },
+  {
+    "word": "2005,",
+    "start": 0.52,
+    "end": 1.44,
+    "prob": 0.983
+  },
+  {
+    "word": "two 22-year-old",
+    "start": 1.92,
+    "end": 2.6,
+    "prob": 0.844
+  },
+  {
+    "word": "college",
+    "start": 2.86,
+    "end": 3.18,
+    "prob": 0.961
+  },
+  {
+    "word": "grads",
+    "start": 3.18,
+    "end": 3.66,
+    "prob": 0.972
+  },
+  {
+    "word": "were",
+    "start": 3.66,
+    "end": 3.74,
+    "prob": 0.998
+  },
+  {
+    "word": "kicked",
+    "start": 3.74,
+    "end": 3.98,
+    "prob": 0.998
+  },
+  {
+    "word": "out",
+    "start": 3.98,
+    "end": 4.22,
+    "prob": 0.997
+  },
+  {
+    "word": "of",
+    "start": 4.22,
+    "end": 4.38,
+    "prob": 0.996
+  },
+  {
+    "word": "Y",
+    "start": 4.38,
+    "end": 4.52,
+    "prob": 0.797
+  },
+  {
+    "word": "Combinator.",
+    "start": 4.52,
+    "end": 5.08,
+    "prob": 0.71
+  },
+  {
+    "word": "Their",
+    "start": 5.66,
+    "end": 6.16,
+    "prob": 0.985
+  },
+  {
+    "word": "startup",
+    "start": 6.16,
+    "end": 6.56,
+    "prob": 0.731
+  },
+  {
+    "word": "was",
+    "start": 6.56,
+    "end": 6.82,
+    "prob": 0.998
+  },
+  {
+    "word": "a",
+    "start": 6.82,
+    "end": 6.92,
+    "prob": 0.998
+  },
+  {
+    "word": "mobile",
+    "start": 6.92,
+    "end": 7.16,
+    "prob": 0.978
+  },
+  {
+    "word": "food",
+    "start": 7.16,
+    "end": 7.48,
+    "prob": 0.934
+  },
+  {
+    "word": "ordering",
+    "start": 7.48,
+    "end": 7.8,
+    "prob": 0.731
+  },
+  {
+    "word": "app",
+    "start": 7.8,
+    "end": 8.1,
+    "prob": 0.996
+  },
+  {
+    "word": "on",
+    "start": 8.1,
+    "end": 8.3,
+    "prob": 0.999
+  },
+  {
+    "word": "old",
+    "start": 8.3,
+    "end": 8.48,
+    "prob": 0.971
+  },
+  {
+    "word": "flip",
+    "start": 8.48,
+    "end": 8.7,
+    "prob": 0.951
+  },
+  {
+    "word": "phones.",
+    "start": 8.7,
+    "end": 9.22,
+    "prob": 0.894
+  },
+  {
+    "word": "Paul",
+    "start": 10.3,
+    "end": 10.46,
+    "prob": 0.984
+  },
+  {
+    "word": "Graham",
+    "start": 10.46,
+    "end": 10.76,
+    "prob": 0.881
+  },
+  {
+    "word": "hated",
+    "start": 10.76,
+    "end": 11.12,
+    "prob": 0.994
+  },
+  {
+    "word": "it",
+    "start": 11.12,
+    "end": 11.34,
+    "prob": 0.999
+  },
+  {
+    "word": "and",
+    "start": 11.34,
+    "end": 11.46,
+    "prob": 0.994
+  },
+  {
+    "word": "told",
+    "start": 11.46,
+    "end": 11.68,
+    "prob": 0.999
+  },
+  {
+    "word": "them",
+    "start": 11.68,
+    "end": 11.86,
+    "prob": 0.992
+  },
+  {
+    "word": "to",
+    "start": 11.86,
+    "end": 11.98,
+    "prob": 0.994
+  },
+  {
+    "word": "go",
+    "start": 11.98,
+    "end": 12.14,
+    "prob": 0.958
+  },
+  {
+    "word": "home.",
+    "start": 12.14,
+    "end": 12.52,
+    "prob": 1.0
+  },
+  {
+    "word": "On",
+    "start": 13.44,
+    "end": 13.54,
+    "prob": 0.881
+  },
+  {
+    "word": "the",
+    "start": 13.54,
+    "end": 13.66,
+    "prob": 0.991
+  },
+  {
+    "word": "train",
+    "start": 13.66,
+    "end": 13.9,
+    "prob": 0.996
+  },
+  {
+    "word": "back",
+    "start": 13.9,
+    "end": 14.14,
+    "prob": 0.978
+  },
+  {
+    "word": "to",
+    "start": 14.14,
+    "end": 14.36,
+    "prob": 0.999
+  },
+  {
+    "word": "Virginia,",
+    "start": 14.36,
+    "end": 14.72,
+    "prob": 0.992
+  },
+  {
+    "word": "their",
+    "start": 15.1,
+    "end": 15.22,
+    "prob": 0.958
+  },
+  {
+    "word": "phone",
+    "start": 15.22,
+    "end": 15.46,
+    "prob": 0.847
+  },
+  {
+    "word": "rang.",
+    "start": 15.46,
+    "end": 15.74,
+    "prob": 0.999
+  },
+  {
+    "word": "It",
+    "start": 16.64,
+    "end": 16.9,
+    "prob": 0.895
+  },
+  {
+    "word": "was",
+    "start": 16.9,
+    "end": 17.06,
+    "prob": 0.998
+  },
+  {
+    "word": "Graham:",
+    "start": 17.06,
+    "end": 17.44,
+    "prob": 0.99
+  },
+  {
+    "word": "\"Your",
+    "start": 18.4,
+    "end": 18.62,
+    "prob": 0.856
+  },
+  {
+    "word": "idea",
+    "start": 18.62,
+    "end": 18.98,
+    "prob": 0.992
+  },
+  {
+    "word": "is",
+    "start": 18.98,
+    "end": 19.3,
+    "prob": 0.998
+  },
+  {
+    "word": "dead.",
+    "start": 19.3,
+    "end": 19.54,
+    "prob": 0.994
+  },
+  {
+    "word": "But",
+    "start": 20.38,
+    "end": 20.7,
+    "prob": 0.978
+  },
+  {
+    "word": "we",
+    "start": 20.7,
+    "end": 20.88,
+    "prob": 0.98
+  },
+  {
+    "word": "like",
+    "start": 20.88,
+    "end": 21.08,
+    "prob": 0.996
+  },
+  {
+    "word": "you.",
+    "start": 21.08,
+    "end": 21.34,
+    "prob": 0.998
+  },
+  {
+    "word": "Build",
+    "start": 22.3,
+    "end": 22.58,
+    "prob": 0.942
+  },
+  {
+    "word": "the",
+    "start": 22.58,
+    "end": 22.74,
+    "prob": 0.974
+  },
+  {
+    "word": "front",
+    "start": 22.74,
+    "end": 22.94,
+    "prob": 0.973
+  },
+  {
+    "word": "page",
+    "start": 22.94,
+    "end": 23.3,
+    "prob": 0.99
+  },
+  {
+    "word": "of",
+    "start": 23.3,
+    "end": 23.42,
+    "prob": 0.999
+  },
+  {
+    "word": "the",
+    "start": 23.42,
+    "end": 23.54,
+    "prob": 0.997
+  },
+  {
+    "word": "internet.\"",
+    "start": 23.54,
+    "end": 23.92,
+    "prob": 0.725
+  },
+  {
+    "word": "Steve",
+    "start": 24.58,
+    "end": 25.18,
+    "prob": 0.445
+  },
+  {
+    "word": "Huffman",
+    "start": 25.18,
+    "end": 25.66,
+    "prob": 0.936
+  },
+  {
+    "word": "and",
+    "start": 25.66,
+    "end": 25.86,
+    "prob": 0.912
+  },
+  {
+    "word": "Alexis",
+    "start": 25.86,
+    "end": 26.2,
+    "prob": 0.959
+  },
+  {
+    "word": "Ohanian",
+    "start": 26.2,
+    "end": 26.76,
+    "prob": 0.507
+  },
+  {
+    "word": "got",
+    "start": 26.76,
+    "end": 26.94,
+    "prob": 0.99
+  },
+  {
+    "word": "off",
+    "start": 26.94,
+    "end": 27.2,
+    "prob": 0.998
+  },
+  {
+    "word": "at",
+    "start": 27.2,
+    "end": 27.34,
+    "prob": 0.993
+  },
+  {
+    "word": "the",
+    "start": 27.34,
+    "end": 27.42,
+    "prob": 0.989
+  },
+  {
+    "word": "next",
+    "start": 27.42,
+    "end": 27.6,
+    "prob": 0.879
+  },
+  {
+    "word": "station,",
+    "start": 27.6,
+    "end": 28.02,
+    "prob": 0.997
+  },
+  {
+    "word": "turned",
+    "start": 28.38,
+    "end": 28.54,
+    "prob": 0.979
+  },
+  {
+    "word": "around,",
+    "start": 28.54,
+    "end": 28.94,
+    "prob": 0.998
+  },
+  {
+    "word": "and",
+    "start": 29.3,
+    "end": 29.44,
+    "prob": 0.992
+  },
+  {
+    "word": "rented",
+    "start": 29.44,
+    "end": 29.7,
+    "prob": 0.986
+  },
+  {
+    "word": "a",
+    "start": 29.7,
+    "end": 29.86,
+    "prob": 0.99
+  },
+  {
+    "word": "dingy",
+    "start": 29.86,
+    "end": 30.2,
+    "prob": 0.83
+  },
+  {
+    "word": "Cambridge",
+    "start": 30.2,
+    "end": 30.58,
+    "prob": 0.976
+  },
+  {
+    "word": "apartment.",
+    "start": 30.58,
+    "end": 31.06,
+    "prob": 0.988
+  },
+  {
+    "word": "Steve",
+    "start": 32.14,
+    "end": 32.4,
+    "prob": 0.971
+  },
+  {
+    "word": "coded",
+    "start": 32.4,
+    "end": 32.76,
+    "prob": 0.679
+  },
+  {
+    "word": "the",
+    "start": 32.76,
+    "end": 32.96,
+    "prob": 0.997
+  },
+  {
+    "word": "first",
+    "start": 32.96,
+    "end": 33.18,
+    "prob": 0.992
+  },
+  {
+    "word": "version",
+    "start": 33.18,
+    "end": 33.58,
+    "prob": 0.999
+  },
+  {
+    "word": "of",
+    "start": 33.58,
+    "end": 33.72,
+    "prob": 0.999
+  },
+  {
+    "word": "Reddit",
+    "start": 33.72,
+    "end": 33.9,
+    "prob": 0.949
+  },
+  {
+    "word": "in",
+    "start": 33.9,
+    "end": 34.14,
+    "prob": 0.993
+  },
+  {
+    "word": "just",
+    "start": 34.14,
+    "end": 34.3,
+    "prob": 0.994
+  },
+  {
+    "word": "20",
+    "start": 34.3,
+    "end": 34.62,
+    "prob": 0.935
+  },
+  {
+    "word": "days.",
+    "start": 34.62,
+    "end": 34.9,
+    "prob": 0.996
+  },
+  {
+    "word": "The",
+    "start": 36.02,
+    "end": 36.1,
+    "prob": 0.909
+  },
+  {
+    "word": "problem.",
+    "start": 36.1,
+    "end": 36.5,
+    "prob": 0.964
+  },
+  {
+    "word": "When",
+    "start": 37.34,
+    "end": 37.62,
+    "prob": 0.968
+  },
+  {
+    "word": "they",
+    "start": 37.62,
+    "end": 37.76,
+    "prob": 0.991
+  },
+  {
+    "word": "launched,",
+    "start": 37.76,
+    "end": 38.16,
+    "prob": 0.994
+  },
+  {
+    "word": "the",
+    "start": 38.46,
+    "end": 38.56,
+    "prob": 0.988
+  },
+  {
+    "word": "site",
+    "start": 38.56,
+    "end": 38.8,
+    "prob": 0.993
+  },
+  {
+    "word": "was",
+    "start": 38.8,
+    "end": 38.98,
+    "prob": 1.0
+  },
+  {
+    "word": "completely",
+    "start": 38.98,
+    "end": 39.38,
+    "prob": 0.99
+  },
+  {
+    "word": "dead.",
+    "start": 39.38,
+    "end": 39.8,
+    "prob": 0.998
+  },
+  {
+    "word": "Zero",
+    "start": 40.8,
+    "end": 41.14,
+    "prob": 0.856
+  },
+  {
+    "word": "visitors.",
+    "start": 41.14,
+    "end": 41.64,
+    "prob": 0.845
+  },
+  {
+    "word": "So",
+    "start": 42.72,
+    "end": 43.0,
+    "prob": 0.981
+  },
+  {
+    "word": "Steve",
+    "start": 43.0,
+    "end": 43.36,
+    "prob": 0.945
+  },
+  {
+    "word": "and",
+    "start": 43.36,
+    "end": 43.6,
+    "prob": 0.996
+  },
+  {
+    "word": "Alexis",
+    "start": 43.6,
+    "end": 43.94,
+    "prob": 0.998
+  },
+  {
+    "word": "built",
+    "start": 43.94,
+    "end": 44.24,
+    "prob": 0.996
+  },
+  {
+    "word": "an",
+    "start": 44.24,
+    "end": 44.5,
+    "prob": 0.998
+  },
+  {
+    "word": "admin",
+    "start": 44.5,
+    "end": 44.76,
+    "prob": 0.91
+  },
+  {
+    "word": "panel",
+    "start": 44.76,
+    "end": 45.14,
+    "prob": 0.991
+  },
+  {
+    "word": "and",
+    "start": 45.14,
+    "end": 45.34,
+    "prob": 0.995
+  },
+  {
+    "word": "created",
+    "start": 45.34,
+    "end": 45.68,
+    "prob": 0.998
+  },
+  {
+    "word": "hundreds",
+    "start": 45.68,
+    "end": 46.08,
+    "prob": 0.995
+  },
+  {
+    "word": "of",
+    "start": 46.08,
+    "end": 46.3,
+    "prob": 0.998
+  },
+  {
+    "word": "fake",
+    "start": 46.3,
+    "end": 46.54,
+    "prob": 0.989
+  },
+  {
+    "word": "ghost",
+    "start": 46.54,
+    "end": 46.84,
+    "prob": 0.847
+  },
+  {
+    "word": "profiles.",
+    "start": 46.84,
+    "end": 47.42,
+    "prob": 0.994
+  },
+  {
+    "word": "Every",
+    "start": 48.38,
+    "end": 48.72,
+    "prob": 0.017
+  },
+  {
+    "word": "single",
+    "start": 48.72,
+    "end": 49.16,
+    "prob": 0.966
+  },
+  {
+    "word": "morning,",
+    "start": 49.16,
+    "end": 49.54,
+    "prob": 0.986
+  },
+  {
+    "word": "they",
+    "start": 49.88,
+    "end": 49.96,
+    "prob": 0.992
+  },
+  {
+    "word": "submitted",
+    "start": 49.96,
+    "end": 50.3,
+    "prob": 0.997
+  },
+  {
+    "word": "links,",
+    "start": 50.3,
+    "end": 50.76,
+    "prob": 0.994
+  },
+  {
+    "word": "upvoted",
+    "start": 51.04,
+    "end": 51.32,
+    "prob": 0.715
+  },
+  {
+    "word": "themselves,",
+    "start": 51.32,
+    "end": 51.84,
+    "prob": 0.987
+  },
+  {
+    "word": "and",
+    "start": 52.34,
+    "end": 52.44,
+    "prob": 0.997
+  },
+  {
+    "word": "had",
+    "start": 52.44,
+    "end": 52.56,
+    "prob": 0.991
+  },
+  {
+    "word": "full",
+    "start": 52.56,
+    "end": 52.78,
+    "prob": 0.955
+  },
+  {
+    "word": "debates",
+    "start": 52.78,
+    "end": 53.08,
+    "prob": 0.996
+  },
+  {
+    "word": "under",
+    "start": 53.08,
+    "end": 53.4,
+    "prob": 0.993
+  },
+  {
+    "word": "fake",
+    "start": 53.4,
+    "end": 53.68,
+    "prob": 0.985
+  },
+  {
+    "word": "names",
+    "start": 53.68,
+    "end": 54.08,
+    "prob": 0.995
+  },
+  {
+    "word": "just",
+    "start": 54.08,
+    "end": 54.32,
+    "prob": 0.992
+  },
+  {
+    "word": "to",
+    "start": 54.32,
+    "end": 54.5,
+    "prob": 0.999
+  },
+  {
+    "word": "make",
+    "start": 54.5,
+    "end": 54.64,
+    "prob": 0.998
+  },
+  {
+    "word": "the",
+    "start": 54.64,
+    "end": 54.78,
+    "prob": 0.993
+  },
+  {
+    "word": "front",
+    "start": 54.78,
+    "end": 55.0,
+    "prob": 0.945
+  },
+  {
+    "word": "page",
+    "start": 55.0,
+    "end": 55.38,
+    "prob": 0.731
+  },
+  {
+    "word": "look",
+    "start": 55.38,
+    "end": 55.58,
+    "prob": 0.993
+  },
+  {
+    "word": "alive.",
+    "start": 55.58,
+    "end": 55.98,
+    "prob": 0.988
+  },
+  {
+    "word": "Visitors",
+    "start": 56.78,
+    "end": 57.36,
+    "prob": 0.983
+  },
+  {
+    "word": "showed",
+    "start": 57.36,
+    "end": 57.64,
+    "prob": 0.992
+  },
+  {
+    "word": "up,",
+    "start": 57.64,
+    "end": 57.88,
+    "prob": 0.999
+  },
+  {
+    "word": "thought",
+    "start": 58.18,
+    "end": 58.32,
+    "prob": 0.991
+  },
+  {
+    "word": "it",
+    "start": 58.32,
+    "end": 58.46,
+    "prob": 0.998
+  },
+  {
+    "word": "was",
+    "start": 58.46,
+    "end": 58.58,
+    "prob": 0.999
+  },
+  {
+    "word": "a",
+    "start": 58.58,
+    "end": 58.68,
+    "prob": 0.991
+  },
+  {
+    "word": "thriving",
+    "start": 58.68,
+    "end": 59.02,
+    "prob": 0.997
+  },
+  {
+    "word": "community,",
+    "start": 59.02,
+    "end": 59.56,
+    "prob": 0.997
+  },
+  {
+    "word": "and",
+    "start": 59.92,
+    "end": 60.02,
+    "prob": 0.996
+  },
+  {
+    "word": "started",
+    "start": 60.02,
+    "end": 60.4,
+    "prob": 0.994
+  },
+  {
+    "word": "posting.",
+    "start": 60.4,
+    "end": 60.8,
+    "prob": 0.996
+  },
+  {
+    "word": "16",
+    "start": 61.86,
+    "end": 62.28,
+    "prob": 0.663
+  },
+  {
+    "word": "months",
+    "start": 62.28,
+    "end": 62.58,
+    "prob": 0.968
+  },
+  {
+    "word": "later,",
+    "start": 62.58,
+    "end": 62.98,
+    "prob": 0.996
+  },
+  {
+    "word": "Cond\u00e9",
+    "start": 63.36,
+    "end": 63.64,
+    "prob": 0.394
+  },
+  {
+    "word": "Nast",
+    "start": 63.64,
+    "end": 63.92,
+    "prob": 0.45
+  },
+  {
+    "word": "bought",
+    "start": 63.92,
+    "end": 64.18,
+    "prob": 0.911
+  },
+  {
+    "word": "Reddit",
+    "start": 64.18,
+    "end": 64.5,
+    "prob": 0.963
+  },
+  {
+    "word": "for",
+    "start": 64.5,
+    "end": 64.7,
+    "prob": 0.998
+  },
+  {
+    "word": "$10",
+    "start": 64.7,
+    "end": 64.98,
+    "prob": 0.95
+  },
+  {
+    "word": "million dollars.",
+    "start": 64.98,
+    "end": 65.26,
+    "prob": 0.887
+  },
+  {
+    "word": "They",
+    "start": 66.2,
+    "end": 66.88,
+    "prob": 0.948
+  },
+  {
+    "word": "were",
+    "start": 66.88,
+    "end": 67.0,
+    "prob": 0.998
+  },
+  {
+    "word": "23.",
+    "start": 67.0,
+    "end": 67.54,
+    "prob": 0.898
+  },
+  {
+    "word": "Today,",
+    "start": 68.44,
+    "end": 68.88,
+    "prob": 0.967
+  },
+  {
+    "word": "Reddit",
+    "start": 69.3,
+    "end": 69.52,
+    "prob": 0.989
+  },
+  {
+    "word": "is",
+    "start": 69.52,
+    "end": 69.72,
+    "prob": 0.998
+  },
+  {
+    "word": "a",
+    "start": 69.72,
+    "end": 69.82,
+    "prob": 0.996
+  },
+  {
+    "word": "$15",
+    "start": 69.82,
+    "end": 70.22,
+    "prob": 0.95
+  },
+  {
+    "word": "billion dollar",
+    "start": 70.22,
+    "end": 70.66,
+    "prob": 0.934
+  },
+  {
+    "word": "public",
+    "start": 70.66,
+    "end": 71.24,
+    "prob": 0.902
+  },
+  {
+    "word": "empire,",
+    "start": 71.24,
+    "end": 71.72,
+    "prob": 0.906
+  },
+  {
+    "word": "and",
+    "start": 72.08,
+    "end": 72.18,
+    "prob": 0.997
+  },
+  {
+    "word": "the",
+    "start": 72.18,
+    "end": 72.28,
+    "prob": 0.989
+  },
+  {
+    "word": "primary",
+    "start": 72.28,
+    "end": 72.62,
+    "prob": 0.99
+  },
+  {
+    "word": "dataset",
+    "start": 72.62,
+    "end": 73.06,
+    "prob": 0.61
+  },
+  {
+    "word": "powering",
+    "start": 73.06,
+    "end": 73.7,
+    "prob": 0.628
+  },
+  {
+    "word": "Google",
+    "start": 73.7,
+    "end": 74.0,
+    "prob": 0.973
+  },
+  {
+    "word": "and",
+    "start": 74.0,
+    "end": 74.28,
+    "prob": 0.969
+  },
+  {
+    "word": "OpenAI's",
+    "start": 74.28,
+    "end": 75.02,
+    "prob": 0.849
+  },
+  {
+    "word": "artificial",
+    "start": 75.02,
+    "end": 75.48,
+    "prob": 0.954
+  },
+  {
+    "word": "intelligence.",
+    "start": 75.48,
+    "end": 76.0,
+    "prob": 0.999
+  },
+  {
+    "word": "Every",
+    "start": 76.88,
+    "end": 77.4,
+    "prob": 0.385
+  },
+  {
+    "word": "digital",
+    "start": 77.4,
+    "end": 77.8,
+    "prob": 0.957
+  },
+  {
+    "word": "empire",
+    "start": 77.8,
+    "end": 78.18,
+    "prob": 0.902
+  },
+  {
+    "word": "you",
+    "start": 78.18,
+    "end": 78.46,
+    "prob": 0.996
+  },
+  {
+    "word": "use",
+    "start": 78.46,
+    "end": 78.76,
+    "prob": 0.668
+  },
+  {
+    "word": "today",
+    "start": 78.76,
+    "end": 79.0,
+    "prob": 0.997
+  },
+  {
+    "word": "started",
+    "start": 79.0,
+    "end": 79.42,
+    "prob": 0.99
+  },
+  {
+    "word": "with",
+    "start": 79.42,
+    "end": 79.66,
+    "prob": 0.996
+  },
+  {
+    "word": "two",
+    "start": 79.66,
+    "end": 79.9,
+    "prob": 0.865
+  },
+  {
+    "word": "kids",
+    "start": 79.9,
+    "end": 80.22,
+    "prob": 0.989
+  },
+  {
+    "word": "in",
+    "start": 80.22,
+    "end": 80.38,
+    "prob": 0.998
+  },
+  {
+    "word": "a",
+    "start": 80.38,
+    "end": 80.46,
+    "prob": 0.995
+  },
+  {
+    "word": "living",
+    "start": 80.46,
+    "end": 80.66,
+    "prob": 0.999
+  },
+  {
+    "word": "room",
+    "start": 80.66,
+    "end": 80.92,
+    "prob": 0.996
+  },
+  {
+    "word": "faking",
+    "start": 80.92,
+    "end": 81.28,
+    "prob": 0.926
+  },
+  {
+    "word": "it",
+    "start": 81.28,
+    "end": 81.46,
+    "prob": 0.996
+  },
+  {
+    "word": "until",
+    "start": 81.46,
+    "end": 81.72,
+    "prob": 0.994
+  },
+  {
+    "word": "it",
+    "start": 81.72,
+    "end": 81.86,
+    "prob": 0.997
+  },
+  {
+    "word": "became",
+    "start": 81.86,
+    "end": 82.1,
+    "prob": 0.998
+  },
+  {
+    "word": "the",
+    "start": 82.1,
+    "end": 82.3,
+    "prob": 0.994
+  },
+  {
+    "word": "internet.",
+    "start": 82.3,
+    "end": 82.6,
+    "prob": 0.811
+  }
+]

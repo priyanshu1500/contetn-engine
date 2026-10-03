@@ -1,0 +1,2052 @@
+{
+ "duration": 80.2,
+ "specks": true,
+ "shots": [
+  {
+   "id": "s1",
+   "t0": 0.0,
+   "t1": 4.76,
+   "kind": "video",
+   "src": "clips/altman_close.mp4",
+   "from": 0.0,
+   "push": 0.025,
+   "dir": "R",
+   "job": "hook: real Sam Altman on camera close-up"
+  },
+  {
+   "id": "s2",
+   "t0": 4.76,
+   "t1": 11.5,
+   "kind": "stat",
+   "stat": {
+    "prefix": "$",
+    "from": 0,
+    "to": 1000000000,
+    "roll": [
+     5.2,
+     9.2
+    ],
+    "style": "paper"
+   },
+   "job": "stat: $1B rolling counter"
+  },
+  {
+   "id": "s3",
+   "t0": 11.5,
+   "t1": 14.1,
+   "kind": "video",
+   "src": "clips/altman_reaction.mp4",
+   "from": 0.5,
+   "push": 0.025,
+   "dir": "L",
+   "whip": true,
+   "job": "real Sam Altman reaction cutaway"
+  },
+  {
+   "id": "s4",
+   "t0": 14.1,
+   "t1": 18.42,
+   "kind": "evidence",
+   "src": "img/sacra_data_card.png",
+   "scale": 1.55,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "R",
+   "source": "DATA \u00b7 PITCHBOOK & SACRA RESEARCH \u00b7 TINY TEAM UNICORNS",
+   "label": [
+    14.6,
+    15.0
+   ],
+   "job": "evidence: real Sacra data card (Cursor $100M ARR)"
+  },
+  {
+   "id": "s5",
+   "t0": 18.42,
+   "t1": 23.32,
+   "kind": "evidence",
+   "src": "img/bi_altman_card.png",
+   "scale": 1.55,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "L",
+   "source": "SOURCE \u00b7 BUSINESS INSIDER \u00b7 REBECCA TORRENCE \u00b7 MAY 7 2025",
+   "label": [
+    18.7,
+    19.1
+   ],
+   "job": "evidence: real Business Insider article"
+  },
+  {
+   "id": "s6",
+   "t0": 23.32,
+   "t1": 25.26,
+   "kind": "video",
+   "src": "clips/altman_bloomberg.mp4",
+   "from": 4.0,
+   "push": 0.03,
+   "dir": "L",
+   "whip": true,
+   "job": "THE TURN: real Altman Senate testimony on Capitol Hill"
+  },
+  {
+   "id": "s7",
+   "t0": 25.26,
+   "t1": 29.92,
+   "kind": "video",
+   "src": "clips/openai_sign.mp4",
+   "from": 0.0,
+   "push": 0.03,
+   "dir": "R",
+   "whip": true,
+   "job": "OpenAI San Francisco HQ press conference"
+  },
+  {
+   "id": "s8",
+   "t0": 29.92,
+   "t1": 35.24,
+   "kind": "evidence",
+   "src": "img/leverage_thesis_card.png",
+   "scale": 1.55,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "R",
+   "source": "LABOR ECONOMICS \u00b7 HARVARD BUSINESS REVIEW",
+   "label": [
+    30.2,
+    30.6
+   ],
+   "job": "evidence: corporate labor vs coordination thesis"
+  },
+  {
+   "id": "s9",
+   "t0": 35.24,
+   "t1": 40.24,
+   "kind": "evidence",
+   "src": "img/coordination_drag_card.png",
+   "scale": 1.55,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "L",
+   "source": "COORDINATION OVERHEAD \u00b7 SILICON VALLEY BENCHMARK",
+   "label": [
+    35.5,
+    35.9
+   ],
+   "job": "evidence: coordination overhead stat card"
+  },
+  {
+   "id": "s10",
+   "t0": 40.24,
+   "t1": 40.5,
+   "kind": "video",
+   "src": "clips/tech_campus.mp4",
+   "from": 15.0,
+   "push": 0.02,
+   "dir": "R",
+   "whip": true,
+   "job": "real Silicon Valley tech campus drone \u2014 natural color"
+  },
+  {
+   "id": "s11",
+   "t0": 40.5,
+   "t1": 43.56,
+   "kind": "video",
+   "src": "clips/altman_reaction.mp4",
+   "from": 1.0,
+   "push": 0.025,
+   "dir": "L",
+   "whip": true,
+   "job": "Altman reaction \u2014 organizational collapse"
+  },
+  {
+   "id": "s12",
+   "t0": 43.56,
+   "t1": 46.5,
+   "kind": "video",
+   "src": "clips/altman_close.mp4",
+   "from": 2.0,
+   "push": 0.025,
+   "dir": "R",
+   "whip": true,
+   "job": "Altman close-up \u2014 AI kills the glue"
+  },
+  {
+   "id": "s13",
+   "t0": 46.5,
+   "t1": 49.48,
+   "kind": "video",
+   "src": "clips/cursor_ide.mp4",
+   "from": 0.0,
+   "push": 0.02,
+   "dir": "L",
+   "whip": true,
+   "job": "real Cursor AI IDE demo \u2014 autonomous agents writing code"
+  },
+  {
+   "id": "s14",
+   "t0": 49.48,
+   "t1": 55.12,
+   "kind": "video",
+   "src": "clips/chatgpt_reuters.mp4",
+   "from": 8.0,
+   "push": 0.025,
+   "dir": "R",
+   "whip": true,
+   "job": "Reuters AI automation footage \u2014 24/7 compliance & support"
+  },
+  {
+   "id": "s15",
+   "t0": 55.12,
+   "t1": 58.88,
+   "kind": "video",
+   "src": "clips/openai_sign.mp4",
+   "from": 2.0,
+   "push": 0.025,
+   "dir": "L",
+   "whip": true,
+   "job": "OpenAI headquarters exterior \u2014 modern AI enterprise"
+  },
+  {
+   "id": "s16",
+   "t0": 58.88,
+   "t1": 63.68,
+   "kind": "stat",
+   "stat": {
+    "prefix": "",
+    "from": 1,
+    "to": 10000,
+    "suffix": "PEOPLE",
+    "roll": [
+     59.2,
+     60.9
+    ],
+    "style": "dark"
+   },
+   "job": "stat: 1 -> 10,000 people leverage counter"
+  },
+  {
+   "id": "s17",
+   "t0": 63.68,
+   "t1": 66.88,
+   "kind": "video",
+   "src": "clips/jensen_keynote.mp4",
+   "from": 0.0,
+   "push": 0.025,
+   "dir": "L",
+   "whip": true,
+   "job": "real Jensen Huang NVIDIA keynote \u2014 $13B Hugging Face deal"
+  },
+  {
+   "id": "s18",
+   "t0": 66.88,
+   "t1": 69.74,
+   "kind": "video",
+   "src": "clips/chatgpt_reuters.mp4",
+   "from": 2.0,
+   "push": 0.025,
+   "dir": "R",
+   "whip": true,
+   "job": "Reuters AI platform cutaway \u2014 open source model ecosystems"
+  },
+  {
+   "id": "s19",
+   "t0": 69.74,
+   "t1": 73.58,
+   "kind": "stat",
+   "stat": {
+    "prefix": "$",
+    "from": 0,
+    "to": 13,
+    "suffix": "BILLION",
+    "roll": [
+     69.9,
+     71.2
+    ],
+    "style": "dark"
+   },
+   "job": "stat: $13B acquisition counter"
+  },
+  {
+   "id": "s20",
+   "t0": 73.58,
+   "t1": 76.58,
+   "kind": "video",
+   "src": "clips/altman_bloomberg.mp4",
+   "from": 8.0,
+   "push": 0.025,
+   "dir": "L",
+   "whip": true,
+   "job": "Sam Altman testifying on AI disruption"
+  },
+  {
+   "id": "s21",
+   "t0": 76.58,
+   "t1": 80.2,
+   "kind": "video",
+   "src": "clips/altman_reflection.mp4",
+   "from": 0.5,
+   "push": 0.02,
+   "dir": "R",
+   "job": "close: real Sam Altman reflection fading to black"
+  }
+ ],
+ "text": [
+  {
+   "t0": 0.0,
+   "t1": 1.18,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Sam",
+     "t": 0.0,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "Altman",
+     "t": 0.36,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "said",
+     "t": 0.68,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 1.18,
+   "t1": 2.08,
+   "mode": "word",
+   "words": [
+    {
+     "w": "something",
+     "t": 1.18,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "in",
+     "t": 1.5,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "2025",
+     "t": 1.62,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 2.08,
+   "t1": 3.48,
+   "mode": "word",
+   "words": [
+    {
+     "w": "that",
+     "t": 2.08,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "made",
+     "t": 2.84,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "every",
+     "t": 3.1,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 3.76,
+   "t1": 4.98,
+   "mode": "word",
+   "words": [
+    {
+     "w": "middle",
+     "t": 3.76,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "manager",
+     "t": 4.04,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "panic.",
+     "t": 4.38,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 5.36,
+   "t1": 6.1,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Quote,",
+     "t": 5.36,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "it",
+     "t": 5.84,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "is",
+     "t": 6.04,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 6.1,
+   "t1": 6.76,
+   "mode": "word",
+   "words": [
+    {
+     "w": "possible",
+     "t": 6.1,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "we",
+     "t": 6.48,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "will",
+     "t": 6.68,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 6.76,
+   "t1": 7.6,
+   "mode": "word",
+   "words": [
+    {
+     "w": "see",
+     "t": 6.76,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "the",
+     "t": 6.98,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "first",
+     "t": 7.2,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 7.6,
+   "t1": 8.76,
+   "mode": "word",
+   "words": [
+    {
+     "w": "one",
+     "t": 7.6,
+     "color": "#F5C542"
+    },
+    {
+     "w": "person",
+     "t": 7.98,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "billion",
+     "t": 8.38,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 8.76,
+   "t1": 10.0,
+   "mode": "word",
+   "words": [
+    {
+     "w": "dollar",
+     "t": 8.76,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "company,",
+     "t": 9.1,
+     "color": "#F5C542"
+    },
+    {
+     "w": "one",
+     "t": 9.88,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 10.0,
+   "t1": 11.12,
+   "mode": "word",
+   "words": [
+    {
+     "w": "person,",
+     "t": 10.0,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "a",
+     "t": 10.78,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "billion",
+     "t": 10.86,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 11.12,
+   "t1": 11.72,
+   "mode": "word",
+   "words": [
+    {
+     "w": "dollars,",
+     "t": 11.12,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 11.96,
+   "t1": 13.04,
+   "mode": "word",
+   "words": [
+    {
+     "w": "no",
+     "t": 11.96,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "team,",
+     "t": 12.22,
+     "color": "#F5C542"
+    },
+    {
+     "w": "and",
+     "t": 12.86,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 13.04,
+   "t1": 14.02,
+   "mode": "word",
+   "words": [
+    {
+     "w": "it's",
+     "t": 13.04,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "already",
+     "t": 13.14,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "happening.",
+     "t": 13.36,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 14.3,
+   "t1": 14.52,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Cursor",
+     "t": 14.3,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 14.52,
+   "t1": 15.74,
+   "mode": "word",
+   "words": [
+    {
+     "w": "hit",
+     "t": 14.52,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "100",
+     "t": 14.72,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "million",
+     "t": 15.34,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 15.74,
+   "t1": 16.8,
+   "mode": "word",
+   "words": [
+    {
+     "w": "in",
+     "t": 15.74,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "annual",
+     "t": 16.06,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "revenue",
+     "t": 16.46,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 16.8,
+   "t1": 17.7,
+   "mode": "word",
+   "words": [
+    {
+     "w": "with",
+     "t": 16.8,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "fewer",
+     "t": 17.24,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "than",
+     "t": 17.56,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 17.7,
+   "t1": 18.64,
+   "mode": "word",
+   "words": [
+    {
+     "w": "50",
+     "t": 17.7,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "people.",
+     "t": 18.02,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 18.98,
+   "t1": 20.14,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Safe",
+     "t": 18.98,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "Superintelligence",
+     "t": 19.06,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "raised",
+     "t": 19.8,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 20.14,
+   "t1": 20.78,
+   "mode": "word",
+   "words": [
+    {
+     "w": "at",
+     "t": 20.14,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "a",
+     "t": 20.3,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "32",
+     "t": 20.38,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 20.78,
+   "t1": 21.4,
+   "mode": "word",
+   "words": [
+    {
+     "w": "billion",
+     "t": 20.78,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 21.4,
+   "t1": 22.62,
+   "mode": "word",
+   "words": [
+    {
+     "w": "dollar",
+     "t": 21.4,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "valuation",
+     "t": 21.72,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "with",
+     "t": 22.26,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 22.62,
+   "t1": 23.04,
+   "mode": "word",
+   "words": [
+    {
+     "w": "a",
+     "t": 22.62,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "team",
+     "t": 22.7,
+     "color": "#F5C542"
+    },
+    {
+     "w": "of",
+     "t": 22.88,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 23.04,
+   "t1": 23.54,
+   "mode": "word",
+   "words": [
+    {
+     "w": "20.",
+     "t": 23.04,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 23.7,
+   "t1": 24.16,
+   "mode": "word",
+   "words": [
+    {
+     "w": "But",
+     "t": 23.7,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "here's",
+     "t": 23.84,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "what",
+     "t": 24.08,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 24.16,
+   "t1": 25.04,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Altman",
+     "t": 24.16,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "isn't",
+     "t": 24.44,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "telling",
+     "t": 24.8,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 25.04,
+   "t1": 25.26,
+   "mode": "word",
+   "words": [
+    {
+     "w": "you.",
+     "t": 25.04,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 25.26,
+   "t1": 26.38,
+   "mode": "word",
+   "words": [
+    {
+     "w": "These",
+     "t": 25.26,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "companies",
+     "t": 25.78,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "didn't",
+     "t": 26.08,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 26.38,
+   "t1": 27.72,
+   "mode": "word",
+   "words": [
+    {
+     "w": "eliminate",
+     "t": 26.38,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "people",
+     "t": 26.78,
+     "color": "#F5C542"
+    },
+    {
+     "w": "because",
+     "t": 27.2,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 27.72,
+   "t1": 29.12,
+   "mode": "word",
+   "words": [
+    {
+     "w": "AI",
+     "t": 27.72,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "is",
+     "t": 28.16,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "smarter",
+     "t": 28.84,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 29.26,
+   "t1": 30.14,
+   "mode": "word",
+   "words": [
+    {
+     "w": "than",
+     "t": 29.26,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "humans.",
+     "t": 29.5,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 30.42,
+   "t1": 31.48,
+   "mode": "word",
+   "words": [
+    {
+     "w": "They",
+     "t": 30.42,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "eliminated",
+     "t": 30.6,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "people",
+     "t": 31.02,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 31.48,
+   "t1": 32.54,
+   "mode": "word",
+   "words": [
+    {
+     "w": "because",
+     "t": 31.48,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "for",
+     "t": 31.98,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "100",
+     "t": 32.24,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 32.54,
+   "t1": 33.9,
+   "mode": "word",
+   "words": [
+    {
+     "w": "years,",
+     "t": 32.54,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "most",
+     "t": 33.26,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "corporate",
+     "t": 33.54,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 33.9,
+   "t1": 35.0,
+   "mode": "word",
+   "words": [
+    {
+     "w": "labor",
+     "t": 33.9,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "wasn't",
+     "t": 34.22,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "actually",
+     "t": 34.76,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 35.0,
+   "t1": 35.46,
+   "mode": "word",
+   "words": [
+    {
+     "w": "work.",
+     "t": 35.0,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 35.76,
+   "t1": 36.52,
+   "mode": "word",
+   "words": [
+    {
+     "w": "It",
+     "t": 35.76,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "was",
+     "t": 35.82,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "coordination,",
+     "t": 35.92,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 36.96,
+   "t1": 37.48,
+   "mode": "word",
+   "words": [
+    {
+     "w": "meetings",
+     "t": 36.96,
+     "color": "#F5C542"
+    },
+    {
+     "w": "to",
+     "t": 37.1,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "plan",
+     "t": 37.28,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 37.48,
+   "t1": 38.88,
+   "mode": "word",
+   "words": [
+    {
+     "w": "meetings,",
+     "t": 37.48,
+     "color": "#F5C542"
+    },
+    {
+     "w": "status",
+     "t": 38.46,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "reports",
+     "t": 38.7,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 39.06,
+   "t1": 40.46,
+   "mode": "word",
+   "words": [
+    {
+     "w": "about",
+     "t": 39.06,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "status",
+     "t": 39.48,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "reports.",
+     "t": 39.84,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 40.92,
+   "t1": 41.42,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Half",
+     "t": 40.92,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "the",
+     "t": 41.06,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "org",
+     "t": 41.24,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 41.42,
+   "t1": 42.64,
+   "mode": "word",
+   "words": [
+    {
+     "w": "chart",
+     "t": 41.42,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "existed",
+     "t": 41.72,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "to",
+     "t": 42.32,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 42.64,
+   "t1": 43.3,
+   "mode": "word",
+   "words": [
+    {
+     "w": "manage",
+     "t": 42.64,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "the",
+     "t": 42.94,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "other",
+     "t": 43.14,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 43.3,
+   "t1": 43.78,
+   "mode": "word",
+   "words": [
+    {
+     "w": "half.",
+     "t": 43.3,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 44.16,
+   "t1": 44.94,
+   "mode": "word",
+   "words": [
+    {
+     "w": "AI",
+     "t": 44.16,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "doesn't",
+     "t": 44.32,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "replace",
+     "t": 44.66,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 44.94,
+   "t1": 45.6,
+   "mode": "word",
+   "words": [
+    {
+     "w": "the",
+     "t": 44.94,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "work.",
+     "t": 45.18,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 45.86,
+   "t1": 46.32,
+   "mode": "word",
+   "words": [
+    {
+     "w": "It",
+     "t": 45.86,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "kills",
+     "t": 45.96,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "the",
+     "t": 46.16,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 46.32,
+   "t1": 46.72,
+   "mode": "word",
+   "words": [
+    {
+     "w": "glue.",
+     "t": 46.32,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 47.04,
+   "t1": 47.76,
+   "mode": "word",
+   "words": [
+    {
+     "w": "One",
+     "t": 47.04,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "engineer",
+     "t": 47.16,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "can",
+     "t": 47.54,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 47.76,
+   "t1": 48.66,
+   "mode": "word",
+   "words": [
+    {
+     "w": "now",
+     "t": 47.76,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "deploy",
+     "t": 47.98,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "agents",
+     "t": 48.3,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 48.66,
+   "t1": 49.7,
+   "mode": "word",
+   "words": [
+    {
+     "w": "that",
+     "t": 48.66,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "write",
+     "t": 48.88,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "code,",
+     "t": 49.12,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 50.02,
+   "t1": 50.76,
+   "mode": "word",
+   "words": [
+    {
+     "w": "run",
+     "t": 50.02,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "support",
+     "t": 50.16,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "around",
+     "t": 50.5,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 50.76,
+   "t1": 51.78,
+   "mode": "word",
+   "words": [
+    {
+     "w": "the",
+     "t": 50.76,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "clock,",
+     "t": 50.88,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "manage",
+     "t": 51.12,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 51.78,
+   "t1": 52.9,
+   "mode": "word",
+   "words": [
+    {
+     "w": "compliance,",
+     "t": 51.78,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "and",
+     "t": 52.56,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "handle",
+     "t": 52.62,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 52.9,
+   "t1": 54.04,
+   "mode": "word",
+   "words": [
+    {
+     "w": "ad",
+     "t": 52.9,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "spend",
+     "t": 53.06,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "without",
+     "t": 53.36,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 54.04,
+   "t1": 54.88,
+   "mode": "word",
+   "words": [
+    {
+     "w": "a",
+     "t": 54.04,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "single",
+     "t": 54.18,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "standup",
+     "t": 54.44,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 54.88,
+   "t1": 55.34,
+   "mode": "word",
+   "words": [
+    {
+     "w": "meeting.",
+     "t": 54.88,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 55.56,
+   "t1": 56.6,
+   "mode": "word",
+   "words": [
+    {
+     "w": "The",
+     "t": 55.56,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "industrial",
+     "t": 55.64,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "revolution",
+     "t": 56.02,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 56.6,
+   "t1": 58.0,
+   "mode": "word",
+   "words": [
+    {
+     "w": "put",
+     "t": 56.6,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "10,000",
+     "t": 57.0,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "people",
+     "t": 57.8,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 58.06,
+   "t1": 59.1,
+   "mode": "word",
+   "words": [
+    {
+     "w": "under",
+     "t": 58.06,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "one",
+     "t": 58.46,
+     "color": "#F5C542"
+    },
+    {
+     "w": "roof.",
+     "t": 58.64,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 59.44,
+   "t1": 60.4,
+   "mode": "word",
+   "words": [
+    {
+     "w": "The",
+     "t": 59.44,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "AI",
+     "t": 59.56,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "era",
+     "t": 59.88,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 60.4,
+   "t1": 61.3,
+   "mode": "word",
+   "words": [
+    {
+     "w": "gives",
+     "t": 60.4,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "one",
+     "t": 60.62,
+     "color": "#F5C542"
+    },
+    {
+     "w": "person",
+     "t": 60.9,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 61.3,
+   "t1": 62.16,
+   "mode": "word",
+   "words": [
+    {
+     "w": "the",
+     "t": 61.3,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "output",
+     "t": 61.46,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "of",
+     "t": 61.76,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 62.16,
+   "t1": 63.5,
+   "mode": "word",
+   "words": [
+    {
+     "w": "all",
+     "t": 62.16,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "10",
+     "t": 62.46,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": ",000.",
+     "t": 62.8,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 63.68,
+   "t1": 64.66,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Jensen",
+     "t": 63.68,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "Huang",
+     "t": 63.94,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "just",
+     "t": 64.22,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 64.66,
+   "t1": 65.74,
+   "mode": "word",
+   "words": [
+    {
+     "w": "spent",
+     "t": 64.66,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "13",
+     "t": 64.9,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "billion",
+     "t": 65.4,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 65.74,
+   "t1": 66.16,
+   "mode": "word",
+   "words": [
+    {
+     "w": "dollars",
+     "t": 65.74,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 66.16,
+   "t1": 67.0,
+   "mode": "word",
+   "words": [
+    {
+     "w": "to",
+     "t": 66.16,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "own",
+     "t": 66.64,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "the",
+     "t": 66.88,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 67.0,
+   "t1": 68.0,
+   "mode": "word",
+   "words": [
+    {
+     "w": "platform",
+     "t": 67.0,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "where",
+     "t": 67.44,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "those",
+     "t": 67.8,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 68.0,
+   "t1": 68.98,
+   "mode": "word",
+   "words": [
+    {
+     "w": "one",
+     "t": 68.0,
+     "color": "#F5C542"
+    },
+    {
+     "w": "person",
+     "t": 68.28,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "armies",
+     "t": 68.64,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 68.98,
+   "t1": 69.96,
+   "mode": "word",
+   "words": [
+    {
+     "w": "get",
+     "t": 68.98,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "their",
+     "t": 69.32,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "models.",
+     "t": 69.46,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 70.42,
+   "t1": 71.28,
+   "mode": "word",
+   "words": [
+    {
+     "w": "Sam",
+     "t": 70.42,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "Altman",
+     "t": 70.62,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "is",
+     "t": 70.94,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 71.28,
+   "t1": 72.16,
+   "mode": "word",
+   "words": [
+    {
+     "w": "betting",
+     "t": 71.28,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "his",
+     "t": 71.58,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "entire",
+     "t": 71.8,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 72.16,
+   "t1": 73.2,
+   "mode": "word",
+   "words": [
+    {
+     "w": "company",
+     "t": 72.16,
+     "color": "#F5C542"
+    },
+    {
+     "w": "on",
+     "t": 72.64,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "this",
+     "t": 73.04,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 73.2,
+   "t1": 73.8,
+   "mode": "word",
+   "words": [
+    {
+     "w": "future.",
+     "t": 73.2,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 74.08,
+   "t1": 74.86,
+   "mode": "word",
+   "words": [
+    {
+     "w": "The",
+     "t": 74.08,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "question",
+     "t": 74.16,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "isn't",
+     "t": 74.44,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 74.86,
+   "t1": 75.44,
+   "mode": "word",
+   "words": [
+    {
+     "w": "whether",
+     "t": 74.86,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "the",
+     "t": 75.04,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "one",
+     "t": 75.2,
+     "color": "#F5C542"
+    }
+   ]
+  },
+  {
+   "t0": 75.44,
+   "t1": 76.34,
+   "mode": "word",
+   "words": [
+    {
+     "w": "person",
+     "t": 75.44,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "company",
+     "t": 75.8,
+     "color": "#F5C542"
+    },
+    {
+     "w": "is",
+     "t": 76.16,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 76.34,
+   "t1": 76.8,
+   "mode": "word",
+   "words": [
+    {
+     "w": "coming.",
+     "t": 76.34,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 77.02,
+   "t1": 77.42,
+   "mode": "word",
+   "words": [
+    {
+     "w": "It's",
+     "t": 77.02,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "whether",
+     "t": 77.14,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "you're",
+     "t": 77.28,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 77.42,
+   "t1": 78.56,
+   "mode": "word",
+   "words": [
+    {
+     "w": "building",
+     "t": 77.42,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "one",
+     "t": 77.68,
+     "color": "#F5C542"
+    },
+    {
+     "w": "or",
+     "t": 78.0,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 78.56,
+   "t1": 78.88,
+   "mode": "word",
+   "words": [
+    {
+     "w": "about",
+     "t": 78.56,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "to",
+     "t": 78.74,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "be",
+     "t": 78.82,
+     "color": "#FFFFFF"
+    }
+   ]
+  },
+  {
+   "t0": 78.88,
+   "t1": 79.84,
+   "mode": "word",
+   "words": [
+    {
+     "w": "replaced",
+     "t": 78.88,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "by",
+     "t": 79.14,
+     "color": "#FFFFFF"
+    },
+    {
+     "w": "one.",
+     "t": 79.36,
+     "color": "#F5C542"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "t0": 0.2,
+   "t1": 4.5,
+   "text": "SAM ALTMAN \u00b7 CEO, OPENAI",
+   "pos": "br"
+  },
+  {
+   "t0": 23.6,
+   "t1": 25.0,
+   "text": "U.S. SENATE TESTIMONY \u00b7 CAPITOL HILL",
+   "pos": "br"
+  },
+  {
+   "t0": 64.0,
+   "t1": 66.6,
+   "text": "JENSEN HUANG \u00b7 CEO, NVIDIA",
+   "pos": "br"
+  }
+ ],
+ "overlays": [],
+ "flashes": [],
+ "fadeOut": [
+  77.7,
+  80.2
+ ]
+}

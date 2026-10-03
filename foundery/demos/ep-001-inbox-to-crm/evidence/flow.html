@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { width:1080px; height:1350px; background:#F5EBDD;
+         font-family:-apple-system,Segoe UI,Arial,sans-serif; overflow:hidden; }
+  .wrap { padding:70px 60px; height:100%; display:flex; flex-direction:column; justify-content:center; }
+  .label { color:#8A7F6E; font-size:22px; letter-spacing:3px; text-transform:uppercase; margin-bottom:40px; font-weight:700; }
+  .row { display:flex; align-items:center; justify-content:space-between; }
+  .node { background:#FFFFFF; border:2px solid #E5D9C4; border-radius:20px;
+          padding:36px 28px; width:280px; text-align:center;
+          box-shadow:0 8px 0 #E5D9C4; }
+  .node .icon { font-size:52px; margin-bottom:14px; }
+  .node .name { color:#413333; font-size:26px; font-weight:700; }
+  .node .sub { color:#8A7F6E; font-size:17px; margin-top:6px; }
+  .arrow { color:#4E71FF; font-size:44px; font-weight:300; }
+  .agent { border-color:#4E71FF; box-shadow:0 8px 0 #4E71FF; }
+  .agent .name { color:#4E71FF; }
+  .footer { margin-top:60px; color:#F2765E; font-size:24px; font-weight:700; }
+</style></head>
+<body>
+  <div class="wrap">
+    <div class="label">the build · live agent</div>
+    <div class="row">
+      <div class="node"><div class="icon">✉️</div><div class="name">Gmail</div><div class="sub">inbound lead</div></div>
+      <div class="arrow">→</div>
+      <div class="node agent"><div class="icon">⚙️</div><div class="name">Agent</div><div class="sub">reads · tags · drafts</div></div>
+      <div class="arrow">→</div>
+      <div class="node"><div class="icon">📇</div><div class="name">CRM</div><div class="sub">row created</div></div>
+    </div>
+    <div class="footer">● running — 3 weeks, zero manual entry</div>
+  </div>
+</body></html>

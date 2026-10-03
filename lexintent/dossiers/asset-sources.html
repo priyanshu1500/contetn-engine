@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LexIntent Asset Sources</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#f8f6f2;--paper-2:#f2efe8;--ink:#111111;--ink-soft:#4a4741;
+    --burgundy:#6a0f1a;--grey:#8a8a8a;--divider:#d8d3ca;--stamp:rgba(106,15,26,.14);
+    --ok:#3f6b3f;--warn:#8a5a12;--bad:#7a1414;
+    --f-head:"Newsreader",Georgia,"Times New Roman",serif;
+    --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --s-1:clamp(.75rem,.72rem+.14vw,.82rem);--s0:clamp(.93rem,.9rem+.18vw,1rem);
+    --s1:clamp(1.12rem,1rem+.45vw,1.3rem);--s2:clamp(1.45rem,1.28rem+.9vw,1.9rem);
+    --s3:clamp(1.85rem,1.5rem+1.9vw,2.9rem);
+  }
+  @media(prefers-color-scheme:dark){html:not([data-theme="light"]){
+    --paper:#14130f;--paper-2:#1b1a15;--ink:#ede8dd;--ink-soft:#a8a297;--burgundy:#c14b52;
+    --grey:#7f7a70;--divider:#38342c;--stamp:rgba(193,75,82,.16);--ok:#7ba97b;--warn:#c9973f;--bad:#d97a7a;
+  }}
+  html[data-theme="dark"]{
+    --paper:#14130f;--paper-2:#1b1a15;--ink:#ede8dd;--ink-soft:#a8a297;--burgundy:#c14b52;
+    --grey:#7f7a70;--divider:#38342c;--stamp:rgba(193,75,82,.16);--ok:#7ba97b;--warn:#c9973f;--bad:#d97a7a;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:62rem;margin:0 auto;padding:clamp(1.2rem,1rem+2vw,3rem) clamp(1rem,.5rem+3vw,2.4rem) 6rem;}
+  a{color:var(--burgundy);text-underline-offset:.14em;}
+  a:focus-visible{outline:2px solid var(--burgundy);outline-offset:2px;}
+
+  header.mast{position:relative;border-bottom:2px solid var(--ink);padding-bottom:.9rem;margin-bottom:1rem;}
+  .mast .rule{border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);padding:.32rem 0;margin-bottom:.7rem;font-family:var(--f-body);font-weight:600;font-size:var(--s-1);letter-spacing:.26em;text-transform:uppercase;color:var(--grey);}
+  .mast h1{font-family:var(--f-head);font-weight:600;font-size:var(--s3);line-height:1.02;letter-spacing:.01em;text-transform:uppercase;margin:.1rem 0 .4rem;}
+  .mast .sub{font-family:var(--f-body);font-size:var(--s-1);color:var(--ink-soft);}
+  .themebtn{position:absolute;top:2.3rem;right:0;font-family:var(--f-body);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;background:none;border:1px solid var(--divider);color:var(--ink-soft);padding:.26rem .5rem;cursor:pointer;}
+
+  .bar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--divider);padding:.6rem 0;margin-bottom:.4rem;display:flex;flex-wrap:wrap;gap:.4rem .5rem;align-items:center;}
+  .bar input[type=search]{flex:1 1 11rem;min-width:8rem;font:inherit;font-size:var(--s-1);padding:.4rem .55rem;background:var(--paper-2);border:1px solid var(--divider);color:var(--ink);}
+  .chip{font-family:var(--f-body);font-size:.66rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.26rem .5rem;border:1px solid var(--divider);background:var(--paper-2);color:var(--ink-soft);cursor:pointer;user-select:none;white-space:nowrap;}
+  .chip.on{background:var(--burgundy);border-color:var(--burgundy);color:#fff;}
+  html[data-theme="dark"] .chip.on{color:#14130f;}
+  @media(prefers-color-scheme:dark){html:not([data-theme="light"]) .chip.on{color:#14130f;}}
+  .grp{width:100%;font-family:var(--f-body);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin:.15rem 0 -.1rem;}
+  .progress{font-family:var(--f-body);font-size:var(--s-1);color:var(--ink-soft);margin-left:auto;font-variant-numeric:tabular-nums;}
+  .progress b{color:var(--burgundy);font-family:var(--f-head);}
+  .count{font-family:var(--f-body);font-size:var(--s-1);color:var(--grey);margin:.5rem 0 .8rem;letter-spacing:.06em;text-transform:uppercase;}
+
+  .cat{margin-top:1.8rem;}
+  .cat h2{font-family:var(--f-head);font-weight:500;font-size:var(--s2);border-bottom:2px solid var(--ink);padding-bottom:.35rem;margin:0 0 .7rem;}
+  .row{display:grid;grid-template-columns:1.4rem 1fr;gap:.6rem;padding:.6rem .1rem;border-bottom:1px solid var(--divider);}
+  .row input[type=checkbox]{margin-top:.2rem;accent-color:var(--burgundy);width:1rem;height:1rem;}
+  .row .main{min-width:0;}
+  .row .t{font-family:var(--f-head);font-weight:600;font-size:1rem;line-height:1.25;}
+  .row .t a{text-decoration:none;}
+  .row .t a:hover{text-decoration:underline;}
+  .row .d{font-size:var(--s-1);color:var(--ink-soft);margin:.15rem 0 .3rem;}
+  .row .tags{display:flex;flex-wrap:wrap;gap:.3rem;}
+  .tag{font-family:var(--f-body);font-weight:600;font-size:.58rem;letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--divider);padding:.05rem .32rem;color:var(--ink-soft);white-space:nowrap;}
+  .tag.pri1{color:var(--burgundy);border-color:var(--burgundy);}
+  .tag.lic-pd{color:var(--ok);border-color:var(--ok);}
+  .tag.lic-free{color:var(--ink-soft);}
+  .tag.lic-attr{color:var(--warn);border-color:var(--warn);}
+  .tag.lic-nc{color:var(--bad);border-color:var(--bad);background:var(--stamp);}
+  .row.done{opacity:.5;}
+  .row.done .t{text-decoration:line-through;}
+  .empty{color:var(--grey);font-style:italic;padding:2rem 0;text-align:center;}
+
+  .plan{margin-top:3rem;border-top:2px solid var(--ink);padding-top:1.2rem;}
+  .plan h2{font-family:var(--f-head);font-weight:500;font-size:var(--s1);margin:0 0 .3rem;}
+  .plan h3{font-family:var(--f-body);font-weight:700;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);margin:1.4rem 0 .5rem;}
+  .plan ol,.plan ul{padding-left:1.2rem;max-width:60ch;}
+  .plan li{margin-bottom:.4rem;}
+  .plan .sprint li{display:flex;gap:.55rem;align-items:flex-start;list-style:none;margin-left:-1.2rem;}
+  .plan .sprint input{margin-top:.25rem;accent-color:var(--burgundy);}
+  .plan code{background:var(--paper-2);border:1px solid var(--divider);padding:.04rem .3rem;font-size:.9em;}
+  .pen{border-left:2px solid var(--burgundy);background:var(--paper-2);padding:.8rem 1rem;margin:1.2rem 0;max-width:60ch;}
+  .pen .lbl{font-family:var(--f-head);font-style:italic;color:var(--burgundy);font-size:var(--s-1);display:block;margin-bottom:.3rem;}
+  .pen p{margin:0;font-size:var(--s-1);}
+  .note{font-size:var(--s-1);color:var(--grey);font-style:italic;border-top:1px solid var(--divider);padding-top:.9rem;margin-top:1.8rem;}
+  .toast{position:fixed;bottom:1.2rem;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-size:var(--s-1);padding:.5rem .9rem;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9;}
+  .toast.show{opacity:1;}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div class="rule">LexIntent Intelligence — Production System</div>
+    <button class="themebtn" id="themebtn" type="button">Theme</button>
+    <h1>Asset Sources</h1>
+    <div class="sub">Free &amp; open-source repositories for editorial reels — fonts, textures, sound, footage, archival imagery, icons, motion. Filter by need, licence, and priority. Tick what you&rsquo;ve pulled.</div>
+  </header>
+
+  <div class="bar" id="bar">
+    <input type="search" id="q" placeholder="Search…" autocomplete="off" />
+    <span class="grp">Category</span>
+    <span class="chip" data-f="cat" data-v="Fonts">Fonts</span>
+    <span class="chip" data-f="cat" data-v="Textures">Textures</span>
+    <span class="chip" data-f="cat" data-v="SFX">SFX</span>
+    <span class="chip" data-f="cat" data-v="Music">Music</span>
+    <span class="chip" data-f="cat" data-v="Video">Video / B-roll</span>
+    <span class="chip" data-f="cat" data-v="Imagery">Archival imagery</span>
+    <span class="chip" data-f="cat" data-v="Icons">Icons</span>
+    <span class="chip" data-f="cat" data-v="Motion">Motion / libs</span>
+    <span class="chip" data-f="cat" data-v="Imagegen">Image gen</span>
+    <span class="chip" data-f="cat" data-v="Directory">Directories</span>
+    <span class="grp">Filter</span>
+    <span class="chip" data-f="pri" data-v="1">Get now</span>
+    <span class="chip" data-f="lic" data-v="pd">CC0 / PD</span>
+    <span class="chip" data-f="lic" data-v="nc">⚠ non-commercial</span>
+    <span class="chip" data-f="done" data-v="0">Not pulled</span>
+    <span class="progress" id="prog"></span>
+  </div>
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+
+  <section class="plan">
+    <h2>Plan for review</h2>
+    <p style="max-width:60ch;color:var(--ink-soft);font-size:var(--s-1)">One acquisition sprint (~half a day), then a monthly 30-minute top-up. Everything lands under <code>D:\agency content\assets\</code> in fixed folders so OpenChatCut / HyperFrames / Remotion always resolve.</p>
+
+    <h3>Acquisition sprint — do once</h3>
+    <ul class="sprint" id="sprint">
+      <li><input type="checkbox" data-k="sp1"><span><b>Fonts</b> → <code>assets/fonts/</code>. Self-host via <b>Fontsource</b> (Newsreader, Source Serif 4, Inter) so renders don&rsquo;t hit the network. Download <b>Fontshare</b> Zodiak / Gambetta / Sentient as the Canela-class display alternatives + one slab for a masthead.</span></li>
+      <li><input type="checkbox" data-k="sp2"><span><b>Textures</b> → <code>assets/textures/</code>. From <b>Rawpixel PD</b>: 10–15 paper / ledger / halftone / foxed-page scans. From <b>Lost &amp; Taken</b> + <b>Texturelabs</b>: paper, ink-bleed, dust, grain. From <b>Transparent Textures</b>: 2–3 tileable fibre patterns for the HTML/CSS scenes.</span></li>
+      <li><input type="checkbox" data-k="sp3"><span><b>SFX</b> → <code>assets/sfx/</code>. Grab the current-year <b>Sonniss GDC bundle</b> once (extract only foley / paper / impact / cloth). Top up gaps from <b>Mixkit</b> + <b>Pixabay</b>. Put your <b>Freesound</b> API key in <code>OpenChatCut\.env.local</code> (<code>FREESOUND_API_KEY=</code>) to search CC0 in-app. video-shotcraft&rsquo;s 16-category pack is already local — use it first.</span></li>
+      <li><input type="checkbox" data-k="sp4"><span><b>Music beds</b> → <code>assets/music/</code>. 4–6 minimal / ambient / underscore tracks from <b>Pixabay Music</b> + <b>YouTube Audio Library</b> (filter “no attribution”). One <b>Musopen</b> public-domain classical piece for archival / Case File cuts. Keep every bed for use at ≤ −20 dB under VO.</span></li>
+      <li><input type="checkbox" data-k="sp5"><span><b>B-roll</b> → <code>assets/broll/</code>. 10–20 <b>Prelinger</b> (Internet Archive) clips: offices, courtrooms, typewriters, paperwork, filing, city streets — the spine of the Archive-Collage / Case File formats. Plus ~10 modern clips from <b>Pexels</b> / <b>Coverr</b> (hands, libraries, desks, keyboards).</span></li>
+      <li><input type="checkbox" data-k="sp6"><span><b>Archival stills</b> → <code>assets/archival/</code>. Ornaments, rules, engraved initials, old-document scans from <b>Rawpixel PD</b>, <b>Smithsonian Open Access</b>, <b>British Library</b> / Internet Archive Book Images on Flickr — for the masthead furniture and the Redacted / Exhibit-A frames.</span></li>
+      <li><input type="checkbox" data-k="sp7"><span><b>Icons</b> → <code>assets/icons/</code>. Pin <b>Lucide</b> + <b>Tabler</b> locally; use the installed <code>better-icons</code> CLI for anything ad-hoc (200+ Iconify sets). Recolour to burgundy at use time.</span></li>
+      <li><input type="checkbox" data-k="sp8"><span><b>Motion toolkit</b>. Confirm <b>GSAP</b> premium plugins (SplitText / MorphSVG / DrawSVG) are enabled for HyperFrames — GSAP is now fully free. Add <code>@remotion/transitions</code> + <code>@remotion/paths</code> + <code>@remotion/noise</code> to the OpenChatCut scene toolkit.</span></li>
+    </ul>
+
+    <h3>Licence hygiene</h3>
+    <ul>
+      <li>Keep <code>assets/LICENSES.csv</code> — one row per file: <em>filename, source, URL, licence, attribution-needed (y/n), date</em>.</li>
+      <li><b>Nothing tagged ⚠ non-commercial</b> (BBC RemArc, any CC-BY-NC) goes near a LexIntent post. It&rsquo;s listed only so it isn&rsquo;t used by mistake.</li>
+      <li>Prefer <b>CC0 / Public Domain</b> so there&rsquo;s nothing to credit. Attribution-required items → a caption line or a 1-second end-frame; log them in the CSV.</li>
+      <li>Fonts: only <b>OFL</b> / <b>Fontshare FFL</b> / self-hosted OSS. Never a “free for personal use” face on a commercial post.</li>
+    </ul>
+
+    <h3>Pull first — for Script Engine Batch 01</h3>
+    <ul>
+      <li><b>AUT-* / SIG-*</b> — 3 paper textures, 1 ledger-paper scan; pen-scratch + marker SFX (already local).</li>
+      <li><b>RPV-02 / RPV-03</b> (Shortlist, Reject Pile) — page-turn + stamp SFX (local), one stack-of-paper still.</li>
+      <li><b>CAS-01 / CAS-04</b> (Case File, Redacted) — 2 Prelinger clips (office / courtroom), 1 old-document scan, a typewriter foley loop.</li>
+      <li><b>NUM-*</b> — nothing; pure motion-graphic.</li>
+      <li><b>DIS-01</b> — build the parser UI in HTML and screenshot (no asset), + one subtle grain-video overlay from Pixabay.</li>
+    </ul>
+
+    <div class="pen">
+      <span class="lbl">Review cadence —</span>
+      <p>Monthly, 30 min: check <b>Sonniss</b> for the new annual bundle, <b>Fontshare</b> for new releases, and re-verify any Attribution / “check per item” source still permits commercial use. Add new finds to this file&rsquo;s list.</p>
+    </div>
+  </section>
+
+  <p class="note">Licence tags: <span style="color:var(--ok)">CC0/PD</span> = nothing to credit · <span style="color:var(--ink-soft)">Free-com</span> = free for commercial, own terms, usually no credit · <span style="color:var(--warn)">Attribution</span> = credit required · <span style="color:var(--bad)">⚠ NC</span> = non-commercial only, do not use · Check = per-item, verify. Ticks save in this browser.</p>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const S = [
+ // ---- FONTS ----
+ {cat:"Fonts",name:"Google Fonts",url:"https://fonts.google.com",lic:"ofl",licT:"OFL",pri:1,
+  d:"Newsreader, Fraunces, Spectral, Source Serif 4, EB Garamond, Lora, Libre Caslon Text; Inter for body. The editorial serif backbone.",int:"HyperFrames <link> · @remotion/google-fonts for OpenChatCut."},
+ {cat:"Fonts",name:"Fontshare (Indian Type Foundry)",url:"https://www.fontshare.com",lic:"free",licT:"Free-com (FFL/OFL)",pri:1,
+  d:"Zodiak, Gambetta, Sentient, Erode — literary serifs; strong Canela substitutes. Clash Display for a heavy masthead. Free for commercial.",int:"Self-host / webfont."},
+ {cat:"Fonts",name:"Fontsource",url:"https://fontsource.org",lic:"ofl",licT:"OFL (npm)",pri:1,
+  d:"OFL fonts as npm packages — bundle them so Remotion/OpenChatCut renders never depend on a network fetch.",int:"npm i @fontsource/newsreader → import in a scene."},
+ {cat:"Fonts",name:"Velvetyne Type Foundry",url:"https://velvetyne.fr",lic:"ofl",licT:"OFL",pri:2,
+  d:"Libre experimental foundry — a distinctive display face if the brand ever wants an edge without leaving OSS.",int:"Self-host."},
+ {cat:"Fonts",name:"Collletttivo",url:"https://www.collletttivo.it",lic:"ofl",licT:"OFL",pri:2,
+  d:"Italian libre foundry — editorial serifs and grotesques with character.",int:"Self-host."},
+ {cat:"Fonts",name:"The League of Moveable Type",url:"https://www.theleagueofmoveabletype.com",lic:"ofl",licT:"OFL",pri:3,
+  d:"Blackout (a blunt slab for a nameplate), League Gothic (condensed caps for kickers).",int:"Self-host."},
+ {cat:"Fonts",name:"Use & Modify",url:"https://usemodify.com",lic:"ofl",licT:"Libre (directory)",pri:3,
+  d:"Curated directory of libre fonts — discovery, not a foundry.",int:"—"},
+
+ // ---- TEXTURES ----
+ {cat:"Textures",name:"Rawpixel — Public Domain",url:"https://www.rawpixel.com/public-domain",lic:"pd",licT:"CC0 / PD",pri:1,
+  d:"Vintage paper, ledgers, foxed pages, halftone, engravings, ephemera — the exact ground LexIntent wants. Huge, hi-res, free account.",int:"Drop into a Sheet/Masthead scene as a background layer."},
+ {cat:"Textures",name:"Lost & Taken",url:"https://lostandtaken.com",lic:"free",licT:"Free-com",pri:1,
+  d:"Paper, grunge, ink, dust, watercolour textures. Long-standing free-for-commercial set.",int:"Overlay layer, mix-blend multiply."},
+ {cat:"Textures",name:"Texturelabs",url:"https://texturelabs.org",lic:"free",licT:"Free-com",pri:1,
+  d:"Very large hi-res library — paper, ink, grain, dust, light-leaks. Free with a light attribution ask.",int:"Overlay / grain layer."},
+ {cat:"Textures",name:"Transparent Textures",url:"https://www.transparenttextures.com",lic:"free",licT:"Free-com",pri:1,
+  d:"Tileable, subtle, CSS-ready patterns (paper fibres, noise). For the HTML/CSS scenes and this doc's own paper feel.",int:"CSS background-image, tiled."},
+ {cat:"Textures",name:"The Public Domain Review",url:"https://publicdomainreview.org",lic:"pd",licT:"PD",pri:2,
+  d:"Curated historical prints, diagrams, marginalia — engraving and ornament source, with provenance.",int:"Decorative stills."},
+ {cat:"Textures",name:"Pixabay / Pexels — grain video",url:"https://pixabay.com/videos/search/film%20grain/",lic:"free",licT:"Free-com",pri:2,
+  d:"Search “film grain overlay”, “dust”, “light leak” — moving grain video to layer over a whole reel at ~8% screen.",int:"Top video track, blend screen."},
+
+ // ---- SFX ----
+ {cat:"SFX",name:"video-shotcraft SFX pack (installed)",url:"https://github.com/Vincentwei1021/video-shotcraft",lic:"free",licT:"Royalty-free",pri:1,
+  d:"Local already: paper (slide, page-turn, crumple), text (typewriter, marker, pen), impact (bass), transition (whoosh), riser, ui. Use first.",int:"~/.claude/skills/video-shotcraft/assets/audio/sfx/"},
+ {cat:"SFX",name:"Mixkit — Sound Effects",url:"https://mixkit.co/free-sound-effects/",lic:"free",licT:"Free-com, no credit",pri:1,
+  d:"Clean, well-recorded SFX; no attribution. Good for gaps the local pack doesn't cover.",int:"Download WAV/MP3 → A-track."},
+ {cat:"SFX",name:"Pixabay — Sound Effects",url:"https://pixabay.com/sound-effects/",lic:"free",licT:"Free-com, no credit",pri:1,
+  d:"Deep SFX + music under one permissive licence. Paper, pen, stamp, page, foley.",int:"Download → A-track."},
+ {cat:"SFX",name:"Freesound",url:"https://freesound.org",lic:"pd",licT:"Per-item (filter CC0)",pri:1,
+  d:"Millions of sounds; filter to CC0. An API key wires into OpenChatCut for in-editor search.",int:"Set FREESOUND_API_KEY in OpenChatCut/.env.local."},
+ {cat:"SFX",name:"Sonniss — GDC Game Audio Bundle",url:"https://gdc.sonniss.com/",lic:"free",licT:"Royalty-free",pri:1,
+  d:"20–40 GB free every year: foley, paper, cloth, impacts, room tone, textures. One download covers most needs for a year.",int:"Extract foley/paper/impact folders → assets/sfx/."},
+ {cat:"SFX",name:"CC0 Sounds",url:"https://cc0-sounds.exi.software",lic:"pd",licT:"CC0",pri:2,
+  d:"Small, curated, zero-friction CC0 set.",int:"Download → A-track."},
+ {cat:"SFX",name:"Kenney",url:"https://kenney.nl/assets?q=audio",lic:"pd",licT:"CC0",pri:3,
+  d:"UI clicks, blips, confirm tones — useful for the score-card and checklist reels.",int:"Download → A-track."},
+ {cat:"SFX",name:"BBC Sound Effects (RemArc)",url:"https://sound-effects.bbcrewind.co.uk/",lic:"nc",licT:"⚠ Non-commercial",pri:3,
+  d:"~33,000 archival effects — BUT the RemArc licence is personal / education / research only. Do NOT use on a LexIntent post.",int:"Reference only."},
+
+ // ---- MUSIC ----
+ {cat:"Music",name:"Pixabay — Music",url:"https://pixabay.com/music/",lic:"free",licT:"Free-com, no credit",pri:1,
+  d:"Ambient, cinematic-underscore, minimal-piano. Filter for slow, sparse, tension-free beds.",int:"Bed track at ≤ −20 dB under VO."},
+ {cat:"Music",name:"YouTube Audio Library",url:"https://studio.youtube.com",lic:"free",licT:"Free (filter no-attr.)",pri:1,
+  d:"Filter “no attribution required” + “cinematic / ambient”. Reliable, cleared for monetised video.",int:"Download from YouTube Studio → Audio Library."},
+ {cat:"Music",name:"Free Music Archive",url:"https://freemusicarchive.org",lic:"pd",licT:"Per-item CC",pri:2,
+  d:"Filter CC0 / CC-BY. Strong for modern-classical, drone, ambient — the LexIntent register.",int:"Check per-track licence, log it."},
+ {cat:"Music",name:"Musopen",url:"https://musopen.org",lic:"pd",licT:"PD recordings + CC",pri:2,
+  d:"Public-domain classical performances — a period bed for Case File / archival cuts without any music-licence question.",int:"Download PD recordings."},
+ {cat:"Music",name:"incompetech (Kevin MacLeod)",url:"https://incompetech.com/music/royalty-free/",lic:"attr",licT:"CC-BY",pri:3,
+  d:"Vast, tag-searchable. Attribution in the caption. Some tracks feel generic — pick the quiet ambient ones.",int:"Credit line required."},
+ {cat:"Music",name:"Uppbeat",url:"https://uppbeat.io",lic:"attr",licT:"Free tier w/ credit",pri:3,
+  d:"Curated, editorial-friendly. Free tier needs a credit; paid removes it.",int:"Credit or upgrade."},
+
+ // ---- VIDEO ----
+ {cat:"Video",name:"Internet Archive — Prelinger Archives",url:"https://archive.org/details/prelinger",lic:"pd",licT:"Public Domain",pri:1,
+  d:"Vintage industrial / educational / ephemeral film — offices, courts, typewriters, filing, commuters. The core of every Archive-Collage and Case File reel.",int:"Download MP4 → cut into the timeline; grain + frame-border on top."},
+ {cat:"Video",name:"Pexels — Video",url:"https://www.pexels.com/videos/",lic:"free",licT:"Free-com",pri:1,
+  d:"Modern b-roll: hands, keyboards, libraries, desks, city. Clean and consistent.",int:"Download → timeline."},
+ {cat:"Video",name:"Coverr",url:"https://coverr.co",lic:"free",licT:"Free-com",pri:1,
+  d:"Short, loopable, understated b-roll — good for a held background under text.",int:"Download → timeline."},
+ {cat:"Video",name:"Mixkit — Stock Video",url:"https://mixkit.co/free-stock-video/",lic:"free",licT:"Free-com",pri:2,
+  d:"B-roll + subtle motion backgrounds; no attribution.",int:"Download → timeline."},
+ {cat:"Video",name:"Library of Congress",url:"https://www.loc.gov/free-to-use/",lic:"pd",licT:"PD (US)",pri:2,
+  d:"Public-domain film and stills — legal, historical, civic. Provenance is clean.",int:"Download → timeline / stills."},
+ {cat:"Video",name:"Videvo",url:"https://www.videvo.net",lic:"attr",licT:"Mixed (check per clip)",pri:3,
+  d:"Free + attribution + paid tiers mixed together — verify each clip before use.",int:"Check licence per clip."},
+
+ // ---- IMAGERY ----
+ {cat:"Imagery",name:"Openverse",url:"https://openverse.org",lic:"pd",licT:"CC/PD (filter CC0)",pri:1,
+  d:"One search + API over 800M+ CC/PD images and audio. Filter to CC0 for anything-goes usage.",int:"api.openverse.org for scripted pulls."},
+ {cat:"Imagery",name:"Smithsonian Open Access",url:"https://www.si.edu/openaccess",lic:"pd",licT:"CC0",pri:1,
+  d:"4M+ CC0 items — documents, objects, prints. API available. Zero attribution.",int:"API / bulk download."},
+ {cat:"Imagery",name:"Unsplash",url:"https://unsplash.com",lic:"free",licT:"Free-com",pri:1,
+  d:"Modern editorial photography — portraits, desks, cities — for the rare photo-led frame.",int:"Download → still."},
+ {cat:"Imagery",name:"British Library / IA Book Images (Flickr)",url:"https://www.flickr.com/photos/britishlibrary/",lic:"pd",licT:"PD (no known ©)",pri:2,
+  d:"Ornaments, engraved initials, vignettes, maps from digitised books — masthead furniture and Exhibit-A decoration.",int:"Download PNG → decorative layer."},
+ {cat:"Imagery",name:"The Met — Open Access",url:"https://www.metmuseum.org/art/collection",lic:"pd",licT:"CC0",pri:2,
+  d:"Prints, drawings, objects, all CC0. API. Good for texture and period reference.",int:"API / download."},
+ {cat:"Imagery",name:"NYPL Digital Collections",url:"https://digitalcollections.nypl.org",lic:"pd",licT:"PD (large subset)",pri:3,
+  d:"Maps, prints, ephemera, photographs — a deep PD subset flagged clearly.",int:"Download flagged-PD items."},
+ {cat:"Imagery",name:"Old Book Illustrations",url:"https://www.oldbookillustrations.com",lic:"pd",licT:"PD",pri:3,
+  d:"Curated engravings and vignettes — small, hand-picked, all public domain.",int:"Download → decorative layer."},
+
+ // ---- ICONS ----
+ {cat:"Icons",name:"Lucide",url:"https://lucide.dev",lic:"ofl",licT:"ISC",pri:1,
+  d:"Consistent-stroke line icons; a fine, editorial weight. The default icon set for LexIntent.",int:"SVG / npm; recolour to burgundy."},
+ {cat:"Icons",name:"Tabler Icons",url:"https://tabler.io/icons",lic:"ofl",licT:"MIT",pri:1,
+  d:"5,000+ outline + filled; broad coverage for any ad-hoc need.",int:"SVG / npm."},
+ {cat:"Icons",name:"better-icons (installed skill)",url:"https://github.com/",lic:"ofl",licT:"MIT-ish per set",pri:1,
+  d:"CLI over 200+ Iconify libraries — search and fetch an SVG from the terminal without leaving the build.",int:"better-icons search <q> / get <id>."},
+ {cat:"Icons",name:"Phosphor Icons",url:"https://phosphoricons.com",lic:"ofl",licT:"MIT",pri:2,
+  d:"Six weights including a very thin one — matches an editorial hairline aesthetic.",int:"SVG / npm."},
+ {cat:"Icons",name:"unDraw",url:"https://undraw.co",lic:"ofl",licT:"Open (MIT-style)",pri:3,
+  d:"Flat illustrations with one settable accent colour — set it to burgundy for a house illustration style.",int:"Download SVG, set accent."},
+ {cat:"Icons",name:"SVG Repo",url:"https://www.svgrepo.com",lic:"pd",licT:"Mixed (labelled)",pri:3,
+  d:"Very large; every icon is licence-labelled — filter to CC0 / MIT.",int:"Filter, then download."},
+ {cat:"Icons",name:"Reshot",url:"https://www.reshot.com",lic:"free",licT:"Free-com, no credit",pri:3,
+  d:"Icons + illustrations, free for commercial with no attribution.",int:"Download SVG/PNG."},
+
+ // ---- MOTION ----
+ {cat:"Motion",name:"GSAP",url:"https://gsap.com",lic:"ofl",licT:"Free (all plugins)",pri:1,
+  d:"Now fully free including SplitText, MorphSVG, DrawSVG, ScrollTrigger. HyperFrames already loads it — enable the premium plugins for text/SVG animation.",int:"HyperFrames scenes; DrawSVG for the red-pen strokes."},
+ {cat:"Motion",name:"Remotion packages",url:"https://www.remotion.dev/docs",lic:"ofl",licT:"MIT helpers",pri:1,
+  d:"@remotion/transitions, /shapes, /paths, /noise, /google-fonts, /layout-utils, /animation-utils — building blocks for OpenChatCut scenes.",int:"npm add to the scene toolkit."},
+ {cat:"Motion",name:"LottieFiles",url:"https://lottiefiles.com",lic:"free",licT:"Per-item (check)",pri:2,
+  d:"Free vector animations — filter to free, verify the Lottie Simple Licence covers commercial. Render via @remotion/lottie.",int:"@remotion/lottie; check licence per file."},
+ {cat:"Motion",name:"Motion (motion.dev)",url:"https://motion.dev",lic:"ofl",licT:"MIT",pri:3,
+  d:"Vanilla-JS animation library — an alternative to GSAP for the HTML scenes if a lighter dependency is wanted.",int:"HyperFrames / HTML scenes."},
+ {cat:"Motion",name:"awesome-remotion",url:"https://github.com/remotion-dev/awesome-remotion",lic:"ofl",licT:"List",pri:3,
+  d:"Curated templates, components, and example projects for Remotion.",int:"Reference / clone components."},
+
+ // ---- IMAGE GEN ----
+ {cat:"Imagegen",name:"Build-in-HTML + screenshot",url:"https://developer.mozilla.org/",lic:"pd",licT:"n/a — own work",pri:1,
+  d:"For mock product UI (the parser view, score meters, a fake dashboard): build it in HTML/CSS and screenshot. Total control, on-brand, zero licence risk. The default method.",int:"HTML file → Playwright screenshot → asset."},
+ {cat:"Imagegen",name:"Ideogram",url:"https://ideogram.ai",lic:"free",licT:"Free tier",pri:2,
+  d:"Best free model at legible text inside images — fake headlines, sign text, chart labels.",int:"Generate → asset (check ToS for commercial on free tier)."},
+ {cat:"Imagegen",name:"Google AI Studio (Gemini image)",url:"https://aistudio.google.com",lic:"free",licT:"Free tier",pri:2,
+  d:"Fast illustration / texture generation on a free tier.",int:"Generate → asset."},
+ {cat:"Imagegen",name:"Hugging Face Spaces (Flux / SDXL)",url:"https://huggingface.co/spaces",lic:"free",licT:"Free (queued)",pri:3,
+  d:"Run Flux / SDXL demos in the browser, no install. Slow at peak.",int:"Generate → asset."},
+ {cat:"Imagegen",name:"ComfyUI (local, Flux/SDXL)",url:"https://github.com/comfyanonymous/ComfyUI",lic:"ofl",licT:"GPL — local",pri:3,
+  d:"Full local control. The 16 GB laptop is marginal for SDXL and impractical for Flux — situational only.",int:"Local install; heavy."},
+
+ // ---- DIRECTORIES ----
+ {cat:"Directory",name:"The Stocks",url:"https://thestocks.im",lic:"free",licT:"Directory",pri:1,
+  d:"One page linking the best free photo / video / audio / icon / font sources — a fast jump-off.",int:"Bookmark."},
+ {cat:"Directory",name:"awesome-stock-resources",url:"https://github.com/neutraltone/awesome-stock-resources",lic:"free",licT:"List (GitHub)",pri:2,
+  d:"Maintained list of free stock photo / video / audio / icons / textures.",int:"Reference."},
+ {cat:"Directory",name:"Chosic",url:"https://www.chosic.com/free-music/",lic:"attr",licT:"Aggregator (CC)",pri:3,
+  d:"Aggregates Creative-Commons music with clear per-track licence — music discovery.",int:"Check per-track."}
+];
+
+const CATS = ["Fonts","Textures","SFX","Music","Video","Imagery","Icons","Motion","Imagegen","Directory"];
+const CATLABEL = {Fonts:"Fonts",Textures:"Textures",SFX:"Sound effects",Music:"Music beds",Video:"Video / B-roll",Imagery:"Archival imagery & photos",Icons:"Icons & illustration",Motion:"Motion, animation & libraries",Imagegen:"Image generation",Directory:"Directories & aggregators"};
+const KEY="lexintent-assets-v1";
+let got={}; try{got=JSON.parse(localStorage.getItem(KEY)||"{}");}catch(e){got={};}
+const filters={cat:new Set(),pri:new Set(),lic:new Set(),done:new Set(),q:""};
+const $=s=>document.querySelector(s);
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function id(x){return x.name.replace(/[^a-z0-9]+/gi,"-").toLowerCase();}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(got));}catch(e){}}
+let tt;function toast(m){const el=$("#toast");el.textContent=m;el.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>el.classList.remove("show"),1200);}
+
+function rowHTML(x){
+  const k=id(x), on=!!got[k];
+  return `<div class="row ${on?'done':''}" data-k="${k}">
+    <input type="checkbox" ${on?'checked':''} aria-label="pulled">
+    <div class="main">
+      <div class="t"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a></div>
+      <div class="d">${esc(x.d)}${x.int?` <span style="color:var(--grey)">— ${esc(x.int)}</span>`:''}</div>
+      <div class="tags">
+        ${x.pri===1?'<span class="tag pri1">Get now</span>':x.pri===2?'<span class="tag">Nice</span>':'<span class="tag">Situational</span>'}
+        <span class="tag lic-${x.lic==='pd'?'pd':x.lic==='attr'?'attr':x.lic==='nc'?'nc':'free'}">${esc(x.licT)}</span>
+      </div>
+    </div>
+  </div>`;
+}
+function pass(x){
+  if(filters.cat.size && !filters.cat.has(x.cat)) return false;
+  if(filters.pri.size && !filters.pri.has(String(x.pri))) return false;
+  if(filters.lic.size){
+    for(const v of filters.lic){ if(v==='pd' && x.lic!=='pd') return false; if(v==='nc' && x.lic!=='nc') return false; }
+  }
+  if(filters.done.size && filters.done.has("0") && got[id(x)]) return false;
+  if(filters.q){
+    const hay=(x.name+" "+x.d+" "+x.int+" "+x.cat+" "+x.licT).toLowerCase();
+    if(!hay.includes(filters.q)) return false;
+  }
+  return true;
+}
+function render(){
+  const rows=S.filter(pass);
+  let html="";
+  for(const c of CATS){
+    const g=rows.filter(x=>x.cat===c);
+    if(!g.length) continue;
+    html+=`<div class="cat"><h2>${esc(CATLABEL[c])}</h2>${g.map(rowHTML).join("")}</div>`;
+  }
+  $("#list").innerHTML = html || `<p class="empty">Nothing matches those filters.</p>`;
+  $("#count").textContent = `${rows.length} of ${S.length} sources shown`;
+  const total=S.length, done=S.filter(x=>got[id(x)]).length;
+  const now=S.filter(x=>x.pri===1), ndone=now.filter(x=>got[id(x)]).length;
+  $("#prog").innerHTML = `<b>${ndone}</b>/${now.length} “get now” · <b>${done}</b>/${total} total`;
+}
+document.addEventListener("click",e=>{
+  const chip=e.target.closest(".chip");
+  if(chip){ const set=filters[chip.dataset.f]; chip.classList.toggle("on");
+    chip.classList.contains("on")?set.add(chip.dataset.v):set.delete(chip.dataset.v); render(); return; }
+});
+document.addEventListener("change",e=>{
+  const cb=e.target.closest('.row input[type=checkbox]');
+  if(cb){ const k=cb.closest(".row").dataset.k; got[k]=cb.checked; if(!cb.checked) delete got[k]; save(); render(); return; }
+  const sp=e.target.closest('#sprint input[type=checkbox]');
+  if(sp){ got[sp.dataset.k]=sp.checked; save(); }
+});
+$("#q").addEventListener("input",e=>{filters.q=e.target.value.trim().toLowerCase();render();});
+$("#themebtn").addEventListener("click",()=>{
+  const cur=document.documentElement.getAttribute("data-theme");
+  const next=cur==="dark"?"light":cur==="light"?"":"dark";
+  document.documentElement.setAttribute("data-theme",next);
+  try{localStorage.setItem("lexintent-theme",next);}catch(e){}
+});
+try{const th=localStorage.getItem("lexintent-theme");if(th!==null)document.documentElement.setAttribute("data-theme",th);}catch(e){}
+// restore sprint checkboxes
+window.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll('#sprint input').forEach(i=>{if(got[i.dataset.k])i.checked=true;});});
+render();
+</script>
+</body>
+</html>

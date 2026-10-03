@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { width:1080px; height:1500px; background:#F5EBDD;
+         font-family:-apple-system,Segoe UI,Arial,sans-serif; overflow:hidden; }
+  .wrap { padding:60px 56px; height:100%; }
+  .label { color:#8A7F6E; font-size:20px; letter-spacing:3px; text-transform:uppercase; margin-bottom:8px; font-weight:700; }
+  .missed { display:flex; align-items:center; gap:12px; background:#FFF; border:2px solid #E5D9C4;
+            border-radius:14px; padding:16px 20px; margin-bottom:28px; box-shadow:0 6px 0 #E5D9C4; }
+  .missed .dot { width:10px; height:10px; border-radius:50%; background:#F2765E; }
+  .missed .txt { color:#413333; font-size:20px; font-weight:600; }
+  .missed .num { color:#8A7F6E; font-size:16px; margin-left:auto; }
+  .thread { display:flex; flex-direction:column; gap:18px; }
+  .bubble { max-width:80%; padding:18px 22px; border-radius:20px; font-size:21px; line-height:1.45; }
+  .agent { align-self:flex-start; background:#4E71FF; color:#fff; border-bottom-left-radius:6px; }
+  .caller { align-self:flex-end; background:#FFFFFF; border:2px solid #E5D9C4; color:#413333; border-bottom-right-radius:6px; }
+  .tag { font-size:13px; letter-spacing:2px; text-transform:uppercase; font-weight:700; margin-bottom:6px; opacity:.85; }
+  .agent .tag { color:#DCE4FF; }
+  .caller .tag { color:#8A7F6E; }
+  .booked { margin-top:8px; display:inline-flex; align-items:center; gap:10px; background:rgba(46,204,113,.14);
+            color:#1F9D57; font-weight:700; font-size:18px; padding:10px 18px; border-radius:999px; align-self:flex-start; }
+</style></head>
+<body>
+  <div class="wrap">
+    <div class="label">the payoff · live sms, unedited</div>
+    <div class="missed"><div class="dot"></div><div class="txt">Missed call</div><div class="num">(555) 019-2231</div></div>
+    <div class="thread">
+      <div class="bubble agent"><div class="tag">Agent · 8s later</div>Hey! Saw you called about 42 Birchwood Ave — what's your budget range and ideal move-in timeline?</div>
+      <div class="bubble caller"><div class="tag">Buyer</div>Around $450k, looking to move in the next 2 months</div>
+      <div class="bubble agent"><div class="tag">Agent</div>Perfect fit. Does Thurs 2pm or Fri 10am work for a showing?</div>
+      <div class="bubble caller"><div class="tag">Buyer</div>Fri 10am works</div>
+      <div class="bubble agent"><div class="tag">Agent</div>Booked! See you Friday at 10am. ✅</div>
+      <div class="booked">✓ Showing auto-booked · 0 manual steps</div>
+    </div>
+  </div>
+</body></html>

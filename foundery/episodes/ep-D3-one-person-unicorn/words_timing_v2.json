@@ -1,0 +1,1346 @@
+[
+  {
+    "word": "Sam",
+    "start": 0.0,
+    "end": 0.36,
+    "prob": 0.926
+  },
+  {
+    "word": "Altman",
+    "start": 0.36,
+    "end": 0.68,
+    "prob": 0.949
+  },
+  {
+    "word": "said",
+    "start": 0.68,
+    "end": 1.18,
+    "prob": 0.946
+  },
+  {
+    "word": "something",
+    "start": 1.18,
+    "end": 1.5,
+    "prob": 0.99
+  },
+  {
+    "word": "in",
+    "start": 1.5,
+    "end": 1.62,
+    "prob": 0.996
+  },
+  {
+    "word": "2025",
+    "start": 1.62,
+    "end": 2.08,
+    "prob": 0.927
+  },
+  {
+    "word": "that",
+    "start": 2.08,
+    "end": 2.84,
+    "prob": 0.972
+  },
+  {
+    "word": "made",
+    "start": 2.84,
+    "end": 3.1,
+    "prob": 0.995
+  },
+  {
+    "word": "every",
+    "start": 3.1,
+    "end": 3.76,
+    "prob": 0.963
+  },
+  {
+    "word": "middle",
+    "start": 3.76,
+    "end": 4.04,
+    "prob": 0.938
+  },
+  {
+    "word": "manager",
+    "start": 4.04,
+    "end": 4.38,
+    "prob": 0.42
+  },
+  {
+    "word": "panic.",
+    "start": 4.38,
+    "end": 4.76,
+    "prob": 0.991
+  },
+  {
+    "word": "Quote,",
+    "start": 5.36,
+    "end": 5.58,
+    "prob": 0.681
+  },
+  {
+    "word": "it",
+    "start": 5.84,
+    "end": 6.04,
+    "prob": 0.556
+  },
+  {
+    "word": "is",
+    "start": 6.04,
+    "end": 6.1,
+    "prob": 0.983
+  },
+  {
+    "word": "possible",
+    "start": 6.1,
+    "end": 6.48,
+    "prob": 0.996
+  },
+  {
+    "word": "we",
+    "start": 6.48,
+    "end": 6.68,
+    "prob": 0.946
+  },
+  {
+    "word": "will",
+    "start": 6.68,
+    "end": 6.76,
+    "prob": 0.99
+  },
+  {
+    "word": "see",
+    "start": 6.76,
+    "end": 6.98,
+    "prob": 0.997
+  },
+  {
+    "word": "the",
+    "start": 6.98,
+    "end": 7.2,
+    "prob": 0.987
+  },
+  {
+    "word": "first",
+    "start": 7.2,
+    "end": 7.6,
+    "prob": 0.979
+  },
+  {
+    "word": "one",
+    "start": 7.6,
+    "end": 7.98,
+    "prob": 0.696
+  },
+  {
+    "word": "person",
+    "start": 7.98,
+    "end": 8.38,
+    "prob": 0.9
+  },
+  {
+    "word": "billion",
+    "start": 8.38,
+    "end": 8.76,
+    "prob": 0.868
+  },
+  {
+    "word": "dollar",
+    "start": 8.76,
+    "end": 9.1,
+    "prob": 0.95
+  },
+  {
+    "word": "company,",
+    "start": 9.1,
+    "end": 9.42,
+    "prob": 0.996
+  },
+  {
+    "word": "one",
+    "start": 9.88,
+    "end": 10.0,
+    "prob": 0.923
+  },
+  {
+    "word": "person,",
+    "start": 10.0,
+    "end": 10.38,
+    "prob": 0.998
+  },
+  {
+    "word": "a",
+    "start": 10.78,
+    "end": 10.86,
+    "prob": 0.941
+  },
+  {
+    "word": "billion",
+    "start": 10.86,
+    "end": 11.12,
+    "prob": 0.997
+  },
+  {
+    "word": "dollars,",
+    "start": 11.12,
+    "end": 11.5,
+    "prob": 0.989
+  },
+  {
+    "word": "no",
+    "start": 11.96,
+    "end": 12.22,
+    "prob": 0.994
+  },
+  {
+    "word": "team,",
+    "start": 12.22,
+    "end": 12.52,
+    "prob": 0.991
+  },
+  {
+    "word": "and",
+    "start": 12.86,
+    "end": 13.04,
+    "prob": 0.679
+  },
+  {
+    "word": "it's",
+    "start": 13.04,
+    "end": 13.14,
+    "prob": 0.99
+  },
+  {
+    "word": "already",
+    "start": 13.14,
+    "end": 13.36,
+    "prob": 0.999
+  },
+  {
+    "word": "happening.",
+    "start": 13.36,
+    "end": 13.8,
+    "prob": 0.999
+  },
+  {
+    "word": "Kerser",
+    "start": 14.3,
+    "end": 14.52,
+    "prob": 0.574
+  },
+  {
+    "word": "hit",
+    "start": 14.52,
+    "end": 14.72,
+    "prob": 0.974
+  },
+  {
+    "word": "100",
+    "start": 14.72,
+    "end": 15.34,
+    "prob": 0.495
+  },
+  {
+    "word": "million",
+    "start": 15.34,
+    "end": 15.74,
+    "prob": 0.972
+  },
+  {
+    "word": "in",
+    "start": 15.74,
+    "end": 16.06,
+    "prob": 0.967
+  },
+  {
+    "word": "annual",
+    "start": 16.06,
+    "end": 16.46,
+    "prob": 0.985
+  },
+  {
+    "word": "revenue",
+    "start": 16.46,
+    "end": 16.8,
+    "prob": 0.998
+  },
+  {
+    "word": "with",
+    "start": 16.8,
+    "end": 17.24,
+    "prob": 0.924
+  },
+  {
+    "word": "fewer",
+    "start": 17.24,
+    "end": 17.56,
+    "prob": 0.999
+  },
+  {
+    "word": "than",
+    "start": 17.56,
+    "end": 17.7,
+    "prob": 0.998
+  },
+  {
+    "word": "50",
+    "start": 17.7,
+    "end": 18.02,
+    "prob": 0.955
+  },
+  {
+    "word": "people.",
+    "start": 18.02,
+    "end": 18.42,
+    "prob": 0.996
+  },
+  {
+    "word": "Safe",
+    "start": 18.98,
+    "end": 19.06,
+    "prob": 0.902
+  },
+  {
+    "word": "superintelligence",
+    "start": 19.06,
+    "end": 19.8,
+    "prob": 0.795
+  },
+  {
+    "word": "raised",
+    "start": 19.8,
+    "end": 20.14,
+    "prob": 0.983
+  },
+  {
+    "word": "at",
+    "start": 20.14,
+    "end": 20.3,
+    "prob": 0.891
+  },
+  {
+    "word": "a",
+    "start": 20.3,
+    "end": 20.38,
+    "prob": 0.965
+  },
+  {
+    "word": "32",
+    "start": 20.38,
+    "end": 20.78,
+    "prob": 0.723
+  },
+  {
+    "word": "billion",
+    "start": 20.78,
+    "end": 21.4,
+    "prob": 0.991
+  },
+  {
+    "word": "dollar",
+    "start": 21.4,
+    "end": 21.72,
+    "prob": 0.926
+  },
+  {
+    "word": "valuation",
+    "start": 21.72,
+    "end": 22.26,
+    "prob": 0.878
+  },
+  {
+    "word": "with",
+    "start": 22.26,
+    "end": 22.62,
+    "prob": 0.987
+  },
+  {
+    "word": "a",
+    "start": 22.62,
+    "end": 22.7,
+    "prob": 0.983
+  },
+  {
+    "word": "team",
+    "start": 22.7,
+    "end": 22.88,
+    "prob": 0.993
+  },
+  {
+    "word": "of",
+    "start": 22.88,
+    "end": 23.04,
+    "prob": 0.999
+  },
+  {
+    "word": "20.",
+    "start": 23.04,
+    "end": 23.32,
+    "prob": 0.981
+  },
+  {
+    "word": "But",
+    "start": 23.7,
+    "end": 23.84,
+    "prob": 0.993
+  },
+  {
+    "word": "here's",
+    "start": 23.84,
+    "end": 24.08,
+    "prob": 0.99
+  },
+  {
+    "word": "what",
+    "start": 24.08,
+    "end": 24.16,
+    "prob": 0.995
+  },
+  {
+    "word": "Altman",
+    "start": 24.16,
+    "end": 24.44,
+    "prob": 0.991
+  },
+  {
+    "word": "isn't",
+    "start": 24.44,
+    "end": 24.8,
+    "prob": 0.99
+  },
+  {
+    "word": "telling",
+    "start": 24.8,
+    "end": 25.04,
+    "prob": 0.998
+  },
+  {
+    "word": "you.",
+    "start": 25.04,
+    "end": 25.26,
+    "prob": 0.996
+  },
+  {
+    "word": "These",
+    "start": 25.26,
+    "end": 25.78,
+    "prob": 0.615
+  },
+  {
+    "word": "companies",
+    "start": 25.78,
+    "end": 26.08,
+    "prob": 0.992
+  },
+  {
+    "word": "didn't",
+    "start": 26.08,
+    "end": 26.38,
+    "prob": 0.982
+  },
+  {
+    "word": "eliminate",
+    "start": 26.38,
+    "end": 26.78,
+    "prob": 0.987
+  },
+  {
+    "word": "people",
+    "start": 26.78,
+    "end": 27.2,
+    "prob": 0.997
+  },
+  {
+    "word": "because",
+    "start": 27.2,
+    "end": 27.72,
+    "prob": 0.936
+  },
+  {
+    "word": "AI",
+    "start": 27.72,
+    "end": 28.16,
+    "prob": 0.865
+  },
+  {
+    "word": "is",
+    "start": 28.16,
+    "end": 28.84,
+    "prob": 0.991
+  },
+  {
+    "word": "smarter",
+    "start": 28.84,
+    "end": 29.26,
+    "prob": 0.997
+  },
+  {
+    "word": "than",
+    "start": 29.26,
+    "end": 29.5,
+    "prob": 0.998
+  },
+  {
+    "word": "humans.",
+    "start": 29.5,
+    "end": 29.92,
+    "prob": 0.994
+  },
+  {
+    "word": "They",
+    "start": 30.42,
+    "end": 30.6,
+    "prob": 0.994
+  },
+  {
+    "word": "eliminated",
+    "start": 30.6,
+    "end": 31.02,
+    "prob": 0.996
+  },
+  {
+    "word": "people",
+    "start": 31.02,
+    "end": 31.48,
+    "prob": 0.998
+  },
+  {
+    "word": "because",
+    "start": 31.48,
+    "end": 31.98,
+    "prob": 0.929
+  },
+  {
+    "word": "for",
+    "start": 31.98,
+    "end": 32.24,
+    "prob": 0.88
+  },
+  {
+    "word": "100",
+    "start": 32.24,
+    "end": 32.54,
+    "prob": 0.683
+  },
+  {
+    "word": "years,",
+    "start": 32.54,
+    "end": 33.02,
+    "prob": 0.989
+  },
+  {
+    "word": "most",
+    "start": 33.26,
+    "end": 33.54,
+    "prob": 0.991
+  },
+  {
+    "word": "corporate",
+    "start": 33.54,
+    "end": 33.9,
+    "prob": 0.997
+  },
+  {
+    "word": "labor",
+    "start": 33.9,
+    "end": 34.22,
+    "prob": 0.93
+  },
+  {
+    "word": "wasn't",
+    "start": 34.22,
+    "end": 34.76,
+    "prob": 0.987
+  },
+  {
+    "word": "actually",
+    "start": 34.76,
+    "end": 35.0,
+    "prob": 0.992
+  },
+  {
+    "word": "work.",
+    "start": 35.0,
+    "end": 35.24,
+    "prob": 0.991
+  },
+  {
+    "word": "It",
+    "start": 35.76,
+    "end": 35.82,
+    "prob": 0.994
+  },
+  {
+    "word": "was",
+    "start": 35.82,
+    "end": 35.92,
+    "prob": 0.999
+  },
+  {
+    "word": "coordination,",
+    "start": 35.92,
+    "end": 36.3,
+    "prob": 0.967
+  },
+  {
+    "word": "meetings",
+    "start": 36.96,
+    "end": 37.1,
+    "prob": 0.994
+  },
+  {
+    "word": "to",
+    "start": 37.1,
+    "end": 37.28,
+    "prob": 0.903
+  },
+  {
+    "word": "plan",
+    "start": 37.28,
+    "end": 37.48,
+    "prob": 0.984
+  },
+  {
+    "word": "meetings,",
+    "start": 37.48,
+    "end": 37.82,
+    "prob": 0.995
+  },
+  {
+    "word": "status",
+    "start": 38.46,
+    "end": 38.7,
+    "prob": 0.995
+  },
+  {
+    "word": "reports",
+    "start": 38.7,
+    "end": 39.06,
+    "prob": 0.996
+  },
+  {
+    "word": "about",
+    "start": 39.06,
+    "end": 39.48,
+    "prob": 0.984
+  },
+  {
+    "word": "status",
+    "start": 39.48,
+    "end": 39.84,
+    "prob": 0.994
+  },
+  {
+    "word": "reports.",
+    "start": 39.84,
+    "end": 40.24,
+    "prob": 0.998
+  },
+  {
+    "word": "Half",
+    "start": 40.92,
+    "end": 41.06,
+    "prob": 0.99
+  },
+  {
+    "word": "the",
+    "start": 41.06,
+    "end": 41.24,
+    "prob": 0.98
+  },
+  {
+    "word": "org",
+    "start": 41.24,
+    "end": 41.42,
+    "prob": 0.926
+  },
+  {
+    "word": "chart",
+    "start": 41.42,
+    "end": 41.72,
+    "prob": 0.973
+  },
+  {
+    "word": "existed",
+    "start": 41.72,
+    "end": 42.32,
+    "prob": 0.986
+  },
+  {
+    "word": "to",
+    "start": 42.32,
+    "end": 42.64,
+    "prob": 0.996
+  },
+  {
+    "word": "manage",
+    "start": 42.64,
+    "end": 42.94,
+    "prob": 0.995
+  },
+  {
+    "word": "the",
+    "start": 42.94,
+    "end": 43.14,
+    "prob": 0.998
+  },
+  {
+    "word": "other",
+    "start": 43.14,
+    "end": 43.3,
+    "prob": 0.999
+  },
+  {
+    "word": "half.",
+    "start": 43.3,
+    "end": 43.56,
+    "prob": 0.997
+  },
+  {
+    "word": "AI",
+    "start": 44.16,
+    "end": 44.32,
+    "prob": 0.993
+  },
+  {
+    "word": "doesn't",
+    "start": 44.32,
+    "end": 44.66,
+    "prob": 0.997
+  },
+  {
+    "word": "replace",
+    "start": 44.66,
+    "end": 44.94,
+    "prob": 0.999
+  },
+  {
+    "word": "the",
+    "start": 44.94,
+    "end": 45.18,
+    "prob": 0.99
+  },
+  {
+    "word": "work.",
+    "start": 45.18,
+    "end": 45.38,
+    "prob": 0.998
+  },
+  {
+    "word": "It",
+    "start": 45.86,
+    "end": 45.96,
+    "prob": 0.993
+  },
+  {
+    "word": "kills",
+    "start": 45.96,
+    "end": 46.16,
+    "prob": 0.996
+  },
+  {
+    "word": "the",
+    "start": 46.16,
+    "end": 46.32,
+    "prob": 0.998
+  },
+  {
+    "word": "glue.",
+    "start": 46.32,
+    "end": 46.5,
+    "prob": 0.967
+  },
+  {
+    "word": "One",
+    "start": 47.04,
+    "end": 47.16,
+    "prob": 0.985
+  },
+  {
+    "word": "engineer",
+    "start": 47.16,
+    "end": 47.54,
+    "prob": 0.994
+  },
+  {
+    "word": "can",
+    "start": 47.54,
+    "end": 47.76,
+    "prob": 0.997
+  },
+  {
+    "word": "now",
+    "start": 47.76,
+    "end": 47.98,
+    "prob": 0.991
+  },
+  {
+    "word": "deploy",
+    "start": 47.98,
+    "end": 48.3,
+    "prob": 0.999
+  },
+  {
+    "word": "agents",
+    "start": 48.3,
+    "end": 48.66,
+    "prob": 0.996
+  },
+  {
+    "word": "that",
+    "start": 48.66,
+    "end": 48.88,
+    "prob": 0.995
+  },
+  {
+    "word": "write",
+    "start": 48.88,
+    "end": 49.12,
+    "prob": 0.949
+  },
+  {
+    "word": "code,",
+    "start": 49.12,
+    "end": 49.48,
+    "prob": 0.998
+  },
+  {
+    "word": "run",
+    "start": 50.02,
+    "end": 50.16,
+    "prob": 0.991
+  },
+  {
+    "word": "support",
+    "start": 50.16,
+    "end": 50.5,
+    "prob": 0.993
+  },
+  {
+    "word": "around",
+    "start": 50.5,
+    "end": 50.76,
+    "prob": 0.998
+  },
+  {
+    "word": "the",
+    "start": 50.76,
+    "end": 50.88,
+    "prob": 0.986
+  },
+  {
+    "word": "clock,",
+    "start": 50.88,
+    "end": 51.12,
+    "prob": 0.997
+  },
+  {
+    "word": "manage",
+    "start": 51.12,
+    "end": 51.78,
+    "prob": 0.006
+  },
+  {
+    "word": "compliance,",
+    "start": 51.78,
+    "end": 52.26,
+    "prob": 0.983
+  },
+  {
+    "word": "and",
+    "start": 52.56,
+    "end": 52.62,
+    "prob": 0.94
+  },
+  {
+    "word": "handle",
+    "start": 52.62,
+    "end": 52.9,
+    "prob": 0.911
+  },
+  {
+    "word": "ad",
+    "start": 52.9,
+    "end": 53.06,
+    "prob": 0.586
+  },
+  {
+    "word": "spend",
+    "start": 53.06,
+    "end": 53.36,
+    "prob": 0.806
+  },
+  {
+    "word": "without",
+    "start": 53.36,
+    "end": 54.04,
+    "prob": 0.821
+  },
+  {
+    "word": "a",
+    "start": 54.04,
+    "end": 54.18,
+    "prob": 0.988
+  },
+  {
+    "word": "single",
+    "start": 54.18,
+    "end": 54.44,
+    "prob": 0.999
+  },
+  {
+    "word": "stand",
+    "start": 54.44,
+    "end": 54.74,
+    "prob": 0.955
+  },
+  {
+    "word": "-up",
+    "start": 54.74,
+    "end": 54.88,
+    "prob": 0.735
+  },
+  {
+    "word": "meeting.",
+    "start": 54.88,
+    "end": 55.12,
+    "prob": 0.994
+  },
+  {
+    "word": "The",
+    "start": 55.56,
+    "end": 55.64,
+    "prob": 0.896
+  },
+  {
+    "word": "industrial",
+    "start": 55.64,
+    "end": 56.02,
+    "prob": 0.457
+  },
+  {
+    "word": "revolution",
+    "start": 56.02,
+    "end": 56.6,
+    "prob": 0.993
+  },
+  {
+    "word": "put",
+    "start": 56.6,
+    "end": 57.0,
+    "prob": 0.969
+  },
+  {
+    "word": "10",
+    "start": 57.0,
+    "end": 57.34,
+    "prob": 0.913
+  },
+  {
+    "word": ",000",
+    "start": 57.34,
+    "end": 57.8,
+    "prob": 0.977
+  },
+  {
+    "word": "people",
+    "start": 57.8,
+    "end": 58.06,
+    "prob": 0.997
+  },
+  {
+    "word": "under",
+    "start": 58.06,
+    "end": 58.46,
+    "prob": 0.98
+  },
+  {
+    "word": "one",
+    "start": 58.46,
+    "end": 58.64,
+    "prob": 0.923
+  },
+  {
+    "word": "roof.",
+    "start": 58.64,
+    "end": 58.88,
+    "prob": 0.998
+  },
+  {
+    "word": "The",
+    "start": 59.44,
+    "end": 59.56,
+    "prob": 0.986
+  },
+  {
+    "word": "AI",
+    "start": 59.56,
+    "end": 59.88,
+    "prob": 0.919
+  },
+  {
+    "word": "era",
+    "start": 59.88,
+    "end": 60.4,
+    "prob": 0.794
+  },
+  {
+    "word": "gives",
+    "start": 60.4,
+    "end": 60.62,
+    "prob": 0.988
+  },
+  {
+    "word": "one",
+    "start": 60.62,
+    "end": 60.9,
+    "prob": 0.943
+  },
+  {
+    "word": "person",
+    "start": 60.9,
+    "end": 61.3,
+    "prob": 0.995
+  },
+  {
+    "word": "the",
+    "start": 61.3,
+    "end": 61.46,
+    "prob": 0.996
+  },
+  {
+    "word": "output",
+    "start": 61.46,
+    "end": 61.76,
+    "prob": 0.997
+  },
+  {
+    "word": "of",
+    "start": 61.76,
+    "end": 62.16,
+    "prob": 0.995
+  },
+  {
+    "word": "all",
+    "start": 62.16,
+    "end": 62.46,
+    "prob": 0.979
+  },
+  {
+    "word": "10",
+    "start": 62.46,
+    "end": 62.8,
+    "prob": 0.844
+  },
+  {
+    "word": ",000.",
+    "start": 62.8,
+    "end": 63.28,
+    "prob": 0.982
+  },
+  {
+    "word": "Jensen",
+    "start": 63.68,
+    "end": 63.94,
+    "prob": 0.536
+  },
+  {
+    "word": "Huang",
+    "start": 63.94,
+    "end": 64.22,
+    "prob": 0.926
+  },
+  {
+    "word": "just",
+    "start": 64.22,
+    "end": 64.66,
+    "prob": 0.841
+  },
+  {
+    "word": "spent",
+    "start": 64.66,
+    "end": 64.9,
+    "prob": 0.998
+  },
+  {
+    "word": "13",
+    "start": 64.9,
+    "end": 65.4,
+    "prob": 0.173
+  },
+  {
+    "word": "billion",
+    "start": 65.4,
+    "end": 65.74,
+    "prob": 0.994
+  },
+  {
+    "word": "dollars",
+    "start": 65.74,
+    "end": 66.16,
+    "prob": 0.983
+  },
+  {
+    "word": "to",
+    "start": 66.16,
+    "end": 66.64,
+    "prob": 0.99
+  },
+  {
+    "word": "own",
+    "start": 66.64,
+    "end": 66.88,
+    "prob": 0.988
+  },
+  {
+    "word": "the",
+    "start": 66.88,
+    "end": 67.0,
+    "prob": 0.991
+  },
+  {
+    "word": "platform",
+    "start": 67.0,
+    "end": 67.44,
+    "prob": 0.998
+  },
+  {
+    "word": "where",
+    "start": 67.44,
+    "end": 67.8,
+    "prob": 0.884
+  },
+  {
+    "word": "those",
+    "start": 67.8,
+    "end": 68.0,
+    "prob": 0.997
+  },
+  {
+    "word": "one",
+    "start": 68.0,
+    "end": 68.28,
+    "prob": 0.944
+  },
+  {
+    "word": "person",
+    "start": 68.28,
+    "end": 68.64,
+    "prob": 0.868
+  },
+  {
+    "word": "armies",
+    "start": 68.64,
+    "end": 68.98,
+    "prob": 0.897
+  },
+  {
+    "word": "get",
+    "start": 68.98,
+    "end": 69.32,
+    "prob": 0.992
+  },
+  {
+    "word": "their",
+    "start": 69.32,
+    "end": 69.46,
+    "prob": 0.999
+  },
+  {
+    "word": "models.",
+    "start": 69.46,
+    "end": 69.74,
+    "prob": 0.993
+  },
+  {
+    "word": "Sam",
+    "start": 70.42,
+    "end": 70.62,
+    "prob": 0.984
+  },
+  {
+    "word": "Altman",
+    "start": 70.62,
+    "end": 70.94,
+    "prob": 0.931
+  },
+  {
+    "word": "is",
+    "start": 70.94,
+    "end": 71.28,
+    "prob": 0.994
+  },
+  {
+    "word": "betting",
+    "start": 71.28,
+    "end": 71.58,
+    "prob": 0.947
+  },
+  {
+    "word": "his",
+    "start": 71.58,
+    "end": 71.8,
+    "prob": 0.997
+  },
+  {
+    "word": "entire",
+    "start": 71.8,
+    "end": 72.16,
+    "prob": 0.999
+  },
+  {
+    "word": "company",
+    "start": 72.16,
+    "end": 72.64,
+    "prob": 0.997
+  },
+  {
+    "word": "on",
+    "start": 72.64,
+    "end": 73.04,
+    "prob": 0.996
+  },
+  {
+    "word": "this",
+    "start": 73.04,
+    "end": 73.2,
+    "prob": 0.986
+  },
+  {
+    "word": "future.",
+    "start": 73.2,
+    "end": 73.58,
+    "prob": 0.995
+  },
+  {
+    "word": "The",
+    "start": 74.08,
+    "end": 74.16,
+    "prob": 0.995
+  },
+  {
+    "word": "question",
+    "start": 74.16,
+    "end": 74.44,
+    "prob": 0.999
+  },
+  {
+    "word": "isn't",
+    "start": 74.44,
+    "end": 74.86,
+    "prob": 0.96
+  },
+  {
+    "word": "whether",
+    "start": 74.86,
+    "end": 75.04,
+    "prob": 0.988
+  },
+  {
+    "word": "the",
+    "start": 75.04,
+    "end": 75.2,
+    "prob": 0.997
+  },
+  {
+    "word": "one",
+    "start": 75.2,
+    "end": 75.44,
+    "prob": 0.99
+  },
+  {
+    "word": "person",
+    "start": 75.44,
+    "end": 75.8,
+    "prob": 0.942
+  },
+  {
+    "word": "company",
+    "start": 75.8,
+    "end": 76.16,
+    "prob": 0.997
+  },
+  {
+    "word": "is",
+    "start": 76.16,
+    "end": 76.34,
+    "prob": 0.999
+  },
+  {
+    "word": "coming.",
+    "start": 76.34,
+    "end": 76.58,
+    "prob": 0.999
+  },
+  {
+    "word": "It's",
+    "start": 77.02,
+    "end": 77.14,
+    "prob": 0.978
+  },
+  {
+    "word": "whether",
+    "start": 77.14,
+    "end": 77.28,
+    "prob": 0.994
+  },
+  {
+    "word": "you're",
+    "start": 77.28,
+    "end": 77.42,
+    "prob": 0.993
+  },
+  {
+    "word": "building",
+    "start": 77.42,
+    "end": 77.68,
+    "prob": 0.999
+  },
+  {
+    "word": "one",
+    "start": 77.68,
+    "end": 78.0,
+    "prob": 0.996
+  },
+  {
+    "word": "or",
+    "start": 78.0,
+    "end": 78.56,
+    "prob": 0.635
+  },
+  {
+    "word": "about",
+    "start": 78.56,
+    "end": 78.74,
+    "prob": 0.992
+  },
+  {
+    "word": "to",
+    "start": 78.74,
+    "end": 78.82,
+    "prob": 0.981
+  },
+  {
+    "word": "be",
+    "start": 78.82,
+    "end": 78.88,
+    "prob": 0.992
+  },
+  {
+    "word": "replaced",
+    "start": 78.88,
+    "end": 79.14,
+    "prob": 0.994
+  },
+  {
+    "word": "by",
+    "start": 79.14,
+    "end": 79.36,
+    "prob": 0.999
+  },
+  {
+    "word": "one.",
+    "start": 79.36,
+    "end": 79.62,
+    "prob": 0.998
+  }
+]

@@ -1,0 +1,406 @@
+<!-- LexIntent Instagram Dossier -->
+<title>LexIntent Instagram Dossier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  :root {
+    --paper: #f8f6f2;
+    --paper-2: #f2efe8;
+    --ink: #111111;
+    --ink-soft: #4a4741;
+    --burgundy: #6a0f1a;
+    --grey: #8a8a8a;
+    --divider: #d8d3ca;
+    --stamp: rgba(106, 15, 26, 0.14);
+
+    --f-head: "Newsreader", Georgia, "Times New Roman", serif;
+    --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+    --measure: 68ch;
+    --s-1: clamp(0.78rem, 0.74rem + 0.18vw, 0.86rem);
+    --s0: clamp(1rem, 0.95rem + 0.22vw, 1.1rem);
+    --s1: clamp(1.18rem, 1.05rem + 0.5vw, 1.4rem);
+    --s2: clamp(1.55rem, 1.3rem + 1vw, 2.1rem);
+    --s3: clamp(2.1rem, 1.6rem + 2.2vw, 3.4rem);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #14130f;
+      --paper-2: #1b1a15;
+      --ink: #ede8dd;
+      --ink-soft: #a8a297;
+      --burgundy: #c14b52;
+      --grey: #7f7a70;
+      --divider: #38342c;
+      --stamp: rgba(193, 75, 82, 0.16);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #14130f;
+    --paper-2: #1b1a15;
+    --ink: #ede8dd;
+    --ink-soft: #a8a297;
+    --burgundy: #c14b52;
+    --grey: #7f7a70;
+    --divider: #38342c;
+    --stamp: rgba(193, 75, 82, 0.16);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: var(--s0);
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 62rem; margin: 0 auto; padding: clamp(1.5rem, 1rem + 3vw, 4rem) clamp(1.1rem, 0.5rem + 3vw, 3rem) 6rem; }
+  .col { max-width: var(--measure); }
+  @media (min-width: 66rem) {
+    .doc { display: grid; grid-template-columns: 3.2rem minmax(0, 1fr); column-gap: 2.4rem; }
+    .rail { position: relative; }
+    .rail-label {
+      position: sticky; top: 2rem;
+      writing-mode: sideways-lr;
+      font-family: var(--f-body); font-weight: 600;
+      font-size: var(--s-1); letter-spacing: 0.34em; text-transform: uppercase;
+      color: var(--grey); white-space: nowrap;
+    }
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { position: relative; border-bottom: 2px solid var(--ink); padding-bottom: 1rem; margin-bottom: 2.4rem; }
+  .masthead::before {
+    content: "CONFIDENTIAL · INTERNAL";
+    position: absolute; right: -0.5rem; top: -0.4rem;
+    font-family: var(--f-body); font-weight: 700; font-size: clamp(0.7rem, 2.6vw, 1.15rem);
+    letter-spacing: 0.3em; color: var(--stamp);
+    transform: rotate(-4deg); pointer-events: none; user-select: none;
+  }
+  .rule-top { border-top: 1px solid var(--divider); border-bottom: 1px solid var(--divider); padding: 0.35rem 0; margin-bottom: 0.9rem; }
+  .rule-top span {
+    font-family: var(--f-body); font-weight: 600; font-size: var(--s-1);
+    letter-spacing: 0.28em; text-transform: uppercase; color: var(--grey);
+  }
+  .title {
+    font-family: var(--f-head); font-weight: 600; font-size: var(--s3);
+    line-height: 1.02; letter-spacing: 0.01em; text-transform: uppercase;
+    margin: 0.2rem 0 0.5rem; text-wrap: balance;
+  }
+  .dateline {
+    font-family: var(--f-body); font-size: var(--s-1); color: var(--ink-soft);
+    display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem;
+  }
+  .dateline b { color: var(--ink); font-weight: 600; }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 3.4rem; }
+  .kicker {
+    font-family: var(--f-body); font-weight: 600; font-size: var(--s-1);
+    letter-spacing: 0.24em; text-transform: uppercase; color: var(--burgundy);
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    font-family: var(--f-head); font-weight: 500; font-size: var(--s2);
+    line-height: 1.15; letter-spacing: -0.005em; margin: 0 0 1rem;
+    padding-bottom: 0.5rem; border-bottom: 1px solid var(--ink); text-wrap: balance;
+  }
+  h3 {
+    font-family: var(--f-body); font-weight: 700; font-size: var(--s0);
+    letter-spacing: 0.02em; text-transform: uppercase; color: var(--ink-soft);
+    margin: 2rem 0 0.6rem;
+  }
+  p { margin: 0 0 1rem; max-width: var(--measure); }
+  .lede { font-family: var(--f-head); font-size: var(--s1); line-height: 1.5; color: var(--ink); }
+  a { color: var(--burgundy); text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
+  a:focus-visible { outline: 2px solid var(--burgundy); outline-offset: 2px; }
+  strong { font-weight: 700; }
+  .fig { font-family: var(--f-head); font-weight: 600; color: var(--burgundy); font-variant-numeric: tabular-nums; }
+
+  ul, ol { margin: 0 0 1.1rem; padding-left: 1.3rem; }
+  li { margin-bottom: 0.45rem; max-width: var(--measure); }
+  li::marker { color: var(--grey); }
+  ol.exhibits { list-style: none; padding-left: 0; counter-reset: ex; }
+  ol.exhibits > li {
+    counter-increment: ex; display: grid; grid-template-columns: 3.4rem 1fr; gap: 0.9rem;
+    padding: 0.8rem 0; border-bottom: 1px solid var(--divider); align-items: baseline;
+  }
+  ol.exhibits > li::before {
+    content: counter(ex, decimal-leading-zero);
+    font-family: var(--f-head); font-weight: 600; color: var(--burgundy);
+    font-variant-numeric: tabular-nums;
+  }
+  ol.exhibits b { font-weight: 700; }
+  ol.exhibits .q {
+    display: block; font-family: var(--f-head); font-style: italic; color: var(--burgundy);
+    margin: 0.3rem 0; font-size: var(--s-1); line-height: 1.45;
+  }
+  ol.exhibits .m { display: block; color: var(--ink-soft); font-size: var(--s-1); }
+
+  /* ---------- margin annotation ("red pen") ---------- */
+  .pen {
+    border-left: 2px solid var(--burgundy); background: var(--paper-2);
+    padding: 0.9rem 1.1rem; margin: 1.4rem 0;
+  }
+  .pen .tag {
+    font-family: var(--f-head); font-style: italic; font-weight: 500;
+    color: var(--burgundy); font-size: var(--s-1); letter-spacing: 0.02em;
+    display: block; margin-bottom: 0.35rem;
+  }
+  .pen p { margin: 0; }
+
+  /* ---------- tables ---------- */
+  .scroll { overflow-x: auto; margin: 1.3rem 0 1.8rem; border: 1px solid var(--divider); }
+  table { border-collapse: collapse; width: 100%; min-width: 40rem; font-size: var(--s-1); }
+  caption {
+    text-align: left; font-family: var(--f-body); font-weight: 600; font-size: var(--s-1);
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--grey);
+    padding: 0.65rem 0.85rem; background: var(--paper-2); border-bottom: 1px solid var(--divider);
+  }
+  th, td { text-align: left; padding: 0.6rem 0.85rem; vertical-align: top; border-bottom: 1px solid var(--divider); }
+  thead th {
+    font-family: var(--f-body); font-weight: 600; font-size: var(--s-1);
+    letter-spacing: 0.04em; color: var(--ink-soft); background: var(--paper-2);
+    position: sticky; top: 0;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  td .num { font-variant-numeric: tabular-nums; font-family: var(--f-head); }
+  .verdict { font-weight: 700; }
+  .verdict.gap { color: var(--burgundy); }
+
+  .status {
+    display: inline-block; font-family: var(--f-body); font-weight: 700; font-size: 0.68rem;
+    letter-spacing: 0.1em; text-transform: uppercase; padding: 0.12rem 0.45rem;
+    border: 1px solid currentColor; white-space: nowrap;
+  }
+  .status.done { color: var(--burgundy); }
+  .status.next { color: var(--ink-soft); }
+  .status.blocked { color: var(--burgundy); background: var(--stamp); }
+
+  .sources { margin-top: 3.5rem; border-top: 2px solid var(--ink); padding-top: 1.1rem; }
+  .sources ol { padding-left: 1.4rem; }
+  .sources li { font-size: var(--s-1); color: var(--ink-soft); word-break: break-word; }
+  .note { font-size: var(--s-1); color: var(--grey); font-style: italic; border-top: 1px solid var(--divider); padding-top: 0.9rem; margin-top: 2rem; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .masthead { animation: rise 0.5s ease-out both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="rule-top"><span>LexIntent Intelligence &nbsp;—&nbsp; Growth Team Field Report</span></div>
+    <h1 class="title">Instagram Dossier 01</h1>
+    <div class="dateline">
+      <span><b>Filed</b> 31 Aug 2026</span>
+      <span><b>Beat</b> Law-career Instagram · India</span>
+      <span><b>Method</b> Live account inspection (authenticated) + Exa/web + prior reel teardowns</span>
+      <span><b>Covers</b> Phases 1–2 · build sequence for 3–10</span>
+    </div>
+  </header>
+
+  <div class="doc">
+    <div class="rail"><div class="rail-label">Dossier 01</div></div>
+    <article class="body">
+
+      <section aria-labelledby="s-read">
+        <p class="kicker">Executive read</p>
+        <h2 id="s-read">Three findings that set the strategy</h2>
+        <p class="lede">Law-career Instagram is <strong>retention-poor</strong>. The largest dedicated account posts multiple times a day and still draws single- and double-digit likes on most posts. The account that <em>is</em> working — @traceyourcase, 90k, a founder-creator with LexIntent&rsquo;s exact positioning — got there on <span class="fig">291</span> posts, not thousands. Lean and engineered beats high-volume and generic.</p>
+        <p>Second: the one growth mechanic working in this niche right now is <strong>“comment [keyword] → I DM you a resource.”</strong> It is not subtle and it is not new, but it is producing <span class="fig">1,000–5,800</span> comments on single reels while the same accounts’ likes sit in the hundreds. Even the AI-editorial reference creators run the identical loop.</p>
+        <p>Third: the audience’s fear is <strong>specific, verbatim, and repeats</strong> across five years of forum threads. It is not “career anxiety.” It is “my peers with worse CVs are getting Tier-1 and I can’t get past stage one.” That sentence is a content series.</p>
+        <div class="pen">
+          <span class="tag">Margin note —</span>
+          <p>The lane LexIntent wants is empty. Nobody is producing <em>Economist-grade motion</em> for the law-student CV grind. Retention-first editorial reels + the comment-to-DM loop + these exact fears = the opening.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="s-db">
+        <p class="kicker">Phase 1 · Instagram intelligence</p>
+        <h2 id="s-db">Creator database — observed, not assumed</h2>
+        <p>Pulled live via authenticated inspection on 31 Aug 2026. Engagement figures are from the most recent ~10 posts on each account.</p>
+        <div class="scroll">
+          <table>
+            <caption>Law &amp; career accounts</caption>
+            <thead>
+              <tr><th>Account</th><th>Followers</th><th>Posts</th><th>Format</th><th>Engagement (recent)</th><th>What we take</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>@lawctopus.official</strong><br>verified · “Home of Legal Careers”</td>
+                <td><span class="num">100,022</span></td>
+                <td><span class="num">3,509</span></td>
+                <td>Carousels + relatable memes, multi-post/day</td>
+                <td>Likes <span class="num">4–217</span> · comments <span class="num">0–21</span>. Weak for 100k.</td>
+                <td class="verdict gap">The adjacency to beat. Proves info-dump ≠ reach.</td>
+              </tr>
+              <tr>
+                <td><strong>@traceyourcase</strong><br>Harshita Agarwal · verified · <span style="color:var(--burgundy)">founder-creator, legal-tech</span></td>
+                <td><span class="num">90,460</span></td>
+                <td><span class="num">291</span></td>
+                <td>Talking-head + carousels: “the reality of a legal career nobody talks about” · runs her own product</td>
+                <td>Likes <span class="num">300–3,616</span> · comments <span class="num">11–2,080</span>. Top post: “comment <em>judge</em> → I DM you” = <span class="fig">2,080</span> comments.</td>
+                <td class="verdict gap">The closest existing model. Same positioning as LexIntent; wins on lean posting, loses on production.</td>
+              </tr>
+              <tr>
+                <td><strong>@yourinstalawyer</strong><br>verified · Forbes Top 100 digital</td>
+                <td><span class="num">257,046</span></td>
+                <td><span class="num">727</span></td>
+                <td>Consumer / women’s-rights law reels</td>
+                <td>High — but a different audience</td>
+                <td>Proof that law reels <em>can</em> scale to 250k+. Not our topic.</td>
+              </tr>
+              <tr>
+                <td><strong>@legalshotswithvakeel</strong><br>“Queen of Law Memes,” law students</td>
+                <td><span class="num">44,643</span></td>
+                <td><span class="num">1,502</span></td>
+                <td>Law memes + “comment [X]” lead-magnet reels</td>
+                <td>Comments <span class="num">1,341</span> / <span class="num">1,127</span> / <span class="num">5,813</span> on single reels vs 300–1,300 likes</td>
+                <td class="verdict gap">The comment-magnet mechanic, working <em>now</em>, in our exact niche.</td>
+              </tr>
+              <tr>
+                <td><strong>@gregisenberg</strong><br>verified · AI-editorial reference</td>
+                <td><span class="num">146,694</span></td>
+                <td><span class="num">652</span></td>
+                <td>Repurposed X (tweet screenshots) + “comment [X], follow, I’ll DM you”</td>
+                <td>One IG hit <span class="num">124,562</span> likes (text-on-image). Video reels <span class="num">136–603</span>.</td>
+                <td>Even the reference creator leans on the same DM-magnet loop for IG.</td>
+              </tr>
+              <tr>
+                <td>@law_school_india · @nlsirev · @lawschoolindia · @clatscholars · @bluelearn.in</td>
+                <td>small</td>
+                <td>—</td>
+                <td>CLAT / NLU-life niche</td>
+                <td>Low, unverified</td>
+                <td>Fragmented. No editorial voice. Comment sections still worth mining.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pen wedge">
+          <span class="tag">The closest existing model — @traceyourcase —</span>
+          <p>A founder-creator running the exact positioning LexIntent wants (“the reality of a legal career nobody talks about,” legal-tech, product promoted as the conclusion), at <span class="fig">90k</span> verified. Three things she proves: (1) <strong>the positioning works</strong> — engaged 90k on career-reality content; (2) <strong>lean beats volume</strong> — <span class="fig">291</span> posts for 90k vs @lawctopus&rsquo;s <span class="fig">3,509</span> for 100k; (3) <strong>comment-to-DM is the third confirmed instance</strong> — “comment <em>judge</em>” pulled <span class="fig">2,080</span> comments on a plain photo. Her weakness is format: talking-head and carousels, no editorial motion. She has the position; LexIntent out-executes on production.</p>
+        </div>
+        <div class="pen">
+          <span class="tag">On the “AI documentary creator” reference set —</span>
+          <p>Rowan Cheung has <span class="fig">488k</span> IG followers but only <span class="fig">23</span> posts; Matt Wolfe and The Rundown live on YouTube and X. The documentary format’s real evidence base is the <strong>reel teardowns already on file</strong> — Chatbase, NotebookLM, metromedia.house, and the Greg Isenberg value-essay reel — analysed frame-by-frame and logged in project memory. Phase 3 builds on those, not on thin IG accounts.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="s-mech">
+        <p class="kicker">Phase 1 · The mechanic</p>
+        <h2 id="s-mech">One growth loop is doing all the work</h2>
+        <p><strong>Comment-to-DM.</strong> A reel ends with “comment <em>BANK</em> and I’ll send you the list.” Every comment is a reply notification, a re-surface, and a DM opened. Three independent confirmations in this niche: @legalshotswithvakeel runs <span class="fig">5,813</span> comments through it on a single reel; @gregisenberg runs the identical structure with “comment <em>cloudflare</em>, follow me”; @traceyourcase — the closest model to LexIntent — pulled <span class="fig">2,080</span> comments with “comment <em>judge</em>” on a plain photo, no reel required.</p>
+        <p>For LexIntent this is the <strong>primary CTA</strong>, and it fits the brand’s “make people want the next edition” rule: the resource is always a <em>teardown, checklist, or the next Dispatch</em> — never a pitch. The product enters only when someone replies to the DM.</p>
+      </section>
+
+      <section aria-labelledby="s-fear">
+        <p class="kicker">Phase 2 · Comment mining</p>
+        <h2 id="s-fear">Audience fears — ranked, with the words they use</h2>
+        <p>Instagram comments are not machine-readable through the current toolset, so this draws on <strong>Legally India</strong> convo threads (each titled by the fear, with verbatim member posts), LinkedIn, and press — triangulated against the earlier Reddit/Quora pass in project memory. Ranked by how often the theme recurs.</p>
+        <ol class="exhibits">
+          <li>
+            <div>
+              <b>“Peers with worse CVs are getting Tier-1. Mine gets rejected at stage one.”</b>
+              <span class="q">“my peers are getting in tier 1 firms with a resume worse than mine… I just want a chance to prove that I am a perfect candidate but the HRs keep rejecting my application.” — Legally India, thread #185010</span>
+              <span class="m">Emotion: injustice + helplessness. → <strong>Resume Autopsy</strong> / <strong>Hidden Signal</strong> series.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>“No contacts. The placement cell is a nightmare.”</b>
+              <span class="q">“I feel anxious about the future that I’ll get unemployed because I have no contact and our college placement cell is a nightmare.” — same thread</span>
+              <span class="m">Emotion: isolation, fixed fate. → <strong>Recruiter’s Desk</strong> — “how the shortlist actually gets made.”</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>Non-NLU disadvantage</b>
+              <span class="q">Recurring: “how to get an assessment internship at a Tier-1 firm from a non-NLU” — multiple Legally India threads.</span>
+              <span class="m">Emotion: the ceiling is set by the college name. → counter-evidence content; case files of non-NLU callbacks.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>Corporate vs litigation paralysis</b>
+              <span class="q">Three separate 2026 career-guide pages (Lawsikho, iPleaders, Lawspot) rank for “litigation or corporate law” — sustained, unresolved demand.</span>
+              <span class="m">Emotion: fear of the irreversible first move. → the <strong>Corporate vs Litigation</strong> reel already drafted.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>“I wish someone had told me before my first internship.”</b>
+              <span class="q">LinkedIn posts phrased in exactly these words, high engagement.</span>
+              <span class="m">Emotion: preventable regret. → insider-knowledge series, first-person framing.</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <b>The employability gap (macro proof)</b>
+              <span class="q">“India’s legal sector is booming — so why are 98% of law grads left out of the top jobs?” — Mint, Jun 2026</span>
+              <span class="m">Not a fear, a <strong>hook stat</strong>. Opens any “the system, explained” reel.</span>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="s-seq">
+        <p class="kicker">Build sequence</p>
+        <h2 id="s-seq">The 10 phases, ordered — and where each one stands</h2>
+        <p>Each phase depends on the one before it. Formats can’t be designed until the patterns are observed; scripts can’t be written until the formats exist. This is the order of work, not a menu.</p>
+        <ol class="exhibits">
+          <li><div><b>Phase 1–2 · Research</b> &nbsp;<span class="status done">Done — this dossier (rev. 1 Sep: +@traceyourcase)</span><span class="m">Creator database, the comment-to-DM finding (now 3 confirmations), ranked fears with verbatim quotes, the closest-model read.</span></div></li>
+          <li><div><b>Phase 3 · Format database (50)</b> &nbsp;<span class="status done">Done — <code>format-codex.html</code></span><span class="m">8 families, 50 codes. Each: name · inspiration · trigger · fear · edit complexity · OpenChatCut fit · minutes-to-produce.</span></div></li>
+          <li><div><b>Phase 4 · OpenChatCut factory</b> &nbsp;<span class="status blocked">Designed · render-blocked</span><span class="m">Reusable scenes exist — the “Archive Collage” kit and the LexIntent Edition 04 templates (masthead, red-pen, score card, paper transitions). <strong>Rendering is blocked:</strong> the 16 GB laptop sits at ~2.8 GB free RAM; the OpenChatCut dev server and the HyperFrames renderer both crash out of memory mid-render. Needs the machine freed (close browser tabs / restart) before the factory can ship a finished MP4.</span></div></li>
+          <li><div><b>Phase 5 · Repurpose engine</b> &nbsp;<span class="status next">After 3</span><span class="m">One insight → reel + carousel + story + LinkedIn + X thread + email line. A mapping table, not new writing.</span></div></li>
+          <li><div><b>Phase 6 · Script engine (100)</b> &nbsp;<span class="status done">Batch 01 (20) done — <code>script-engine.html</code></span><span class="m">Each: 3 hooks · timecoded script · shot list · OpenChatCut motion notes · type · sound · soft CTA · 8-metric rubric. Batches 02–05 on request.</span></div></li>
+          <li><div><b>Phase 7 · Pillars</b> &nbsp;<span class="status next">With 6</span><span class="m">Recruiter’s Desk · Resume Autopsy · Case File · Law Signals · AI Dispatch — each with intro/outro/motion/music/thumbnail/cadence so the brand reads in three frames.</span></div></li>
+          <li><div><b>Phase 8 · 30-day calendar</b> &nbsp;<span class="status next">After 6–7</span><span class="m">5 reels + 3 stories/day, each day justified — curiosity (D3), trust (D7), authority (D14), social proof (D21), launch push (D30).</span></div></li>
+          <li><div><b>Phase 9 · Performance dashboard</b> &nbsp;<span class="status next">Ship with D1</span><span class="m">Retention · saves · shares · comments · follows · profile visits — each with the action it triggers (low retention → rewrite hook; high saves → double down).</span></div></li>
+          <li><div><b>Phase 10 · Iteration loop</b> &nbsp;<span class="status next">Nightly, from D1</span><span class="m">Every evening: best reel · weakest reel · recurring comments → auto-generate tomorrow’s fixes and follow-up hooks. <strong>Add:</strong> a weekly @traceyourcase check — her outliers and product-launch beats are the closest available signal.</span></div></li>
+        </ol>
+        <div class="pen">
+          <span class="tag">Plan impact — what @traceyourcase changes —</span>
+          <p><strong>Phase 3 (Codex):</strong> add one format — <em>Law Signals / news-jack</em> — a reactive reel on a legal-hiring or law-school story of the week (her NALSAR/CJI carousel was her top post at <span class="fig">3,616</span> likes). <strong>Phase 7 (Pillars):</strong> keep <em>Law Signals</em> as a full column, not an occasional format. <strong>Phase 8 (Calendar):</strong> the 5-a-day target stands, but every slot must clear the retention gate — @traceyourcase reached 90k on ~1 post/3 days; volume without engineering is @lawctopus. <strong>Phase 10:</strong> her account is the weekly benchmark.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="s-filter">
+        <p class="kicker">The gate</p>
+        <h2 id="s-filter">Every reel clears three filters or it doesn’t ship</h2>
+        <ol>
+          <li><strong>Would someone stop scrolling inside three seconds?</strong> — the hook creates an information gap, not a topic announcement.</li>
+          <li><strong>Can it be produced in under 20 minutes</strong> once the templates exist? — if it needs a new animation, it belongs in Phase 4, not the calendar.</li>
+          <li><strong>Does it read as investigative editorial</strong> — a leaked case file — rather than another AI page? Newspaper type, red-pen marks, paper motion, evidence before opinion.</li>
+        </ol>
+        <div class="pen">
+          <span class="tag">Filed —</span>
+          <p>Next action: Phase 3, the 50-format database. It needs no new machine resources and unblocks the script engine. The render blocker on Phase 4 is the only hard dependency on the laptop being freed.</p>
+        </div>
+      </section>
+
+      <section class="sources" aria-labelledby="s-src">
+        <h2 id="s-src" style="border:0;padding:0;font-size:var(--s1)">Sources &amp; method</h2>
+        <ol>
+          <li>Instagram — authenticated live inspection, 31 Aug – 1 Sep 2026: @lawctopus.official, @traceyourcase (Harshita Agarwal), @yourinstalawyer, @legalshotswithvakeel, @gregisenberg, @rowancheung; account search for “law school india / CLAT / NLU”.</li>
+          <li>Legally India Convos — <a href="https://www.legallyindia.com/convos/topic/185010-placement-anxiety-getting-rejections-at-1st-stage-how-do-i-even-get-my-foot-in-the-door">#185010 “Placement anxiety: getting rejections at 1st stage”</a>; <a href="https://www.legallyindia.com/convos/topic/180960-getting-law-firm-internships-current-scenario-and-anxiety">#180960 “Getting law firm internships (current scenario and anxiety)”</a>; non-NLU assessment-internship threads.</li>
+          <li>Mint — <a href="https://www.livemint.com/industry/indian-law-graduates-top-legal-firms-hiring-employability-readiness-gap-11749448302661.html">“India’s legal sector is booming — so why are 98% of law grads left out from the top jobs?”</a> (Jun 2026).</li>
+          <li>LinkedIn — recruiter/advocate posts: “I wish someone told me this before my first legal internship”; “Dear Law Students &amp; Legal Interns – this is costing you internships.”</li>
+          <li>Career guides ranking for the corporate-vs-litigation query: Lawsikho, iPleaders, Lawspot (2026).</li>
+          <li>Prior reel teardowns (project memory, via the <code>watch</code> skill): Chatbase, NotebookLM, motionbyjawad, metromedia.house, Greg Isenberg value-essay reel.</li>
+        </ol>
+        <p class="note">Tooling note — Instagram comment text is not exposed by the current no-key toolset (read commands cover profile and recent-post metadata only), so fear-mining is forum- and press-based and triangulated. If deeper first-person comment data is needed, that’s a manual export.</p>
+      </section>
+
+    </article>
+  </div>
+</div>

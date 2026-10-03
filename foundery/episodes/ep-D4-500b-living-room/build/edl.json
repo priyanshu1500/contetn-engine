@@ -1,0 +1,2472 @@
+{
+ "duration": 83.2,
+ "specks": true,
+ "shots": [
+  {
+   "id": "s1",
+   "t0": 0.0,
+   "t1": 5.08,
+   "kind": "still",
+   "src": "img/yc_2005_class_photo.jpg",
+   "fx": 0.4,
+   "fy": 0.5,
+   "push": 0.03,
+   "dir": "R",
+   "job": "hook: iconic YC 2005 class photo punch on 22yo founders"
+  },
+  {
+   "id": "s2",
+   "t0": 5.08,
+   "t1": 9.22,
+   "kind": "evidence",
+   "src": "img/flip_phone_mymobilemenu.png",
+   "scale": 1.52,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "L",
+   "source": "PRIMARY ARCHIVE \u00b7 2005 MOTOROLA FLIP PHONE STARTUP",
+   "label": [
+    5.4,
+    5.8
+   ],
+   "job": "evidence: real 2005 mobile menu app rejected by YC"
+  },
+  {
+   "id": "s3",
+   "t0": 9.22,
+   "t1": 12.52,
+   "kind": "video",
+   "src": "clips/paul_graham.mp4",
+   "from": 0.5,
+   "push": 0.02,
+   "dir": "R",
+   "whip": true,
+   "job": "Paul Graham on camera: \"Hated it and told them to go home\""
+  },
+  {
+   "id": "s4",
+   "t0": 12.52,
+   "t1": 15.74,
+   "kind": "evidence",
+   "src": "img/paul_graham_card.png",
+   "scale": 1.52,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "L",
+   "source": "PRIMARY TRANSCRIPT \u00b7 JUNE 2005 YC DIRECTIVE",
+   "label": [
+    12.8,
+    13.2
+   ],
+   "job": "evidence: Paul Graham phone call directive card"
+  },
+  {
+   "id": "s5",
+   "t0": 15.74,
+   "t1": 19.54,
+   "kind": "video",
+   "src": "clips/paul_graham.mp4",
+   "from": 4.0,
+   "push": 0.02,
+   "dir": "R",
+   "whip": true,
+   "job": "Paul Graham on camera: \"Your idea is dead. But we like you.\""
+  },
+  {
+   "id": "s6",
+   "t0": 19.54,
+   "t1": 23.92,
+   "kind": "stark",
+   "stark": {
+    "text": "\"BUILD THE FRONT PAGE OF THE INTERNET.\"",
+    "sub": "Paul Graham phone directive to Steve & Alexis (June 2005)",
+    "bg": "white",
+    "tag": "THE FOUNDATIONAL DIRECTIVE",
+    "size": 105
+   },
+   "job": "stark high-key contrast reset slide: Paul Graham quote"
+  },
+  {
+   "id": "s7",
+   "t0": 23.92,
+   "t1": 31.06,
+   "kind": "polaroid",
+   "polaroid": {
+    "src": "img/huffman_young.jpg",
+    "label": "Steve Huffman \u00b7 Age 21 (Cambridge, MA)",
+    "scale": 1.05,
+    "rot": -2.2
+   },
+   "job": "polaroid: young Steve Huffman coding in rented Cambridge apartment"
+  },
+  {
+   "id": "s8",
+   "t0": 31.06,
+   "t1": 34.9,
+   "kind": "stat",
+   "stat": {
+    "prefix": "",
+    "from": 1,
+    "to": 20,
+    "suffix": "DAYS TO CODE",
+    "roll": [
+     31.3,
+     32.6
+    ],
+    "style": "paper"
+   },
+   "job": "stat: 20 days to build Reddit v1"
+  },
+  {
+   "id": "s9",
+   "t0": 34.9,
+   "t1": 39.8,
+   "kind": "still",
+   "src": "img/huffman_young.jpg",
+   "fx": 0.5,
+   "fy": 0.5,
+   "push": 0.03,
+   "dir": "L",
+   "whip": true,
+   "job": "still: young Steve Huffman coding in Cambridge apartment"
+  },
+  {
+   "id": "s10",
+   "t0": 39.8,
+   "t1": 41.64,
+   "kind": "stark",
+   "stark": {
+    "text": "ZERO VISITORS.",
+    "sub": "Launch day reality: completely dead.",
+    "bg": "dark",
+    "tag": "THE COLD START CRISIS",
+    "size": 140
+   },
+   "job": "stark optical contrast reset slide: Zero visitors crisis"
+  },
+  {
+   "id": "s11",
+   "t0": 41.64,
+   "t1": 47.42,
+   "kind": "evidence",
+   "src": "img/ghost_profiles_card.png",
+   "scale": 1.55,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "L",
+   "source": "INTERNAL ADMIN TOOL \u00b7 FAKE USER POPULATION DATABASE",
+   "label": [
+    41.9,
+    42.3
+   ],
+   "job": "evidence: 2.5D ghost profiles admin console"
+  },
+  {
+   "id": "s12",
+   "t0": 47.42,
+   "t1": 55.98,
+   "kind": "evidence",
+   "src": "img/reddit_2005_wayback.png",
+   "scale": 1.55,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "R",
+   "source": "PRIMARY SNAPSHOT \u00b7 ARCHIVE.ORG JUNE 23, 2005",
+   "label": [
+    47.7,
+    48.1
+   ],
+   "job": "evidence: original June 2005 Reddit interface snapshot with fake debates"
+  },
+  {
+   "id": "s13",
+   "t0": 55.98,
+   "t1": 60.8,
+   "kind": "video",
+   "src": "clips/alexis_interview.mp4",
+   "from": 0.0,
+   "push": 0.025,
+   "dir": "R",
+   "whip": true,
+   "job": "Alexis Ohanian authentic interview explaining the fake user growth hack"
+  },
+  {
+   "id": "s14",
+   "t0": 60.8,
+   "t1": 65.26,
+   "kind": "evidence",
+   "src": "img/conde_nast_headline.png",
+   "scale": 1.55,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "R",
+   "source": "WIRED MAGAZINE ARCHIVE \u00b7 OCTOBER 31, 2006",
+   "label": [
+    61.1,
+    61.5
+   ],
+   "job": "evidence: Cond\u00e9 Nast $10M cash buyout headline"
+  },
+  {
+   "id": "s15",
+   "t0": 65.26,
+   "t1": 67.54,
+   "kind": "stat",
+   "stat": {
+    "prefix": "$",
+    "from": 1,
+    "to": 10,
+    "suffix": "MILLION (AGED 23)",
+    "roll": [
+     65.5,
+     66.5
+    ],
+    "style": "paper"
+   },
+   "job": "stat: $10M cash buyout valuation"
+  },
+  {
+   "id": "s16",
+   "t0": 67.54,
+   "t1": 76.0,
+   "kind": "video",
+   "src": "clips/reddit_ipo_bell.mp4",
+   "from": 0.0,
+   "push": 0.02,
+   "dir": "L",
+   "whip": true,
+   "job": "Steve Huffman ringing NYSE opening bell \u2014 $15B public titan"
+  },
+  {
+   "id": "s17",
+   "t0": 76.0,
+   "t1": 80.0,
+   "kind": "evidence",
+   "src": "img/reddit_ipo_deal_card.png",
+   "scale": 1.55,
+   "pos": [
+    350,
+    140
+   ],
+   "imgSize": [
+    760,
+    475
+   ],
+   "imgOff": [
+    0,
+    0
+   ],
+   "dir": "R",
+   "source": "NYSE: RDDT \u00b7 GOOGLE & OPENAI LICENSING DEALS",
+   "label": [
+    76.3,
+    76.7
+   ],
+   "job": "evidence: Reddit $15.4B IPO and $60M/yr AI dataset deals"
+  },
+  {
+   "id": "s18",
+   "t0": 80.0,
+   "t1": 83.2,
+   "kind": "still",
+   "src": "img/yc_2005_class_photo.jpg",
+   "fx": 0.5,
+   "fy": 0.5,
+   "push": 0.02,
+   "dir": "L",
+   "job": "close: vintage 2005 class photo pull-out fading to black"
+  }
+ ],
+ "text": [
+  {
+   "t0": 0.0,
+   "t1": 1.4,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "In",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 0.0
+    },
+    {
+     "w": "June",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 0.3
+    },
+    {
+     "w": "2005,",
+     "fontKind": "condensed",
+     "em": true,
+     "color": "#F7F5EF",
+     "box": null,
+     "t": 0.52
+    }
+   ]
+  },
+  {
+   "t0": 1.92,
+   "t1": 3.32,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "TWO 22-YEAR-OLD",
+     "fontKind": "condensed",
+     "em": true,
+     "color": "#F7F5EF",
+     "box": null,
+     "t": 1.92
+    },
+    {
+     "w": "college",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 2.86
+    },
+    {
+     "w": "grads",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 3.18
+    }
+   ]
+  },
+  {
+   "t0": 3.66,
+   "t1": 3.98,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "were",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 3.66
+    },
+    {
+     "w": "kicked",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 3.74
+    }
+   ]
+  },
+  {
+   "t0": 3.98,
+   "t1": 4.52,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "out",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 3.98
+    },
+    {
+     "w": "of",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 4.22
+    },
+    {
+     "w": "Y",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 4.38
+    }
+   ]
+  },
+  {
+   "t0": 4.52,
+   "t1": 5.3,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Combinator.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 4.52
+    }
+   ]
+  },
+  {
+   "t0": 5.66,
+   "t1": 6.82,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Their",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 5.66
+    },
+    {
+     "w": "startup",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 6.16
+    },
+    {
+     "w": "was",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 6.56
+    }
+   ]
+  },
+  {
+   "t0": 6.82,
+   "t1": 7.48,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "a",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 6.82
+    },
+    {
+     "w": "mobile",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 6.92
+    },
+    {
+     "w": "food",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 7.16
+    }
+   ]
+  },
+  {
+   "t0": 7.48,
+   "t1": 8.3,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "ordering",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 7.48
+    },
+    {
+     "w": "app",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 7.8
+    },
+    {
+     "w": "on",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 8.1
+    }
+   ]
+  },
+  {
+   "t0": 8.3,
+   "t1": 9.44,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "old",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 8.3
+    },
+    {
+     "w": "flip",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 8.48
+    },
+    {
+     "w": "phones.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 8.7
+    }
+   ]
+  },
+  {
+   "t0": 10.3,
+   "t1": 10.76,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Paul",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 10.3
+    },
+    {
+     "w": "Graham",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 10.46
+    }
+   ]
+  },
+  {
+   "t0": 10.76,
+   "t1": 11.46,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "hated",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 10.76
+    },
+    {
+     "w": "it",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 11.12
+    },
+    {
+     "w": "and",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 11.34
+    }
+   ]
+  },
+  {
+   "t0": 11.46,
+   "t1": 11.98,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "told",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 11.46
+    },
+    {
+     "w": "them",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 11.68
+    },
+    {
+     "w": "to",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 11.86
+    }
+   ]
+  },
+  {
+   "t0": 11.98,
+   "t1": 12.74,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "go",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 11.98
+    },
+    {
+     "w": "home.",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 12.14
+    }
+   ]
+  },
+  {
+   "t0": 13.44,
+   "t1": 13.9,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "On",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 13.44
+    },
+    {
+     "w": "the",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 13.54
+    },
+    {
+     "w": "train",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 13.66
+    }
+   ]
+  },
+  {
+   "t0": 13.9,
+   "t1": 14.94,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "back",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 13.9
+    },
+    {
+     "w": "to",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 14.14
+    },
+    {
+     "w": "Virginia,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 14.36
+    }
+   ]
+  },
+  {
+   "t0": 15.1,
+   "t1": 15.96,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "their",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 15.1
+    },
+    {
+     "w": "phone",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 15.22
+    },
+    {
+     "w": "rang.",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 15.46
+    }
+   ]
+  },
+  {
+   "t0": 16.64,
+   "t1": 17.66,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "It",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 16.64
+    },
+    {
+     "w": "was",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 16.9
+    },
+    {
+     "w": "Graham:",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 17.06
+    }
+   ]
+  },
+  {
+   "t0": 18.4,
+   "t1": 19.3,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "\"Your",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 18.4
+    },
+    {
+     "w": "idea",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 18.62
+    },
+    {
+     "w": "is",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 18.98
+    }
+   ]
+  },
+  {
+   "t0": 19.3,
+   "t1": 19.76,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "dead.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 19.3
+    }
+   ]
+  },
+  {
+   "t0": 20.38,
+   "t1": 21.08,
+   "mode": "word",
+   "darkText": true,
+   "words": [
+    {
+     "w": "But",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 20.38
+    },
+    {
+     "w": "we",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 20.7
+    },
+    {
+     "w": "like",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 20.88
+    }
+   ]
+  },
+  {
+   "t0": 21.08,
+   "t1": 21.56,
+   "mode": "word",
+   "darkText": true,
+   "words": [
+    {
+     "w": "you.",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 21.08
+    }
+   ]
+  },
+  {
+   "t0": 22.3,
+   "t1": 22.94,
+   "mode": "word",
+   "darkText": true,
+   "words": [
+    {
+     "w": "Build",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 22.3
+    },
+    {
+     "w": "the",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 22.58
+    },
+    {
+     "w": "front",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 22.74
+    }
+   ]
+  },
+  {
+   "t0": 22.94,
+   "t1": 23.54,
+   "mode": "word",
+   "darkText": true,
+   "words": [
+    {
+     "w": "page",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 22.94
+    },
+    {
+     "w": "of",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 23.3
+    },
+    {
+     "w": "the",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#0A0A0A",
+     "t": 23.42
+    }
+   ]
+  },
+  {
+   "t0": 23.54,
+   "t1": 24.14,
+   "mode": "word",
+   "darkText": true,
+   "words": [
+    {
+     "w": "internet.\"",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#0A0A0A",
+     "rotate": 0,
+     "t": 23.54
+    }
+   ]
+  },
+  {
+   "t0": 24.58,
+   "t1": 25.86,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Steve",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 24.58
+    },
+    {
+     "w": "Huffman",
+     "fontKind": "mono",
+     "em": true,
+     "color": "#F7F5EF",
+     "t": 25.18
+    },
+    {
+     "w": "and",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 25.66
+    }
+   ]
+  },
+  {
+   "t0": 25.86,
+   "t1": 26.94,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Alexis",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 25.86
+    },
+    {
+     "w": "Ohanian",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 26.2
+    },
+    {
+     "w": "got",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 26.76
+    }
+   ]
+  },
+  {
+   "t0": 26.94,
+   "t1": 27.42,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "off",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 26.94
+    },
+    {
+     "w": "at",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 27.2
+    },
+    {
+     "w": "the",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 27.34
+    }
+   ]
+  },
+  {
+   "t0": 27.42,
+   "t1": 28.54,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "next",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 27.42
+    },
+    {
+     "w": "station,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 27.6
+    },
+    {
+     "w": "turned",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 28.38
+    }
+   ]
+  },
+  {
+   "t0": 28.54,
+   "t1": 29.7,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "around,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 28.54
+    },
+    {
+     "w": "and",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 29.3
+    },
+    {
+     "w": "rented",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 29.44
+    }
+   ]
+  },
+  {
+   "t0": 29.7,
+   "t1": 30.58,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "a",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 29.7
+    },
+    {
+     "w": "dingy",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 29.86
+    },
+    {
+     "w": "Cambridge",
+     "fontKind": "mono",
+     "em": true,
+     "color": "#F7F5EF",
+     "t": 30.2
+    }
+   ]
+  },
+  {
+   "t0": 30.58,
+   "t1": 31.28,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "apartment.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 30.58
+    }
+   ]
+  },
+  {
+   "t0": 32.14,
+   "t1": 32.96,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Steve",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 32.14
+    },
+    {
+     "w": "coded",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 32.4
+    },
+    {
+     "w": "the",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 32.76
+    }
+   ]
+  },
+  {
+   "t0": 32.96,
+   "t1": 33.72,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "first",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 32.96
+    },
+    {
+     "w": "version",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 33.18
+    },
+    {
+     "w": "of",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 33.58
+    }
+   ]
+  },
+  {
+   "t0": 33.72,
+   "t1": 34.3,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Reddit",
+     "fontKind": "mono",
+     "em": true,
+     "color": "#F7F5EF",
+     "t": 33.72
+    },
+    {
+     "w": "in",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 33.9
+    },
+    {
+     "w": "just",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 34.14
+    }
+   ]
+  },
+  {
+   "t0": 34.3,
+   "t1": 34.62,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "20",
+     "fontKind": "condensed",
+     "em": true,
+     "color": "#F7F5EF",
+     "box": null,
+     "t": 34.3
+    }
+   ]
+  },
+  {
+   "t0": 34.62,
+   "t1": 35.12,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "days.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 34.62
+    }
+   ]
+  },
+  {
+   "t0": 36.02,
+   "t1": 36.72,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "The",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 36.02
+    },
+    {
+     "w": "problem.",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 36.1
+    }
+   ]
+  },
+  {
+   "t0": 37.34,
+   "t1": 38.38,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "When",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 37.34
+    },
+    {
+     "w": "they",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 37.62
+    },
+    {
+     "w": "launched,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 37.76
+    }
+   ]
+  },
+  {
+   "t0": 38.46,
+   "t1": 38.98,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "the",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 38.46
+    },
+    {
+     "w": "site",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 38.56
+    },
+    {
+     "w": "was",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 38.8
+    }
+   ]
+  },
+  {
+   "t0": 38.98,
+   "t1": 40.02,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "completely",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 38.98
+    },
+    {
+     "w": "dead.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 39.38
+    }
+   ]
+  },
+  {
+   "t0": 40.8,
+   "t1": 41.14,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "ZERO",
+     "fontKind": "condensed",
+     "em": true,
+     "color": "#F7F5EF",
+     "box": "yellow",
+     "t": 40.8
+    }
+   ]
+  },
+  {
+   "t0": 41.14,
+   "t1": 41.86,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "visitors.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 41.14
+    }
+   ]
+  },
+  {
+   "t0": 42.72,
+   "t1": 43.6,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "So",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 42.72
+    },
+    {
+     "w": "Steve",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 43.0
+    },
+    {
+     "w": "and",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 43.36
+    }
+   ]
+  },
+  {
+   "t0": 43.6,
+   "t1": 44.5,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Alexis",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 43.6
+    },
+    {
+     "w": "built",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 43.94
+    },
+    {
+     "w": "an",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 44.24
+    }
+   ]
+  },
+  {
+   "t0": 44.5,
+   "t1": 45.34,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "admin",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 44.5
+    },
+    {
+     "w": "panel",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 44.76
+    },
+    {
+     "w": "and",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 45.14
+    }
+   ]
+  },
+  {
+   "t0": 45.34,
+   "t1": 46.3,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "created",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 45.34
+    },
+    {
+     "w": "hundreds",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 45.68
+    },
+    {
+     "w": "of",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 46.08
+    }
+   ]
+  },
+  {
+   "t0": 46.3,
+   "t1": 46.84,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "fake",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 46.3
+    },
+    {
+     "w": "ghost",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 46.54
+    }
+   ]
+  },
+  {
+   "t0": 46.84,
+   "t1": 47.64,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "profiles.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 46.84
+    }
+   ]
+  },
+  {
+   "t0": 48.38,
+   "t1": 49.76,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Every",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 48.38
+    },
+    {
+     "w": "single",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 48.72
+    },
+    {
+     "w": "morning,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 49.16
+    }
+   ]
+  },
+  {
+   "t0": 49.88,
+   "t1": 50.98,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "they",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 49.88
+    },
+    {
+     "w": "submitted",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 49.96
+    },
+    {
+     "w": "links,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 50.3
+    }
+   ]
+  },
+  {
+   "t0": 51.04,
+   "t1": 52.44,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "upvoted",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 51.04
+    },
+    {
+     "w": "themselves,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 51.32
+    },
+    {
+     "w": "and",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 52.34
+    }
+   ]
+  },
+  {
+   "t0": 52.44,
+   "t1": 53.08,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "had",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 52.44
+    },
+    {
+     "w": "full",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 52.56
+    },
+    {
+     "w": "debates",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 52.78
+    }
+   ]
+  },
+  {
+   "t0": 53.08,
+   "t1": 54.08,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "under",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 53.08
+    },
+    {
+     "w": "fake",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 53.4
+    },
+    {
+     "w": "names",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 53.68
+    }
+   ]
+  },
+  {
+   "t0": 54.08,
+   "t1": 54.64,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "just",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 54.08
+    },
+    {
+     "w": "to",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 54.32
+    },
+    {
+     "w": "make",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 54.5
+    }
+   ]
+  },
+  {
+   "t0": 54.64,
+   "t1": 55.38,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "the",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 54.64
+    },
+    {
+     "w": "front",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 54.78
+    },
+    {
+     "w": "page",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 55.0
+    }
+   ]
+  },
+  {
+   "t0": 55.38,
+   "t1": 56.2,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "look",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 55.38
+    },
+    {
+     "w": "alive.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 55.58
+    }
+   ]
+  },
+  {
+   "t0": 56.78,
+   "t1": 57.36,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Visitors",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 56.78
+    }
+   ]
+  },
+  {
+   "t0": 57.36,
+   "t1": 58.32,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "showed",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 57.36
+    },
+    {
+     "w": "up,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 57.64
+    },
+    {
+     "w": "thought",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 58.18
+    }
+   ]
+  },
+  {
+   "t0": 58.32,
+   "t1": 58.68,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "it",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 58.32
+    },
+    {
+     "w": "was",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 58.46
+    },
+    {
+     "w": "a",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 58.58
+    }
+   ]
+  },
+  {
+   "t0": 58.68,
+   "t1": 60.02,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "thriving",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 58.68
+    },
+    {
+     "w": "community,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 59.02
+    },
+    {
+     "w": "and",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 59.92
+    }
+   ]
+  },
+  {
+   "t0": 60.02,
+   "t1": 61.02,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "started",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 60.02
+    },
+    {
+     "w": "posting.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 60.4
+    }
+   ]
+  },
+  {
+   "t0": 61.86,
+   "t1": 62.28,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "16",
+     "fontKind": "condensed",
+     "em": true,
+     "color": "#F7F5EF",
+     "box": null,
+     "t": 61.86
+    }
+   ]
+  },
+  {
+   "t0": 62.28,
+   "t1": 63.64,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "months",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 62.28
+    },
+    {
+     "w": "later,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 62.58
+    },
+    {
+     "w": "Cond\u00e9",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 63.36
+    }
+   ]
+  },
+  {
+   "t0": 63.64,
+   "t1": 64.5,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Nast",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 63.64
+    },
+    {
+     "w": "bought",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 63.92
+    },
+    {
+     "w": "Reddit",
+     "fontKind": "mono",
+     "em": true,
+     "color": "#F7F5EF",
+     "t": 64.18
+    }
+   ]
+  },
+  {
+   "t0": 64.5,
+   "t1": 65.48,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "for",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 64.5
+    },
+    {
+     "w": "$10",
+     "fontKind": "condensed",
+     "em": true,
+     "color": "#F7F5EF",
+     "box": "yellow",
+     "t": 64.7
+    },
+    {
+     "w": "million dollars.",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 64.98
+    }
+   ]
+  },
+  {
+   "t0": 66.2,
+   "t1": 67.6,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "They",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 66.2
+    },
+    {
+     "w": "were",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 66.88
+    },
+    {
+     "w": "23.",
+     "fontKind": "condensed",
+     "em": true,
+     "color": "#F7F5EF",
+     "box": null,
+     "t": 67.0
+    }
+   ]
+  },
+  {
+   "t0": 68.44,
+   "t1": 69.72,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Today,",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 68.44
+    },
+    {
+     "w": "Reddit",
+     "fontKind": "mono",
+     "em": true,
+     "color": "#F7F5EF",
+     "t": 69.3
+    },
+    {
+     "w": "is",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 69.52
+    }
+   ]
+  },
+  {
+   "t0": 69.72,
+   "t1": 70.66,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "a",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 69.72
+    },
+    {
+     "w": "$15",
+     "fontKind": "condensed",
+     "em": true,
+     "color": "#F7F5EF",
+     "box": "yellow",
+     "t": 69.82
+    },
+    {
+     "w": "billion dollar",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 70.22
+    }
+   ]
+  },
+  {
+   "t0": 70.66,
+   "t1": 71.94,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "public",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 70.66
+    },
+    {
+     "w": "empire,",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 71.24
+    }
+   ]
+  },
+  {
+   "t0": 72.08,
+   "t1": 72.62,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "and",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 72.08
+    },
+    {
+     "w": "the",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 72.18
+    },
+    {
+     "w": "primary",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 72.28
+    }
+   ]
+  },
+  {
+   "t0": 72.62,
+   "t1": 74.0,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "dataset",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 72.62
+    },
+    {
+     "w": "powering",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 73.06
+    },
+    {
+     "w": "Google",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 73.7
+    }
+   ]
+  },
+  {
+   "t0": 74.0,
+   "t1": 75.4,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "and",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 74.0
+    },
+    {
+     "w": "OpenAI's",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 74.28
+    },
+    {
+     "w": "artificial",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 75.02
+    }
+   ]
+  },
+  {
+   "t0": 75.48,
+   "t1": 76.22,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "intelligence.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 75.48
+    }
+   ]
+  },
+  {
+   "t0": 76.88,
+   "t1": 78.18,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "Every",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 76.88
+    },
+    {
+     "w": "digital",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 77.4
+    },
+    {
+     "w": "empire",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 77.8
+    }
+   ]
+  },
+  {
+   "t0": 78.18,
+   "t1": 79.0,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "you",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 78.18
+    },
+    {
+     "w": "use",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 78.46
+    },
+    {
+     "w": "today",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 78.76
+    }
+   ]
+  },
+  {
+   "t0": 79.0,
+   "t1": 79.9,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "started",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 79.0
+    },
+    {
+     "w": "with",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 79.42
+    },
+    {
+     "w": "two",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 79.66
+    }
+   ]
+  },
+  {
+   "t0": 79.9,
+   "t1": 80.46,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "kids",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 79.9
+    },
+    {
+     "w": "in",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 80.22
+    },
+    {
+     "w": "a",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 80.38
+    }
+   ]
+  },
+  {
+   "t0": 80.46,
+   "t1": 81.28,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "living",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 80.46
+    },
+    {
+     "w": "room",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 80.66
+    },
+    {
+     "w": "faking",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 80.92
+    }
+   ]
+  },
+  {
+   "t0": 81.28,
+   "t1": 81.86,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "it",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 81.28
+    },
+    {
+     "w": "until",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 81.46
+    },
+    {
+     "w": "it",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 81.72
+    }
+   ]
+  },
+  {
+   "t0": 81.86,
+   "t1": 82.82,
+   "mode": "word",
+   "darkText": false,
+   "words": [
+    {
+     "w": "became",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 81.86
+    },
+    {
+     "w": "the",
+     "fontKind": "sans",
+     "em": false,
+     "color": "#F7F5EF",
+     "t": 82.1
+    },
+    {
+     "w": "internet.",
+     "fontKind": "serif-italic",
+     "em": true,
+     "color": "#F5C542",
+     "rotate": 0,
+     "t": 82.3
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "t0": 0.8,
+   "t1": 4.8,
+   "text": "PRIMARY ARCHIVE \u00b7 Y COMBINATOR SUMMER 2005",
+   "pos": "br"
+  },
+  {
+   "t0": 12.7,
+   "t1": 15.5,
+   "text": "PAUL GRAHAM \u00b7 FOUNDER, Y COMBINATOR",
+   "pos": "br"
+  },
+  {
+   "t0": 24.1,
+   "t1": 30.9,
+   "text": "STEVE HUFFMAN (AGE 21) \u00b7 CO-FOUNDER, REDDIT",
+   "pos": "br"
+  },
+  {
+   "t0": 56.2,
+   "t1": 60.6,
+   "text": "ALEXIS OHANIAN \u00b7 CO-FOUNDER, REDDIT",
+   "pos": "br"
+  },
+  {
+   "t0": 67.7,
+   "t1": 75.8,
+   "text": "NEW YORK STOCK EXCHANGE \u00b7 TICKER: RDDT",
+   "pos": "br"
+  }
+ ],
+ "overlays": [],
+ "flashes": [],
+ "fadeOut": [
+  80.7,
+  83.2
+ ]
+}

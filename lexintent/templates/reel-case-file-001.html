@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Case File No. 001</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#f8f6f2;--paper-2:#f2efe8;--ink:#111;--ink-soft:#4a4741;--burgundy:#6a0f1a;
+    --grey:#8a8a8a;--divider:#d8d3ca;--ok:#3f6b3f;
+    --f-head:"Newsreader",Georgia,serif;--f-body:"Inter",system-ui,sans-serif;
+  }
+  @media(prefers-color-scheme:dark){html:not([data-theme="light"]){
+    --paper:#14130f;--paper-2:#1b1a15;--ink:#ede8dd;--ink-soft:#a8a297;--burgundy:#c14b52;--grey:#807a70;--divider:#38342c;--ok:#7ba97b;
+  }}
+  html[data-theme="dark"]{
+    --paper:#14130f;--paper-2:#1b1a15;--ink:#ede8dd;--ink-soft:#a8a297;--burgundy:#c14b52;--grey:#807a70;--divider:#38342c;--ok:#7ba97b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);line-height:1.55;font-size:15px}
+  .wrap{max-width:56rem;margin:0 auto;padding:2rem 1.4rem 6rem}
+  a{color:var(--burgundy)}
+  header{border-bottom:2px solid var(--ink);padding-bottom:1rem;margin-bottom:1.6rem;position:relative}
+  .rule{border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);padding:.3rem 0;margin-bottom:.7rem;font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;color:var(--grey);font-weight:600}
+  h1{font-family:var(--f-head);font-weight:600;font-size:clamp(1.9rem,1.4rem+2.4vw,3rem);margin:.1rem 0 .3rem;letter-spacing:.01em}
+  .sub{color:var(--ink-soft);font-size:.92rem;max-width:52ch}
+  .themebtn{position:absolute;top:2.1rem;right:0;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;background:none;border:1px solid var(--divider);color:var(--ink-soft);padding:.26rem .5rem;cursor:pointer}
+  h2{font-family:var(--f-head);font-weight:500;font-size:1.5rem;border-bottom:2px solid var(--ink);padding-bottom:.3rem;margin:2.4rem 0 .9rem}
+  h3{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);margin:1.4rem 0 .5rem}
+  .meta{display:flex;flex-wrap:wrap;gap:.4rem .5rem;margin:1rem 0}
+  .tag{font-size:.62rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--divider);padding:.12rem .45rem;color:var(--ink-soft)}
+  .tag.b{color:var(--burgundy);border-color:var(--burgundy)}
+  video{width:100%;max-width:340px;border:1px solid var(--divider);background:#000;display:block;border-radius:2px}
+  .videorow{display:flex;gap:1.4rem;flex-wrap:wrap;align-items:flex-start}
+  .videorow .files{font-size:.8rem;color:var(--ink-soft)}
+  .videorow .files code{background:var(--paper-2);border:1px solid var(--divider);padding:.05rem .3rem;font-size:.92em;word-break:break-all}
+  table{border-collapse:collapse;width:100%;font-size:.84rem;margin:.6rem 0}
+  th,td{text-align:left;vertical-align:top;padding:.5rem .6rem;border-bottom:1px solid var(--divider)}
+  th{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+  td .tc{font-family:var(--f-head);color:var(--burgundy);font-weight:600;white-space:nowrap}
+  td .vo{font-family:var(--f-head);font-style:italic;color:var(--ink)}
+  .copybox{background:var(--paper-2);border:1px solid var(--divider);border-left:2px solid var(--burgundy);padding:.9rem 1rem;margin:.6rem 0;position:relative;white-space:pre-wrap;font-size:.9rem}
+  .copybtn{position:absolute;top:.5rem;right:.5rem;font-size:.56rem;letter-spacing:.08em;text-transform:uppercase;background:var(--paper);border:1px solid var(--divider);color:var(--ink-soft);padding:.2rem .45rem;cursor:pointer}
+  .copybtn.done{color:var(--ok);border-color:var(--ok)}
+  ul{padding-left:1.1rem;max-width:60ch}li{margin-bottom:.35rem}
+  .pen{border-left:2px solid var(--burgundy);background:var(--paper-2);padding:.8rem 1rem;margin:1rem 0;font-size:.88rem;max-width:60ch}
+  .pen .l{font-family:var(--f-head);font-style:italic;color:var(--burgundy);display:block;margin-bottom:.25rem}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.4rem}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr}}
+  .note{font-size:.8rem;color:var(--grey);font-style:italic;border-top:1px solid var(--divider);padding-top:.9rem;margin-top:2rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="rule">LexIntent Intelligence — Production Sheet</div>
+    <button class="themebtn" id="themebtn">Theme</button>
+    <h1>Case File No. 001</h1>
+    <div class="sub">The Rejected 9-Pointer. First finished reel — script, Andrew VO, CC0 music bed and full SFX, rendered end-to-end. Format <b>CAS-01</b> from the Script Engine, mapped to the No. 1 verbatim fear in the Instagram research.</div>
+  </header>
+
+  <div class="meta">
+    <span class="tag b">CAS-01 · Case File</span>
+    <span class="tag">Pillar: Case File</span>
+    <span class="tag">46.0s · 1080×1920</span>
+    <span class="tag">7 scenes</span>
+    <span class="tag">−14 LUFS</span>
+    <span class="tag">CTA: comment FILE → DM</span>
+  </div>
+
+  <div class="videorow">
+    <video controls preload="metadata" src="http://127.0.0.1:8124/case-file-001/case-file-001-final.mp4"></video>
+    <div class="files">
+      <h3 style="margin-top:0">Files</h3>
+      <p><code>D:\agency content\reels\case-file-001\</code></p>
+      <ul style="padding-left:1rem">
+        <li><b>case-file-001-final.mp4</b> — VO + music + SFX, post-ready</li>
+        <li>case-file-001-audio.mp4 — SFX only, no VO</li>
+        <li>case-file-001.mp4 — silent picture</li>
+        <li>index.html — HyperFrames source (editable)</li>
+        <li>narration/ — Andrew VO, narrate.py, transcript</li>
+        <li>finalmix.py — the audio assembly</li>
+      </ul>
+      <p style="font-size:.76rem">Local preview server: <code>python -m http.server 8124</code> in <code>D:\agency content\reels</code>. If the video above is blank, start it and reload.</p>
+    </div>
+  </div>
+
+  <h2>Why this reel first</h2>
+  <ul>
+    <li><b>Highest emotional pull in Batch 01</b> (rubric 10/10). It's a real, quoted person and the outcome reads as unjust until the reveal.</li>
+    <li>Answers fear #1 from the research, verbatim: <em>"my peers are getting Tier-1 with a worse resume than mine."</em> (Legally India thread #185010.)</li>
+    <li><b>Series framing</b> — "No. 001" builds a return habit, the same mechanic @traceyourcase and @legalshotswithvakeel use.</li>
+    <li>Product never appears. The insight is the hero; the analyzer enters only on the DM reply.</li>
+  </ul>
+
+  <h2>Script — word-for-word, timecoded</h2>
+  <table>
+    <thead><tr><th>Time</th><th>On screen</th><th>Voiceover (Andrew)</th><th>Sound</th></tr></thead>
+    <tbody>
+      <tr><td class="tc">0:00–0:05</td><td>Masthead: <b>LEXINTENT · CASE FILE</b> / rule / <i>Case File No. 001</i> / "The rejected 9-pointer — a documented case". Courthouse faint behind.</td><td class="vo">"Case file. Number, oh oh one."</td><td>Typewriter hits ×2, return bell</td></tr>
+      <tr><td class="tc">0:05–0:12</td><td>Recorded facts type in, one line at a time: 01 Fourth year. Non-NLU · 02 8.0 CGPA · 03 Three publications · 04 Relevant internships · 05 <span style="color:var(--burgundy)">Zero callbacks.</span></td><td class="vo">"Fourth year. Non-NLU. Eight-point-oh. Three publications. Real internships. Zero callbacks."</td><td>Keystroke per line; bass hit on line 05</td></tr>
+      <tr><td class="tc">0:12–0:20</td><td>The CV on a paper sheet, slow push-in. Caption: "Stronger, on paper, than the peers who got placed. So what did recruiters see?"</td><td class="vo">"On paper, he's stronger than the classmates who got placed. So what did the recruiters see that he didn't?"</td><td>Paper slide</td></tr>
+      <tr><td class="tc">0:20–0:30</td><td>Burgundy pen works down the sheet. Three margin notes draw in: "assisted / observed — no ownership" · "not peer-reviewed — reads as filler" · "no practice-area direction".</td><td class="vo">"Every internship line says assisted, or observed. The publications? Student blog posts. No practice area anywhere."</td><td>Marker stroke ×3</td></tr>
+      <tr><td class="tc">0:30–0:37</td><td>"Every strength was <i>real</i>. None of it was written as a <i>signal</i>." A burgundy line connects three circled points. <span style="color:var(--grey)">Shader: cross-warp into verdict.</span></td><td class="vo">"Every one of those strengths was real. None of it was written as a signal."</td><td>Pen click; fast-write; warp</td></tr>
+      <tr><td class="tc">0:37–0:43</td><td>Verdict card, bordered: <b>VERDICT</b> — "A strong candidate with a resume that <i>couldn't prove it</i>." Courthouse faint behind.</td><td class="vo">"The verdict. A strong candidate, with a resume that couldn't prove it."</td><td>Paper slide + bass hit</td></tr>
+      <tr><td class="tc">0:43–0:46</td><td>End card: masthead mark / rule / "Comment <b>FILE</b> for the full breakdown and the rewrite." / "We reply in your DMs".</td><td class="vo">"Comment the word file. I'll send the full breakdown."</td><td>Paper move; soft confirm tone</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Caption &amp; pinned comment</h2>
+  <h3>Caption</h3>
+  <div class="copybox" data-copy>Case File No. 001 — the 9-pointer nobody called back.
+
+Fourth year. Non-NLU. 8.0. Three publications. Real internships. Zero interviews — while classmates with thinner CVs got Tier-1.
+
+His CV wasn't weak. It just never turned any of it into a hiring signal. Every internship line said "assisted" or "observed". The publications were student-portal posts. Nothing said what kind of law he wanted to practise.
+
+Comment FILE and I'll send you the full breakdown + the annotated rewrite.</div>
+  <h3>Pinned comment</h3>
+  <div class="copybox" data-copy>The fix wasn't more experience — it was language. "Assisted on research" → "drafted 3 sections of a writ petition, cited in the final filing." Same work. One sends a signal. Comment FILE for the line-by-line.</div>
+
+  <h2>Hook variants (for the thumbnail / first 3s A-B)</h2>
+  <div class="copybox" data-copy>1. Case file: 8 CGPA, three publications, strong internships. Rejected by every firm. Here's why.
+2. His resume was better than the friends who got placed. He still got nothing. We found the reason.
+3. "My peers are getting Tier-1 with a worse resume than mine." This is what was actually on his CV.</div>
+
+  <h2>What this proves we can produce now</h2>
+  <div class="grid2">
+    <div>
+      <h3>Working, on this machine</h3>
+      <ul>
+        <li>Editorial 9:16 reels, 30–60s, LexIntent brand — masthead, red-pen DrawSVG, Recruiter's Notes, paper grain, one shader accent</li>
+        <li>Andrew (edge-tts) VO, fixed-timing, auto-checked against each scene window</li>
+        <li>CC0 music bed, sidechain-ducked under VO, + 20 SFX cues from the local pack, mastered to −14 LUFS</li>
+        <li>HyperFrames render via <code>--low-memory-mode</code> — ~2.5 min for 46s, no OOM</li>
+        <li>Archival stills (Prelinger / Met / Pixabay) as scene grounds</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Not yet</h3>
+      <ul>
+        <li>OpenChatCut editor — dev server is stuck in a restart loop on this box; stock-media keys (Pexels/Pixabay/Freesound) are now wired into its <code>.env.local</code> for when it's stable</li>
+        <li>Moving archival <i>video</i> inside scenes — needs the sub-composition mount; stills only for now</li>
+        <li>Music generation / ElevenLabs voice — no keys</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pen">
+    <span class="l">Next in the series —</span>
+    Same rig produces <b>RPV-02 "Shortlist"</b>, <b>AUT-01 "Resume Autopsy"</b>, <b>SIG-01 "The Hidden Signal"</b> with only script + VO swaps. One trust-week = Case File Nos. 001–003 back to back.
+  </div>
+
+  <p class="note">Licences: VO = edge-tts (free). Music bed = Freesound s/540456, CC0, by abelchamber (no credit needed). SFX = video-shotcraft pack (royalty-free). Courthouse still = Pixabay (free, no credit). All logged in <code>D:\agency content\assets\LICENSES.csv</code>.</p>
+</div>
+
+<script>
+  document.addEventListener("click",e=>{
+    var b=e.target.closest(".copybtn"); if(!b)return;
+    var box=b.closest(".copybox");
+    var t=box.cloneNode(true); t.querySelector(".copybtn")?.remove();
+    navigator.clipboard.writeText(t.textContent.trim()).then(()=>{
+      b.textContent="Copied"; b.classList.add("done");
+      setTimeout(()=>{b.textContent="Copy";b.classList.remove("done")},1400);
+    });
+  });
+  document.querySelectorAll(".copybox[data-copy]").forEach(box=>{
+    var b=document.createElement("button"); b.className="copybtn"; b.textContent="Copy";
+    box.appendChild(b);
+  });
+  var tb=document.getElementById("themebtn");
+  tb.addEventListener("click",()=>{
+    var c=document.documentElement.getAttribute("data-theme");
+    var n=c==="dark"?"light":c==="light"?"":"dark";
+    document.documentElement.setAttribute("data-theme",n);
+    try{localStorage.setItem("lexintent-theme",n)}catch(e){}
+  });
+  try{var th=localStorage.getItem("lexintent-theme");if(th!==null)document.documentElement.setAttribute("data-theme",th)}catch(e){}
+</script>
+</body>
+</html>

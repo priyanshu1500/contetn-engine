@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en" data-theme="">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LexIntent Script Engine — Batch 01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#f8f6f2; --paper-2:#f2efe8; --ink:#111111; --ink-soft:#4a4741;
+    --burgundy:#6a0f1a; --grey:#8a8a8a; --divider:#d8d3ca; --stamp:rgba(106,15,26,.14);
+    --ok:#3f6b3f; --warn:#8a5a12;
+    --f-head:"Newsreader",Georgia,"Times New Roman",serif;
+    --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --s-1:clamp(.76rem,.72rem+.16vw,.83rem);
+    --s0:clamp(.94rem,.9rem+.2vw,1.02rem);
+    --s1:clamp(1.15rem,1rem+.5vw,1.35rem);
+    --s2:clamp(1.5rem,1.3rem+1vw,2rem);
+    --s3:clamp(1.9rem,1.5rem+2vw,3rem);
+  }
+  @media(prefers-color-scheme:dark){html:not([data-theme="light"]){
+    --paper:#14130f;--paper-2:#1b1a15;--ink:#ede8dd;--ink-soft:#a8a297;--burgundy:#c14b52;
+    --grey:#7f7a70;--divider:#38342c;--stamp:rgba(193,75,82,.16);--ok:#7ba97b;--warn:#c9973f;
+  }}
+  html[data-theme="dark"]{
+    --paper:#14130f;--paper-2:#1b1a15;--ink:#ede8dd;--ink-soft:#a8a297;--burgundy:#c14b52;
+    --grey:#7f7a70;--divider:#38342c;--stamp:rgba(193,75,82,.16);--ok:#7ba97b;--warn:#c9973f;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:60rem;margin:0 auto;padding:clamp(1.2rem,1rem+2vw,3rem) clamp(1rem,.5rem+3vw,2.4rem) 6rem;}
+
+  header.mast{position:relative;border-bottom:2px solid var(--ink);padding-bottom:.9rem;margin-bottom:1.2rem;}
+  .mast .rule{border-top:1px solid var(--divider);border-bottom:1px solid var(--divider);padding:.32rem 0;margin-bottom:.7rem;font-family:var(--f-body);font-weight:600;font-size:var(--s-1);letter-spacing:.26em;text-transform:uppercase;color:var(--grey);}
+  .mast h1{font-family:var(--f-head);font-weight:600;font-size:var(--s3);line-height:1.02;letter-spacing:.01em;text-transform:uppercase;margin:.1rem 0 .4rem;}
+  .mast .sub{font-family:var(--f-body);font-size:var(--s-1);color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;}
+  .mast .sub b{color:var(--ink);font-weight:600;}
+  .themebtn{position:absolute;top:2.4rem;right:0;font-family:var(--f-body);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;background:none;border:1px solid var(--divider);color:var(--ink-soft);padding:.28rem .5rem;cursor:pointer;}
+
+  .bar{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--divider);padding:.7rem 0;margin-bottom:1rem;display:flex;flex-wrap:wrap;gap:.5rem .6rem;align-items:center;}
+  .bar input[type=search]{flex:1 1 12rem;min-width:9rem;font:inherit;font-size:var(--s-1);padding:.4rem .6rem;background:var(--paper-2);border:1px solid var(--divider);color:var(--ink);}
+  .chip{font-family:var(--f-body);font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.28rem .52rem;border:1px solid var(--divider);background:var(--paper-2);color:var(--ink-soft);cursor:pointer;user-select:none;white-space:nowrap;}
+  .chip.on{background:var(--burgundy);border-color:var(--burgundy);color:#fff;}
+  html[data-theme="dark"] .chip.on,html:not([data-theme="light"]) .chip.on{color:#14130f;}
+  @media(prefers-color-scheme:dark){html:not([data-theme="light"]) .chip.on{color:#14130f;}}
+  .progress{font-family:var(--f-body);font-size:var(--s-1);color:var(--ink-soft);margin-left:auto;font-variant-numeric:tabular-nums;}
+  .progress b{color:var(--burgundy);font-family:var(--f-head);}
+  .count{font-family:var(--f-body);font-size:var(--s-1);color:var(--grey);margin:.2rem 0 1rem;letter-spacing:.08em;text-transform:uppercase;}
+
+  .card{border:1px solid var(--divider);background:var(--paper-2);margin-bottom:.7rem;}
+  .card > .head{display:grid;grid-template-columns:auto 1fr auto;gap:.5rem .8rem;align-items:center;padding:.75rem .9rem;cursor:pointer;}
+  .card > .head:focus-visible{outline:2px solid var(--burgundy);outline-offset:-2px;}
+  .code{font-family:var(--f-body);font-weight:700;font-size:.66rem;letter-spacing:.12em;color:var(--burgundy);white-space:nowrap;}
+  .card h3{font-family:var(--f-head);font-weight:600;font-size:1.02rem;margin:0;line-height:1.2;}
+  .card .peek{grid-column:2;font-size:var(--s-1);color:var(--ink-soft);font-style:italic;font-family:var(--f-head);}
+  .meta{display:flex;gap:.35rem;align-items:center;flex-wrap:wrap;justify-content:flex-end;}
+  .pill{font-family:var(--f-body);font-weight:600;font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--divider);padding:.06rem .34rem;color:var(--ink-soft);white-space:nowrap;}
+  .pill.low{color:var(--burgundy);border-color:var(--burgundy);}
+  .stat{width:.62rem;height:.62rem;border-radius:50%;border:1px solid var(--grey);flex:none;}
+  .stat.s1{background:var(--grey);border-color:var(--grey);}
+  .stat.s2{background:var(--warn);border-color:var(--warn);}
+  .stat.s3{background:var(--ok);border-color:var(--ok);}
+
+  .body{display:none;padding:0 .9rem 1rem;border-top:1px solid var(--divider);}
+  .card.open .body{display:block;}
+  .card.open .arrow{transform:rotate(90deg);}
+  .arrow{display:inline-block;transition:transform .15s;color:var(--grey);}
+
+  .body h4{font-family:var(--f-body);font-weight:700;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);margin:1.1rem 0 .4rem;display:flex;align-items:center;gap:.5rem;}
+  .body h4 button{margin-left:auto;}
+  .btn{font-family:var(--f-body);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;background:none;border:1px solid var(--divider);color:var(--ink-soft);padding:.2rem .45rem;cursor:pointer;}
+  .btn:hover{border-color:var(--burgundy);color:var(--burgundy);}
+  .btn.wide{width:100%;padding:.5rem;margin-top:1rem;}
+  .btn.cyc{border-color:var(--burgundy);color:var(--burgundy);}
+
+  .hooks{display:grid;gap:.4rem;}
+  .hook{display:grid;grid-template-columns:1fr auto;gap:.5rem;align-items:start;background:var(--paper);border:1px solid var(--divider);padding:.5rem .6rem;font-family:var(--f-head);font-size:.95rem;}
+  .hook .fw{font-family:var(--f-body);font-size:.58rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:.15rem;}
+  .scriptlines{display:grid;grid-template-columns:3.4rem 1fr;gap:.15rem .7rem;font-size:var(--s-1);}
+  .scriptlines .tc{font-family:var(--f-body);font-weight:600;font-size:.62rem;color:var(--burgundy);padding-top:.16rem;font-variant-numeric:tabular-nums;}
+  .scriptlines .ln{color:var(--ink);}
+  ul.plain{margin:.2rem 0;padding-left:1.1rem;font-size:var(--s-1);}
+  ul.plain li{margin-bottom:.3rem;color:var(--ink-soft);}
+  ul.plain li b{color:var(--ink);}
+  .kv{font-size:var(--s-1);color:var(--ink-soft);}
+  .kv b{color:var(--ink);}
+  .rubric{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:.4rem .9rem;font-size:var(--s-1);}
+  .rmetric{display:grid;grid-template-columns:1fr auto;gap:.3rem;align-items:center;}
+  .rmetric .rl{color:var(--ink-soft);}
+  .rmetric .rn{font-family:var(--f-head);font-weight:600;color:var(--burgundy);font-variant-numeric:tabular-nums;}
+  .rtrack{grid-column:1 / -1;height:4px;background:var(--divider);}
+  .rfill{height:100%;background:var(--burgundy);}
+  .rnote{font-size:var(--s-1);color:var(--ink-soft);font-style:italic;font-family:var(--f-head);margin-top:.5rem;}
+  .empty{color:var(--grey);font-style:italic;padding:2rem 0;text-align:center;}
+  .toast{position:fixed;bottom:1.2rem;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-size:var(--s-1);padding:.5rem .9rem;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9;}
+  .toast.show{opacity:1;}
+  .note{font-size:var(--s-1);color:var(--grey);font-style:italic;border-top:1px solid var(--divider);padding-top:1rem;margin-top:2rem;}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div class="rule">LexIntent Intelligence — Script Engine</div>
+    <button class="themebtn" id="themebtn" type="button">Theme</button>
+    <h1>Batch 01 · Twenty Scripts</h1>
+    <div class="sub">
+      <span><b>Filed</b> 31 Aug 2026</span>
+      <span><b>Each</b> 3 hooks · timecoded script · shot list · OpenChatCut motion · type · sound · CTA · rubric</span>
+      <span><b>Source</b> Format Codex + Dossier 01 fears + viral-hooks frameworks</span>
+    </div>
+  </header>
+
+  <div class="bar" id="bar">
+    <input type="search" id="q" placeholder="Search name, hook, keyword…" autocomplete="off" />
+    <span class="chip" data-f="fam" data-v="Autopsy">Autopsy</span>
+    <span class="chip" data-f="fam" data-v="Two-Path">Two-Path</span>
+    <span class="chip" data-f="fam" data-v="Recruiter POV">Recruiter POV</span>
+    <span class="chip" data-f="fam" data-v="Case File">Case File</span>
+    <span class="chip" data-f="fam" data-v="Myth">Myth</span>
+    <span class="chip" data-f="fam" data-v="Signal Decode">Signal</span>
+    <span class="chip" data-f="fam" data-v="Number">Number</span>
+    <span class="chip" data-f="fam" data-v="Dispatch">Dispatch</span>
+    <span class="chip" data-f="cx" data-v="Low">Low cx</span>
+    <span class="chip" data-f="status" data-v="0">Not started</span>
+    <span class="chip" data-f="status" data-v="3">Posted</span>
+    <span class="progress" id="prog"></span>
+  </div>
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+
+  <p class="note">Status cycles <b>Not started → Scripted → Filmed → Posted</b> and saves in this browser. “Copy” buttons put plain text on your clipboard for OpenChatCut / the edit doc. Batch 02 (next 20 codes) on request.</p>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const SCRIPTS = [
+ {code:"AUT-01",name:"Resume Autopsy",fam:"Autopsy",pillar:"Resume Autopsy",cx:"Low",min:12,fear:"#1 rejected at stage one",trigger:"Insider + injustice",
+  hooks:[
+   {fw:"Brunson — curiosity + specificity",t:"This is the line that got a law student rejected in the first six seconds."},
+   {fw:"Hormozi — cost of inaction",t:"Your resume isn't being rejected. It's being skipped. Here's the exact line doing it."},
+   {fw:"Kallaway — IRL open loop",t:"A recruiter circled one line on this CV and moved on. I'll show you which."}],
+  script:[
+   ["0:00","On paper: a law-student CV, anonymised. Cursor drops onto the experience block."],
+   ["0:03","VO: “A recruiter spends about seven seconds here. Yours gives them nothing to hold onto.”"],
+   ["0:08","Burgundy pen circles: “Interned at a law firm, Mumbai.”"],
+   ["0:11","Margin note writes in: “Too generic. No drafting signal.”"],
+   ["0:16","VO: “They're not reading. They're scanning for proof you can do the work.”"],
+   ["0:22","Cut to the rewrite: “Drafted 3 sections of an SPA reviewed by the partner.” Burgundy underline draws."],
+   ["0:30","VO: “Same four weeks. One version is a certificate. One is a hiring signal.”"],
+   ["0:38","Card: “Not a longer resume. A resume that speaks.”"],
+   ["0:43","CTA card + VO: “Comment AUTOPSY and I'll send you the six-line CV check.”"]],
+  shots:["Sheet scene — CV mock, cursor overlay","Red-pen: circle draw on beat 0:08","Margin note: handwritten-italic, slight rotate, in at 0:11","Before/After: strike weak line, slide strong line up, underline draw","Number beat: “7” faint behind the scan (optional)","Brand end-card: masthead lockup + CTA line"],
+  motion:"Slow 3% push-in on the sheet throughout. Pen circle = SVG stroke draw, 0.9s, power2.inOut. Margin note = fade + x:26 + rotate -2. Rewrite line = paper-slide up, underline scaleX 0→1. No cuts faster than 1.5s.",
+  type:"Newsreader 500 for the CV headings; Inter for body rows. Margin note Newsreader italic, burgundy. CTA card: Inter SemiBold caps, burgundy keyword.",
+  sound:"Paper-slide on the sheet entrance. Marker-pen scratch on the circle. Soft pen-write on the note. Low bass hit on the rewrite reveal. Bed: none / faint room tone.",
+  cta:"Comment AUTOPSY → DM the 6-line CV check (feeds product waitlist on reply).",
+  rubric:{Hook:8,Curiosity:8,Clarity:9,"Emotional Pull":8,"Save Potential":9,"Share Potential":7,"OCC Efficiency":9,"Brand Consistency":10},
+  rnote:"Cornerstone format. Save potential is high because it's a checklist people re-watch. Share is only 7 — it implicates the viewer more than it entertains; pair with a lighter reel same day."},
+
+ {code:"AUT-02",name:"The Cold Email Autopsy",fam:"Autopsy",pillar:"Resume Autopsy",cx:"Low",min:12,fear:"#2 no contacts, cold outreach ignored",trigger:"Loss-aversion",
+  hooks:[
+   {fw:"Hormozi — why X isn't working",t:"You sent 40 internship emails and heard nothing. It's not the count. It's these three lines."},
+   {fw:"Brunson — open loop",t:"Here's the internship email that gets deleted in two seconds — and the one that gets a reply."},
+   {fw:"Bush — contrarian",t:"“Respected Sir/Ma'am, I am a hardworking law student…” — delete all of it."}],
+  script:[
+   ["0:00","Screen-rec: an internship application email, open in a mail client."],
+   ["0:03","Pen strikes the subject: “Internship Application”. Note: “Says nothing. Won't get opened.”"],
+   ["0:09","Pen strikes the opener: “I am a sincere and hardworking student…”"],
+   ["0:14","VO: “The reader already knows you want an internship. Tell them why you, for this chamber.”"],
+   ["0:20","Rebuild live, typewriter: subject → “Application — [practice] internship, [month], [your name]”."],
+   ["0:27","Body line appears: “I've drafted [X] at [prior internship]. I'd like to do the same on your [practice] matters this [month].”"],
+   ["0:34","VO: “One specific line about their work beats a paragraph about you.”"],
+   ["0:40","CTA card: “Comment EMAIL for the cold-email skeleton.”"]],
+  shots:["Sheet/email scene — mail client mock","Red-pen strikes on subject + opener","Typewriter rebuild of subject + one body line","Card: side-by-side old vs new subject","Brand end-card + CTA"],
+  motion:"Static email frame, 3% push. Strikes = burgundy line scaleX 0→1, left origin, 0.4s power2.in. Typewriter rebuild at ~22 cps. Old/new subject cross-slide.",
+  type:"Monospace-ish for the email field text (IBM Plex Mono fallback ok); Inter for VO captions; Newsreader for the card verdict.",
+  sound:"Keyboard clicks under the typewriter rebuild. Pen scratch on strikes. Page-move on the card. No music.",
+  cta:"Comment EMAIL → DM the cold-email skeleton + 3 subject-line formulas.",
+  rubric:{Hook:8,Curiosity:7,Clarity:9,"Emotional Pull":7,"Save Potential":8,"Share Potential":7,"OCC Efficiency":9,"Brand Consistency":9},
+  rnote:"Very producible and very saveable. Emotional pull is moderate — outreach anxiety is real but less raw than rejection. Works best in placement-season weeks."},
+
+ {code:"AUT-04",name:"The Internship Section, Autopsied",fam:"Autopsy",pillar:"Resume Autopsy",cx:"Low",min:14,fear:"#1 rejected at stage one",trigger:"Gap — you did the work",
+  hooks:[
+   {fw:"Bush — number + contrarian",t:"Eight internships on your CV. That's why the corporate recruiter passed."},
+   {fw:"Brunson — specificity",t:"Six of these eight internship lines say the same thing: “I was in the room.”"},
+   {fw:"Hormozi — reframe",t:"You think eight internships is a strong CV. A recruiter reads it as “no direction.”"}],
+  script:[
+   ["0:00","Sheet: eight internship entries stacked, tight."],
+   ["0:04","VO: “Volume isn't signal. Watch what a recruiter actually does with this.”"],
+   ["0:09","Pen strikes six entries — each reads “observed proceedings / assisted the team”."],
+   ["0:16","Two survive. Note beside them: “These have a verb that proves work.”"],
+   ["0:22","Reorder: the two strong entries slide to the top; the strike-outs fade."],
+   ["0:29","VO: “One internship written like a result beats five written like a certificate.”"],
+   ["0:36","Number card: “2–4” — outcome bullets per entry, not eight lines of duties."],
+   ["0:42","CTA: “Comment SIGNAL for the internship-bullet rewrite guide.”"]],
+  shots:["Sheet — 8 entries","Red-pen strikes ×6, staggered","Margin note on the 2 survivors","Reorder animation — survivors to top","Number card: 2–4","Brand end-card + CTA"],
+  motion:"Strikes staggered 0.3s apart. Reorder = y-position tween, power3.inOut, 0.8s + settle. Number card breaks full-bleed. 3% push on the sheet before the reorder.",
+  type:"Inter for entries; Newsreader italic burgundy for the note; big Newsreader numeral on the card.",
+  sound:"Six quick pen scratches. Paper-slide on the reorder. Bass hit on the number card. Bed: faint tension pad −24 dB.",
+  cta:"Comment SIGNAL → DM the internship-bullet rewrite guide (verb list + 10 before/afters).",
+  rubric:{Hook:9,Curiosity:8,Clarity:8,"Emotional Pull":8,"Save Potential":8,"Share Potential":8,"OCC Efficiency":8,"Brand Consistency":9},
+  rnote:"Strong hook — it threatens a point of pride (the internship count). Share potential decent because the “volume ≠ signal” line is quotable. Med-low prod time due to the reorder + strikes count."},
+
+ {code:"AUT-07",name:"The Objective Line Autopsy",fam:"Autopsy",pillar:"Resume Autopsy",cx:"Low",min:8,fear:"#1 rejected at stage one",trigger:"Pattern-interrupt",
+  hooks:[
+   {fw:"Bush — imperative",t:"Delete your objective statement. Right now. I'll wait."},
+   {fw:"Brunson — cost",t:"“Objective: to secure a challenging role…” — that's three inches of prime resume space, wasted."},
+   {fw:"Koe — reframe",t:"The first thing a recruiter reads on your CV is the first thing you should cut."}],
+  script:[
+   ["0:00","Sheet: top of a CV. “Objective: To secure a challenging role in a reputed law firm…”"],
+   ["0:03","Pen crosses it out in one long stroke."],
+   ["0:06","Note: “Three inches of prime space, gone.”"],
+   ["0:10","VO: “The recruiter knows what you want. That space should tell them what you can do.”"],
+   ["0:16","Card: “Part 2 tomorrow — what goes there instead.”"]],
+  shots:["Sheet — CV header only","Red-pen single strike, long, 0.6s","Margin note","Number/space callout (optional): a ruler measuring the freed space","Card: teaser for part 2"],
+  motion:"Single dramatic strike, ease power2.in. Freed space marked with a thin burgundy bracket. Slow push-in throughout. One shot, no cuts.",
+  type:"Newsreader for the objective text (so the cross-out reads); Inter caps for the teaser card.",
+  sound:"One long pen scratch. Soft bass on the strike landing. Page-turn into the card.",
+  cta:"“Part 2 tomorrow: what goes there instead.” (next-edition CTA — builds the return habit).",
+  rubric:{Hook:8,Curiosity:7,Clarity:9,"Emotional Pull":6,"Save Potential":6,"Share Potential":7,"OCC Efficiency":10,"Brand Consistency":9},
+  rnote:"Fastest reel in the batch — 8 min, one shot. Low save potential (it's a single tip) but perfect as a daily filler and it sets up a 2-part hook. Use on high-volume days."},
+
+ {code:"TWO-01",name:"Two Students",fam:"Two-Path",pillar:"Law Career Decode",cx:"Low",min:14,fear:"#1 rejected at stage one",trigger:"Injustice + gap",
+  hooks:[
+   {fw:"Kallaway — contrast open loop",t:"Two law students. Same university. Same GPA. One gets a Khaitan interview. One never hears back."},
+   {fw:"Brunson — withheld variable",t:"These two students are identical on paper. One got shortlisted at every Tier-1. Here's the only difference."},
+   {fw:"Bush — one-word",t:"Same marks. Same college. Opposite outcomes. The difference fits on one line."}],
+  script:[
+   ["0:00","Serif, one line at a time: “Two law students.” → “Same university.” → “Same GPA.”"],
+   ["0:05","“One gets a Khaitan interview.” → “The other never hears back.”"],
+   ["0:10","Reveal, burgundy underline: “Two resumes.”"],
+   ["0:14","Sheet split — the two CVs side by side. VO: “Line for line, they're 90% the same.”"],
+   ["0:20","Pen circles the same slot on each: internships. One says “observed”, one says “drafted”."],
+   ["0:27","VO: “One resume tells a recruiter you were present. One tells them you can start on day one.”"],
+   ["0:35","Card: “It's not effort. It's the signal.”"],
+   ["0:40","CTA: “Comment SWAP and I'll send you the line-by-line diff.”"]],
+  shots:["Kinetic text — staccato hook lines","Underline draw on “Two resumes.”","Two-column sheet","Red-pen circle on both internship blocks","Card verdict","Brand end-card + CTA"],
+  motion:"Hook lines: fade + y:34, one every ~0.9s. Split CVs slide in from opposite edges. Twin circles draw simultaneously. 3% push on the split. Cut rhythm 1.5–2s.",
+  type:"Newsreader 500, big, for hook lines; burgundy italic for “Khaitan” and the reveal accent; Inter for CV rows.",
+  sound:"Soft typewriter tick per hook line. Bass hit on “Two resumes.” Twin pen scratches. Paper-slide on the split.",
+  cta:"Comment SWAP → DM the line-by-line diff (the two CVs, annotated).",
+  rubric:{Hook:10,Curiosity:9,Clarity:8,"Emotional Pull":9,"Save Potential":7,"Share Potential":9,"OCC Efficiency":8,"Brand Consistency":10},
+  rnote:"Best hook in the batch — proven contrast structure, threatens no one, pure information gap. Share potential 9 (tag-a-friend built in). Save only 7 because the payoff is conceptual, not a checklist."},
+
+ {code:"TWO-03",name:"One Line, Two Versions",fam:"Two-Path",pillar:"Resume Autopsy",cx:"Low",min:9,fear:"#1 rejected at stage one",trigger:"Pattern-interrupt",
+  hooks:[
+   {fw:"Bush — before/after",t:"“Assisted with research.” vs “Drafted three sections of a writ petition cited in the filing.” Same work."},
+   {fw:"Hormozi — same input, better output",t:"You don't need more experience. You need to write the experience you already have like this."},
+   {fw:"Brunson — reveal",t:"One of these lines gets you an interview. They describe the exact same four weeks."}],
+  script:[
+   ["0:00","Frame: “Same internship. Same four weeks.”"],
+   ["0:03","Line A appears, grey: “Assisted with research.” Pen strikes it."],
+   ["0:08","Line B slides up, burgundy: “Drafted three sections of a writ petition cited in the final filing.” Underline draws."],
+   ["0:15","VO: “One is a duty. One is a result. Recruiters scan for results.”"],
+   ["0:22","Score card: the two lines scored — 3 / 10 vs 8 / 10."],
+   ["0:29","CTA: “Comment REWRITE for ten more before-and-afters.”"]],
+  shots:["Text scene — Line A + strike","Line B slide + underline draw","Score-card: two bars","Brand end-card + CTA"],
+  motion:"Strike scaleX 0→1 left origin. Line B paper-slide up 34px + underline. Score bars grow left-origin, numbers count up. One continuous shot.",
+  type:"Newsreader italic for both lines; grey for A, burgundy for B; Inter caps for the score labels.",
+  sound:"Pen scratch on strike. Paper-slide on B. Soft ticks as the score counts. Bass hit on the final score.",
+  cta:"Comment REWRITE → DM 10 before/after bullet pairs (the translation table).",
+  rubric:{Hook:8,Curiosity:7,Clarity:10,"Emotional Pull":7,"Save Potential":9,"Share Potential":7,"OCC Efficiency":10,"Brand Consistency":9},
+  rnote:"Clearest teaching reel in the batch and 9 min to make. Save potential 9 — it's a directly copyable rewrite. Low ceiling on reach (no big emotional spike); use as a daily anchor, not a launch reel."},
+
+ {code:"TWO-05",name:"NLU vs Non-NLU (the real gap)",fam:"Two-Path",pillar:"Law Career Decode",cx:"Med",min:17,fear:"#3 non-NLU ceiling",trigger:"Injustice → agency",
+  hooks:[
+   {fw:"Brunson — challenge a belief",t:"You think your college name is why you're not getting Tier-1 callbacks. It's narrower than that."},
+   {fw:"Kallaway — open loop",t:"Two identical CVs — one from an NLU, one not. Here's exactly where the shortlist splits."},
+   {fw:"Hormozi — the gap + the fix",t:"The NLU advantage on a fresher CV is about three lines wide. Here's how to close it."}],
+  script:[
+   ["0:00","Two CVs, identical text, side by side. Labels: “NLU” / “Non-NLU”."],
+   ["0:04","VO: “Same grades. Same internships. Same publications. Watch the recruiter's read.”"],
+   ["0:10","Flow: an arrow runs down both. On the non-NLU side it pauses at three points — network access, brand-name internships, on-campus recruiting."],
+   ["0:18","VO: “That's the gap. It's real, and it's specific — which means it's addressable.”"],
+   ["0:25","Pen writes three fixes in the margin: cold assessment internships, a directional practice narrative, applying 6–10 months early."],
+   ["0:34","Card: “The ceiling isn't the college. It's the three lines you haven't added yet.”"],
+   ["0:41","CTA: “Comment BRIDGE for the non-NLU playbook.”"]],
+  shots:["Two-column sheet with labels","Flow arrow with 3 pause points on one side","Margin note — 3 fixes written in","Card verdict","Brand end-card + CTA"],
+  motion:"Flow arrow = SVG path draw, pauses via keyframed hold. Pause points pulse burgundy. Margin fixes write in one at a time (pen-write). 3% push on the split.",
+  type:"Inter for CV rows; Newsreader burgundy italic for the margin fixes; big serif for the card verdict.",
+  sound:"Paper-slide on the split. Three soft pings on the pause points. Pen-write on each margin fix. Bed: faint pad.",
+  cta:"Comment BRIDGE → DM the non-NLU playbook (assessment-internship list + narrative template + calendar).",
+  rubric:{Hook:8,Curiosity:8,Clarity:8,"Emotional Pull":9,"Save Potential":9,"Share Potential":8,"OCC Efficiency":7,"Brand Consistency":9},
+  rnote:"High emotional pull — the non-NLU ceiling is the #3 fear and rarely addressed with agency instead of sympathy. OCC efficiency 7: the flow-with-pauses is the most complex motion in the batch. Worth it; feature on a trust-building day."},
+
+ {code:"RPV-01",name:"The 7-Second Scan",fam:"Recruiter POV",pillar:"Recruiter's Desk",cx:"Med",min:16,fear:"#1 rejected at stage one",trigger:"Insider + specificity",
+  hooks:[
+   {fw:"Bush — number cold open",t:"Seven seconds. That's the entire decision on your resume. Here's where those seconds go."},
+   {fw:"Kallaway — POV",t:"This is your CV, from the recruiter's side of the desk. Watch where their eyes actually land."},
+   {fw:"Brunson — withheld",t:"A recruiter looks at four places on your resume and ignores the rest. Most students fill the wrong four."}],
+  script:[
+   ["0:00","Big burgundy numeral counts 0 → 7. Label: “seconds on your resume.”"],
+   ["0:04","Sheet slides up. VO: “Not a read. A scan. Their eyes hit four points.”"],
+   ["0:09","Scan-line traces an F-shape: name/education → most recent internship → the first two bullets → a glance at the tail."],
+   ["0:17","Pen circles what got skipped: the objective, the hobbies, bullets 3–6."],
+   ["0:24","VO: “Everything they need to say yes has to be in those four spots. Yours is buried below them.”"],
+   ["0:32","Card: “Top three inches decide it.”"],
+   ["0:38","CTA: “Comment SCAN for what to put in the top three inches.”"]],
+  shots:["Number scene — counter 0→7","Sheet entrance","Scan-line overlay — F-path, animated (NEW kit piece)","Red-pen circles on the skipped zones","Card verdict","Brand end-card + CTA"],
+  motion:"Counter with a slight overshoot. Scan-line = a soft burgundy dot + trailing line following an SVG F-path, ~2s, ease power1.inOut. Skipped zones circled after. 3% push on the sheet.",
+  type:"Huge Newsreader numeral, burgundy; Inter caps for the label and card.",
+  sound:"Soft tick per count. A low sub-drone under the scan. Pen scratch on the skip circles. Bass hit on “7”.",
+  cta:"Comment SCAN → DM “the top three inches” one-pager.",
+  rubric:{Hook:9,Curiosity:9,Clarity:9,"Emotional Pull":8,"Save Potential":9,"Share Potential":8,"OCC Efficiency":7,"Brand Consistency":10},
+  rnote:"The Recruiter's Desk flagship. Every number in the batch is a strong thumbnail; this one owns “7 seconds”. OCC 7 only because the scan-line is a new (small) build. Once built, reuse across RPV-04, DIS-01, DIS-04."},
+
+ {code:"RPV-02",name:"The Shortlist",fam:"Recruiter POV",pillar:"Recruiter's Desk",cx:"Med",min:17,fear:"#1 · #2",trigger:"Loss-aversion",
+  hooks:[
+   {fw:"Bush — number funnel",t:"Eighty applications. Six make the shortlist. Watch exactly when the other seventy-four get cut."},
+   {fw:"Kallaway — POV",t:"I'll take you inside the shortlist meeting. Here's the order the cuts happen in."},
+   {fw:"Hormozi — locate the pain",t:"You're probably getting cut at stage two and don't know it. Here are the six stages."}],
+  script:[
+   ["0:00","Number: 80 → (it will fall). Label: “applications for one internship slot.”"],
+   ["0:05","Six cards fall away one by one, each stamped in burgundy:"],
+   ["0:08","“Wrong practice area.” → “No drafting signal.” → “Applied in April, slot filled in January.”"],
+   ["0:16","“File named CV_final.pdf.” → “Same email as everyone.” → “Never tailored.”"],
+   ["0:24","Counter lands on 6. VO: “Most students fall out on two and three. Both are fixable in an afternoon.”"],
+   ["0:33","Card: “You're not behind on effort. You're behind on the checklist.”"],
+   ["0:39","CTA: “Comment LIST for the six-point pre-send check.”"]],
+  shots:["Number scene — 80 counting down as cards fall","Six reject cards, each with a burgundy stamp","Counter resolves to 6","Card verdict","Brand end-card + CTA"],
+  motion:"Cards = paper-slide out + stamp thud, one every ~1.4s (the 2-second rule, tightened for a list). Counter ticks down with each. Stamp = scale 1.4→1 + slight rotate.",
+  type:"Newsreader numeral; Inter SemiBold caps inside the stamps; burgundy stamp fill at low opacity.",
+  sound:"Stamp/thud per card. Paper-slide. Counter tick. Bass hit on “6”. Bed: light tension pad.",
+  cta:"Comment LIST → DM the 6-point pre-send check (printable).",
+  rubric:{Hook:9,Curiosity:8,Clarity:9,"Emotional Pull":9,"Save Potential":9,"Share Potential":8,"OCC Efficiency":8,"Brand Consistency":9},
+  rnote:"“Watch yourself get cut in real time” is a strong loss-aversion device. Six stamped beats = six 2-second changes, dead on the retention rule. Reuses the Number + Stamp kit; only the stamp motion needs a pass."},
+
+ {code:"RPV-03",name:"The Reject Pile",fam:"Recruiter POV",pillar:"Recruiter's Desk",cx:"Med",min:18,fear:"#1 rejected at stage one",trigger:"Pattern-interrupt + rhythm",
+  hooks:[
+   {fw:"Kallaway — POV",t:"This is the reject pile. Every CV flips, gets one word, and goes on the stack. Yours is in here somewhere."},
+   {fw:"Bush — rhythm cold open",t:"One resume. One reason. One second. Watch."},
+   {fw:"Brunson — pattern reveal",t:"Twelve resumes, twelve reject reasons. Eleven of you are making the same one."}],
+  script:[
+   ["0:00","A stack of CVs slides into frame. The top one flips face-up."],
+   ["0:02","A burgundy word stamps across it — “Generic” — and it slides to a second pile. Next flips."],
+   ["0:04","Rapid: “Late.” · “No numbers.” · “Wrong practice.” · “Objective.” · “Typos.” · “No outcomes.”"],
+   ["0:16","Freeze on the last one. VO: “Notice how many said the same thing. No signal.”"],
+   ["0:23","The word “SIGNAL” stamps across the whole frame."],
+   ["0:28","Card: “Fix the one they all share.”"],
+   ["0:33","CTA: “Comment PILE for the twelve auto-reject triggers.”"]],
+  shots:["Page-flip scene — CV stack, each flips","Stamp per CV — one burgundy word","Freeze frame on the last CV","Full-frame stamp: SIGNAL","Card verdict","Brand end-card + CTA"],
+  motion:"Flip = 3D rotateY on a card, 0.4s. Stamp on the beat. Cadence exactly 1.5s per card for the middle run, then slow to the freeze. Full-frame stamp = scale + grain.",
+  type:"Inter SemiBold caps for the stamp words; big for the SIGNAL frame; Newsreader for the card.",
+  sound:"Page-flip + stamp per card (tight rhythm). Sudden silence on the freeze. Bass boom on the SIGNAL stamp.",
+  cta:"Comment PILE → DM the 12 auto-reject triggers.",
+  rubric:{Hook:8,Curiosity:8,Clarity:8,"Emotional Pull":8,"Save Potential":8,"Share Potential":9,"OCC Efficiency":7,"Brand Consistency":9},
+  rnote:"Highest-rhythm reel in the batch — the montage-then-freeze is a proven retention move and very shareable. OCC 7: needs the page-flip card built (it's in video-shotcraft — card-flip-reveal) plus tight beat timing. Do it once, reuse for CAS-06."},
+
+ {code:"RPV-07",name:"The Slot Was Filled in January",fam:"Recruiter POV",pillar:"Recruiter's Desk",cx:"Low",min:12,fear:"#2 no contacts / behind",trigger:"Loss-aversion",
+  hooks:[
+   {fw:"Brunson — reveal a hidden cause",t:"That internship you applied for in April? The firm decided in January."},
+   {fw:"Bush — timeframe cold open",t:"Six to ten months. That's how far ahead top firms recruit. You're applying in the wrong season."},
+   {fw:"Hormozi — reframe the failure",t:"You're not getting rejected. You're applying after the slots are gone."}],
+  script:[
+   ["0:00","A calendar fills the frame. Month label: JANUARY."],
+   ["0:03","A burgundy ring marks an early date. Note: “Firm decides here.”"],
+   ["0:08","VO: “Top firms recruit six to ten months out. The students who get in applied early —”"],
+   ["0:14","Three ping dots land on later dates. Counter: “followed up ×3”."],
+   ["0:20","Cut to APRIL. A single late application drops in. VO: “— and this is when most people apply.”"],
+   ["0:27","Card: “You're not behind on effort. You're behind on the calendar.”"],
+   ["0:33","CTA: “Comment TIMING for the application calendar.”"]],
+  shots:["Calendar scene — month grid","Deadline ring + margin note","Ping dots + follow-up counter","Month change: January → April","Late application drop-in","Card verdict + CTA"],
+  motion:"Calendar draws in. Ring = hand-drawn square, rotate −4. Pings pop + ring pulse, staggered. Month change = paper-slide. Late app = drop + settle.",
+  type:"IBM Plex Mono for the calendar; Newsreader burgundy italic for “deadline”; Inter caps for the card.",
+  sound:"Soft draw on the calendar. Three pings. Paper-slide on the month change. Low thud on the late drop.",
+  cta:"Comment TIMING → DM the application calendar (month-by-month, per firm tier).",
+  rubric:{Hook:8,Curiosity:8,Clarity:9,"Emotional Pull":8,"Save Potential":9,"Share Potential":7,"OCC Efficiency":9,"Brand Consistency":10},
+  rnote:"Uses the Calendar kit scene almost as-is — 12 min. High save potential (people screenshot the calendar). The “behind on the calendar, not the effort” line is the emotional release; keep it verbatim across formats."},
+
+ {code:"CAS-01",name:"Case File No. 001 — The Rejected 9-Pointer",fam:"Case File",pillar:"Case File",cx:"Med",min:18,fear:"#1 (verbatim source)",trigger:"Injustice — a documented case",
+  hooks:[
+   {fw:"Kallaway — case cold open",t:"Case file: 8 CGPA, three publications, strong internships. Rejected by every firm he applied to. Here's why."},
+   {fw:"Brunson — the mystery",t:"His resume was better than the friends who got placed. He still got nothing. We found the reason."},
+   {fw:"Bush — quote the pain",t:"“My peers are getting Tier-1 with a worse resume than mine.” This is what was actually on his CV."}],
+  script:[
+   ["0:00","Masthead: “LEXINTENT — CASE FILE No. 001”. Thin divider. Dateline."],
+   ["0:04","VO reads the facts, plain: “Fourth year. Non-NLU. 8 CGPA. Publications. Relevant internships. Zero callbacks.”"],
+   ["0:11","Sheet: the CV, on screen. VO: “On paper, stronger than the peers who got placed. So what did the recruiters see?”"],
+   ["0:19","Pen works down it: internships all say “assisted / observed”. Publications are portal blog posts. No practice-area direction."],
+   ["0:28","Three burgundy circles connect. VO: “Every strength was real. None of it was written as a signal.”"],
+   ["0:36","Card: “Verdict — a strong candidate with a resume that couldn't prove it.”"],
+   ["0:43","CTA: “Comment FILE for the full breakdown and the rewrite.”"]],
+  shots:["Masthead scene","Fact list — typed, one line at a time","Sheet — the CV","Red-pen: 3 findings circled, then connected with a line","Verdict card","Brand end-card + CTA"],
+  motion:"Masthead typewriter. Facts type in. Slow push on the sheet. Three circles draw, then a connecting stroke. Verdict card = paper-slide over.",
+  type:"Newsreader for masthead + verdict; Inter for the fact list; burgundy for the circled findings.",
+  sound:"Typewriter + return bell on the masthead. Keyboard on the facts. Pen scratches on the circles. Low bass on the verdict.",
+  cta:"Comment FILE → DM the full breakdown + the annotated rewrite (product tie-in on reply).",
+  rubric:{Hook:9,Curiosity:9,Clarity:8,"Emotional Pull":10,"Save Potential":8,"Share Potential":8,"OCC Efficiency":7,"Brand Consistency":10},
+  rnote:"Highest emotional pull in the batch — it's a real, quoted person and the outcome feels unjust until the reveal. The series framing (“No. 001”) builds a habit. OCC 7: more scenes than average. Anchor reel for a trust week."},
+
+ {code:"CAS-03",name:"Exhibit A",fam:"Case File",pillar:"Case File",cx:"Low",min:9,fear:"#1 rejected at stage one",trigger:"Curiosity gap",
+  hooks:[
+   {fw:"Bush — object cold open",t:"This is the one line on a law student's CV that got her the interview. Exhibit A."},
+   {fw:"Brunson — withhold",t:"One line. It's why this resume got shortlisted at three Tier-1 firms. I'll tell you why it works after you read it."},
+   {fw:"Kallaway — evidence",t:"Entered into evidence: a single CV bullet. Here's what a recruiter sees in it."}],
+  script:[
+   ["0:00","Black frame. A single CV line fades up, held like evidence: “Drafted the statement of facts and two issues for a writ petition; both retained in the final filing.”"],
+   ["0:06","Burgundy circle draws around it. Label: “Exhibit A.”"],
+   ["0:10","VO: “Three things a recruiter reads here — a verb that proves work, a number, and an outcome that survived review.”"],
+   ["0:20","Each of the three underlines in turn, burgundy."],
+   ["0:27","Card: “Exhibit B tomorrow.”"]],
+  shots:["Sheet/evidence scene — one line on a dark-paper frame","Red-pen circle + “Exhibit A” label","Three underlines, staggered","Teaser card"],
+  motion:"Line fades + slow push. Circle draws. Three underlines scaleX 0→1, staggered 0.6s. One shot. Very restrained.",
+  type:"Newsreader 500 for the line; Inter caps for “EXHIBIT A”; burgundy underlines.",
+  sound:"Low room tone. Pen scratch on the circle. Three soft marker strokes. Page-turn into the teaser.",
+  cta:"“Exhibit B tomorrow.” (next-edition; builds the daily-return habit as a mini-series).",
+  rubric:{Hook:8,Curiosity:9,Clarity:9,"Emotional Pull":6,"Save Potential":8,"Share Potential":6,"OCC Efficiency":10,"Brand Consistency":10},
+  rnote:"Purest brand expression in the batch and 9 min to cut. Curiosity 9 (withheld reason), but low emotional/ share — it's quiet. Ideal as a recurring daily micro-series alternating with louder reels."},
+
+ {code:"MYT-01",name:"Your 8 Internships Are Hurting You",fam:"Myth",pillar:"Law Signals",cx:"Low",min:12,fear:"#1 rejected at stage one",trigger:"Pattern-interrupt",
+  hooks:[
+   {fw:"Bush — number + threat",t:"Eight internships on your CV. Zero Tier-1 callbacks. Those two facts are related."},
+   {fw:"Hormozi — reframe pride as problem",t:"You think eight internships is a strong resume. A corporate recruiter reads it as “no direction.”"},
+   {fw:"Brunson — challenge belief",t:"More internships is not a better resume. Past a point, it's a worse one. Here's where the line is."}],
+  script:[
+   ["0:00","Card: “8 internships.” → “0 Tier-1 callbacks.”"],
+   ["0:04","VO: “Volume feels like effort. To a recruiter it reads as: this person can't pick a lane.”"],
+   ["0:10","Sheet: eight scattered practice areas as tags. They fly in from all sides."],
+   ["0:16","They converge into two labelled columns — a directional CV. VO: “Two or three internships pointing the same way beat eight going nowhere.”"],
+   ["0:25","Number card: “1–2” practice areas a fresher CV should signal."],
+   ["0:32","Card: “Purposeful over plentiful.”"],
+   ["0:38","CTA: “Comment CV for the fix.”"]],
+  shots:["Number card: 8 / 0","Tag-converge scene — scattered practice tags → 2 columns","Number card: 1–2","Card verdict + CTA"],
+  motion:"Tags fly in staggered from random edges, then merge to columns (power3.inOut). Matched tags get a burgundy edge. Number cards full-bleed. 3% push.",
+  type:"Newsreader numerals; Inter for the tag pills; big serif for the verdict.",
+  sound:"Whoosh per tag-in. Soft impact on the merge. Bass hit on the number cards.",
+  cta:"Comment CV → DM the “directional CV” template (how to pick 1–2 lanes and reframe past internships to fit).",
+  rubric:{Hook:9,Curiosity:8,Clarity:8,"Emotional Pull":8,"Save Potential":8,"Share Potential":8,"OCC Efficiency":8,"Brand Consistency":9},
+  rnote:"Reuses the tag-converge kit scene from the Archive Collage kit almost directly. Strong pattern-interrupt hook. Balanced scores — a reliable mid-week reel, not a spike."},
+
+ {code:"MYT-03",name:"Supreme Court Tunnel Vision",fam:"Myth",pillar:"Law Signals",cx:"Low",min:11,fear:"#4 corporate-vs-litigation",trigger:"Pattern-interrupt",
+  hooks:[
+   {fw:"Brunson — the safe move is the mistake",t:"Interning under a judge every break feels like the safe choice. To a corporate firm it's a red flag."},
+   {fw:"Bush — insider term",t:"Recruiters have a name for your CV: “Supreme Court tunnel vision.” It's not a compliment."},
+   {fw:"Hormozi — cost of the default",t:"Every prestige internship you repeat is a signal you're not interested in transactional work."}],
+  script:[
+   ["0:00","Sheet: six internship lines, all “Chambers of [Senior Advocate] / Hon'ble Justice […]”."],
+   ["0:04","VO: “Prestige. Safe. And repeated six times, it stops adding information.”"],
+   ["0:10","A “Target: Corporate firm” chip flashes at the top. Pen strikes through four of the six litigation entries."],
+   ["0:17","VO: “To this reader, that stack says: not interested in what we do.”"],
+   ["0:24","Reorder: two entries move up; a corporate-adjacent internship is added, highlighted."],
+   ["0:31","Card: “Prestige isn't a direction.”"],
+   ["0:37","CTA: “Comment LANE for how to build a directional CV.”"]],
+  shots:["Sheet — 6 litigation entries","Target chip flash","Red-pen strikes ×4","Reorder + one new highlighted entry","Card verdict + CTA"],
+  motion:"Target chip pulses. Strikes staggered. Reorder y-tween + the new entry slides in with a burgundy left-edge. 3% push.",
+  type:"Inter for entries; burgundy chip; Newsreader italic for the verdict.",
+  sound:"Chip ping. Four pen scratches. Paper-slide on the reorder. Bass hit on the verdict.",
+  cta:"Comment LANE → DM the directional-CV builder (map internships to a target practice, spot the gaps).",
+  rubric:{Hook:8,Curiosity:7,Clarity:8,"Emotional Pull":7,"Save Potential":8,"Share Potential":7,"OCC Efficiency":9,"Brand Consistency":9},
+  rnote:"Niche but sharp — best for the litigation/corporate-undecided segment (#4 fear). Uses Sheet + Reorder + Red-pen, all built. Lower share (it's advice, not spectacle); pair with a Two-Path reel."},
+
+ {code:"SIG-01",name:"“Assisted With Research” → Nothing",fam:"Signal Decode",pillar:"Recruiter's Desk",cx:"Low",min:9,fear:"#1 rejected at stage one",trigger:"Specificity",
+  hooks:[
+   {fw:"Bush — translate cold open",t:"“Assisted with research.” Here's what a recruiter actually hears when they read that: nothing."},
+   {fw:"Brunson — decoder",t:"Your CV has a hidden translation. I'll show you what five common bullets really say to a hiring partner."},
+   {fw:"Hormozi — same work, wrong words",t:"The problem isn't your experience. It's that you're describing it in words that carry no signal."}],
+  script:[
+   ["0:00","Text: “Assisted with research.” A translation panel slides under it: “= I was in the room.”"],
+   ["0:06","VO: “Present isn't the same as useful. Watch the fix.”"],
+   ["0:11","Line changes: “Researched two issues that made the written submission.” Panel: “= I can do the work.”"],
+   ["0:18","Two more pairs, fast: “Attended hearings” → “observer” / “Prepared case briefs on 4 matters” → “contributor”."],
+   ["0:27","Score card: duty-phrasing 3/10, result-phrasing 8/10."],
+   ["0:33","CTA: “Comment DECODE for the 20-phrase translation table.”"]],
+  shots:["Text scene — bullet + sliding translation panel","Line-change to the fixed version","Two more fast pairs","Score-card","Brand end-card + CTA"],
+  motion:"Translation panel slides up from behind the line. Line-change = quick cross-fade. Fast pairs at 1.5s each. Score bars grow. One continuous shot.",
+  type:"Newsreader for the bullets; Inter grey for the translation panel; burgundy for the fixed versions.",
+  sound:"Paper-slide on the panel. Soft ticks on the fast pairs. Bass hit on the score.",
+  cta:"Comment DECODE → DM the 20-phrase translation table (what you wrote → what they hear → the fix).",
+  rubric:{Hook:8,Curiosity:8,Clarity:10,"Emotional Pull":7,"Save Potential":10,"Share Potential":7,"OCC Efficiency":10,"Brand Consistency":9},
+  rnote:"Highest save potential in the batch — a literal decoder people bookmark and reuse. Clear, fast, cheap. Share is only 7 (utility, not emotion). Make it a weekly recurring slot in Signal Decode."},
+
+ {code:"SIG-06",name:"The Filename Signal",fam:"Signal Decode",pillar:"Resume Autopsy",cx:"Low",min:6,fear:"#1 rejected at stage one",trigger:"Loss-aversion",
+  hooks:[
+   {fw:"Bush — object cold open",t:"“CV_final_v2 (1).pdf”, sent from “coolguy.rahul@…”. The recruiter has already decided."},
+   {fw:"Brunson — before the read",t:"A recruiter judges your resume before they open it. Two things do it."},
+   {fw:"Hormozi — 10-second fix",t:"There's a rejection reason on your application you can fix in ten seconds. It's the file name."}],
+  script:[
+   ["0:00","Close-up: an email attachment. Filename: “CV_final_v2 (1).pdf”. Sender: “coolguy.rahul@…”."],
+   ["0:03","Burgundy pen circles both. Note: “Decided before the file opens.”"],
+   ["0:07","Cut: “Rahul-Sharma_CV.pdf” from “rahul.sharma.law@…”. VO: “Ten seconds. Do it now.”"],
+   ["0:11","Card: LexIntent lockup."]],
+  shots:["Filename close-up scene","Red-pen circle on filename + sender","Fixed version cut","Brand end-card"],
+  motion:"Slow push on the close-up. Circle draws. Hard cut to the fixed version. Minimal.",
+  type:"Monospace for the filename/email; Newsreader italic for the note.",
+  sound:"Pen scratch. A single low bass tap on the fix. Page-turn to the card.",
+  cta:"“Ten seconds. Do it now.” (implicit action CTA; no keyword — this one is a pure daily filler).",
+  rubric:{Hook:8,Curiosity:6,Clarity:10,"Emotional Pull":6,"Save Potential":5,"Share Potential":7,"OCC Efficiency":10,"Brand Consistency":9},
+  rnote:"6 minutes, one shot — the cheapest reel in the batch. Low save/curiosity (it's one tiny tip) but it's a legitimate scroll-stopper and near-zero cost. Use to hit the 5-a-day count on heavy days."},
+
+ {code:"NUM-01",name:"98%",fam:"Number",pillar:"AI Dispatch",cx:"Low",min:8,fear:"#6 employability gap",trigger:"Specificity",
+  hooks:[
+   {fw:"Bush — stat cold open",t:"India's legal sector is booming. 98% of law graduates are locked out of the top jobs."},
+   {fw:"Brunson — tension",t:"There have never been more legal jobs. There have never been more law grads who can't get one. Why?"},
+   {fw:"Kallaway — headline",t:"A number from this month's data: 98%. That's the share of law grads the top firms won't look at."}],
+  script:[
+   ["0:00","Masthead flicker: “LEXINTENT — LAW SIGNALS”. Then full-bleed: “98%”."],
+   ["0:04","VO: “Ninety-eight percent of Indian law graduates never get considered for a top-tier role.”"],
+   ["0:09","Text: “It's not the market. The market is growing.”"],
+   ["0:14","Three lines type in — the readiness gap: no drafting proof, no practice direction, applied late."],
+   ["0:22","VO: “The gap isn't talent. It's what the resume proves. That's a fixable problem.”"],
+   ["0:29","Card: “Follow — the readiness checklist drops this week.”"]],
+  shots:["Masthead scene","Full-bleed number: 98%","Kinetic text — 3 readiness-gap lines","Card + next-edition CTA"],
+  motion:"Masthead quick. Number scales in with grain. Text lines fade + rise, one at a time. Slow push on the card.",
+  type:"Huge Newsreader “98%”, burgundy; Inter for the readiness lines; Inter caps for the card.",
+  sound:"Typewriter on the masthead. Bass boom on “98%”. Keyboard on the readiness lines.",
+  cta:"“Follow — the readiness checklist drops this week.” (next-edition; opens a soft loop to the product content).",
+  rubric:{Hook:9,Curiosity:8,Clarity:8,"Emotional Pull":8,"Save Potential":6,"Share Potential":9,"OCC Efficiency":10,"Brand Consistency":10},
+  rnote:"Best pure top-of-funnel reel in the batch — a shocking, real, citable number, 8 min to make, very shareable. Low save (nothing to bookmark). Use to open a themed week or a launch runway."},
+
+ {code:"NUM-06",name:"Score Your Own CV (live)",fam:"Number",pillar:"AI Dispatch",cx:"Med",min:15,fear:"#1 rejected at stage one",trigger:"Specificity + proof",
+  hooks:[
+   {fw:"Hormozi — do it with me",t:"Six questions. Score your resume against them right now. Comment your number."},
+   {fw:"Brunson — interactive",t:"By the end of this reel you'll know your resume's score out of ten. Most law students get a four."},
+   {fw:"Bush — challenge",t:"I'll bet your CV scores under six on the check recruiters actually use. Let's find out."}],
+  script:[
+   ["0:00","Card: “Score your CV. 6 checks. Out of 10.”"],
+   ["0:04","Check 1 appears: “Every internship has a verb that proves work (drafted / researched / argued).” A sample CV gets a burgundy ✓ or ✗."],
+   ["0:09","Checks 2–6, ~2.5s each: outcomes not duties · 2–4 bullets per entry · practice direction · one-page · named file + pro email."],
+   ["0:24","Score lands on the sample: “4 / 10.” VO: “That's a typical first draft. Each fix is worth a point.”"],
+   ["0:31","Card: “Comment your score. I'll tell you which fix moves it most.”"],
+   ["0:37","Brand end-card: “LexIntent — we're building the tool that does this in three seconds.”"]],
+  shots:["Score-card scene — rubric intro","Sheet with ✓/✗ stamped per check","Score counter resolves to 4/10","Comment-your-score card","Brand end-card (product line)"],
+  motion:"Each check slides in; ✓/✗ stamps on the sample CV. Score bar grows, number counts. End-card = masthead lockup, restrained.",
+  type:"Inter SemiBold for the checks; Newsreader numeral for the score; burgundy ✓/✗.",
+  sound:"Soft ui-tick per check. Stamp per ✓/✗. Bass hit on the score. Page-turn to the end-card.",
+  cta:"Comment your score → reply tells them the highest-leverage fix. Doubles as the clearest product tie-in in the batch.",
+  rubric:{Hook:9,Curiosity:9,Clarity:9,"Emotional Pull":8,"Save Potential":9,"Share Potential":9,"OCC Efficiency":8,"Brand Consistency":9},
+  rnote:"The best all-rounder: interactive (drives comments hard), saveable (it's a rubric), shareable (people compare scores), and it introduces the product as the natural next step without a pitch. Feature it weekly; it's the funnel's workhorse."},
+
+ {code:"DIS-01",name:"An AI Reads Your CV Like This",fam:"Dispatch",pillar:"AI Dispatch",cx:"Med",min:18,fear:"#1 rejected at stage one",trigger:"Curiosity gap",
+  hooks:[
+   {fw:"Kallaway — screen POV",t:"This is your resume, the way an AI screening tool sees it. Watch what it flags."},
+   {fw:"Brunson — machine reveal",t:"A recruiter's software reads your CV in half a second. Here's the read it produces."},
+   {fw:"Hormozi — the new gatekeeper",t:"Before a human sees your resume, this does. And it's looking for exactly three things."}],
+  script:[
+   ["0:00","Screen-rec: a CV loads into a parser view. A scan-line sweeps top to bottom."],
+   ["0:04","Flags drop in the margin: “No drafting verb — internship 1.” “Duty, not outcome — line 3.” “No practice direction.”"],
+   ["0:13","VO: “It's not judging your effort. It's checking whether the words carry a signal.”"],
+   ["0:20","A score meter fills: 41 / 100. Then the fixes apply live and it climbs to 78."],
+   ["0:28","VO: “Same experience. Same person. The resume just started speaking the reader's language.”"],
+   ["0:36","Brand end-card: “LexIntent — we're building this. Comment SCAN for the waitlist.”"]],
+  shots:["Sheet + parser scene","Scan-line overlay (NEW kit piece — shared with RPV-01)","Margin flags, staggered","Score meter 41 → 78 with live fixes","Brand end-card + CTA"],
+  motion:"Scan-line sweep ~2s. Flags = fade + x:20 on the beat. Score meter = bar + counter, then a second pass climbing after the fixes. Restrained, documentary.",
+  type:"Monospace for the parser flags; Newsreader numeral for the score; Inter for VO captions and the end-card.",
+  sound:"Low sub under the scan. Soft ui-notify per flag. Riser as the score climbs. Bass hit at 78. Page-turn to the end-card.",
+  cta:"Comment SCAN → DM the waitlist link + the manual version of the 3 checks. This is the product-forward reel of the batch.",
+  rubric:{Hook:9,Curiosity:10,Clarity:8,"Emotional Pull":8,"Save Potential":8,"Share Potential":8,"OCC Efficiency":7,"Brand Consistency":9},
+  rnote:"Curiosity 10 — “see the machine's read of your own document” is irresistible. It's the most product-forward reel here, so cap it at ~1–2 per week and always after 3–4 pure-value reels, per the brand rule (product is the conclusion, not the hook). Needs the scan-line build (shared cost with RPV-01)."}
+];
+
+/* ---------- render ---------- */
+const STK = "lexintent-script-status-v1";
+let status = {};
+try { status = JSON.parse(localStorage.getItem(STK) || "{}"); } catch(e){ status = {}; }
+const STLABEL = ["Not started","Scripted","Filmed","Posted"];
+const filters = { fam:new Set(), cx:new Set(), status:new Set(), q:"" };
+
+const $ = s => document.querySelector(s);
+const listEl = $("#list"), countEl = $("#count"), progEl = $("#prog");
+
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function famMatch(f, v){ return f.startsWith(v) || f === v; }
+
+function saveStatus(){ try{ localStorage.setItem(STK, JSON.stringify(status)); }catch(e){} }
+
+function scriptText(s){
+  let t = `${s.code} — ${s.name}\n${s.fam} · ${s.pillar} · ~${s.min} min · fear ${s.fear}\n\nHOOKS\n`;
+  s.hooks.forEach((h,i)=> t += `${i+1}. [${h.fw}] ${h.t}\n`);
+  t += `\nSCRIPT\n`;
+  s.script.forEach(r => t += `${r[0]}  ${r[1]}\n`);
+  t += `\nSHOT LIST\n` + s.shots.map(x=>"- "+x).join("\n");
+  t += `\n\nMOTION\n${s.motion}\n\nTYPOGRAPHY\n${s.type}\n\nSOUND\n${s.sound}\n\nCTA\n${s.cta}\n\nRUBRIC\n`;
+  t += Object.entries(s.rubric).map(([k,v])=>`${k}: ${v}/10`).join("  ·  ");
+  t += `\n${s.rnote}\n`;
+  return t;
+}
+
+function copy(text, msg){
+  navigator.clipboard.writeText(text).then(()=>toast(msg||"Copied")).catch(()=>toast("Copy failed"));
+}
+let tt;
+function toast(m){ const el=$("#toast"); el.textContent=m; el.classList.add("show"); clearTimeout(tt); tt=setTimeout(()=>el.classList.remove("show"),1400); }
+
+function cardHTML(s){
+  const st = status[s.code] || 0;
+  const rub = Object.entries(s.rubric).map(([k,v])=>`
+    <div class="rmetric"><span class="rl">${esc(k)}</span><span class="rn">${v}</span>
+      <div class="rtrack"><div class="rfill" style="width:${v*10}%"></div></div></div>`).join("");
+  const hooks = s.hooks.map(h=>`
+    <div class="hook"><div><span class="fw">${esc(h.fw)}</span>${esc(h.t)}</div>
+      <button class="btn" data-copy="hook" data-t="${esc(h.t)}">Copy</button></div>`).join("");
+  const lines = s.script.map(r=>`<div class="tc">${esc(r[0])}</div><div class="ln">${esc(r[1])}</div>`).join("");
+  return `<div class="card" data-code="${s.code}">
+    <div class="head" role="button" tabindex="0" data-act="toggle">
+      <span class="code">${s.code}</span>
+      <h3>${esc(s.name)} <span class="arrow">▸</span></h3>
+      <div class="peek">${esc(s.hooks[0].t)}</div>
+      <div class="meta">
+        <span class="pill ${s.cx==='Low'?'low':''}">${s.cx}</span>
+        <span class="pill">${s.min}m</span>
+        <span class="pill">${esc(s.fam)}</span>
+        <span class="stat s${st}" title="${STLABEL[st]}"></span>
+      </div>
+    </div>
+    <div class="body">
+      <h4>Hooks <button class="btn cyc" data-act="cycle">${STLABEL[st]} ⟳</button></h4>
+      <div class="hooks">${hooks}</div>
+      <h4>Script <button class="btn" data-copy="script">Copy script</button></h4>
+      <div class="scriptlines">${lines}</div>
+      <h4>Shot list</h4><ul class="plain">${s.shots.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+      <h4>Motion (OpenChatCut)</h4><p class="kv">${esc(s.motion)}</p>
+      <h4>Typography</h4><p class="kv">${esc(s.type)}</p>
+      <h4>Sound</h4><p class="kv">${esc(s.sound)}</p>
+      <h4>CTA</h4><p class="kv">${esc(s.cta)}</p>
+      <h4>Rubric — /10</h4><div class="rubric">${rub}</div>
+      <p class="rnote">${esc(s.rnote)}</p>
+      <button class="btn wide" data-copy="all">Copy everything</button>
+    </div>
+  </div>`;
+}
+
+function render(){
+  const rows = SCRIPTS.filter(s=>{
+    if(filters.fam.size && ![...filters.fam].some(v=>famMatch(s.fam,v))) return false;
+    if(filters.cx.size && !filters.cx.has(s.cx)) return false;
+    if(filters.status.size && !filters.status.has(String(status[s.code]||0))) return false;
+    if(filters.q){
+      const hay = (s.code+" "+s.name+" "+s.fam+" "+s.pillar+" "+s.fear+" "+s.hooks.map(h=>h.t).join(" ")+" "+s.script.map(r=>r[1]).join(" ")+" "+s.cta).toLowerCase();
+      if(!hay.includes(filters.q)) return false;
+    }
+    return true;
+  });
+  listEl.innerHTML = rows.length ? rows.map(cardHTML).join("") : `<p class="empty">No scripts match those filters.</p>`;
+  countEl.textContent = `${rows.length} of ${SCRIPTS.length} shown`;
+  const posted = SCRIPTS.filter(s=>(status[s.code]||0)>=3).length;
+  const filmed = SCRIPTS.filter(s=>(status[s.code]||0)>=2).length;
+  progEl.innerHTML = `<b>${filmed}</b>/${SCRIPTS.length} filmed · <b>${posted}</b> posted`;
+}
+
+document.addEventListener("click", e=>{
+  const chip = e.target.closest(".chip");
+  if(chip){
+    const set = filters[chip.dataset.f];
+    chip.classList.toggle("on");
+    chip.classList.contains("on") ? set.add(chip.dataset.v) : set.delete(chip.dataset.v);
+    render(); return;
+  }
+  const head = e.target.closest("[data-act='toggle']");
+  if(head && !e.target.closest("button")){ head.closest(".card").classList.toggle("open"); return; }
+  const cyc = e.target.closest("[data-act='cycle']");
+  if(cyc){
+    const code = cyc.closest(".card").dataset.code;
+    status[code] = ((status[code]||0)+1)%4; saveStatus();
+    const open = cyc.closest(".card").classList.contains("open");
+    render();
+    if(open){ const c=document.querySelector(`.card[data-code="${code}"]`); if(c) c.classList.add("open"); }
+    return;
+  }
+  const cp = e.target.closest("[data-copy]");
+  if(cp){
+    const card = cp.closest(".card"); const s = SCRIPTS.find(x=>x.code===card.dataset.code);
+    if(cp.dataset.copy==="hook") copy(cp.dataset.t, "Hook copied");
+    else if(cp.dataset.copy==="script") copy(s.script.map(r=>`${r[0]}  ${r[1]}`).join("\n"), "Script copied");
+    else if(cp.dataset.copy==="all") copy(scriptText(s), "Full script copied");
+  }
+});
+document.addEventListener("keydown", e=>{
+  if(e.key==="Enter" || e.key===" "){
+    const h = e.target.closest("[data-act='toggle']");
+    if(h){ e.preventDefault(); h.closest(".card").classList.toggle("open"); }
+  }
+});
+$("#q").addEventListener("input", e=>{ filters.q = e.target.value.trim().toLowerCase(); render(); });
+$("#themebtn").addEventListener("click", ()=>{
+  const cur = document.documentElement.getAttribute("data-theme");
+  const next = cur==="dark" ? "light" : cur==="light" ? "" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  try{ localStorage.setItem("lexintent-theme", next); }catch(e){}
+});
+try{ const th = localStorage.getItem("lexintent-theme"); if(th!==null) document.documentElement.setAttribute("data-theme", th); }catch(e){}
+
+render();
+</script>
+</body>
+</html>

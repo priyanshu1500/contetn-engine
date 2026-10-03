@@ -1,0 +1,61 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: kar, Inter, 76, &H333341&, &H14100E&, &H99000000&, 0, 1, 5, 4, 2, 90, 90, 300, 1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.92,kar,,0,0,0,,{\c&HFF714E&}THIS {\c&H333341&}RAN {\c&H333341&}MY
+Dialogue: 0,0:00:00.92,0:00:01.86,kar,,0,0,0,,{\c&HFF714E&}INBOX {\c&H333341&}FOR {\c&H333341&}THREE
+Dialogue: 0,0:00:01.86,0:00:02.36,kar,,0,0,0,,{\c&HFF714E&}WEEKS
+Dialogue: 0,0:00:02.82,0:00:03.26,kar,,0,0,0,,{\c&H333341&}I {\c&HFF714E&}DIDN'T {\c&H333341&}TOUCH
+Dialogue: 0,0:00:03.26,0:00:03.76,kar,,0,0,0,,{\c&H333341&}IT {\c&HFF714E&}ONCE
+Dialogue: 0,0:00:04.46,0:00:05.36,kar,,0,0,0,,{\c&H333341&}EVERY {\c&H333341&}LEAD {\c&HFF714E&}EMAIL
+Dialogue: 0,0:00:05.86,0:00:06.58,kar,,0,0,0,,{\c&HFF714E&}COPIED {\c&H333341&}INTO {\c&H333341&}THE
+Dialogue: 0,0:00:06.58,0:00:07.58,kar,,0,0,0,,{\c&H333341&}CRM {\c&H333341&}BY {\c&HFF714E&}HAND
+Dialogue: 0,0:00:08.12,0:00:08.82,kar,,0,0,0,,{\c&H333341&}FORTY {\c&H333341&}-FIVE {\c&HFF714E&}MINUTES
+Dialogue: 0,0:00:08.82,0:00:09.34,kar,,0,0,0,,{\c&H333341&}A {\c&HFF714E&}DAY
+Dialogue: 0,0:00:09.34,0:00:09.84,kar,,0,0,0,,{\c&HFF714E&}GONE
+Dialogue: 0,0:00:10.38,0:00:10.84,kar,,0,0,0,,{\c&H333341&}SO {\c&H333341&}I {\c&HFF714E&}BUILT
+Dialogue: 0,0:00:10.84,0:00:11.54,kar,,0,0,0,,{\c&H333341&}AN {\c&HFF714E&}AGENT {\c&H333341&}THAT
+Dialogue: 0,0:00:11.54,0:00:12.38,kar,,0,0,0,,{\c&H333341&}READS {\c&H333341&}THE {\c&HFF714E&}EMAIL
+Dialogue: 0,0:00:12.84,0:00:13.40,kar,,0,0,0,,{\c&HFF714E&}PULLS {\c&H333341&}OUT {\c&H333341&}THE
+Dialogue: 0,0:00:13.40,0:00:13.90,kar,,0,0,0,,{\c&HFF714E&}CONTACT
+Dialogue: 0,0:00:14.32,0:00:14.60,kar,,0,0,0,,{\c&H333341&}AND {\c&HFF714E&}WHAT {\c&H333341&}THEY
+Dialogue: 0,0:00:14.60,0:00:15.20,kar,,0,0,0,,{\c&HFF714E&}ACTUALLY {\c&H333341&}WANT
+Dialogue: 0,0:00:15.48,0:00:16.02,kar,,0,0,0,,{\c&H333341&}AND {\c&HFF714E&}DROPS {\c&H333341&}A
+Dialogue: 0,0:00:16.02,0:00:16.82,kar,,0,0,0,,{\c&H333341&}CLEAN {\c&H333341&}ROW {\c&HFF714E&}STRAIGHT
+Dialogue: 0,0:00:16.82,0:00:17.80,kar,,0,0,0,,{\c&HFF714E&}INTO {\c&H333341&}THE {\c&H333341&}CRM
+Dialogue: 0,0:00:19.18,0:00:20.26,kar,,0,0,0,,{\c&HFF714E&}WATCH {\c&H333341&}—
+Dialogue: 0,0:00:20.26,0:00:20.96,kar,,0,0,0,,{\c&HFF714E&}EMAIL {\c&H333341&}COMES {\c&H333341&}IN
+Dialogue: 0,0:00:21.32,0:00:22.12,kar,,0,0,0,,{\c&H333341&}THE {\c&HFF714E&}AGENT {\c&H333341&}READS
+Dialogue: 0,0:00:22.12,0:00:22.62,kar,,0,0,0,,{\c&HFF714E&}IT
+Dialogue: 0,0:00:22.88,0:00:23.58,kar,,0,0,0,,{\c&H333341&}TAGS {\c&H333341&}THE {\c&HFF714E&}INTENT
+Dialogue: 0,0:00:24.22,0:00:24.88,kar,,0,0,0,,{\c&HFF714E&}AND {\c&H333341&}THE {\c&H333341&}CRM
+Dialogue: 0,0:00:24.88,0:00:25.80,kar,,0,0,0,,{\c&H333341&}ROW {\c&HFF714E&}APPEARS {\c&H333341&}WITH
+Dialogue: 0,0:00:25.80,0:00:26.82,kar,,0,0,0,,{\c&H333341&}THE {\c&HFF714E&}CONTACT {\c&H333341&}ALREADY
+Dialogue: 0,0:00:26.82,0:00:27.36,kar,,0,0,0,,{\c&HFF714E&}FILLED {\c&H333341&}IN
+Dialogue: 0,0:00:27.80,0:00:28.30,kar,,0,0,0,,{\c&H333341&}IT {\c&H333341&}EVEN {\c&HFF714E&}DRAFTS
+Dialogue: 0,0:00:28.30,0:00:29.26,kar,,0,0,0,,{\c&H333341&}THE {\c&HFF714E&}FIRST {\c&H333341&}REPLY
+Dialogue: 0,0:00:29.26,0:00:29.70,kar,,0,0,0,,{\c&HFF714E&}FOR {\c&H333341&}ME
+Dialogue: 0,0:00:29.70,0:00:30.32,kar,,0,0,0,,{\c&H333341&}TO {\c&HFF714E&}APPROVE
+Dialogue: 0,0:00:31.98,0:00:32.30,kar,,0,0,0,,{\c&H333341&}45 {\c&HFF714E&}MINUTES {\c&H333341&}A
+Dialogue: 0,0:00:32.30,0:00:32.80,kar,,0,0,0,,{\c&HFF714E&}DAY
+Dialogue: 0,0:00:32.94,0:00:33.80,kar,,0,0,0,,{\c&H333341&}DOWN {\c&H333341&}TO {\c&HFF714E&}ABOUT
+Dialogue: 0,0:00:33.80,0:00:34.56,kar,,0,0,0,,{\c&H333341&}TWO {\c&HFF714E&}MINUTES {\c&H333341&}OF
+Dialogue: 0,0:00:34.56,0:00:35.06,kar,,0,0,0,,{\c&HFF714E&}REVIEW
+Dialogue: 0,0:00:35.42,0:00:35.86,kar,,0,0,0,,{\c&HFF714E&}THAT'S {\c&H333341&}FOUR {\c&H333341&}HOURS
+Dialogue: 0,0:00:35.86,0:00:36.36,kar,,0,0,0,,{\c&H333341&}A {\c&H333341&}WEEK {\c&HFF714E&}BACK
+Dialogue: 0,0:00:37.12,0:00:37.42,kar,,0,0,0,,{\c&H333341&}IF {\c&H333341&}YOUR {\c&HFF714E&}INBOX
+Dialogue: 0,0:00:37.42,0:00:38.10,kar,,0,0,0,,{\c&HFF714E&}LOOKS {\c&H333341&}LIKE {\c&H333341&}MINE
+Dialogue: 0,0:00:38.10,0:00:38.60,kar,,0,0,0,,{\c&HFF714E&}DID
+Dialogue: 0,0:00:38.90,0:00:39.40,kar,,0,0,0,,{\c&HFF714E&}COMMENT
+Dialogue: 0,0:00:39.52,0:00:40.02,kar,,0,0,0,,{\c&HFF714E&}AUTOMATE
+Dialogue: 0,0:00:40.18,0:00:40.54,kar,,0,0,0,,{\c&H333341&}AND {\c&HFF714E&}I'LL {\c&H333341&}SEND
+Dialogue: 0,0:00:40.54,0:00:40.92,kar,,0,0,0,,{\c&H333341&}YOU {\c&H333341&}THE {\c&HFF714E&}WORKFLOW
+Dialogue: 0,0:00:40.92,0:00:41.42,kar,,0,0,0,,{\c&HFF714E&}BREAKDOWN

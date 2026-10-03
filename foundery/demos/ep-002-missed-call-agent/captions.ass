@@ -1,0 +1,62 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour, Bold, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: kar, Anton, 76, &H333341&, &H14100E&, &H99000000&, 0, 1, 5, 4, 2, 90, 90, 300, 1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.00,kar,,0,0,0,,{\c&H333341&}A {\c&H333341&}SIX {\c&HFF714E&}HUNDRED
+Dialogue: 0,0:00:01.00,0:00:02.16,kar,,0,0,0,,{\c&H333341&}FIFTY {\c&HFF714E&}THOUSAND {\c&H333341&}DOLLAR
+Dialogue: 0,0:00:02.16,0:00:03.20,kar,,0,0,0,,{\c&H333341&}BUYER {\c&HFF714E&}CALLED {\c&H333341&}THIS
+Dialogue: 0,0:00:03.20,0:00:03.70,kar,,0,0,0,,{\c&HFF714E&}AGENCY
+Dialogue: 0,0:00:04.12,0:00:04.90,kar,,0,0,0,,{\c&HFF714E&}NOBODY {\c&H333341&}PICKED {\c&H333341&}UP
+Dialogue: 0,0:00:05.54,0:00:06.46,kar,,0,0,0,,{\c&HFF714E&}FOURTEEN {\c&H333341&}MINUTES {\c&H333341&}LATER
+Dialogue: 0,0:00:06.80,0:00:07.24,kar,,0,0,0,,{\c&H333341&}HE {\c&HFF714E&}CALLED {\c&H333341&}THE
+Dialogue: 0,0:00:07.24,0:00:07.98,kar,,0,0,0,,{\c&HFF714E&}OFFICE {\c&H333341&}NEXT {\c&H333341&}DOOR
+Dialogue: 0,0:00:07.98,0:00:08.48,kar,,0,0,0,,{\c&HFF714E&}INSTEAD
+Dialogue: 0,0:00:08.96,0:00:09.70,kar,,0,0,0,,{\c&HFF714E&}SEVENTY-EIGHT {\c&H333341&}PERCENT
+Dialogue: 0,0:00:09.70,0:00:10.48,kar,,0,0,0,,{\c&H333341&}OF {\c&HFF714E&}BUYERS {\c&H333341&}GO
+Dialogue: 0,0:00:10.48,0:00:11.64,kar,,0,0,0,,{\c&H333341&}WITH {\c&HFF714E&}WHOEVER {\c&H333341&}ANSWERS
+Dialogue: 0,0:00:11.64,0:00:12.14,kar,,0,0,0,,{\c&HFF714E&}FIRST
+Dialogue: 0,0:00:12.94,0:00:13.58,kar,,0,0,0,,{\c&H333341&}SO {\c&HFF714E&}INSTEAD {\c&H333341&}OF
+Dialogue: 0,0:00:13.58,0:00:14.22,kar,,0,0,0,,{\c&H333341&}HIRING {\c&HFF714E&}SOMEONE {\c&H333341&}TO
+Dialogue: 0,0:00:14.22,0:00:14.72,kar,,0,0,0,,{\c&HFF714E&}SIT {\c&H333341&}BY {\c&H333341&}THE
+Dialogue: 0,0:00:14.72,0:00:15.60,kar,,0,0,0,,{\c&HFF714E&}PHONE {\c&H333341&}ALL {\c&H333341&}DAY
+Dialogue: 0,0:00:15.96,0:00:16.46,kar,,0,0,0,,{\c&H333341&}WE {\c&HFF714E&}GAVE {\c&H333341&}THE
+Dialogue: 0,0:00:16.46,0:00:16.96,kar,,0,0,0,,{\c&H333341&}PHONE {\c&H333341&}A {\c&HFF714E&}BRAIN
+Dialogue: 0,0:00:17.52,0:00:17.88,kar,,0,0,0,,{\c&H333341&}THE {\c&HFF714E&}SECOND {\c&H333341&}A
+Dialogue: 0,0:00:17.88,0:00:18.60,kar,,0,0,0,,{\c&H333341&}CALL {\c&H333341&}IS {\c&HFF714E&}MISSED
+Dialogue: 0,0:00:18.78,0:00:19.34,kar,,0,0,0,,{\c&H333341&}IT {\c&HFF714E&}ACTS
+Dialogue: 0,0:00:20.26,0:00:20.76,kar,,0,0,0,,{\c&HFF714E&}WATCH
+Dialogue: 0,0:00:21.20,0:00:21.82,kar,,0,0,0,,{\c&H333341&}IT {\c&HFF714E&}TEXTS {\c&H333341&}BACK
+Dialogue: 0,0:00:21.82,0:00:22.56,kar,,0,0,0,,{\c&H333341&}IN {\c&HFF714E&}UNDER {\c&H333341&}TEN
+Dialogue: 0,0:00:22.56,0:00:23.08,kar,,0,0,0,,{\c&HFF714E&}SECONDS
+Dialogue: 0,0:00:23.50,0:00:24.16,kar,,0,0,0,,{\c&HFF714E&}ASKS {\c&H333341&}THE {\c&H333341&}TWO
+Dialogue: 0,0:00:24.16,0:00:25.04,kar,,0,0,0,,{\c&HFF714E&}QUESTIONS {\c&H333341&}THAT {\c&H333341&}ACTUALLY
+Dialogue: 0,0:00:25.04,0:00:25.54,kar,,0,0,0,,{\c&HFF714E&}MATTER
+Dialogue: 0,0:00:25.72,0:00:26.76,kar,,0,0,0,,{\c&H333341&}BUDGET {\c&H333341&}AND {\c&HFF714E&}TIMELINE
+Dialogue: 0,0:00:27.20,0:00:27.72,kar,,0,0,0,,{\c&H333341&}AND {\c&HFF714E&}LOCKS {\c&H333341&}IN
+Dialogue: 0,0:00:27.72,0:00:28.26,kar,,0,0,0,,{\c&H333341&}A {\c&HFF714E&}SHOWING {\c&H333341&}BEFORE
+Dialogue: 0,0:00:28.26,0:00:28.96,kar,,0,0,0,,{\c&H333341&}HE {\c&H333341&}EVEN {\c&HFF714E&}THINKS
+Dialogue: 0,0:00:28.96,0:00:29.66,kar,,0,0,0,,{\c&H333341&}ABOUT {\c&HFF714E&}CALLING {\c&H333341&}ANYONE
+Dialogue: 0,0:00:29.66,0:00:30.38,kar,,0,0,0,,{\c&HFF714E&}ELSE
+Dialogue: 0,0:00:30.78,0:00:31.38,kar,,0,0,0,,{\c&HFF714E&}THAT'S {\c&H333341&}A {\c&H333341&}FULL-TIME
+Dialogue: 0,0:00:31.38,0:00:32.62,kar,,0,0,0,,{\c&HFF714E&}COORDINATOR'S {\c&H333341&}JOB
+Dialogue: 0,0:00:32.62,0:00:33.70,kar,,0,0,0,,{\c&H333341&}DONE {\c&HFF714E&}BEFORE {\c&H333341&}YOUR
+Dialogue: 0,0:00:33.70,0:00:34.44,kar,,0,0,0,,{\c&HFF714E&}COFFEE {\c&H333341&}GETS {\c&H333341&}COLD
+Dialogue: 0,0:00:35.02,0:00:35.74,kar,,0,0,0,,{\c&H333341&}SIX {\c&HFF714E&}SHOWINGS {\c&H333341&}A
+Dialogue: 0,0:00:35.74,0:00:36.44,kar,,0,0,0,,{\c&HFF714E&}WEEK {\c&H333341&}THAT {\c&H333341&}USED
+Dialogue: 0,0:00:36.44,0:00:37.38,kar,,0,0,0,,{\c&H333341&}TO {\c&H333341&}JUST {\c&HFF714E&}EVAPORATE
+Dialogue: 0,0:00:37.62,0:00:38.42,kar,,0,0,0,,{\c&H333341&}BOOKED {\c&HFF714E&}AUTOMATICALLY
+Dialogue: 0,0:00:39.64,0:00:40.38,kar,,0,0,0,,{\c&H333341&}STILL {\c&H333341&}PAYING {\c&HFF714E&}SOMEONE
+Dialogue: 0,0:00:40.38,0:00:40.82,kar,,0,0,0,,{\c&H333341&}TO {\c&HFF714E&}SIT {\c&H333341&}BY
+Dialogue: 0,0:00:40.82,0:00:41.54,kar,,0,0,0,,{\c&H333341&}THE {\c&HFF714E&}PHONE {\c&H333341&}AND
+Dialogue: 0,0:00:41.54,0:00:42.04,kar,,0,0,0,,{\c&HFF714E&}HOPE?
+Dialogue: 0,0:00:42.52,0:00:43.02,kar,,0,0,0,,{\c&HFF714E&}COMMENT {\c&H333341&}SYSTEM
+Dialogue: 0,0:00:43.48,0:00:43.86,kar,,0,0,0,,{\c&HFF714E&}I'LL {\c&H333341&}SEND {\c&H333341&}YOU
+Dialogue: 0,0:00:43.86,0:00:44.54,kar,,0,0,0,,{\c&H333341&}THE {\c&H333341&}EXACT {\c&HFF714E&}BLUEPRINT

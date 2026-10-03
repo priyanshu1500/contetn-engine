@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Casual Voice Picker</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@600;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#E8E5DE;--ink:#172639;--gold:#CB9323;--bronze:#926D33;--coral:#F48A5B;--card:#F2F0EA}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:42rem;margin:0 auto;padding:2rem 1.3rem 5rem}
+h1{font-family:"Newsreader",serif;font-weight:700;font-size:2.4rem;margin:.2rem 0}
+.eyebrow{font-weight:700;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze)}
+.script{font-family:"Newsreader",serif;font-size:1.05rem;background:var(--card);border-left:4px solid var(--coral);padding:.9rem 1.1rem;margin:1.1rem 0}
+.v{border:2px solid var(--ink);background:var(--card);padding:.85rem 1.05rem;margin:.85rem 0;box-shadow:6px 6px 0 rgba(23,38,57,.75)}
+.v .n{font-family:"Newsreader",serif;font-weight:700;font-size:1.3rem}
+.v .t{font-size:.78rem;color:var(--bronze);margin-left:.4rem}
+.v audio{width:100%;margin-top:.55rem}
+.grp{font-weight:700;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin:1.6rem 0 .4rem;border-bottom:2px solid var(--ink);padding-bottom:.3rem}
+.note{font-size:.82rem;color:var(--bronze);font-style:italic;margin-top:2rem}
+</style></head><body><div class="wrap">
+<div class="eyebrow">LexIntent — Voiceover</div>
+<h1>Casual voice — pick one</h1>
+<p style="font-size:.9rem;color:var(--bronze)">All reading the same casual opener. Want the "talking to a friend" feel, not announcer. Tell me the one.</p>
+<div class="script">"Okay so — two law students. Same GPA, same law school. One walks into a top firm, the other hears nothing. And the whole difference? Four words on the resume."</div>
+
+<div class="grp">edge-tts (free, Microsoft)</div>
+<div class="v"><span class="n">Brian</span><span class="t">US · young, casual, upbeat</span><audio controls preload="none" src="_refs/voices/cas-en-US-BrianMultilingualNeural.mp3"></audio></div>
+<div class="v"><span class="n">Andrew</span><span class="t">US · warm, conversational (non-multilingual variant)</span><audio controls preload="none" src="_refs/voices/cas-en-US-AndrewNeural.mp3"></audio></div>
+<div class="v"><span class="n">Christopher</span><span class="t">US · relaxed, mid-range</span><audio controls preload="none" src="_refs/voices/cas-en-US-ChristopherNeural.mp3"></audio></div>
+
+<div class="grp">Kokoro (free, local)</div>
+<div class="v"><span class="n">Adam</span><span class="t">US · natural, easy</span><audio controls preload="none" src="_refs/voices/cas-kokoro-am_adam.mp3"></audio></div>
+<div class="v"><span class="n">Puck</span><span class="t">US · expressive, playful — most "casual creator"</span><audio controls preload="none" src="_refs/voices/cas-kokoro-am_puck.mp3"></audio></div>
+<div class="v"><span class="n">Michael</span><span class="t">US · steady, friendly</span><audio controls preload="none" src="_refs/voices/cas-kokoro-am_michael.mp3"></audio></div>
+<div class="v"><span class="n">Liam</span><span class="t">US · lighter, quick</span><audio controls preload="none" src="_refs/voices/cas-kokoro-am_liam.mp3"></audio></div>
+
+<p class="note">If none feel right, ElevenLabs ($5/mo) has the most natural casual American voices + you can clone your own.</p>
+</div></body></html>

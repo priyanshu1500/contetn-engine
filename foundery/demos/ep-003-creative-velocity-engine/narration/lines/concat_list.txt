@@ -1,0 +1,5 @@
+file 'D:\agency content\ai-agency\demos\ep-003-creative-velocity-engine\narration\lines\line_01.mp3'
+file 'D:\agency content\ai-agency\demos\ep-003-creative-velocity-engine\narration\lines\line_02.mp3'
+file 'D:\agency content\ai-agency\demos\ep-003-creative-velocity-engine\narration\lines\line_03.mp3'
+file 'D:\agency content\ai-agency\demos\ep-003-creative-velocity-engine\narration\lines\line_04.mp3'
+file 'D:\agency content\ai-agency\demos\ep-003-creative-velocity-engine\narration\lines\line_05.mp3'

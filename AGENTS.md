@@ -112,8 +112,11 @@ To create or update an episode:
 ---
 
 ## 6. Where Knowledge Lives
-- `D:\agency content\SYSTEM_KNOWLEDGE_BASE.md`: Deep architectural and creative guide.
-- `D:\agency content\BIN\docs\METROMEDIA_EDITORIAL_PLAYBOOK.md`: Frame-by-frame breakdown of the MetroMedia aesthetic.
-- `D:\agency content\BIN\docs\DESIGN_PHILOSOPHY.md`: Core agency brand and positioning rules.
-- `D:\agency content\BIN\docs\PIPELINE.md`: Technical FFmpeg and Python script specs.
+- `guidebooks/SKILLS_AND_TOOLING.md`: Complete directory of AI agent skills, GitHub repositories, and operational protocols.
+- `guidebooks/REPLICATION_GUIDE_NEW_PC.md`: Step-by-step setup on a fresh machine.
+- `guidebooks/THOUGHT_PROCESS_AND_RESEARCH.md`: Evolution history, taste mandates, and forensic reference breakdowns.
+- `SYSTEM_KNOWLEDGE_BASE.md`: Deep architectural and creative guide.
+- `guidebooks/METROMEDIA_EDITORIAL_PLAYBOOK.md`: Frame-by-frame breakdown of the MetroMedia aesthetic.
+- `guidebooks/DESIGN_PHILOSOPHY.md`: Core agency brand and positioning rules.
+- `guidebooks/PIPELINE.md`: Technical FFmpeg and Python script specs.
 

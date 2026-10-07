@@ -1,0 +1,1901 @@
+{
+  "title": "Episode D5 \u2014 The 7 Lines of Code (The True Story of Stripe)",
+  "fps": 24,
+  "duration": 75.2,
+  "width": 1080,
+  "height": 1920,
+  "specks": true,
+  "shots": [
+    {
+      "id": "s1",
+      "t0": 0.0,
+      "t1": 5.26,
+      "kind": "polaroid",
+      "polaroid": {
+        "src": "img/collison_installation_card.png",
+        "label": "Patrick & John Collison \u00b7 Palo Alto, 2010",
+        "scale": 1.05,
+        "rot": -1.8
+      },
+      "job": "hook: young Collison brothers polaroid punch in Silicon Valley"
+    },
+    {
+      "id": "s2",
+      "t0": 5.26,
+      "t1": 8.35,
+      "kind": "video",
+      "src": "clips/succession_boardroom.mp4",
+      "from": 1.0,
+      "push": 0.03,
+      "dir": "R",
+      "whip": true,
+      "job": "investor boardroom: laughed out of the room"
+    },
+    {
+      "id": "s3",
+      "t0": 8.35,
+      "t1": 14.49,
+      "kind": "video",
+      "src": "clips/office_walk_corridor.mp4",
+      "from": 0.5,
+      "push": 0.02,
+      "dir": "L",
+      "whip": true,
+      "job": "corporate corridor: PayPal and credit card monopolies"
+    },
+    {
+      "id": "s4",
+      "t0": 14.49,
+      "t1": 24.04,
+      "kind": "evidence",
+      "src": "img/merchant_bank_forms.png",
+      "scale": 1.52,
+      "pos": [
+        350,
+        140
+      ],
+      "imgSize": [
+        760,
+        475
+      ],
+      "imgOff": [
+        0,
+        0
+      ],
+      "dir": "L",
+      "source": "LEGACY BANKING SPECIFICATION \u00b7 2010 ACQUIRING PROCESS",
+      "label": [
+        14.8,
+        15.2
+      ],
+      "job": "evidence: 20 pages of bank forms and 6-week delay"
+    },
+    {
+      "id": "s5",
+      "t0": 24.04,
+      "t1": 31.5,
+      "kind": "stark",
+      "stark": {
+        "text": "FRICTION IS THE SILENT KILLER OF COMMERCE.",
+        "sub": "The foundational realization of Patrick & John Collison",
+        "bg": "white",
+        "tag": "THE FOUNDATIONAL REALIZATION",
+        "size": 110
+      },
+      "job": "stark optical contrast reset slide: Friction is the silent killer"
+    },
+    {
+      "id": "s6",
+      "t0": 31.5,
+      "t1": 36.59,
+      "kind": "evidence",
+      "src": "img/stripe_7_lines_code.png",
+      "scale": 1.55,
+      "pos": [
+        350,
+        140
+      ],
+      "imgSize": [
+        760,
+        475
+      ],
+      "imgOff": [
+        0,
+        0
+      ],
+      "dir": "R",
+      "source": "ORIGINAL STRIPE REPOSITORY \u00b7 CHECKOUT.HTML (2010)",
+      "label": [
+        31.8,
+        32.2
+      ],
+      "job": "evidence: 7 lines of Stripe code integration"
+    },
+    {
+      "id": "s7",
+      "t0": 36.59,
+      "t1": 43.79,
+      "kind": "video",
+      "src": "clips/cursor_ide.mp4",
+      "from": 0.5,
+      "push": 0.03,
+      "dir": "R",
+      "whip": true,
+      "job": "video: code terminal integration in 2 minutes"
+    },
+    {
+      "id": "s8",
+      "t0": 43.79,
+      "t1": 53.33,
+      "kind": "polaroid",
+      "polaroid": {
+        "src": "img/patrick_collison.jpg",
+        "label": "Patrick Collison // \"Give me your laptop right now.\"",
+        "scale": 1.08,
+        "rot": 2.1
+      },
+      "job": "polaroid: Patrick Collison coffee shop install"
+    },
+    {
+      "id": "s9",
+      "t0": 53.33,
+      "t1": 57.77,
+      "kind": "stark",
+      "stark": {
+        "text": "THE COLLISON INSTALLATION.",
+        "sub": "Silicon Valley legendary founder lore (2010)",
+        "bg": "dark",
+        "tag": "FOUNDER DISTRIBUTION LORE",
+        "size": 120
+      },
+      "job": "stark optical reset slide: The Collison Installation"
+    },
+    {
+      "id": "s10",
+      "t0": 57.77,
+      "t1": 65.66,
+      "kind": "stat",
+      "stat": {
+        "prefix": "$",
+        "from": 1,
+        "to": 1000,
+        "suffix": "BILLION VOLUME",
+        "roll": [
+          58.0,
+          59.6
+        ],
+        "style": "gold"
+      },
+      "job": "stat: $1 Trillion annual payment volume"
+    },
+    {
+      "id": "s11",
+      "t0": 65.66,
+      "t1": 69.05,
+      "kind": "video",
+      "src": "clips/reddit_ipo_bell.mp4",
+      "from": 1.0,
+      "push": 0.03,
+      "dir": "R",
+      "whip": true,
+      "job": "video: financial market trading floor scale"
+    },
+    {
+      "id": "s12",
+      "t0": 69.05,
+      "t1": 72.6,
+      "kind": "stark",
+      "stark": {
+        "text": "COLLAPSE THE FRICTION.",
+        "sub": "The company that eliminates friction wins the market.",
+        "bg": "white",
+        "tag": "THE OPERATIONAL LAW",
+        "size": 115
+      },
+      "job": "stark high-key contrast reset: Collapse the friction"
+    },
+    {
+      "id": "s13",
+      "t0": 72.6,
+      "t1": 75.2,
+      "kind": "video",
+      "src": "clips/tech_campus.mp4",
+      "from": 2.0,
+      "push": 0.02,
+      "dir": "L",
+      "whip": true,
+      "job": "outro: aerial tech campus cinematic close"
+    }
+  ],
+  "text": [
+    {
+      "t0": 0.099,
+      "t1": 1.397,
+      "mode": "word",
+      "words": [
+        {
+          "w": "In",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 0.099
+        },
+        {
+          "w": "2010,",
+          "fontKind": "condensed",
+          "em": true,
+          "color": "#F7F5EF",
+          "box": null,
+          "t": 0.281
+        },
+        {
+          "w": "two",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 1.167
+        }
+      ]
+    },
+    {
+      "t0": 1.397,
+      "t1": 2.052,
+      "mode": "word",
+      "words": [
+        {
+          "w": "brothers",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 1.397
+        },
+        {
+          "w": "from",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 1.834
+        },
+        {
+          "w": "a",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 1.98
+        }
+      ]
+    },
+    {
+      "t0": 2.052,
+      "t1": 3.217,
+      "mode": "word",
+      "words": [
+        {
+          "w": "tiny",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 2.052
+        },
+        {
+          "w": "Irish",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 2.465
+        },
+        {
+          "w": "village",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 2.817
+        }
+      ]
+    },
+    {
+      "t0": 3.217,
+      "t1": 3.921,
+      "mode": "word",
+      "words": [
+        {
+          "w": "tried",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 3.217
+        },
+        {
+          "w": "to",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 3.521
+        },
+        {
+          "w": "raise",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 3.63
+        }
+      ]
+    },
+    {
+      "t0": 3.921,
+      "t1": 5.321,
+      "mode": "word",
+      "words": [
+        {
+          "w": "money",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 3.921
+        },
+        {
+          "w": "in",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 4.237
+        },
+        {
+          "w": "Silicon Valley.",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 4.358
+        }
+      ]
+    },
+    {
+      "t0": 6.092,
+      "t1": 7.221,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Every",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 6.092
+        },
+        {
+          "w": "top",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 6.408
+        },
+        {
+          "w": "investor",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 6.699
+        }
+      ]
+    },
+    {
+      "t0": 7.221,
+      "t1": 7.803,
+      "mode": "word",
+      "words": [
+        {
+          "w": "laughed",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 7.221
+        },
+        {
+          "w": "them",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 7.512
+        },
+        {
+          "w": "out",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 7.646
+        }
+      ]
+    },
+    {
+      "t0": 7.803,
+      "t1": 8.569,
+      "mode": "word",
+      "words": [
+        {
+          "w": "of",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 7.803
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 7.876
+        },
+        {
+          "w": "room",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 7.973
+        }
+      ]
+    },
+    {
+      "t0": 9.187,
+      "t1": 10.255,
+      "mode": "word",
+      "words": [
+        {
+          "w": "PayPal",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 9.187
+        },
+        {
+          "w": "had",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 9.721
+        },
+        {
+          "w": "already",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 9.867
+        }
+      ]
+    },
+    {
+      "t0": 10.255,
+      "t1": 11.655,
+      "mode": "word",
+      "words": [
+        {
+          "w": "won",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 10.255
+        },
+        {
+          "w": "Credit",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 11.444
+        },
+        {
+          "w": "card",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 11.808
+        }
+      ]
+    },
+    {
+      "t0": 12.1,
+      "t1": 12.985,
+      "mode": "word",
+      "words": [
+        {
+          "w": "processing",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 12.1
+        },
+        {
+          "w": "was",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 12.731
+        },
+        {
+          "w": "an",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 12.888
+        }
+      ]
+    },
+    {
+      "t0": 12.985,
+      "t1": 14.385,
+      "mode": "word",
+      "words": [
+        {
+          "w": "entrenched",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 12.985
+        },
+        {
+          "w": "corporate",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 13.507
+        },
+        {
+          "w": "monopoly",
+          "fontKind": "serif-italic",
+          "em": true,
+          "color": "#F5C542",
+          "rotate": 0,
+          "t": 13.859
+        }
+      ]
+    },
+    {
+      "t0": 15.328,
+      "t1": 16.335,
+      "mode": "word",
+      "words": [
+        {
+          "w": "To",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 15.328
+        },
+        {
+          "w": "accept",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 15.485
+        },
+        {
+          "w": "payments",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 15.934
+        }
+      ]
+    },
+    {
+      "t0": 16.335,
+      "t1": 17.634,
+      "mode": "word",
+      "words": [
+        {
+          "w": "online",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 16.335
+        },
+        {
+          "w": "an",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 17.136
+        },
+        {
+          "w": "internet",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 17.233
+        }
+      ]
+    },
+    {
+      "t0": 17.634,
+      "t1": 18.301,
+      "mode": "word",
+      "words": [
+        {
+          "w": "business",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 17.634
+        },
+        {
+          "w": "had",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 18.022
+        },
+        {
+          "w": "to",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 18.216
+        }
+      ]
+    },
+    {
+      "t0": 18.301,
+      "t1": 19.492,
+      "mode": "word",
+      "words": [
+        {
+          "w": "wait",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 18.301
+        },
+        {
+          "w": "six",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 18.58
+        },
+        {
+          "w": "weeks",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 18.896
+        }
+      ]
+    },
+    {
+      "t0": 19.527,
+      "t1": 20.619,
+      "mode": "word",
+      "words": [
+        {
+          "w": "submit",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 19.527
+        },
+        {
+          "w": "twenty",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 19.903
+        },
+        {
+          "w": "pages",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 20.206
+        }
+      ]
+    },
+    {
+      "t0": 20.619,
+      "t1": 21.784,
+      "mode": "word",
+      "words": [
+        {
+          "w": "of",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 20.619
+        },
+        {
+          "w": "paper",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 20.728
+        },
+        {
+          "w": "forms",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 21.068
+        }
+      ]
+    },
+    {
+      "t0": 21.784,
+      "t1": 22.706,
+      "mode": "word",
+      "words": [
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 21.784
+        },
+        {
+          "w": "pay",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 21.978
+        },
+        {
+          "w": "thousands",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 22.184
+        }
+      ]
+    },
+    {
+      "t0": 22.706,
+      "t1": 23.519,
+      "mode": "word",
+      "words": [
+        {
+          "w": "in",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 22.706
+        },
+        {
+          "w": "bank",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 22.864
+        },
+        {
+          "w": "setup",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 23.143
+        }
+      ]
+    },
+    {
+      "t0": 23.519,
+      "t1": 24.919,
+      "mode": "word",
+      "words": [
+        {
+          "w": "fees",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 23.519
+        },
+        {
+          "w": "Patrick",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 24.879
+        },
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 25.364
+        }
+      ]
+    },
+    {
+      "t0": 25.498,
+      "t1": 26.808,
+      "mode": "word",
+      "words": [
+        {
+          "w": "John",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 25.498
+        },
+        {
+          "w": "Collison",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 25.801
+        },
+        {
+          "w": "realized",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 26.311
+        }
+      ]
+    },
+    {
+      "t0": 26.808,
+      "t1": 27.937,
+      "mode": "word",
+      "words": [
+        {
+          "w": "something",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 26.808
+        },
+        {
+          "w": "every",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 27.233
+        },
+        {
+          "w": "incumbent",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 27.5
+        }
+      ]
+    },
+    {
+      "t0": 27.937,
+      "t1": 29.337,
+      "mode": "word",
+      "words": [
+        {
+          "w": "missed",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 27.937
+        },
+        {
+          "w": "Friction",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 29.235
+        },
+        {
+          "w": "is",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 29.757
+        }
+      ]
+    },
+    {
+      "t0": 29.891,
+      "t1": 30.752,
+      "mode": "word",
+      "words": [
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 29.891
+        },
+        {
+          "w": "silent",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 30.0
+        },
+        {
+          "w": "killer",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 30.437
+        }
+      ]
+    },
+    {
+      "t0": 30.752,
+      "t1": 32.152,
+      "mode": "word",
+      "words": [
+        {
+          "w": "of",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 30.752
+        },
+        {
+          "w": "commerce",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 30.862
+        },
+        {
+          "w": "So",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 32.342
+        }
+      ]
+    },
+    {
+      "t0": 32.573,
+      "t1": 33.519,
+      "mode": "word",
+      "words": [
+        {
+          "w": "they",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 32.573
+        },
+        {
+          "w": "locked",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 32.694
+        },
+        {
+          "w": "themselves",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 33.01
+        }
+      ]
+    },
+    {
+      "t0": 33.519,
+      "t1": 34.49,
+      "mode": "word",
+      "words": [
+        {
+          "w": "in",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 33.519
+        },
+        {
+          "w": "a",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 33.604
+        },
+        {
+          "w": "Palo Alto",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 33.677
+        }
+      ]
+    },
+    {
+      "t0": 34.49,
+      "t1": 35.376,
+      "mode": "word",
+      "words": [
+        {
+          "w": "apartment",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 34.49
+        },
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 35.012
+        },
+        {
+          "w": "wrote",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 35.158
+        }
+      ]
+    },
+    {
+      "t0": 35.376,
+      "t1": 36.165,
+      "mode": "word",
+      "words": [
+        {
+          "w": "seven",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 35.376
+        },
+        {
+          "w": "lines",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 35.74
+        },
+        {
+          "w": "of",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 36.056
+        }
+      ]
+    },
+    {
+      "t0": 36.165,
+      "t1": 37.565,
+      "mode": "word",
+      "words": [
+        {
+          "w": "code",
+          "fontKind": "mono",
+          "em": true,
+          "color": "#F7F5EF",
+          "t": 36.165
+        },
+        {
+          "w": "Seven",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 37.427
+        },
+        {
+          "w": "lines",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 37.913
+        }
+      ]
+    },
+    {
+      "t0": 39.345,
+      "t1": 40.061,
+      "mode": "word",
+      "words": [
+        {
+          "w": "A",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 39.345
+        },
+        {
+          "w": "founder",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 39.466
+        },
+        {
+          "w": "could",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 39.891
+        }
+      ]
+    },
+    {
+      "t0": 40.061,
+      "t1": 41.044,
+      "mode": "word",
+      "words": [
+        {
+          "w": "copy-paste",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 40.061
+        },
+        {
+          "w": "it",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 40.74
+        },
+        {
+          "w": "into",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 40.825
+        }
+      ]
+    },
+    {
+      "t0": 41.044,
+      "t1": 42.112,
+      "mode": "word",
+      "words": [
+        {
+          "w": "their",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 41.044
+        },
+        {
+          "w": "website",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 41.214
+        },
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 42.002
+        }
+      ]
+    },
+    {
+      "t0": 42.112,
+      "t1": 43.131,
+      "mode": "word",
+      "words": [
+        {
+          "w": "accept",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 42.112
+        },
+        {
+          "w": "payments",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 42.524
+        },
+        {
+          "w": "in",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 42.949
+        }
+      ]
+    },
+    {
+      "t0": 43.131,
+      "t1": 44.531,
+      "mode": "word",
+      "words": [
+        {
+          "w": "two",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 43.131
+        },
+        {
+          "w": "minutes",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 43.301
+        },
+        {
+          "w": "When",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 44.624
+        }
+      ]
+    },
+    {
+      "t0": 44.879,
+      "t1": 46.129,
+      "mode": "word",
+      "words": [
+        {
+          "w": "founders",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 44.879
+        },
+        {
+          "w": "said",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 45.352
+        },
+        {
+          "w": "Email",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 45.813
+        }
+      ]
+    },
+    {
+      "t0": 46.129,
+      "t1": 46.663,
+      "mode": "word",
+      "words": [
+        {
+          "w": "me",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 46.129
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 46.25
+        },
+        {
+          "w": "beta",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 46.371
+        }
+      ]
+    },
+    {
+      "t0": 46.663,
+      "t1": 47.913,
+      "mode": "word",
+      "words": [
+        {
+          "w": "link",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 46.663
+        },
+        {
+          "w": "Patrick",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 47.209
+        },
+        {
+          "w": "didn't",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 47.67
+        }
+      ]
+    },
+    {
+      "t0": 47.913,
+      "t1": 48.994,
+      "mode": "word",
+      "words": [
+        {
+          "w": "send",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 47.913
+        },
+        {
+          "w": "an",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 48.155
+        },
+        {
+          "w": "email",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 48.252
+        }
+      ]
+    },
+    {
+      "t0": 49.612,
+      "t1": 50.158,
+      "mode": "word",
+      "words": [
+        {
+          "w": "He",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 49.612
+        },
+        {
+          "w": "took",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 49.794
+        },
+        {
+          "w": "their",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 50.024
+        }
+      ]
+    },
+    {
+      "t0": 50.158,
+      "t1": 51.117,
+      "mode": "word",
+      "words": [
+        {
+          "w": "laptop",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 50.158
+        },
+        {
+          "w": "right",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 50.68
+        },
+        {
+          "w": "there",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 50.947
+        }
+      ]
+    },
+    {
+      "t0": 51.117,
+      "t1": 51.626,
+      "mode": "word",
+      "words": [
+        {
+          "w": "in",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 51.117
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 51.189
+        },
+        {
+          "w": "coffee",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 51.274
+        }
+      ]
+    },
+    {
+      "t0": 51.626,
+      "t1": 52.561,
+      "mode": "word",
+      "words": [
+        {
+          "w": "shop",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 51.626
+        },
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 52.002
+        },
+        {
+          "w": "installed",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 52.099
+        }
+      ]
+    },
+    {
+      "t0": 52.561,
+      "t1": 52.852,
+      "mode": "word",
+      "words": [
+        {
+          "w": "it",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 52.561
+        },
+        {
+          "w": "on",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 52.646
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 52.779
+        }
+      ]
+    },
+    {
+      "t0": 52.852,
+      "t1": 54.252,
+      "mode": "word",
+      "words": [
+        {
+          "w": "spot",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 52.852
+        },
+        {
+          "w": "That",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 54.163
+        },
+        {
+          "w": "became",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 54.405
+        }
+      ]
+    },
+    {
+      "t0": 54.818,
+      "t1": 56.218,
+      "mode": "word",
+      "words": [
+        {
+          "w": "known",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 54.818
+        },
+        {
+          "w": "across",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 55.085
+        },
+        {
+          "w": "Silicon Valley.",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 55.425
+        }
+      ]
+    },
+    {
+      "t0": 56.274,
+      "t1": 57.674,
+      "mode": "word",
+      "words": [
+        {
+          "w": "as",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 56.274
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 56.408
+        },
+        {
+          "w": "Collison Installation.",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 56.505
+        }
+      ]
+    },
+    {
+      "t0": 58.604,
+      "t1": 60.004,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Today",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 58.604
+        },
+        {
+          "w": "Stripe",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 59.345
+        },
+        {
+          "w": "processes",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 59.733
+        }
+      ]
+    },
+    {
+      "t0": 60.364,
+      "t1": 61.59,
+      "mode": "word",
+      "words": [
+        {
+          "w": "over",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 60.364
+        },
+        {
+          "w": " TRILLION",
+          "fontKind": "condensed",
+          "em": true,
+          "color": "#F7F5EF",
+          "box": null,
+          "t": 60.607
+        },
+        {
+          "w": "dollars",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 61.238
+        }
+      ]
+    },
+    {
+      "t0": 61.59,
+      "t1": 62.755,
+      "mode": "word",
+      "words": [
+        {
+          "w": "a",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 61.59
+        },
+        {
+          "w": "year",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 61.638
+        },
+        {
+          "w": "powering",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 62.245
+        }
+      ]
+    },
+    {
+      "t0": 62.755,
+      "t1": 64.155,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Amazon",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 62.755
+        },
+        {
+          "w": "Google",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 63.544
+        },
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 64.199
+        }
+      ]
+    },
+    {
+      "t0": 64.308,
+      "t1": 65.073,
+      "mode": "word",
+      "words": [
+        {
+          "w": "half",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 64.308
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 64.612
+        },
+        {
+          "w": "internet",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 64.709
+        }
+      ]
+    },
+    {
+      "t0": 65.073,
+      "t1": 66.473,
+      "mode": "word",
+      "words": [
+        {
+          "w": "economy",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 65.073
+        },
+        {
+          "w": "The",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 66.493
+        },
+        {
+          "w": "lesson",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 66.65
+        }
+      ]
+    },
+    {
+      "t0": 67.015,
+      "t1": 67.973,
+      "mode": "word",
+      "words": [
+        {
+          "w": "for",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 67.015
+        },
+        {
+          "w": "every",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 67.233
+        },
+        {
+          "w": "founder",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 67.476
+        }
+      ]
+    },
+    {
+      "t0": 67.973,
+      "t1": 69.273,
+      "mode": "word",
+      "words": [
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 67.973
+        },
+        {
+          "w": "operator",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 68.119
+        },
+        {
+          "w": "today",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 68.604
+        }
+      ]
+    },
+    {
+      "t0": 69.903,
+      "t1": 70.631,
+      "mode": "word",
+      "words": [
+        {
+          "w": "The",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 69.903
+        },
+        {
+          "w": "company",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 70.049
+        },
+        {
+          "w": "that",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 70.461
+        }
+      ]
+    },
+    {
+      "t0": 70.631,
+      "t1": 71.748,
+      "mode": "word",
+      "words": [
+        {
+          "w": "collapses",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 70.631
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 71.189
+        },
+        {
+          "w": "friction",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 71.286
+        }
+      ]
+    },
+    {
+      "t0": 71.748,
+      "t1": 72.817,
+      "mode": "word",
+      "words": [
+        {
+          "w": "wins",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 71.748
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 72.027
+        },
+        {
+          "w": "market",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 72.112
+        }
+      ]
+    },
+    {
+      "t0": 73.434,
+      "t1": 74.831,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Every",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 73.434
+        },
+        {
+          "w": "single",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 73.774
+        },
+        {
+          "w": "time",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 74.15
+        }
+      ]
+    }
+  ],
+  "annotations": [],
+  "flashes": [],
+  "fadeOut": [
+    74.7,
+    75.2
+  ]
+}

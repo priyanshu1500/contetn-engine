@@ -1,0 +1,1082 @@
+[
+  {
+    "word": "In",
+    "start": 0.099,
+    "end": 0.269,
+    "prob": 1.0
+  },
+  {
+    "word": "2010,",
+    "start": 0.281,
+    "end": 0.924,
+    "prob": 1.0
+  },
+  {
+    "word": "two",
+    "start": 1.167,
+    "end": 1.385,
+    "prob": 1.0
+  },
+  {
+    "word": "brothers",
+    "start": 1.397,
+    "end": 1.822,
+    "prob": 1.0
+  },
+  {
+    "word": "from",
+    "start": 1.834,
+    "end": 1.968,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 1.98,
+    "end": 2.041,
+    "prob": 1.0
+  },
+  {
+    "word": "tiny",
+    "start": 2.052,
+    "end": 2.453,
+    "prob": 1.0
+  },
+  {
+    "word": "Irish",
+    "start": 2.465,
+    "end": 2.805,
+    "prob": 1.0
+  },
+  {
+    "word": "village",
+    "start": 2.817,
+    "end": 3.205,
+    "prob": 1.0
+  },
+  {
+    "word": "tried",
+    "start": 3.217,
+    "end": 3.508,
+    "prob": 1.0
+  },
+  {
+    "word": "to",
+    "start": 3.521,
+    "end": 3.618,
+    "prob": 1.0
+  },
+  {
+    "word": "raise",
+    "start": 3.63,
+    "end": 3.909,
+    "prob": 1.0
+  },
+  {
+    "word": "money",
+    "start": 3.921,
+    "end": 4.224,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 4.237,
+    "end": 4.346,
+    "prob": 1.0
+  },
+  {
+    "word": "Silicon Valley.",
+    "start": 4.358,
+    "end": 5.256,
+    "prob": 1.0
+  },
+  {
+    "word": "Every",
+    "start": 6.092,
+    "end": 6.395,
+    "prob": 1.0
+  },
+  {
+    "word": "top",
+    "start": 6.408,
+    "end": 6.687,
+    "prob": 1.0
+  },
+  {
+    "word": "investor",
+    "start": 6.699,
+    "end": 7.209,
+    "prob": 1.0
+  },
+  {
+    "word": "laughed",
+    "start": 7.221,
+    "end": 7.5,
+    "prob": 1.0
+  },
+  {
+    "word": "them",
+    "start": 7.512,
+    "end": 7.633,
+    "prob": 1.0
+  },
+  {
+    "word": "out",
+    "start": 7.646,
+    "end": 7.792,
+    "prob": 1.0
+  },
+  {
+    "word": "of",
+    "start": 7.803,
+    "end": 7.864,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 7.876,
+    "end": 7.961,
+    "prob": 1.0
+  },
+  {
+    "word": "room",
+    "start": 7.973,
+    "end": 8.349,
+    "prob": 1.0
+  },
+  {
+    "word": "PayPal",
+    "start": 9.187,
+    "end": 9.709,
+    "prob": 1.0
+  },
+  {
+    "word": "had",
+    "start": 9.721,
+    "end": 9.855,
+    "prob": 1.0
+  },
+  {
+    "word": "already",
+    "start": 9.867,
+    "end": 10.243,
+    "prob": 1.0
+  },
+  {
+    "word": "won",
+    "start": 10.255,
+    "end": 10.607,
+    "prob": 1.0
+  },
+  {
+    "word": "Credit",
+    "start": 11.444,
+    "end": 11.796,
+    "prob": 1.0
+  },
+  {
+    "word": "card",
+    "start": 11.808,
+    "end": 12.087,
+    "prob": 1.0
+  },
+  {
+    "word": "processing",
+    "start": 12.1,
+    "end": 12.719,
+    "prob": 1.0
+  },
+  {
+    "word": "was",
+    "start": 12.731,
+    "end": 12.877,
+    "prob": 1.0
+  },
+  {
+    "word": "an",
+    "start": 12.888,
+    "end": 12.973,
+    "prob": 1.0
+  },
+  {
+    "word": "entrenched",
+    "start": 12.985,
+    "end": 13.495,
+    "prob": 1.0
+  },
+  {
+    "word": "corporate",
+    "start": 13.507,
+    "end": 13.847,
+    "prob": 1.0
+  },
+  {
+    "word": "monopoly",
+    "start": 13.859,
+    "end": 14.49,
+    "prob": 1.0
+  },
+  {
+    "word": "To",
+    "start": 15.328,
+    "end": 15.474,
+    "prob": 1.0
+  },
+  {
+    "word": "accept",
+    "start": 15.485,
+    "end": 15.922,
+    "prob": 1.0
+  },
+  {
+    "word": "payments",
+    "start": 15.934,
+    "end": 16.322,
+    "prob": 1.0
+  },
+  {
+    "word": "online",
+    "start": 16.335,
+    "end": 16.869,
+    "prob": 1.0
+  },
+  {
+    "word": "an",
+    "start": 17.136,
+    "end": 17.221,
+    "prob": 1.0
+  },
+  {
+    "word": "internet",
+    "start": 17.233,
+    "end": 17.621,
+    "prob": 1.0
+  },
+  {
+    "word": "business",
+    "start": 17.634,
+    "end": 18.01,
+    "prob": 1.0
+  },
+  {
+    "word": "had",
+    "start": 18.022,
+    "end": 18.204,
+    "prob": 1.0
+  },
+  {
+    "word": "to",
+    "start": 18.216,
+    "end": 18.289,
+    "prob": 1.0
+  },
+  {
+    "word": "wait",
+    "start": 18.301,
+    "end": 18.568,
+    "prob": 1.0
+  },
+  {
+    "word": "six",
+    "start": 18.58,
+    "end": 18.883,
+    "prob": 1.0
+  },
+  {
+    "word": "weeks",
+    "start": 18.896,
+    "end": 19.272,
+    "prob": 1.0
+  },
+  {
+    "word": "submit",
+    "start": 19.527,
+    "end": 19.891,
+    "prob": 1.0
+  },
+  {
+    "word": "twenty",
+    "start": 19.903,
+    "end": 20.194,
+    "prob": 1.0
+  },
+  {
+    "word": "pages",
+    "start": 20.206,
+    "end": 20.607,
+    "prob": 1.0
+  },
+  {
+    "word": "of",
+    "start": 20.619,
+    "end": 20.716,
+    "prob": 1.0
+  },
+  {
+    "word": "paper",
+    "start": 20.728,
+    "end": 21.056,
+    "prob": 1.0
+  },
+  {
+    "word": "forms",
+    "start": 21.068,
+    "end": 21.566,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 21.784,
+    "end": 21.966,
+    "prob": 1.0
+  },
+  {
+    "word": "pay",
+    "start": 21.978,
+    "end": 22.172,
+    "prob": 1.0
+  },
+  {
+    "word": "thousands",
+    "start": 22.184,
+    "end": 22.694,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 22.706,
+    "end": 22.852,
+    "prob": 1.0
+  },
+  {
+    "word": "bank",
+    "start": 22.864,
+    "end": 23.131,
+    "prob": 1.0
+  },
+  {
+    "word": "setup",
+    "start": 23.143,
+    "end": 23.507,
+    "prob": 1.0
+  },
+  {
+    "word": "fees",
+    "start": 23.519,
+    "end": 24.041,
+    "prob": 1.0
+  },
+  {
+    "word": "Patrick",
+    "start": 24.879,
+    "end": 25.352,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 25.364,
+    "end": 25.485,
+    "prob": 1.0
+  },
+  {
+    "word": "John",
+    "start": 25.498,
+    "end": 25.789,
+    "prob": 1.0
+  },
+  {
+    "word": "Collison",
+    "start": 25.801,
+    "end": 26.299,
+    "prob": 1.0
+  },
+  {
+    "word": "realized",
+    "start": 26.311,
+    "end": 26.796,
+    "prob": 1.0
+  },
+  {
+    "word": "something",
+    "start": 26.808,
+    "end": 27.221,
+    "prob": 1.0
+  },
+  {
+    "word": "every",
+    "start": 27.233,
+    "end": 27.488,
+    "prob": 1.0
+  },
+  {
+    "word": "incumbent",
+    "start": 27.5,
+    "end": 27.925,
+    "prob": 1.0
+  },
+  {
+    "word": "missed",
+    "start": 27.937,
+    "end": 28.398,
+    "prob": 1.0
+  },
+  {
+    "word": "Friction",
+    "start": 29.235,
+    "end": 29.745,
+    "prob": 1.0
+  },
+  {
+    "word": "is",
+    "start": 29.757,
+    "end": 29.878,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 29.891,
+    "end": 29.988,
+    "prob": 1.0
+  },
+  {
+    "word": "silent",
+    "start": 30.0,
+    "end": 30.425,
+    "prob": 1.0
+  },
+  {
+    "word": "killer",
+    "start": 30.437,
+    "end": 30.74,
+    "prob": 1.0
+  },
+  {
+    "word": "of",
+    "start": 30.752,
+    "end": 30.849,
+    "prob": 1.0
+  },
+  {
+    "word": "commerce",
+    "start": 30.862,
+    "end": 31.505,
+    "prob": 1.0
+  },
+  {
+    "word": "So",
+    "start": 32.342,
+    "end": 32.56,
+    "prob": 1.0
+  },
+  {
+    "word": "they",
+    "start": 32.573,
+    "end": 32.682,
+    "prob": 1.0
+  },
+  {
+    "word": "locked",
+    "start": 32.694,
+    "end": 32.997,
+    "prob": 1.0
+  },
+  {
+    "word": "themselves",
+    "start": 33.01,
+    "end": 33.508,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 33.519,
+    "end": 33.592,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 33.604,
+    "end": 33.665,
+    "prob": 1.0
+  },
+  {
+    "word": "Palo Alto",
+    "start": 33.677,
+    "end": 34.478,
+    "prob": 1.0
+  },
+  {
+    "word": "apartment",
+    "start": 34.49,
+    "end": 35.0,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 35.012,
+    "end": 35.146,
+    "prob": 1.0
+  },
+  {
+    "word": "wrote",
+    "start": 35.158,
+    "end": 35.364,
+    "prob": 1.0
+  },
+  {
+    "word": "seven",
+    "start": 35.376,
+    "end": 35.728,
+    "prob": 1.0
+  },
+  {
+    "word": "lines",
+    "start": 35.74,
+    "end": 36.043,
+    "prob": 1.0
+  },
+  {
+    "word": "of",
+    "start": 36.056,
+    "end": 36.153,
+    "prob": 1.0
+  },
+  {
+    "word": "code",
+    "start": 36.165,
+    "end": 36.59,
+    "prob": 1.0
+  },
+  {
+    "word": "Seven",
+    "start": 37.427,
+    "end": 37.9,
+    "prob": 1.0
+  },
+  {
+    "word": "lines",
+    "start": 37.913,
+    "end": 38.508,
+    "prob": 1.0
+  },
+  {
+    "word": "A",
+    "start": 39.345,
+    "end": 39.454,
+    "prob": 1.0
+  },
+  {
+    "word": "founder",
+    "start": 39.466,
+    "end": 39.879,
+    "prob": 1.0
+  },
+  {
+    "word": "could",
+    "start": 39.891,
+    "end": 40.049,
+    "prob": 1.0
+  },
+  {
+    "word": "copy-paste",
+    "start": 40.061,
+    "end": 40.728,
+    "prob": 1.0
+  },
+  {
+    "word": "it",
+    "start": 40.74,
+    "end": 40.813,
+    "prob": 1.0
+  },
+  {
+    "word": "into",
+    "start": 40.825,
+    "end": 41.031,
+    "prob": 1.0
+  },
+  {
+    "word": "their",
+    "start": 41.044,
+    "end": 41.202,
+    "prob": 1.0
+  },
+  {
+    "word": "website",
+    "start": 41.214,
+    "end": 41.736,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 42.002,
+    "end": 42.099,
+    "prob": 1.0
+  },
+  {
+    "word": "accept",
+    "start": 42.112,
+    "end": 42.513,
+    "prob": 1.0
+  },
+  {
+    "word": "payments",
+    "start": 42.524,
+    "end": 42.937,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 42.949,
+    "end": 43.119,
+    "prob": 1.0
+  },
+  {
+    "word": "two",
+    "start": 43.131,
+    "end": 43.289,
+    "prob": 1.0
+  },
+  {
+    "word": "minutes",
+    "start": 43.301,
+    "end": 43.786,
+    "prob": 1.0
+  },
+  {
+    "word": "When",
+    "start": 44.624,
+    "end": 44.867,
+    "prob": 1.0
+  },
+  {
+    "word": "founders",
+    "start": 44.879,
+    "end": 45.34,
+    "prob": 1.0
+  },
+  {
+    "word": "said",
+    "start": 45.352,
+    "end": 45.619,
+    "prob": 1.0
+  },
+  {
+    "word": "Email",
+    "start": 45.813,
+    "end": 46.116,
+    "prob": 1.0
+  },
+  {
+    "word": "me",
+    "start": 46.129,
+    "end": 46.238,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 46.25,
+    "end": 46.359,
+    "prob": 1.0
+  },
+  {
+    "word": "beta",
+    "start": 46.371,
+    "end": 46.65,
+    "prob": 1.0
+  },
+  {
+    "word": "link",
+    "start": 46.663,
+    "end": 47.027,
+    "prob": 1.0
+  },
+  {
+    "word": "Patrick",
+    "start": 47.209,
+    "end": 47.658,
+    "prob": 1.0
+  },
+  {
+    "word": "didn't",
+    "start": 47.67,
+    "end": 47.901,
+    "prob": 1.0
+  },
+  {
+    "word": "send",
+    "start": 47.913,
+    "end": 48.144,
+    "prob": 1.0
+  },
+  {
+    "word": "an",
+    "start": 48.155,
+    "end": 48.24,
+    "prob": 1.0
+  },
+  {
+    "word": "email",
+    "start": 48.252,
+    "end": 48.774,
+    "prob": 1.0
+  },
+  {
+    "word": "He",
+    "start": 49.612,
+    "end": 49.782,
+    "prob": 1.0
+  },
+  {
+    "word": "took",
+    "start": 49.794,
+    "end": 50.012,
+    "prob": 1.0
+  },
+  {
+    "word": "their",
+    "start": 50.024,
+    "end": 50.145,
+    "prob": 1.0
+  },
+  {
+    "word": "laptop",
+    "start": 50.158,
+    "end": 50.668,
+    "prob": 1.0
+  },
+  {
+    "word": "right",
+    "start": 50.68,
+    "end": 50.935,
+    "prob": 1.0
+  },
+  {
+    "word": "there",
+    "start": 50.947,
+    "end": 51.105,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 51.117,
+    "end": 51.178,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 51.189,
+    "end": 51.262,
+    "prob": 1.0
+  },
+  {
+    "word": "coffee",
+    "start": 51.274,
+    "end": 51.614,
+    "prob": 1.0
+  },
+  {
+    "word": "shop",
+    "start": 51.626,
+    "end": 51.99,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 52.002,
+    "end": 52.087,
+    "prob": 1.0
+  },
+  {
+    "word": "installed",
+    "start": 52.099,
+    "end": 52.548,
+    "prob": 1.0
+  },
+  {
+    "word": "it",
+    "start": 52.561,
+    "end": 52.634,
+    "prob": 1.0
+  },
+  {
+    "word": "on",
+    "start": 52.646,
+    "end": 52.767,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 52.779,
+    "end": 52.84,
+    "prob": 1.0
+  },
+  {
+    "word": "spot",
+    "start": 52.852,
+    "end": 53.325,
+    "prob": 1.0
+  },
+  {
+    "word": "That",
+    "start": 54.163,
+    "end": 54.394,
+    "prob": 1.0
+  },
+  {
+    "word": "became",
+    "start": 54.405,
+    "end": 54.806,
+    "prob": 1.0
+  },
+  {
+    "word": "known",
+    "start": 54.818,
+    "end": 55.073,
+    "prob": 1.0
+  },
+  {
+    "word": "across",
+    "start": 55.085,
+    "end": 55.413,
+    "prob": 1.0
+  },
+  {
+    "word": "Silicon Valley.",
+    "start": 55.425,
+    "end": 56.263,
+    "prob": 1.0
+  },
+  {
+    "word": "as",
+    "start": 56.274,
+    "end": 56.395,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 56.408,
+    "end": 56.493,
+    "prob": 1.0
+  },
+  {
+    "word": "Collison Installation.",
+    "start": 56.505,
+    "end": 57.767,
+    "prob": 1.0
+  },
+  {
+    "word": "Today",
+    "start": 58.604,
+    "end": 59.053,
+    "prob": 1.0
+  },
+  {
+    "word": "Stripe",
+    "start": 59.345,
+    "end": 59.721,
+    "prob": 1.0
+  },
+  {
+    "word": "processes",
+    "start": 59.733,
+    "end": 60.352,
+    "prob": 1.0
+  },
+  {
+    "word": "over",
+    "start": 60.364,
+    "end": 60.595,
+    "prob": 1.0
+  },
+  {
+    "word": " Trillion",
+    "start": 60.607,
+    "end": 61.225,
+    "prob": 1.0
+  },
+  {
+    "word": "dollars",
+    "start": 61.238,
+    "end": 61.578,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 61.59,
+    "end": 61.626,
+    "prob": 1.0
+  },
+  {
+    "word": "year",
+    "start": 61.638,
+    "end": 61.99,
+    "prob": 1.0
+  },
+  {
+    "word": "powering",
+    "start": 62.245,
+    "end": 62.743,
+    "prob": 1.0
+  },
+  {
+    "word": "Amazon",
+    "start": 62.755,
+    "end": 63.289,
+    "prob": 1.0
+  },
+  {
+    "word": "Google",
+    "start": 63.544,
+    "end": 63.957,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 64.199,
+    "end": 64.296,
+    "prob": 1.0
+  },
+  {
+    "word": "half",
+    "start": 64.308,
+    "end": 64.599,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 64.612,
+    "end": 64.697,
+    "prob": 1.0
+  },
+  {
+    "word": "internet",
+    "start": 64.709,
+    "end": 65.061,
+    "prob": 1.0
+  },
+  {
+    "word": "economy",
+    "start": 65.073,
+    "end": 65.656,
+    "prob": 1.0
+  },
+  {
+    "word": "The",
+    "start": 66.493,
+    "end": 66.639,
+    "prob": 1.0
+  },
+  {
+    "word": "lesson",
+    "start": 66.65,
+    "end": 67.002,
+    "prob": 1.0
+  },
+  {
+    "word": "for",
+    "start": 67.015,
+    "end": 67.221,
+    "prob": 1.0
+  },
+  {
+    "word": "every",
+    "start": 67.233,
+    "end": 67.464,
+    "prob": 1.0
+  },
+  {
+    "word": "founder",
+    "start": 67.476,
+    "end": 67.961,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 67.973,
+    "end": 68.107,
+    "prob": 1.0
+  },
+  {
+    "word": "operator",
+    "start": 68.119,
+    "end": 68.592,
+    "prob": 1.0
+  },
+  {
+    "word": "today",
+    "start": 68.604,
+    "end": 69.053,
+    "prob": 1.0
+  },
+  {
+    "word": "The",
+    "start": 69.903,
+    "end": 70.037,
+    "prob": 1.0
+  },
+  {
+    "word": "company",
+    "start": 70.049,
+    "end": 70.45,
+    "prob": 1.0
+  },
+  {
+    "word": "that",
+    "start": 70.461,
+    "end": 70.619,
+    "prob": 1.0
+  },
+  {
+    "word": "collapses",
+    "start": 70.631,
+    "end": 71.177,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 71.189,
+    "end": 71.274,
+    "prob": 1.0
+  },
+  {
+    "word": "friction",
+    "start": 71.286,
+    "end": 71.735,
+    "prob": 1.0
+  },
+  {
+    "word": "wins",
+    "start": 71.748,
+    "end": 72.015,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 72.027,
+    "end": 72.1,
+    "prob": 1.0
+  },
+  {
+    "word": "market",
+    "start": 72.112,
+    "end": 72.597,
+    "prob": 1.0
+  },
+  {
+    "word": "Every",
+    "start": 73.434,
+    "end": 73.762,
+    "prob": 1.0
+  },
+  {
+    "word": "single",
+    "start": 73.774,
+    "end": 74.138,
+    "prob": 1.0
+  },
+  {
+    "word": "time",
+    "start": 74.15,
+    "end": 74.611,
+    "prob": 1.0
+  }
+]

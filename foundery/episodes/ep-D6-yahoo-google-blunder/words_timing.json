@@ -1,962 +1,1130 @@
 [
   {
-    "word": "Yahoo",
+    "word": "These",
     "start": 0.099,
-    "end": 0.572,
-    "prob": 1.0
-  },
-  {
-    "word": "had",
-    "start": 0.584,
-    "end": 0.815,
+    "end": 0.402,
     "prob": 1.0
   },
   {
     "word": "two",
-    "start": 0.827,
-    "end": 1.021,
+    "start": 0.414,
+    "end": 0.632,
     "prob": 1.0
   },
   {
-    "word": "chances",
-    "start": 1.033,
-    "end": 1.518,
-    "prob": 1.0
-  },
-  {
-    "word": "to",
-    "start": 1.531,
-    "end": 1.628,
-    "prob": 1.0
-  },
-  {
-    "word": "buy",
-    "start": 1.64,
-    "end": 1.822,
-    "prob": 1.0
-  },
-  {
-    "word": "Google",
-    "start": 1.834,
-    "end": 2.307,
-    "prob": 1.0
-  },
-  {
-    "word": "1998",
-    "start": 3.143,
-    "end": 4.369,
-    "prob": 1.0
-  },
-  {
-    "word": "for",
-    "start": 4.612,
-    "end": 4.867,
-    "prob": 1.0
-  },
-  {
-    "word": "$1,000,000",
-    "start": 4.879,
-    "end": 6.031,
-    "prob": 1.0
-  },
-  {
-    "word": "2002",
-    "start": 6.869,
-    "end": 8.01,
-    "prob": 1.0
-  },
-  {
-    "word": "for",
-    "start": 8.252,
-    "end": 8.47,
-    "prob": 1.0
-  },
-  {
-    "word": "$3,000,000,000",
-    "start": 8.483,
-    "end": 9.259,
-    "prob": 1.0
-  },
-  {
-    "word": "They",
-    "start": 10.097,
-    "end": 10.267,
-    "prob": 1.0
-  },
-  {
-    "word": "said",
-    "start": 10.279,
-    "end": 10.558,
-    "prob": 1.0
-  },
-  {
-    "word": "no",
-    "start": 10.57,
-    "end": 10.788,
-    "prob": 1.0
-  },
-  {
-    "word": "both",
-    "start": 10.801,
-    "end": 11.08,
-    "prob": 1.0
-  },
-  {
-    "word": "times",
-    "start": 11.092,
-    "end": 11.711,
-    "prob": 1.0
-  },
-  {
-    "word": "The",
-    "start": 12.549,
-    "end": 12.695,
-    "prob": 1.0
-  },
-  {
-    "word": "first",
-    "start": 12.706,
-    "end": 13.034,
-    "prob": 1.0
-  },
-  {
-    "word": "rejection",
-    "start": 13.046,
-    "end": 13.58,
-    "prob": 1.0
-  },
-  {
-    "word": "is",
-    "start": 13.592,
-    "end": 13.713,
-    "prob": 1.0
-  },
-  {
-    "word": "the",
-    "start": 13.726,
-    "end": 13.823,
-    "prob": 1.0
-  },
-  {
-    "word": "one",
-    "start": 13.835,
-    "end": 14.041,
-    "prob": 1.0
-  },
-  {
-    "word": "that",
-    "start": 14.053,
-    "end": 14.199,
-    "prob": 1.0
-  },
-  {
-    "word": "changed",
-    "start": 14.211,
-    "end": 14.599,
-    "prob": 1.0
-  },
-  {
-    "word": "the",
-    "start": 14.612,
-    "end": 14.685,
-    "prob": 1.0
-  },
-  {
-    "word": "world",
-    "start": 14.697,
-    "end": 15.158,
-    "prob": 1.0
-  },
-  {
-    "word": "Larry Page",
-    "start": 15.995,
-    "end": 16.772,
-    "prob": 1.0
-  },
-  {
-    "word": "and",
-    "start": 16.784,
-    "end": 16.905,
-    "prob": 1.0
-  },
-  {
-    "word": "Sergey Brin",
-    "start": 16.917,
-    "end": 17.597,
-    "prob": 1.0
-  },
-  {
-    "word": "walked",
-    "start": 17.609,
-    "end": 17.912,
-    "prob": 1.0
-  },
-  {
-    "word": "into",
-    "start": 17.925,
-    "end": 18.119,
-    "prob": 1.0
-  },
-  {
-    "word": "Yahoo",
-    "start": 18.131,
-    "end": 18.556,
-    "prob": 1.0
-  },
-  {
-    "word": "headquarters",
-    "start": 18.568,
-    "end": 19.199,
-    "prob": 1.0
-  },
-  {
-    "word": "and",
-    "start": 19.211,
-    "end": 19.357,
+    "word": "twenty-four-year-olds",
+    "start": 0.645,
+    "end": 1.531,
     "prob": 1.0
   },
   {
     "word": "offered",
-    "start": 19.369,
-    "end": 19.66,
+    "start": 1.543,
+    "end": 1.846,
     "prob": 1.0
   },
   {
-    "word": "them",
-    "start": 19.672,
-    "end": 19.83,
+    "word": "to",
+    "start": 1.858,
+    "end": 1.931,
     "prob": 1.0
   },
   {
-    "word": "the",
-    "start": 19.842,
-    "end": 19.903,
+    "word": "sell",
+    "start": 1.943,
+    "end": 2.222,
+    "prob": 1.0
+  },
+  {
+    "word": "their",
+    "start": 2.234,
+    "end": 2.38,
     "prob": 1.0
   },
   {
     "word": "entire",
-    "start": 19.915,
-    "end": 20.388,
+    "start": 2.392,
+    "end": 2.829,
     "prob": 1.0
   },
   {
-    "word": "PageRank",
-    "start": 20.401,
-    "end": 20.959,
-    "prob": 1.0
-  },
-  {
-    "word": "algorithm",
-    "start": 20.971,
-    "end": 21.566,
+    "word": "company",
+    "start": 2.841,
+    "end": 3.229,
     "prob": 1.0
   },
   {
     "word": "for",
-    "start": 21.578,
-    "end": 21.76,
+    "start": 3.242,
+    "end": 3.4,
     "prob": 1.0
   },
   {
-    "word": "$1,000,000",
-    "start": 21.772,
-    "end": 22.33,
+    "word": "less",
+    "start": 3.412,
+    "end": 3.691,
     "prob": 1.0
   },
   {
-    "word": "bucks",
-    "start": 22.342,
-    "end": 22.827,
-    "prob": 1.0
-  },
-  {
-    "word": "Yahoo",
-    "start": 23.665,
-    "end": 24.09,
-    "prob": 1.0
-  },
-  {
-    "word": "laughed",
-    "start": 24.102,
-    "end": 24.405,
-    "prob": 1.0
-  },
-  {
-    "word": "them",
-    "start": 24.417,
-    "end": 24.538,
-    "prob": 1.0
-  },
-  {
-    "word": "out",
-    "start": 24.551,
-    "end": 24.721,
-    "prob": 1.0
-  },
-  {
-    "word": "of",
-    "start": 24.733,
-    "end": 24.794,
+    "word": "than",
+    "start": 3.703,
+    "end": 3.824,
     "prob": 1.0
   },
   {
     "word": "the",
-    "start": 24.806,
-    "end": 24.891,
+    "start": 3.836,
+    "end": 3.909,
+    "prob": 1.0
+  },
+  {
+    "word": "price",
+    "start": 3.921,
+    "end": 4.249,
+    "prob": 1.0
+  },
+  {
+    "word": "of",
+    "start": 4.261,
+    "end": 4.31,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 4.322,
+    "end": 4.383,
+    "prob": 1.0
+  },
+  {
+    "word": "modest",
+    "start": 4.395,
+    "end": 4.832,
+    "prob": 1.0
+  },
+  {
+    "word": "house",
+    "start": 4.844,
+    "end": 5.317,
+    "prob": 1.0
+  },
+  {
+    "word": "The",
+    "start": 6.153,
+    "end": 6.299,
     "prob": 1.0
   },
   {
     "word": "boardroom",
-    "start": 24.903,
-    "end": 25.461,
+    "start": 6.311,
+    "end": 6.784,
     "prob": 1.0
   },
   {
-    "word": "Their",
-    "start": 26.299,
-    "end": 26.542,
+    "word": "laughed",
+    "start": 6.796,
+    "end": 7.063,
     "prob": 1.0
   },
   {
-    "word": "reason",
-    "start": 26.553,
-    "end": 26.99,
-    "prob": 1.0
-  },
-  {
-    "word": "Google's",
-    "start": 27.828,
-    "end": 28.253,
-    "prob": 1.0
-  },
-  {
-    "word": "search",
-    "start": 28.265,
-    "end": 28.581,
-    "prob": 1.0
-  },
-  {
-    "word": "engine",
-    "start": 28.592,
-    "end": 28.944,
-    "prob": 1.0
-  },
-  {
-    "word": "worked",
-    "start": 28.956,
-    "end": 29.259,
-    "prob": 1.0
-  },
-  {
-    "word": "too",
-    "start": 29.272,
-    "end": 29.478,
-    "prob": 1.0
-  },
-  {
-    "word": "fast",
-    "start": 29.49,
-    "end": 30.048,
-    "prob": 1.0
-  },
-  {
-    "word": "It",
-    "start": 30.886,
-    "end": 31.044,
-    "prob": 1.0
-  },
-  {
-    "word": "sent",
-    "start": 31.056,
-    "end": 31.299,
-    "prob": 1.0
-  },
-  {
-    "word": "users",
-    "start": 31.311,
-    "end": 31.748,
-    "prob": 1.0
-  },
-  {
-    "word": "off",
-    "start": 31.76,
-    "end": 31.954,
-    "prob": 1.0
-  },
-  {
-    "word": "the",
-    "start": 31.966,
-    "end": 32.063,
-    "prob": 1.0
-  },
-  {
-    "word": "site",
-    "start": 32.075,
-    "end": 32.391,
-    "prob": 1.0
-  },
-  {
-    "word": "in",
-    "start": 32.403,
-    "end": 32.561,
-    "prob": 1.0
-  },
-  {
-    "word": "3 SECONDS",
-    "start": 32.573,
-    "end": 33.459,
-    "prob": 1.0
-  },
-  {
-    "word": "Yahoo",
-    "start": 34.296,
-    "end": 34.721,
-    "prob": 1.0
-  },
-  {
-    "word": "made",
-    "start": 34.733,
-    "end": 34.951,
-    "prob": 1.0
-  },
-  {
-    "word": "money",
-    "start": 34.964,
-    "end": 35.243,
-    "prob": 1.0
-  },
-  {
-    "word": "by",
-    "start": 35.255,
-    "end": 35.413,
-    "prob": 1.0
-  },
-  {
-    "word": "keeping",
-    "start": 35.425,
-    "end": 35.813,
-    "prob": 1.0
-  },
-  {
-    "word": "people",
-    "start": 35.825,
-    "end": 36.141,
-    "prob": 1.0
-  },
-  {
-    "word": "trapped",
-    "start": 36.153,
-    "end": 36.505,
-    "prob": 1.0
-  },
-  {
-    "word": "on",
-    "start": 36.517,
-    "end": 36.614,
-    "prob": 1.0
-  },
-  {
-    "word": "their",
-    "start": 36.626,
-    "end": 36.747,
-    "prob": 1.0
-  },
-  {
-    "word": "portal",
-    "start": 36.76,
-    "end": 37.185,
-    "prob": 1.0
-  },
-  {
-    "word": "clicking",
-    "start": 37.439,
-    "end": 37.803,
-    "prob": 1.0
-  },
-  {
-    "word": "banner",
-    "start": 37.816,
-    "end": 38.204,
-    "prob": 1.0
-  },
-  {
-    "word": "ads",
-    "start": 38.216,
-    "end": 38.507,
-    "prob": 1.0
-  },
-  {
-    "word": "and",
-    "start": 38.519,
-    "end": 38.653,
-    "prob": 1.0
-  },
-  {
-    "word": "reading",
-    "start": 38.665,
-    "end": 38.944,
-    "prob": 1.0
-  },
-  {
-    "word": "horoscopes",
-    "start": 38.956,
-    "end": 39.793,
-    "prob": 1.0
-  },
-  {
-    "word": "Google",
-    "start": 40.631,
-    "end": 41.007,
-    "prob": 1.0
-  },
-  {
-    "word": "built",
-    "start": 41.019,
-    "end": 41.225,
-    "prob": 1.0
-  },
-  {
-    "word": "their",
-    "start": 41.238,
-    "end": 41.372,
-    "prob": 1.0
-  },
-  {
-    "word": "entire",
-    "start": 41.383,
-    "end": 41.844,
-    "prob": 1.0
-  },
-  {
-    "word": "$1 Trillion",
-    "start": 41.857,
-    "end": 42.561,
-    "prob": 1.0
-  },
-  {
-    "word": "empire",
-    "start": 42.573,
-    "end": 43.071,
-    "prob": 1.0
-  },
-  {
-    "word": "on",
-    "start": 43.083,
-    "end": 43.168,
-    "prob": 1.0
-  },
-  {
-    "word": "the",
-    "start": 43.18,
-    "end": 43.229,
-    "prob": 1.0
-  },
-  {
-    "word": "exact",
-    "start": 43.24,
-    "end": 43.725,
-    "prob": 1.0
-  },
-  {
-    "word": "opposite",
-    "start": 43.738,
-    "end": 44.151,
-    "prob": 1.0
-  },
-  {
-    "word": "bet",
-    "start": 44.163,
-    "end": 44.491,
-    "prob": 1.0
-  },
-  {
-    "word": "Give",
-    "start": 45.328,
-    "end": 45.559,
-    "prob": 1.0
-  },
-  {
-    "word": "people",
-    "start": 45.57,
-    "end": 45.861,
-    "prob": 1.0
-  },
-  {
-    "word": "the",
-    "start": 45.874,
-    "end": 45.971,
-    "prob": 1.0
-  },
-  {
-    "word": "answer",
-    "start": 45.983,
-    "end": 46.311,
-    "prob": 1.0
-  },
-  {
-    "word": "instantly",
-    "start": 46.323,
-    "end": 46.893,
-    "prob": 1.0
-  },
-  {
-    "word": "and",
-    "start": 47.099,
-    "end": 47.245,
-    "prob": 1.0
-  },
-  {
-    "word": "get",
-    "start": 47.257,
-    "end": 47.427,
+    "word": "them",
+    "start": 7.075,
+    "end": 7.209,
     "prob": 1.0
   },
   {
     "word": "out",
-    "start": 47.439,
-    "end": 47.597,
+    "start": 7.221,
+    "end": 7.391,
     "prob": 1.0
   },
   {
     "word": "of",
-    "start": 47.609,
-    "end": 47.67,
-    "prob": 1.0
-  },
-  {
-    "word": "their",
-    "start": 47.682,
-    "end": 47.828,
-    "prob": 1.0
-  },
-  {
-    "word": "way",
-    "start": 47.84,
-    "end": 48.204,
-    "prob": 1.0
-  },
-  {
-    "word": "Yahoo",
-    "start": 49.041,
-    "end": 49.49,
-    "prob": 1.0
-  },
-  {
-    "word": "didn't",
-    "start": 49.502,
-    "end": 49.745,
-    "prob": 1.0
-  },
-  {
-    "word": "miss",
-    "start": 49.757,
-    "end": 49.963,
-    "prob": 1.0
-  },
-  {
-    "word": "Google",
-    "start": 49.976,
-    "end": 50.34,
-    "prob": 1.0
-  },
-  {
-    "word": "by",
-    "start": 50.352,
-    "end": 50.51,
-    "prob": 1.0
-  },
-  {
-    "word": "accident",
-    "start": 50.522,
-    "end": 51.153,
-    "prob": 1.0
-  },
-  {
-    "word": "They",
-    "start": 51.99,
-    "end": 52.184,
-    "prob": 1.0
-  },
-  {
-    "word": "actively",
-    "start": 52.197,
-    "end": 52.682,
-    "prob": 1.0
-  },
-  {
-    "word": "rejected",
-    "start": 52.694,
-    "end": 53.179,
+    "start": 7.403,
+    "end": 7.464,
     "prob": 1.0
   },
   {
     "word": "the",
-    "start": 53.192,
-    "end": 53.277,
+    "start": 7.476,
+    "end": 7.561,
     "prob": 1.0
   },
   {
-    "word": "idea",
-    "start": 53.289,
-    "end": 53.677,
+    "word": "building",
+    "start": 7.573,
+    "end": 8.034,
+    "prob": 1.0
+  },
+  {
+    "word": "The",
+    "start": 8.871,
+    "end": 9.029,
+    "prob": 1.0
+  },
+  {
+    "word": "algorithm",
+    "start": 9.041,
+    "end": 9.684,
+    "prob": 1.0
+  },
+  {
+    "word": "was",
+    "start": 9.697,
+    "end": 9.843,
+    "prob": 1.0
+  },
+  {
+    "word": "PageRank",
+    "start": 9.854,
+    "end": 10.582,
+    "prob": 1.0
+  },
+  {
+    "word": "Those",
+    "start": 11.42,
+    "end": 11.711,
+    "prob": 1.0
+  },
+  {
+    "word": "students",
+    "start": 11.723,
+    "end": 12.136,
+    "prob": 1.0
+  },
+  {
+    "word": "were",
+    "start": 12.148,
+    "end": 12.245,
+    "prob": 1.0
+  },
+  {
+    "word": "Larry Page",
+    "start": 12.257,
+    "end": 12.974,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 12.985,
+    "end": 13.119,
+    "prob": 1.0
+  },
+  {
+    "word": "Sergey Brin",
+    "start": 13.131,
+    "end": 13.957,
+    "prob": 1.0
+  },
+  {
+    "word": "And",
+    "start": 14.794,
+    "end": 14.94,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 14.951,
+    "end": 15.036,
+    "prob": 1.0
+  },
+  {
+    "word": "boardroom",
+    "start": 15.049,
+    "end": 15.498,
     "prob": 1.0
   },
   {
     "word": "that",
-    "start": 53.689,
-    "end": 53.859,
+    "start": 15.51,
+    "end": 15.668,
     "prob": 1.0
   },
   {
-    "word": "won",
-    "start": 53.871,
-    "end": 54.187,
+    "word": "rejected",
+    "start": 15.68,
+    "end": 16.153,
+    "prob": 1.0
+  },
+  {
+    "word": "them",
+    "start": 16.165,
+    "end": 16.311,
+    "prob": 1.0
+  },
+  {
+    "word": "was",
+    "start": 16.323,
+    "end": 16.481,
+    "prob": 1.0
+  },
+  {
+    "word": "Yahoo",
+    "start": 16.493,
+    "end": 17.027,
     "prob": 1.0
   },
   {
     "word": "Here",
-    "start": 55.024,
-    "end": 55.255,
+    "start": 17.864,
+    "end": 18.095,
     "prob": 1.0
   },
   {
     "word": "is",
-    "start": 55.267,
-    "end": 55.388,
+    "start": 18.107,
+    "end": 18.228,
     "prob": 1.0
   },
   {
     "word": "the",
-    "start": 55.401,
-    "end": 55.498,
+    "start": 18.24,
+    "end": 18.337,
     "prob": 1.0
   },
   {
-    "word": "warning",
-    "start": 55.51,
-    "end": 55.826,
+    "word": "part",
+    "start": 18.349,
+    "end": 18.64,
     "prob": 1.0
   },
   {
-    "word": "for",
-    "start": 55.837,
-    "end": 56.043,
+    "word": "nobody",
+    "start": 18.653,
+    "end": 19.029,
     "prob": 1.0
   },
   {
-    "word": "every",
-    "start": 56.056,
-    "end": 56.287,
+    "word": "understands",
+    "start": 19.041,
+    "end": 19.842,
     "prob": 1.0
   },
   {
-    "word": "business",
-    "start": 56.299,
-    "end": 56.712,
+    "word": "Yahoo",
+    "start": 20.68,
+    "end": 21.129,
     "prob": 1.0
   },
   {
-    "word": "owner",
-    "start": 56.723,
-    "end": 56.978,
+    "word": "didn't",
+    "start": 21.141,
+    "end": 21.372,
     "prob": 1.0
   },
   {
-    "word": "today",
-    "start": 56.99,
-    "end": 57.439,
+    "word": "reject",
+    "start": 21.384,
+    "end": 21.809,
     "prob": 1.0
   },
   {
-    "word": "Right",
-    "start": 58.289,
-    "end": 58.58,
+    "word": "Google",
+    "start": 21.82,
+    "end": 22.196,
     "prob": 1.0
   },
   {
-    "word": "now",
-    "start": 58.592,
-    "end": 58.92,
-    "prob": 1.0
-  },
-  {
-    "word": "legacy",
-    "start": 59.138,
-    "end": 59.539,
-    "prob": 1.0
-  },
-  {
-    "word": "companies",
-    "start": 59.551,
-    "end": 60.012,
-    "prob": 1.0
-  },
-  {
-    "word": "are",
-    "start": 60.024,
-    "end": 60.133,
-    "prob": 1.0
-  },
-  {
-    "word": "rejecting",
-    "start": 60.146,
-    "end": 60.668,
-    "prob": 1.0
-  },
-  {
-    "word": "autonomous",
-    "start": 60.68,
-    "end": 61.275,
-    "prob": 1.0
-  },
-  {
-    "word": "AI",
-    "start": 61.286,
-    "end": 61.687,
-    "prob": 1.0
-  },
-  {
-    "word": "workflows",
-    "start": 61.699,
-    "end": 62.294,
-    "prob": 1.0
-  },
-  {
-    "word": "for",
-    "start": 62.306,
-    "end": 62.415,
+    "word": "because",
+    "start": 22.209,
+    "end": 22.5,
     "prob": 1.0
   },
   {
     "word": "the",
-    "start": 62.427,
-    "end": 62.476,
+    "start": 22.512,
+    "end": 22.597,
     "prob": 1.0
   },
   {
-    "word": "exact",
-    "start": 62.488,
-    "end": 62.986,
+    "word": "technology",
+    "start": 22.609,
+    "end": 23.24,
     "prob": 1.0
   },
   {
-    "word": "same",
-    "start": 62.998,
-    "end": 63.289,
+    "word": "was",
+    "start": 23.252,
+    "end": 23.422,
     "prob": 1.0
   },
   {
-    "word": "reason",
-    "start": 63.301,
-    "end": 63.75,
+    "word": "bad",
+    "start": 23.434,
+    "end": 23.871,
     "prob": 1.0
   },
   {
-    "word": "It",
-    "start": 64.587,
-    "end": 64.745,
+    "word": "They",
+    "start": 24.709,
+    "end": 24.879,
     "prob": 1.0
   },
   {
-    "word": "collapses",
-    "start": 64.757,
-    "end": 65.327,
+    "word": "rejected",
+    "start": 24.891,
+    "end": 25.401,
+    "prob": 1.0
+  },
+  {
+    "word": "it",
+    "start": 25.413,
+    "end": 25.547,
+    "prob": 1.0
+  },
+  {
+    "word": "because",
+    "start": 25.558,
+    "end": 25.837,
+    "prob": 1.0
+  },
+  {
+    "word": "it",
+    "start": 25.849,
+    "end": 25.91,
+    "prob": 1.0
+  },
+  {
+    "word": "was",
+    "start": 25.922,
+    "end": 26.092,
+    "prob": 1.0
+  },
+  {
+    "word": "too",
+    "start": 26.104,
+    "end": 26.31,
+    "prob": 1.0
+  },
+  {
+    "word": "fast",
+    "start": 26.323,
+    "end": 26.881,
+    "prob": 1.0
+  },
+  {
+    "word": "In",
+    "start": 27.718,
+    "end": 27.888,
+    "prob": 1.0
+  },
+  {
+    "word": "nineteen",
+    "start": 27.901,
+    "end": 28.277,
+    "prob": 1.0
+  },
+  {
+    "word": "ninety-eight",
+    "start": 28.289,
+    "end": 28.823,
+    "prob": 1.0
+  },
+  {
+    "word": "Yahoo's",
+    "start": 29.017,
+    "end": 29.454,
+    "prob": 1.0
+  },
+  {
+    "word": "entire",
+    "start": 29.466,
+    "end": 29.964,
+    "prob": 1.0
+  },
+  {
+    "word": "revenue",
+    "start": 29.976,
+    "end": 30.316,
+    "prob": 1.0
+  },
+  {
+    "word": "model",
+    "start": 30.328,
+    "end": 30.704,
+    "prob": 1.0
+  },
+  {
+    "word": "was",
+    "start": 30.716,
+    "end": 30.874,
+    "prob": 1.0
+  },
+  {
+    "word": "built",
+    "start": 30.886,
+    "end": 31.153,
+    "prob": 1.0
+  },
+  {
+    "word": "on",
+    "start": 31.165,
+    "end": 31.286,
+    "prob": 1.0
+  },
+  {
+    "word": "trapping",
+    "start": 31.299,
+    "end": 31.7,
+    "prob": 1.0
+  },
+  {
+    "word": "you",
+    "start": 31.711,
+    "end": 31.857,
+    "prob": 1.0
+  },
+  {
+    "word": "on",
+    "start": 31.869,
+    "end": 31.966,
     "prob": 1.0
   },
   {
     "word": "their",
-    "start": 65.34,
-    "end": 65.522,
+    "start": 31.978,
+    "end": 32.099,
     "prob": 1.0
   },
   {
-    "word": "billed",
-    "start": 65.534,
-    "end": 65.813,
+    "word": "portal",
+    "start": 32.112,
+    "end": 32.44,
     "prob": 1.0
   },
   {
-    "word": "hours",
-    "start": 65.825,
-    "end": 66.395,
+    "word": "for",
+    "start": 32.451,
+    "end": 32.597,
     "prob": 1.0
   },
   {
-    "word": "The",
-    "start": 67.233,
-    "end": 67.342,
+    "word": "forty-five",
+    "start": 32.609,
+    "end": 33.167,
     "prob": 1.0
   },
   {
-    "word": "market",
-    "start": 67.354,
-    "end": 67.73,
+    "word": "minutes",
+    "start": 33.18,
+    "end": 33.52,
     "prob": 1.0
   },
   {
-    "word": "doesn't",
-    "start": 67.743,
-    "end": 68.034,
+    "word": "to",
+    "start": 33.532,
+    "end": 33.629,
     "prob": 1.0
   },
   {
-    "word": "care",
-    "start": 68.046,
-    "end": 68.277,
+    "word": "sell",
+    "start": 33.641,
+    "end": 33.932,
     "prob": 1.0
   },
   {
-    "word": "about",
-    "start": 68.289,
-    "end": 68.532,
+    "word": "banner",
+    "start": 33.944,
+    "end": 34.308,
     "prob": 1.0
   },
   {
-    "word": "your",
-    "start": 68.544,
-    "end": 68.678,
+    "word": "ads",
+    "start": 34.32,
+    "end": 34.781,
     "prob": 1.0
   },
   {
-    "word": "billable",
-    "start": 68.689,
-    "end": 69.09,
+    "word": "Google",
+    "start": 35.619,
+    "end": 35.971,
     "prob": 1.0
   },
   {
-    "word": "hours",
-    "start": 69.102,
-    "end": 69.636,
+    "word": "built",
+    "start": 35.983,
+    "end": 36.189,
     "prob": 1.0
   },
   {
-    "word": "The",
-    "start": 70.473,
-    "end": 70.607,
+    "word": "the",
+    "start": 36.201,
+    "end": 36.262,
     "prob": 1.0
   },
   {
-    "word": "faster",
-    "start": 70.619,
-    "end": 71.032,
+    "word": "exact",
+    "start": 36.274,
+    "end": 36.772,
     "prob": 1.0
   },
   {
-    "word": "machine",
-    "start": 71.044,
-    "end": 71.529,
+    "word": "opposite",
+    "start": 36.784,
+    "end": 37.269,
     "prob": 1.0
   },
   {
-    "word": "always",
-    "start": 71.541,
-    "end": 71.942,
+    "word": "an",
+    "start": 37.536,
+    "end": 37.694,
     "prob": 1.0
   },
   {
-    "word": "wins",
-    "start": 71.954,
-    "end": 72.488,
+    "word": "engine",
+    "start": 37.706,
+    "end": 38.022,
+    "prob": 1.0
+  },
+  {
+    "word": "designed",
+    "start": 38.034,
+    "end": 38.459,
+    "prob": 1.0
+  },
+  {
+    "word": "to",
+    "start": 38.471,
+    "end": 38.544,
+    "prob": 1.0
+  },
+  {
+    "word": "give",
+    "start": 38.556,
+    "end": 38.714,
+    "prob": 1.0
+  },
+  {
+    "word": "you",
+    "start": 38.726,
+    "end": 38.847,
+    "prob": 1.0
+  },
+  {
+    "word": "an",
+    "start": 38.859,
+    "end": 38.956,
+    "prob": 1.0
+  },
+  {
+    "word": "answer",
+    "start": 38.968,
+    "end": 39.393,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 39.405,
+    "end": 39.526,
+    "prob": 1.0
+  },
+  {
+    "word": "kick",
+    "start": 39.539,
+    "end": 39.757,
+    "prob": 1.0
+  },
+  {
+    "word": "you",
+    "start": 39.769,
+    "end": 39.915,
+    "prob": 1.0
+  },
+  {
+    "word": "off",
+    "start": 39.927,
+    "end": 40.145,
+    "prob": 1.0
+  },
+  {
+    "word": "their",
+    "start": 40.158,
+    "end": 40.316,
+    "prob": 1.0
+  },
+  {
+    "word": "site",
+    "start": 40.328,
+    "end": 40.619,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 40.631,
+    "end": 40.765,
+    "prob": 1.0
+  },
+  {
+    "word": "3 SECONDS",
+    "start": 40.777,
+    "end": 41.639,
+    "prob": 1.0
+  },
+  {
+    "word": "Yahoo",
+    "start": 42.476,
+    "end": 42.949,
+    "prob": 1.0
+  },
+  {
+    "word": "called",
+    "start": 42.961,
+    "end": 43.277,
+    "prob": 1.0
+  },
+  {
+    "word": "that",
+    "start": 43.289,
+    "end": 43.435,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 43.447,
+    "end": 43.496,
+    "prob": 1.0
+  },
+  {
+    "word": "distraction",
+    "start": 43.507,
+    "end": 44.235,
+    "prob": 1.0
+  },
+  {
+    "word": "Four",
+    "start": 45.073,
+    "end": 45.328,
+    "prob": 1.0
+  },
+  {
+    "word": "years",
+    "start": 45.34,
+    "end": 45.607,
+    "prob": 1.0
+  },
+  {
+    "word": "later",
+    "start": 45.619,
+    "end": 45.971,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 46.177,
+    "end": 46.311,
+    "prob": 1.0
+  },
+  {
+    "word": "two",
+    "start": 46.323,
+    "end": 46.481,
+    "prob": 1.0
+  },
+  {
+    "word": "thousand",
+    "start": 46.493,
+    "end": 46.833,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 46.845,
+    "end": 46.918,
+    "prob": 1.0
+  },
+  {
+    "word": "two",
+    "start": 46.93,
+    "end": 47.221,
+    "prob": 1.0
+  },
+  {
+    "word": "Yahoo",
+    "start": 47.512,
+    "end": 47.864,
+    "prob": 1.0
+  },
+  {
+    "word": "realized",
+    "start": 47.876,
+    "end": 48.41,
+    "prob": 1.0
+  },
+  {
+    "word": "their",
+    "start": 48.422,
+    "end": 48.531,
+    "prob": 1.0
+  },
+  {
+    "word": "mistake",
+    "start": 48.544,
+    "end": 49.029,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 49.041,
+    "end": 49.175,
+    "prob": 1.0
+  },
+  {
+    "word": "offered",
+    "start": 49.187,
+    "end": 49.539,
+    "prob": 1.0
+  },
+  {
+    "word": "$3,000,000,000",
+    "start": 49.551,
+    "end": 50.218,
+    "prob": 1.0
+  },
+  {
+    "word": "dollars",
+    "start": 50.231,
+    "end": 50.619,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 50.631,
+    "end": 50.752,
+    "prob": 1.0
+  },
+  {
+    "word": "cash",
+    "start": 50.765,
+    "end": 51.323,
+    "prob": 1.0
+  },
+  {
+    "word": "Larry",
+    "start": 52.16,
+    "end": 52.585,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 52.597,
+    "end": 52.731,
+    "prob": 1.0
+  },
+  {
+    "word": "Sergey",
+    "start": 52.743,
+    "end": 53.204,
+    "prob": 1.0
+  },
+  {
+    "word": "said",
+    "start": 53.216,
+    "end": 53.459,
+    "prob": 1.0
+  },
+  {
+    "word": "five",
+    "start": 53.471,
+    "end": 53.969,
+    "prob": 1.0
+  },
+  {
+    "word": "Yahoo",
+    "start": 54.806,
+    "end": 55.267,
+    "prob": 1.0
+  },
+  {
+    "word": "walked",
+    "start": 55.279,
+    "end": 55.57,
+    "prob": 1.0
+  },
+  {
+    "word": "away",
+    "start": 55.583,
+    "end": 55.874,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 55.886,
+    "end": 55.947,
+    "prob": 1.0
+  },
+  {
+    "word": "second",
+    "start": 55.959,
+    "end": 56.323,
+    "prob": 1.0
+  },
+  {
+    "word": "time",
+    "start": 56.335,
+    "end": 56.614,
+    "prob": 1.0
+  },
+  {
+    "word": "over",
+    "start": 56.626,
+    "end": 56.832,
+    "prob": 1.0
+  },
+  {
+    "word": "two",
+    "start": 56.845,
+    "end": 57.063,
+    "prob": 1.0
+  },
+  {
+    "word": "billion",
+    "start": 57.075,
+    "end": 57.439,
+    "prob": 1.0
+  },
+  {
+    "word": "dollars",
+    "start": 57.451,
+    "end": 58.009,
+    "prob": 1.0
+  },
+  {
+    "word": "Fourteen",
+    "start": 58.847,
+    "end": 59.381,
+    "prob": 1.0
+  },
+  {
+    "word": "years",
+    "start": 59.393,
+    "end": 59.672,
+    "prob": 1.0
+  },
+  {
+    "word": "later",
+    "start": 59.684,
+    "end": 60.024,
+    "prob": 1.0
+  },
+  {
+    "word": "Yahoo",
+    "start": 60.231,
+    "end": 60.607,
+    "prob": 1.0
+  },
+  {
+    "word": "sold",
+    "start": 60.619,
+    "end": 60.922,
+    "prob": 1.0
+  },
+  {
+    "word": "their",
+    "start": 60.934,
+    "end": 61.08,
+    "prob": 1.0
+  },
+  {
+    "word": "core",
+    "start": 61.092,
+    "end": 61.347,
+    "prob": 1.0
+  },
+  {
+    "word": "business",
+    "start": 61.359,
+    "end": 61.772,
+    "prob": 1.0
+  },
+  {
+    "word": "to",
+    "start": 61.784,
+    "end": 61.893,
+    "prob": 1.0
+  },
+  {
+    "word": "Verizon",
+    "start": 61.905,
+    "end": 62.427,
+    "prob": 1.0
+  },
+  {
+    "word": "for",
+    "start": 62.439,
+    "end": 62.585,
+    "prob": 1.0
+  },
+  {
+    "word": "scrap",
+    "start": 62.597,
+    "end": 62.913,
+    "prob": 1.0
+  },
+  {
+    "word": "metal",
+    "start": 62.925,
+    "end": 63.326,
+    "prob": 1.0
+  },
+  {
+    "word": "Meanwhile",
+    "start": 64.163,
+    "end": 64.83,
+    "prob": 1.0
+  },
+  {
+    "word": "that",
+    "start": 65.012,
+    "end": 65.17,
+    "prob": 1.0
+  },
+  {
+    "word": "rejected",
+    "start": 65.182,
+    "end": 65.68,
+    "prob": 1.0
+  },
+  {
+    "word": "search",
+    "start": 65.692,
+    "end": 66.02,
+    "prob": 1.0
+  },
+  {
+    "word": "algorithm",
+    "start": 66.032,
+    "end": 66.59,
+    "prob": 1.0
+  },
+  {
+    "word": "became",
+    "start": 66.602,
+    "end": 66.93,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 66.942,
+    "end": 67.015,
+    "prob": 1.0
+  },
+  {
+    "word": "two",
+    "start": 67.027,
+    "end": 67.258,
+    "prob": 1.0
+  },
+  {
+    "word": "$1 Trillion",
+    "start": 67.269,
+    "end": 67.67,
+    "prob": 1.0
+  },
+  {
+    "word": "dollar",
+    "start": 67.682,
+    "end": 68.01,
+    "prob": 1.0
+  },
+  {
+    "word": "empire",
+    "start": 68.022,
+    "end": 68.592,
+    "prob": 1.0
+  },
+  {
+    "word": "Passing",
+    "start": 69.43,
+    "end": 69.867,
+    "prob": 1.0
+  },
+  {
+    "word": "on",
+    "start": 69.879,
+    "end": 69.976,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 69.988,
+    "end": 70.061,
+    "prob": 1.0
+  },
+  {
+    "word": "future",
+    "start": 70.073,
+    "end": 70.486,
+    "prob": 1.0
+  },
+  {
+    "word": "once",
+    "start": 70.498,
+    "end": 70.753,
+    "prob": 1.0
+  },
+  {
+    "word": "is",
+    "start": 70.765,
+    "end": 70.874,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 70.886,
+    "end": 70.935,
+    "prob": 1.0
+  },
+  {
+    "word": "mistake",
+    "start": 70.947,
+    "end": 71.566,
+    "prob": 1.0
+  },
+  {
+    "word": "Passing",
+    "start": 72.403,
+    "end": 72.852,
+    "prob": 1.0
+  },
+  {
+    "word": "on",
+    "start": 72.864,
+    "end": 72.985,
+    "prob": 1.0
+  },
+  {
+    "word": "it",
+    "start": 72.998,
+    "end": 73.095,
+    "prob": 1.0
+  },
+  {
+    "word": "twice",
+    "start": 73.107,
+    "end": 73.483,
+    "prob": 1.0
+  },
+  {
+    "word": "is",
+    "start": 73.495,
+    "end": 73.604,
+    "prob": 1.0
+  },
+  {
+    "word": "an",
+    "start": 73.617,
+    "end": 73.702,
+    "prob": 1.0
+  },
+  {
+    "word": "extinction",
+    "start": 73.714,
+    "end": 74.236,
+    "prob": 1.0
+  },
+  {
+    "word": "event",
+    "start": 74.248,
+    "end": 74.697,
     "prob": 1.0
   }
 ]

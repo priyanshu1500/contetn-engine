@@ -1,21 +1,18 @@
-Yahoo had two chances to buy Google.
-In 1998, for one million dollars.
-In 2002, for three billion.
-They said no both times.
-The first rejection is the one that changed the world.
-Larry Page and Sergey Brin walked into Yahoo headquarters and offered them the entire PageRank algorithm for one million bucks.
-Yahoo laughed them out of the boardroom.
-Their reason?
-Google's search engine worked too fast.
-It sent users off the site in three seconds.
-Yahoo made money by keeping people trapped on their portal, clicking banner ads and reading horoscopes.
-Google built their entire trillion-dollar empire on the exact opposite bet:
-Give people the answer instantly, and get out of their way.
-Yahoo didn't miss Google by accident.
-They actively rejected the idea that won.
-Here is the warning for every business owner today:
-Right now, legacy companies are rejecting autonomous AI workflows for the exact same reason:
-It collapses their billed hours.
-The market doesn't care about your billable hours.
-The faster machine always wins.
-
+These two twenty-four-year-olds offered to sell their entire company for less than the price of a modest house.
+The boardroom laughed them out of the building.
+The algorithm was PageRank.
+Those students were Larry Page and Sergey Brin.
+And the boardroom that rejected them was Yahoo.
+Here is the part nobody understands:
+Yahoo didn't reject Google because the technology was bad.
+They rejected it because it was too fast.
+In nineteen ninety-eight, Yahoo's entire revenue model was built on trapping you on their portal for forty-five minutes to sell banner ads.
+Google built the exact opposite: an engine designed to give you an answer and kick you off their site in three seconds.
+Yahoo called that a distraction.
+Four years later, in two thousand and two, Yahoo realized their mistake and offered three billion dollars in cash.
+Larry and Sergey said five.
+Yahoo walked away a second time over two billion dollars.
+Fourteen years later, Yahoo sold their core business to Verizon for scrap metal.
+Meanwhile, that rejected search algorithm became a two trillion dollar empire.
+Passing on the future once is a mistake.
+Passing on it twice is an extinction event.

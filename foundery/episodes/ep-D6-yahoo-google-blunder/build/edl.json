@@ -1,0 +1,1641 @@
+{
+  "duration": 73.1,
+  "shots": [
+    {
+      "id": "s1",
+      "kind": "video",
+      "src": "clips/vintage_office_90s.mp4",
+      "t0": 0.0,
+      "t1": 2.307,
+      "from": 1.0,
+      "scale": 1.06,
+      "grade": "contrast(1.15) brightness(0.95)",
+      "scrim": true,
+      "job": "hook:asymmetric_decision"
+    },
+    {
+      "id": "s2",
+      "kind": "still",
+      "src": "img/yahoo_google_rejection_card.png",
+      "t0": 2.307,
+      "t1": 11.711,
+      "fx": 0.5,
+      "fy": 0.5,
+      "scale": 1.04,
+      "job": "proof:boardroom_rejections"
+    },
+    {
+      "id": "s3",
+      "kind": "stark",
+      "t0": 11.711,
+      "t1": 15.158,
+      "stark": {
+        "bg": "white",
+        "text": "THE FIRST REJECTION",
+        "tag": "STANFORD UNIVERSITY // 1998",
+        "sub": "Larry Page & Sergey Brin walk into Yahoo HQ."
+      },
+      "job": "optical_reset:white"
+    },
+    {
+      "id": "s4",
+      "kind": "polaroid",
+      "t0": 15.158,
+      "t1": 22.827,
+      "polaroid": {
+        "src": "img/larry_page.jpg",
+        "label": "Larry Page (Stanford CS, 1998)",
+        "rot": -2.0,
+        "scale": 1.0
+      },
+      "job": "photo:founder_larry"
+    },
+    {
+      "id": "s5",
+      "kind": "video",
+      "src": "clips/succession_boardroom.mp4",
+      "t0": 22.827,
+      "t1": 25.461,
+      "from": 0.0,
+      "scale": 1.08,
+      "scrim": true,
+      "job": "broll:boardroom_rejection"
+    },
+    {
+      "id": "s6",
+      "kind": "still",
+      "src": "img/google_speed_card.png",
+      "t0": 25.461,
+      "t1": 33.459,
+      "fx": 0.5,
+      "fy": 0.5,
+      "scale": 1.05,
+      "job": "proof:speed_metric"
+    },
+    {
+      "id": "s7",
+      "kind": "still",
+      "src": "img/yahoo_portal_trap_card.png",
+      "t0": 33.459,
+      "t1": 39.793,
+      "fx": 0.5,
+      "fy": 0.5,
+      "scale": 1.04,
+      "job": "proof:portal_trap"
+    },
+    {
+      "id": "s8",
+      "kind": "still",
+      "src": "img/trillion_divergence_card.png",
+      "t0": 39.793,
+      "t1": 48.204,
+      "fx": 0.5,
+      "fy": 0.5,
+      "scale": 1.04,
+      "job": "stat:divergence"
+    },
+    {
+      "id": "s9",
+      "kind": "stark",
+      "t0": 48.204,
+      "t1": 54.187,
+      "stark": {
+        "bg": "#0B0B0C",
+        "text": "THEY REJECTED THE IDEA THAT WON.",
+        "tag": "HISTORICAL POST-MORTEM",
+        "sub": "Yahoo didn't miss Google by accident."
+      },
+      "job": "optical_reset:black"
+    },
+    {
+      "id": "s10",
+      "kind": "video",
+      "src": "clips/cursor_ide.mp4",
+      "t0": 54.187,
+      "t1": 63.75,
+      "from": 0.0,
+      "scale": 1.05,
+      "scrim": true,
+      "job": "tech:autonomous_velocity"
+    },
+    {
+      "id": "s11",
+      "kind": "still",
+      "src": "img/faster_machine_lesson.png",
+      "t0": 63.75,
+      "t1": 73.1,
+      "fx": 0.5,
+      "fy": 0.5,
+      "scale": 1.04,
+      "job": "moral:agency_lesson"
+    }
+  ],
+  "text": [
+    {
+      "t0": 0.099,
+      "t1": 1.033,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Yahoo",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 0.099
+        },
+        {
+          "w": "had",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 0.584
+        },
+        {
+          "w": "two",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 0.827
+        }
+      ]
+    },
+    {
+      "t0": 1.033,
+      "t1": 1.834,
+      "mode": "word",
+      "words": [
+        {
+          "w": "chances",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 1.033
+        },
+        {
+          "w": "to",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 1.531
+        },
+        {
+          "w": "buy",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 1.64
+        }
+      ]
+    },
+    {
+      "t0": 1.834,
+      "t1": 3.234,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Google",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 1.834
+        },
+        {
+          "w": "1998",
+          "fontKind": "condensed",
+          "em": true,
+          "color": "#F7F5EF",
+          "box": null,
+          "t": 3.143
+        },
+        {
+          "w": "for",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 4.612
+        }
+      ]
+    },
+    {
+      "t0": 4.879,
+      "t1": 6.279,
+      "mode": "word",
+      "words": [
+        {
+          "w": "$1,000,000",
+          "fontKind": "condensed",
+          "em": true,
+          "color": "#F7F5EF",
+          "box": "yellow",
+          "t": 4.879
+        },
+        {
+          "w": "2002",
+          "fontKind": "condensed",
+          "em": true,
+          "color": "#F7F5EF",
+          "box": null,
+          "t": 6.869
+        },
+        {
+          "w": "for",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 8.252
+        }
+      ]
+    },
+    {
+      "t0": 8.483,
+      "t1": 9.883,
+      "mode": "word",
+      "words": [
+        {
+          "w": "$3,000,000,000",
+          "fontKind": "condensed",
+          "em": true,
+          "color": "#F7F5EF",
+          "box": "yellow",
+          "t": 8.483
+        },
+        {
+          "w": "They",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 10.097
+        },
+        {
+          "w": "said",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 10.279
+        }
+      ]
+    },
+    {
+      "t0": 10.57,
+      "t1": 11.931,
+      "mode": "word",
+      "words": [
+        {
+          "w": "no",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 10.57
+        },
+        {
+          "w": "both",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 10.801
+        },
+        {
+          "w": "times",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 11.092
+        }
+      ]
+    },
+    {
+      "t0": 12.549,
+      "t1": 13.592,
+      "mode": "word",
+      "words": [
+        {
+          "w": "The",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 12.549
+        },
+        {
+          "w": "first",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 12.706
+        },
+        {
+          "w": "rejection",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 13.046
+        }
+      ]
+    },
+    {
+      "t0": 13.592,
+      "t1": 14.053,
+      "mode": "word",
+      "words": [
+        {
+          "w": "is",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 13.592
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 13.726
+        },
+        {
+          "w": "one",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 13.835
+        }
+      ]
+    },
+    {
+      "t0": 14.053,
+      "t1": 14.697,
+      "mode": "word",
+      "words": [
+        {
+          "w": "that",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 14.053
+        },
+        {
+          "w": "changed",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 14.211
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 14.612
+        }
+      ]
+    },
+    {
+      "t0": 14.697,
+      "t1": 16.097,
+      "mode": "word",
+      "words": [
+        {
+          "w": "world",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 14.697
+        },
+        {
+          "w": "Larry Page",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 15.995
+        },
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 16.784
+        }
+      ]
+    },
+    {
+      "t0": 16.917,
+      "t1": 18.131,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Sergey Brin",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 16.917
+        },
+        {
+          "w": "walked",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 17.609
+        },
+        {
+          "w": "into",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 17.925
+        }
+      ]
+    },
+    {
+      "t0": 18.131,
+      "t1": 19.369,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Yahoo",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 18.131
+        },
+        {
+          "w": "headquarters",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 18.568
+        },
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 19.211
+        }
+      ]
+    },
+    {
+      "t0": 19.369,
+      "t1": 19.915,
+      "mode": "word",
+      "words": [
+        {
+          "w": "offered",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 19.369
+        },
+        {
+          "w": "them",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 19.672
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 19.842
+        }
+      ]
+    },
+    {
+      "t0": 19.915,
+      "t1": 21.315,
+      "mode": "word",
+      "words": [
+        {
+          "w": "entire",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 19.915
+        },
+        {
+          "w": "PageRank",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 20.401
+        },
+        {
+          "w": "algorithm",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 20.971
+        }
+      ]
+    },
+    {
+      "t0": 21.578,
+      "t1": 22.978,
+      "mode": "word",
+      "words": [
+        {
+          "w": "for",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 21.578
+        },
+        {
+          "w": "$1,000,000",
+          "fontKind": "condensed",
+          "em": true,
+          "color": "#F7F5EF",
+          "box": "yellow",
+          "t": 21.772
+        },
+        {
+          "w": "bucks",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 22.342
+        }
+      ]
+    },
+    {
+      "t0": 23.665,
+      "t1": 24.551,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Yahoo",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 23.665
+        },
+        {
+          "w": "laughed",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 24.102
+        },
+        {
+          "w": "them",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 24.417
+        }
+      ]
+    },
+    {
+      "t0": 24.551,
+      "t1": 24.903,
+      "mode": "word",
+      "words": [
+        {
+          "w": "out",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 24.551
+        },
+        {
+          "w": "of",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 24.733
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 24.806
+        }
+      ]
+    },
+    {
+      "t0": 24.903,
+      "t1": 26.303,
+      "mode": "word",
+      "words": [
+        {
+          "w": "boardroom",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 24.903
+        },
+        {
+          "w": "Their",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 26.299
+        },
+        {
+          "w": "reason",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 26.553
+        }
+      ]
+    },
+    {
+      "t0": 27.828,
+      "t1": 28.956,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Google's",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 27.828
+        },
+        {
+          "w": "search",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 28.265
+        },
+        {
+          "w": "engine",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 28.592
+        }
+      ]
+    },
+    {
+      "t0": 28.956,
+      "t1": 30.268,
+      "mode": "word",
+      "words": [
+        {
+          "w": "worked",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 28.956
+        },
+        {
+          "w": "too",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 29.272
+        },
+        {
+          "w": "fast",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 29.49
+        }
+      ]
+    },
+    {
+      "t0": 30.886,
+      "t1": 31.76,
+      "mode": "word",
+      "words": [
+        {
+          "w": "It",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 30.886
+        },
+        {
+          "w": "sent",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 31.056
+        },
+        {
+          "w": "users",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 31.311
+        }
+      ]
+    },
+    {
+      "t0": 31.76,
+      "t1": 32.403,
+      "mode": "word",
+      "words": [
+        {
+          "w": "off",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 31.76
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 31.966
+        },
+        {
+          "w": "site",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 32.075
+        }
+      ]
+    },
+    {
+      "t0": 32.403,
+      "t1": 33.803,
+      "mode": "word",
+      "words": [
+        {
+          "w": "in",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 32.403
+        },
+        {
+          "w": "3 SECONDS",
+          "fontKind": "condensed",
+          "em": true,
+          "color": "#F7F5EF",
+          "box": null,
+          "t": 32.573
+        },
+        {
+          "w": "Yahoo",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 34.296
+        }
+      ]
+    },
+    {
+      "t0": 34.733,
+      "t1": 35.425,
+      "mode": "word",
+      "words": [
+        {
+          "w": "made",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 34.733
+        },
+        {
+          "w": "money",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 34.964
+        },
+        {
+          "w": "by",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 35.255
+        }
+      ]
+    },
+    {
+      "t0": 35.425,
+      "t1": 36.517,
+      "mode": "word",
+      "words": [
+        {
+          "w": "keeping",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 35.425
+        },
+        {
+          "w": "people",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 35.825
+        },
+        {
+          "w": "trapped",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 36.153
+        }
+      ]
+    },
+    {
+      "t0": 36.517,
+      "t1": 37.405,
+      "mode": "word",
+      "words": [
+        {
+          "w": "on",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 36.517
+        },
+        {
+          "w": "their",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 36.626
+        },
+        {
+          "w": "portal",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 36.76
+        }
+      ]
+    },
+    {
+      "t0": 37.439,
+      "t1": 38.519,
+      "mode": "word",
+      "words": [
+        {
+          "w": "clicking",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 37.439
+        },
+        {
+          "w": "banner",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 37.816
+        },
+        {
+          "w": "ads",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 38.216
+        }
+      ]
+    },
+    {
+      "t0": 38.519,
+      "t1": 39.919,
+      "mode": "word",
+      "words": [
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 38.519
+        },
+        {
+          "w": "reading",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 38.665
+        },
+        {
+          "w": "horoscopes",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 38.956
+        }
+      ]
+    },
+    {
+      "t0": 40.631,
+      "t1": 41.383,
+      "mode": "word",
+      "words": [
+        {
+          "w": "Google",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 40.631
+        },
+        {
+          "w": "built",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 41.019
+        },
+        {
+          "w": "their",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 41.238
+        }
+      ]
+    },
+    {
+      "t0": 41.383,
+      "t1": 42.783,
+      "mode": "word",
+      "words": [
+        {
+          "w": "entire",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 41.383
+        },
+        {
+          "w": "$1 TRILLION",
+          "fontKind": "condensed",
+          "em": true,
+          "color": "#F7F5EF",
+          "box": "yellow",
+          "t": 41.857
+        },
+        {
+          "w": "empire",
+          "fontKind": "serif-italic",
+          "em": true,
+          "color": "#F5C542",
+          "rotate": 0,
+          "t": 42.573
+        }
+      ]
+    },
+    {
+      "t0": 43.083,
+      "t1": 43.738,
+      "mode": "word",
+      "words": [
+        {
+          "w": "on",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 43.083
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 43.18
+        },
+        {
+          "w": "exact",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 43.24
+        }
+      ]
+    },
+    {
+      "t0": 43.738,
+      "t1": 45.138,
+      "mode": "word",
+      "words": [
+        {
+          "w": "opposite",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 43.738
+        },
+        {
+          "w": "bet",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 44.163
+        },
+        {
+          "w": "Give",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 45.328
+        }
+      ]
+    },
+    {
+      "t0": 45.57,
+      "t1": 46.323,
+      "mode": "word",
+      "words": [
+        {
+          "w": "people",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 45.57
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 45.874
+        },
+        {
+          "w": "answer",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 45.983
+        }
+      ]
+    },
+    {
+      "t0": 46.323,
+      "t1": 47.439,
+      "mode": "word",
+      "words": [
+        {
+          "w": "instantly",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 46.323
+        },
+        {
+          "w": "and",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 47.099
+        },
+        {
+          "w": "get",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 47.257
+        }
+      ]
+    },
+    {
+      "t0": 47.439,
+      "t1": 47.84,
+      "mode": "word",
+      "words": [
+        {
+          "w": "out",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 47.439
+        },
+        {
+          "w": "of",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 47.609
+        },
+        {
+          "w": "their",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 47.682
+        }
+      ]
+    },
+    {
+      "t0": 47.84,
+      "t1": 49.24,
+      "mode": "word",
+      "words": [
+        {
+          "w": "way",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 47.84
+        },
+        {
+          "w": "Yahoo",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 49.041
+        },
+        {
+          "w": "didn't",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 49.502
+        }
+      ]
+    },
+    {
+      "t0": 49.757,
+      "t1": 50.522,
+      "mode": "word",
+      "words": [
+        {
+          "w": "miss",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 49.757
+        },
+        {
+          "w": "Google",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 49.976
+        },
+        {
+          "w": "by",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 50.352
+        }
+      ]
+    },
+    {
+      "t0": 50.522,
+      "t1": 51.922,
+      "mode": "word",
+      "words": [
+        {
+          "w": "accident",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 50.522
+        },
+        {
+          "w": "They",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 51.99
+        },
+        {
+          "w": "actively",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 52.197
+        }
+      ]
+    },
+    {
+      "t0": 52.694,
+      "t1": 53.689,
+      "mode": "word",
+      "words": [
+        {
+          "w": "rejected",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 52.694
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 53.192
+        },
+        {
+          "w": "idea",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 53.289
+        }
+      ]
+    },
+    {
+      "t0": 53.689,
+      "t1": 55.089,
+      "mode": "word",
+      "words": [
+        {
+          "w": "that",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 53.689
+        },
+        {
+          "w": "won",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 53.871
+        },
+        {
+          "w": "Here",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 55.024
+        }
+      ]
+    },
+    {
+      "t0": 55.267,
+      "t1": 55.837,
+      "mode": "word",
+      "words": [
+        {
+          "w": "is",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 55.267
+        },
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 55.401
+        },
+        {
+          "w": "warning",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 55.51
+        }
+      ]
+    },
+    {
+      "t0": 55.837,
+      "t1": 56.723,
+      "mode": "word",
+      "words": [
+        {
+          "w": "for",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 55.837
+        },
+        {
+          "w": "every",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 56.056
+        },
+        {
+          "w": "business",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 56.299
+        }
+      ]
+    },
+    {
+      "t0": 56.723,
+      "t1": 58.123,
+      "mode": "word",
+      "words": [
+        {
+          "w": "owner",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 56.723
+        },
+        {
+          "w": "today",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 56.99
+        },
+        {
+          "w": "Right",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 58.289
+        }
+      ]
+    },
+    {
+      "t0": 58.592,
+      "t1": 59.992,
+      "mode": "word",
+      "words": [
+        {
+          "w": "now",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 58.592
+        },
+        {
+          "w": "legacy",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 59.138
+        },
+        {
+          "w": "companies",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 59.551
+        }
+      ]
+    },
+    {
+      "t0": 60.024,
+      "t1": 61.286,
+      "mode": "word",
+      "words": [
+        {
+          "w": "are",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 60.024
+        },
+        {
+          "w": "rejecting",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 60.146
+        },
+        {
+          "w": "autonomous",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 60.68
+        }
+      ]
+    },
+    {
+      "t0": 61.286,
+      "t1": 62.427,
+      "mode": "word",
+      "words": [
+        {
+          "w": "AI",
+          "fontKind": "mono",
+          "em": true,
+          "color": "#F7F5EF",
+          "t": 61.286
+        },
+        {
+          "w": "workflows",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 61.699
+        },
+        {
+          "w": "for",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 62.306
+        }
+      ]
+    },
+    {
+      "t0": 62.427,
+      "t1": 63.301,
+      "mode": "word",
+      "words": [
+        {
+          "w": "the",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 62.427
+        },
+        {
+          "w": "exact",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 62.488
+        },
+        {
+          "w": "same",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 62.998
+        }
+      ]
+    },
+    {
+      "t0": 63.301,
+      "t1": 64.701,
+      "mode": "word",
+      "words": [
+        {
+          "w": "reason",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 63.301
+        },
+        {
+          "w": "It",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 64.587
+        },
+        {
+          "w": "collapses",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 64.757
+        }
+      ]
+    },
+    {
+      "t0": 65.34,
+      "t1": 66.615,
+      "mode": "word",
+      "words": [
+        {
+          "w": "their",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 65.34
+        },
+        {
+          "w": "billed",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 65.534
+        },
+        {
+          "w": "hours",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 65.825
+        }
+      ]
+    },
+    {
+      "t0": 67.233,
+      "t1": 68.046,
+      "mode": "word",
+      "words": [
+        {
+          "w": "The",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 67.233
+        },
+        {
+          "w": "market",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 67.354
+        },
+        {
+          "w": "doesn't",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 67.743
+        }
+      ]
+    },
+    {
+      "t0": 68.046,
+      "t1": 68.689,
+      "mode": "word",
+      "words": [
+        {
+          "w": "care",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 68.046
+        },
+        {
+          "w": "about",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 68.289
+        },
+        {
+          "w": "your",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 68.544
+        }
+      ]
+    },
+    {
+      "t0": 68.689,
+      "t1": 70.089,
+      "mode": "word",
+      "words": [
+        {
+          "w": "billable",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 68.689
+        },
+        {
+          "w": "hours",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 69.102
+        },
+        {
+          "w": "The",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 70.473
+        }
+      ]
+    },
+    {
+      "t0": 70.619,
+      "t1": 71.954,
+      "mode": "word",
+      "words": [
+        {
+          "w": "faster",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 70.619
+        },
+        {
+          "w": "machine",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 71.044
+        },
+        {
+          "w": "always",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 71.541
+        }
+      ]
+    },
+    {
+      "t0": 71.954,
+      "t1": 72.708,
+      "mode": "word",
+      "words": [
+        {
+          "w": "wins",
+          "fontKind": "sans",
+          "em": false,
+          "color": "#F7F5EF",
+          "t": 71.954
+        }
+      ]
+    }
+  ]
+}

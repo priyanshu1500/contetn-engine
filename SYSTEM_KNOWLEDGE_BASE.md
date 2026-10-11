@@ -1,9 +1,9 @@
 # SYSTEM KNOWLEDGE BASE: High-Status Documentary & Editorial Video Engine
 
-> **Version:** 3.0 (MetroMedia & StanLaunchpad Editorial Standard)  
-> **Last Updated:** 2026-10-03  
+> **Version:** 4.0 (MetroMedia, AttentionCompound & SanjaiBuilds Standard)  
+> **Last Updated:** 2026-10-12  
 > **Maintainer:** Antigravity Autonomous Video Engine  
-> **Scope:** Entire `agency content` workspace & all automated documentary/reel pipelines.
+> **Scope:** Entire `agency content` workspace & all automated documentary/editorial reel pipelines.
 
 ---
 
@@ -50,6 +50,27 @@ High-status editorial video looks like:
   - Contrast flip from outdoor street interview $\rightarrow$ dark CRT scanline screen $\rightarrow$ pure white investor deck tile $\rightarrow$ split-screen co-founder comparison.
   - Floating avatar badges connected with subtle bezier curved tracking lines.
   - Giant condensed currency stamps (`$40M`) punching the screen with scale overshoot.
+
+### Reference 3: Attention Compound (`https://www.instagram.com/p/DeW5zohMQWC/` — 11.4K Likes)
+- **Genre:** Investigative HBO/Netflix-Style Documentary Reel.
+- **Hook Thesis (The Inverted Paradox Hook):** *"The scariest thing about Sam Altman isn't how powerful he is. It's what happens to anyone who tries to take his power away."*
+- **Key Editorial & Technical Breakthroughs:**
+  1. **Broadcast Audio Intercuts:** The narrator cuts away mid-reel to real CNN/Bloomberg anchor commentary (*"They just made the biggest mistake of their lives"*). Breaks narrator fatigue and injects immediate external journalistic credibility.
+  2. **Staccato Rhythmic Punches:** Rapid single-word or short-phrase conclusions (*"The two who challenged him? Gone. The humanity cap on profits? Gone."*).
+  3. **Analog Film / CRT Grading:** Text and footage feature subtle horizontal RGB chromatic aberration (red -2px, cyan +2px) combined with faint horizontal CRT scanlines and crushed pitch-black shadows (`#000000`).
+  4. **Multi-Box Newsroom Mosaic:** 6-box matrix of real news anchors reporting on the crisis simultaneously, creating massive visual urgency.
+  5. **Centered Chest-Level Glowing Serif-Italics:** Moving beyond bottom yellow karaoke boxes to floating, luminous serif italics positioned at chest level (2–4 word thought-units).
+  6. **Broadcast Loudness Compliance:** Audited at exactly `-16.0 dB mean volume` and `-0.1 dB peak`.
+
+### Reference 4: Sanjai Builds (`https://www.instagram.com/reel/DeUGXS_sFsh/` — 4,317 Comments)
+- **Genre:** Tactile Creative Studio / Editorial AI & Interactive Code Showdown.
+- **Hook Thesis (The Viral Remix Hook):** *"I saw this warehouse animation going around on Twitter… so I rebuilt the idea with Claude Opus 5.5. Same concept. Completely different world."*
+- **Alternative Hook (The Fair Creative Tournament):** *"I gave Figma Make, ChatGPT, and Claude the exact same app design challenge. Same prompt. No reference. Zero manual edits. Three completely different results."*
+- **Key Editorial & Technical Breakthroughs:**
+  1. **Warm Linen Canvas (`#F6F4EE`):** Avoids cold black and clinical white; uses a high-end tactile linen/cream background with 2% analog paper grain.
+  2. **3D Plush Clay Mascot Identity:** Recurring tactile clay figures (plush bear "Beam", ringed planet, toy rocket) that humanize complex AI/code workflows and establish instant channel branding.
+  3. **The 5-Layer Mental Model:** Deconstructs complex generative code into simple universal layers (*World $\rightarrow$ Life $\rightarrow$ Interaction $\rightarrow$ Dashboard $\rightarrow$ Extras*).
+  4. **Asymmetric Comment-to-DM Funnel:** Displays an on-screen Instagram DM mockup notification and prompts a single-word keyword trigger (*"Comment WORLD"* or *"Comment DESIGN"*), generating 4,300+ comments to trigger Instagram's viral explore recommendation algorithm.
 
 ---
 
@@ -124,6 +145,29 @@ The Remotion engine (`DocReel.tsx`) implements these standard archetypes:
 - Central bold thesis typography.
 - Surrounding floating badges/icons of relevant software tools, logos, or companies with subtle floating physics (`spring({ damping: 12 })`).
 
+### Archetype 7: `broadcast_mosaic` (High-Urgency Cable News Matrix)
+- 4-box or 6-box split-screen matrix of authentic news broadcasts (CNN, CNBC, CBS, Bloomberg) simultaneously reporting on a breaking crisis.
+- Creates immense visual density, urgency, and journalistic authority.
+- Paired with authentic broadcast news audio soundbites.
+
+### Archetype 8: `centered_glowing_serif` (Chest-Level Floating Subtitles)
+- Eliminates ugly bounding boxes and karaoke highlights.
+- High-contrast Serif Italic (*Playfair Display Italic*, *Editorial New*, *Newsreader*) floating at chest level (vertical anchor 50%–52%).
+- Stark white typography (`#FFFFFF`) with soft ambient drop-shadow (`0 4px 20px rgba(0,0,0,0.8), 0 0 10px rgba(255,255,255,0.3)`).
+- Chunked into natural 2–4 word thought-units (`how powerful` $\rightarrow$ `on a Friday,` $\rightarrow$ `worth $86B`).
+
+### Archetype 9: `analog_crt_cinematic` (Physical Film & CRT Texture)
+- Footage and graphics processed with:
+  - **RGB Chromatic Aberration:** Subtle horizontal color separation (red -2px, cyan +2px).
+  - **Horizontal CRT Scanlines:** 1px alternating raster lines at 8% opacity.
+  - **Crushed Deep Blacks:** Strict shadow falloff to `#000000` with high-contrast directional rim lighting.
+
+### Archetype 10: `tactile_studio_showdown` (Warm Linen Creative Lab)
+- Warm linen/cream background canvas (`#F6F4EE`) with 2% analog paper grain.
+- Floating pure white cards (`#FFFFFF`, 24px radius, diffused drop shadows) or iPhone 16 Pro mockup shells.
+- Integrated 3D plush clay mascots (miniature robots/astronauts/bears) with subtle breathing oscillation (`Math.sin(frame / 15) * 8px`).
+- Floating tool tags (`Figma Make`, `ChatGPT`, `Claude`) with status dots.
+
 ---
 
 ## 6. Audio Engineering & Loudness Formulas
@@ -135,12 +179,21 @@ A video with incredible visuals but weak, muddy audio will fail immediately. Fol
 - **Integrated Voiceover Loudness:** `-14.0 dB to -16.0 dB mean / LUFS`.
 - **Music Bed Level:** `-24.0 dB to -28.0 dB` (must sit 10–12 dB below narration at all times).
 - **SFX Bursts:** `-12.0 dB to -18.0 dB` with fast decay.
+- **Broadcast Audio Intercuts:** `-15.0 dB to -16.0 dB mean` (ducking the narrator completely to allow authentic news soundbites to lead the story).
 
 ### B. FFmpeg Voiceover Mastering Filter Chain
 ```bash
 # Normalize and master voiceover to broadcast-loud standard:
 ffmpeg -y -i raw_tts.mp3 -af "volume=1.45,alimiter=limit=0.98:attack=2:release=50" -ar 44100 -ac 2 voice_mastered.wav
 ```
+
+### C. Archival Broadcast Audio Intercut Mixing
+When intercutting real news anchor bites (e.g. CNN/Bloomberg reporting):
+1. Extract the archival bite with high-pass/low-pass filter to preserve broadcast texture:
+   ```bash
+   ffmpeg -ss START -i news_raw.mp4 -t 4.0 -af "volume=1.25,alimiter=limit=0.98,highpass=f=180,lowpass=f=5000" news_bite.wav
+   ```
+2. In the narration timeline, pause narrator voiceover for the exact bite duration; crossfade from narrator $\rightarrow$ broadcast bite $\rightarrow$ narrator. Never mix narrator voice talking over a broadcast anchor speaking!
 
 ### C. Multi-Track SFX & Music Bed Mixing Command
 **CRITICAL:** Never use default `amix=inputs=3` without `:normalize=0`! Default ffmpeg `amix` divides every input stream by `1/N` (e.g. 1/3 = -9.5 dB cut), instantly destroying your voice volume!

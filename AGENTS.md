@@ -1,7 +1,7 @@
 # AGENTS.md: Autonomous Agent Operating Protocol & Taste Mandate
 
 > **Target Audience:** Any autonomous AI agent, pair-programmer, or subagent working in `D:\agency content`.  
-> **Mission:** Produce world-class, high-status documentary reels and marketing assets that match or exceed accounts like `@metromedia.house` and `@stanlaunchpad`.
+> **Mission:** Produce world-class, high-status documentary reels and marketing assets that match or exceed accounts like `@metromedia.house`, `@stanlaunchpad`, `@attentioncompound`, and `@sanjai.builds`.
 
 ---
 
@@ -12,14 +12,16 @@ Every agent working in this repository must operate with top-tier creative direc
 ### 🚫 The Banned List
 1. **NO Generic AI Slop:**
    - Never use a single font centered at the bottom of the screen with yellow word-by-word karaoke highlights across an entire video.
-   - Never repeat the same generic UI asset (e.g. standard ChatGPT chatbox, fake terminal frame) across multiple videos. The user explicitly flagged this: *"the assets like the chatgpt window frame etc are getting repeated in every other video that just makes our page look more predictable and fake fix that"*.
+   - Never repeat the same generic UI asset (e.g. standard ChatGPT chatbox, fake terminal frame) across multiple videos.
+   - Never use sterile AI-generated stock footage when authentic historical news broadcasts (CNN, CNBC, CBS, Bloomberg, C-SPAN) exist.
 2. **NO Low-Volume or Drowned-Out Audio:**
-   - Never let narrator voiceover fall below `-16.0 dB mean volume`.
+   - Never let narrator voiceover fall below `-16.0 dB mean volume` (-15.5 to -16.5 dB range).
    - Never use ffmpeg `amix` without `:normalize=0`. Default ffmpeg `amix` reduces volume by `1/N` per track, causing the voiceover to become inaudible.
-   - User complaint reference: *"the narration should be same way loud as it was in our previous reel dont fuct that volume man"*.
-3. **NO Hallucinated Founder Names or Misspellings:**
+3. **NO Monotonous Narrator Monologues:**
+   - On investigative documentary reels, intercut real news broadcast audio bites (CNN/Bloomberg) to break vocal monotony and add journalistic weight.
+4. **NO Hallucinated Founder Names or Misspellings:**
    - Cross-check all founder names, dates, metrics, and quotes before rendering. Example: *Steve Huffman*, *Alexis Ohanian*, *Paul Graham*, *Sam Altman*, *Jensen Huang*.
-4. **NO Monotonous Visual Pacing:**
+5. **NO Monotonous Visual Pacing:**
    - Never hold a static asset or single dark video clip for longer than 3.0 seconds without a motion punch, scale shift, or visual transition.
    - Optical contrast must reset rhythmically: alternate between dark cinematic footage and stark pure-white graphic slides every 1.5–2.5 seconds.
 
@@ -34,8 +36,8 @@ All agents must use the following pre-configured paths and tool invocations:
 | **Python** | `python` or `py -3` | Standard library + `Pillow` + `faster-whisper`. Run scripts with full Windows paths or relative to episode folder. |
 | **FFmpeg / FFprobe** | `ffmpeg`, `ffprobe` (in system PATH) | Always test audio volume with `-af "volumedetect"`. |
 | **Node / Remotion** | `node render.mjs` inside `engine/` | Custom render script using `@remotion/renderer`. |
-| **Chrome Headless Shell** | `D:/agency content/.remotion/chrome-headless-shell/win64/chrome-headless-shell-win64/chrome-headless-shell.exe` | Explicitly passed via `--gl=angle` in `render.mjs` for GPU stability on Windows. |
-| **OpenCLI / yt-dlp** | `yt-dlp` | For curating real archival footage and founder reference clips. |
+| **Chrome Headless Shell** | `D:/agency content/OpenChatCut/node_modules/.remotion/chrome-headless-shell/win64/chrome-headless-shell-win64/chrome-headless-shell.exe` | Explicitly passed in `render.mjs` with `--user-data-dir=D:/Temp/chrome_profile` and `--disk-cache-dir=D:/Temp/chrome_cache` to protect Drive C. |
+| **OpenCLI / yt-dlp** | `yt-dlp` | For curating real archival footage, news broadcasts, and reference clips. |
 
 ---
 
@@ -112,11 +114,8 @@ To create or update an episode:
 ---
 
 ## 6. Where Knowledge Lives
-- `guidebooks/SKILLS_AND_TOOLING.md`: Complete directory of AI agent skills, GitHub repositories, and operational protocols.
-- `guidebooks/REPLICATION_GUIDE_NEW_PC.md`: Step-by-step setup on a fresh machine.
-- `guidebooks/THOUGHT_PROCESS_AND_RESEARCH.md`: Evolution history, taste mandates, and forensic reference breakdowns.
-- `SYSTEM_KNOWLEDGE_BASE.md`: Deep architectural and creative guide.
-- `guidebooks/METROMEDIA_EDITORIAL_PLAYBOOK.md`: Frame-by-frame breakdown of the MetroMedia aesthetic.
-- `guidebooks/DESIGN_PHILOSOPHY.md`: Core agency brand and positioning rules.
-- `guidebooks/PIPELINE.md`: Technical FFmpeg and Python script specs.
+- `D:\agency content\SYSTEM_KNOWLEDGE_BASE.md`: Deep architectural and creative guide.
+- `D:\agency content\BIN\docs\METROMEDIA_EDITORIAL_PLAYBOOK.md`: Frame-by-frame breakdown of the MetroMedia aesthetic.
+- `D:\agency content\BIN\docs\DESIGN_PHILOSOPHY.md`: Core agency brand and positioning rules.
+- `D:\agency content\BIN\docs\PIPELINE.md`: Technical FFmpeg and Python script specs.
 

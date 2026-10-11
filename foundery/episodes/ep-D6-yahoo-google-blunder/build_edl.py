@@ -230,8 +230,8 @@ EMPH = {
     'ninety-eight,', 'revenue', 'trapping', 'forty-five', 'minutes', 'banner',
     'ads.', 'opposite:', 'answer', 'kick', '3', 'SECONDS.', 'distraction.',
     'Four', 'years', 'two', 'thousand', 'mistake', '$3,000,000,000', 'cash.',
-    'five.', 'second', 'time', 'billion', 'dollars.', 'Fourteen', 'Verizon',
-    'scrap', 'metal.', 'search', '$1', 'Trillion', 'empire.', 'future',
+    '$5 BILLION', 'second', 'time', '$2 BILLION', 'Fourteen', 'Verizon',
+    'scrap', 'metal.', 'search', '$2 TRILLION', 'empire.', 'future',
     'mistake.', 'twice', 'extinction', 'event.'
 }
 

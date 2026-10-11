@@ -1,0 +1,1286 @@
+[
+  {
+    "word": "The",
+    "start": 0.101,
+    "end": 0.227,
+    "prob": 1.0
+  },
+  {
+    "word": "most",
+    "start": 0.239,
+    "end": 0.492,
+    "prob": 1.0
+  },
+  {
+    "word": "dangerous",
+    "start": 0.505,
+    "end": 1.01,
+    "prob": 1.0
+  },
+  {
+    "word": "thing",
+    "start": 1.022,
+    "end": 1.237,
+    "prob": 1.0
+  },
+  {
+    "word": "about",
+    "start": 1.25,
+    "end": 1.515,
+    "prob": 1.0
+  },
+  {
+    "word": "Jensen",
+    "start": 1.527,
+    "end": 1.956,
+    "prob": 1.0
+  },
+  {
+    "word": "Huang",
+    "start": 1.969,
+    "end": 2.436,
+    "prob": 1.0
+  },
+  {
+    "word": "isn't",
+    "start": 2.449,
+    "end": 2.702,
+    "prob": 1.0
+  },
+  {
+    "word": "that",
+    "start": 2.714,
+    "end": 2.865,
+    "prob": 1.0
+  },
+  {
+    "word": "Nvidia",
+    "start": 2.878,
+    "end": 3.37,
+    "prob": 1.0
+  },
+  {
+    "word": "makes",
+    "start": 3.383,
+    "end": 3.648,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 3.661,
+    "end": 3.749,
+    "prob": 1.0
+  },
+  {
+    "word": "fastest",
+    "start": 3.762,
+    "end": 4.305,
+    "prob": 1.0
+  },
+  {
+    "word": "chips",
+    "start": 4.318,
+    "end": 4.646,
+    "prob": 1.0
+  },
+  {
+    "word": "on",
+    "start": 4.659,
+    "end": 4.798,
+    "prob": 1.0
+  },
+  {
+    "word": "earth",
+    "start": 4.81,
+    "end": 5.214,
+    "prob": 1.0
+  },
+  {
+    "word": "It's",
+    "start": 6.086,
+    "end": 6.275,
+    "prob": 1.0
+  },
+  {
+    "word": "what",
+    "start": 6.288,
+    "end": 6.414,
+    "prob": 1.0
+  },
+  {
+    "word": "happens",
+    "start": 6.427,
+    "end": 6.856,
+    "prob": 1.0
+  },
+  {
+    "word": "to",
+    "start": 6.869,
+    "end": 6.983,
+    "prob": 1.0
+  },
+  {
+    "word": "any",
+    "start": 6.995,
+    "end": 7.248,
+    "prob": 1.0
+  },
+  {
+    "word": "tech",
+    "start": 7.26,
+    "end": 7.55,
+    "prob": 1.0
+  },
+  {
+    "word": "giant",
+    "start": 7.563,
+    "end": 7.967,
+    "prob": 1.0
+  },
+  {
+    "word": "that",
+    "start": 7.98,
+    "end": 8.094,
+    "prob": 1.0
+  },
+  {
+    "word": "tries",
+    "start": 8.106,
+    "end": 8.472,
+    "prob": 1.0
+  },
+  {
+    "word": "to",
+    "start": 8.485,
+    "end": 8.573,
+    "prob": 1.0
+  },
+  {
+    "word": "stop",
+    "start": 8.586,
+    "end": 8.94,
+    "prob": 1.0
+  },
+  {
+    "word": "buying",
+    "start": 8.952,
+    "end": 9.293,
+    "prob": 1.0
+  },
+  {
+    "word": "them",
+    "start": 9.306,
+    "end": 9.571,
+    "prob": 1.0
+  },
+  {
+    "word": "For",
+    "start": 10.442,
+    "end": 10.644,
+    "prob": 1.0
+  },
+  {
+    "word": "context",
+    "start": 10.657,
+    "end": 11.326,
+    "prob": 1.0
+  },
+  {
+    "word": "every",
+    "start": 11.528,
+    "end": 11.793,
+    "prob": 1.0
+  },
+  {
+    "word": "trillion",
+    "start": 11.806,
+    "end": 12.235,
+    "prob": 1.0
+  },
+  {
+    "word": "dollar",
+    "start": 12.247,
+    "end": 12.563,
+    "prob": 1.0
+  },
+  {
+    "word": "company",
+    "start": 12.576,
+    "end": 12.993,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 13.005,
+    "end": 13.068,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 13.081,
+    "end": 13.169,
+    "prob": 1.0
+  },
+  {
+    "word": "world",
+    "start": 13.182,
+    "end": 13.523,
+    "prob": 1.0
+  },
+  {
+    "word": "is",
+    "start": 13.535,
+    "end": 13.649,
+    "prob": 1.0
+  },
+  {
+    "word": "currently",
+    "start": 13.662,
+    "end": 14.053,
+    "prob": 1.0
+  },
+  {
+    "word": "trying",
+    "start": 14.066,
+    "end": 14.356,
+    "prob": 1.0
+  },
+  {
+    "word": "to",
+    "start": 14.369,
+    "end": 14.47,
+    "prob": 1.0
+  },
+  {
+    "word": "kill",
+    "start": 14.482,
+    "end": 14.798,
+    "prob": 1.0
+  },
+  {
+    "word": "Nvidia",
+    "start": 14.811,
+    "end": 15.417,
+    "prob": 1.0
+  },
+  {
+    "word": "Google",
+    "start": 16.288,
+    "end": 16.667,
+    "prob": 1.0
+  },
+  {
+    "word": "built",
+    "start": 16.679,
+    "end": 16.894,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 16.907,
+    "end": 17.008,
+    "prob": 1.0
+  },
+  {
+    "word": "TPU",
+    "start": 17.02,
+    "end": 17.752,
+    "prob": 1.0
+  },
+  {
+    "word": "Amazon",
+    "start": 18.636,
+    "end": 19.229,
+    "prob": 1.0
+  },
+  {
+    "word": "spent",
+    "start": 19.242,
+    "end": 19.57,
+    "prob": 1.0
+  },
+  {
+    "word": "billions",
+    "start": 19.583,
+    "end": 20.05,
+    "prob": 1.0
+  },
+  {
+    "word": "on",
+    "start": 20.063,
+    "end": 20.227,
+    "prob": 1.0
+  },
+  {
+    "word": "Trainium",
+    "start": 20.24,
+    "end": 20.833,
+    "prob": 1.0
+  },
+  {
+    "word": "Microsoft",
+    "start": 21.705,
+    "end": 22.412,
+    "prob": 1.0
+  },
+  {
+    "word": "launched",
+    "start": 22.424,
+    "end": 22.815,
+    "prob": 1.0
+  },
+  {
+    "word": "Maia",
+    "start": 22.828,
+    "end": 23.308,
+    "prob": 1.0
+  },
+  {
+    "word": "On",
+    "start": 24.179,
+    "end": 24.381,
+    "prob": 1.0
+  },
+  {
+    "word": "paper",
+    "start": 24.394,
+    "end": 24.823,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 25.0,
+    "end": 25.114,
+    "prob": 1.0
+  },
+  {
+    "word": "strategy",
+    "start": 25.126,
+    "end": 25.644,
+    "prob": 1.0
+  },
+  {
+    "word": "was",
+    "start": 25.657,
+    "end": 25.821,
+    "prob": 1.0
+  },
+  {
+    "word": "obvious",
+    "start": 25.833,
+    "end": 26.464,
+    "prob": 1.0
+  },
+  {
+    "word": "build",
+    "start": 26.742,
+    "end": 27.007,
+    "prob": 1.0
+  },
+  {
+    "word": "your",
+    "start": 27.02,
+    "end": 27.209,
+    "prob": 1.0
+  },
+  {
+    "word": "own",
+    "start": 27.222,
+    "end": 27.411,
+    "prob": 1.0
+  },
+  {
+    "word": "silicon",
+    "start": 27.424,
+    "end": 27.954,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 28.169,
+    "end": 28.32,
+    "prob": 1.0
+  },
+  {
+    "word": "cut",
+    "start": 28.333,
+    "end": 28.573,
+    "prob": 1.0
+  },
+  {
+    "word": "Jensen",
+    "start": 28.586,
+    "end": 29.053,
+    "prob": 1.0
+  },
+  {
+    "word": "out",
+    "start": 29.066,
+    "end": 29.205,
+    "prob": 1.0
+  },
+  {
+    "word": "of",
+    "start": 29.217,
+    "end": 29.28,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 29.293,
+    "end": 29.356,
+    "prob": 1.0
+  },
+  {
+    "word": "margin",
+    "start": 29.369,
+    "end": 29.899,
+    "prob": 1.0
+  },
+  {
+    "word": "It",
+    "start": 30.77,
+    "end": 30.921,
+    "prob": 1.0
+  },
+  {
+    "word": "was",
+    "start": 30.934,
+    "end": 31.085,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 31.099,
+    "end": 31.175,
+    "prob": 1.0
+  },
+  {
+    "word": "most",
+    "start": 31.187,
+    "end": 31.465,
+    "prob": 1.0
+  },
+  {
+    "word": "coordinated",
+    "start": 31.477,
+    "end": 32.096,
+    "prob": 1.0
+  },
+  {
+    "word": "corporate",
+    "start": 32.109,
+    "end": 32.488,
+    "prob": 1.0
+  },
+  {
+    "word": "revolt",
+    "start": 32.5,
+    "end": 32.942,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 32.955,
+    "end": 33.056,
+    "prob": 1.0
+  },
+  {
+    "word": "modern",
+    "start": 33.068,
+    "end": 33.396,
+    "prob": 1.0
+  },
+  {
+    "word": "history",
+    "start": 33.409,
+    "end": 33.965,
+    "prob": 1.0
+  },
+  {
+    "word": "Except",
+    "start": 34.836,
+    "end": 35.253,
+    "prob": 1.0
+  },
+  {
+    "word": "for",
+    "start": 35.265,
+    "end": 35.416,
+    "prob": 1.0
+  },
+  {
+    "word": "one",
+    "start": 35.429,
+    "end": 35.669,
+    "prob": 1.0
+  },
+  {
+    "word": "fatal",
+    "start": 35.682,
+    "end": 36.01,
+    "prob": 1.0
+  },
+  {
+    "word": "mistake",
+    "start": 36.023,
+    "end": 36.515,
+    "prob": 1.0
+  },
+  {
+    "word": "they",
+    "start": 36.528,
+    "end": 36.642,
+    "prob": 1.0
+  },
+  {
+    "word": "didn't",
+    "start": 36.654,
+    "end": 36.919,
+    "prob": 1.0
+  },
+  {
+    "word": "realize",
+    "start": 36.932,
+    "end": 37.475,
+    "prob": 1.0
+  },
+  {
+    "word": "until",
+    "start": 37.487,
+    "end": 37.752,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 37.765,
+    "end": 37.841,
+    "prob": 1.0
+  },
+  {
+    "word": "models",
+    "start": 37.854,
+    "end": 38.258,
+    "prob": 1.0
+  },
+  {
+    "word": "started",
+    "start": 38.27,
+    "end": 38.611,
+    "prob": 1.0
+  },
+  {
+    "word": "training",
+    "start": 38.624,
+    "end": 39.129,
+    "prob": 1.0
+  },
+  {
+    "word": "Jensen",
+    "start": 40.0,
+    "end": 40.505,
+    "prob": 1.0
+  },
+  {
+    "word": "didn't",
+    "start": 40.518,
+    "end": 40.771,
+    "prob": 1.0
+  },
+  {
+    "word": "build",
+    "start": 40.783,
+    "end": 41.048,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 41.061,
+    "end": 41.099,
+    "prob": 1.0
+  },
+  {
+    "word": "chip",
+    "start": 41.111,
+    "end": 41.414,
+    "prob": 1.0
+  },
+  {
+    "word": "company",
+    "start": 41.427,
+    "end": 41.957,
+    "prob": 1.0
+  },
+  {
+    "word": "In 2006",
+    "start": 42.828,
+    "end": 44.091,
+    "prob": 1.0
+  },
+  {
+    "word": "he",
+    "start": 44.343,
+    "end": 44.444,
+    "prob": 1.0
+  },
+  {
+    "word": "spent",
+    "start": 44.457,
+    "end": 44.773,
+    "prob": 1.0
+  },
+  {
+    "word": "billions",
+    "start": 44.785,
+    "end": 45.189,
+    "prob": 1.0
+  },
+  {
+    "word": "forcing",
+    "start": 45.202,
+    "end": 45.694,
+    "prob": 1.0
+  },
+  {
+    "word": "every",
+    "start": 45.707,
+    "end": 45.96,
+    "prob": 1.0
+  },
+  {
+    "word": "chip",
+    "start": 45.972,
+    "end": 46.3,
+    "prob": 1.0
+  },
+  {
+    "word": "to",
+    "start": 46.313,
+    "end": 46.439,
+    "prob": 1.0
+  },
+  {
+    "word": "run",
+    "start": 46.452,
+    "end": 46.629,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 46.641,
+    "end": 46.692,
+    "prob": 1.0
+  },
+  {
+    "word": "proprietary",
+    "start": 46.705,
+    "end": 47.437,
+    "prob": 1.0
+  },
+  {
+    "word": "language",
+    "start": 47.45,
+    "end": 47.867,
+    "prob": 1.0
+  },
+  {
+    "word": "called",
+    "start": 47.879,
+    "end": 48.207,
+    "prob": 1.0
+  },
+  {
+    "word": "CUDA",
+    "start": 48.22,
+    "end": 48.662,
+    "prob": 1.0
+  },
+  {
+    "word": "When",
+    "start": 49.533,
+    "end": 49.71,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 49.722,
+    "end": 49.836,
+    "prob": 1.0
+  },
+  {
+    "word": "AI",
+    "start": 49.849,
+    "end": 50.278,
+    "prob": 1.0
+  },
+  {
+    "word": "race",
+    "start": 50.29,
+    "end": 50.58,
+    "prob": 1.0
+  },
+  {
+    "word": "exploded",
+    "start": 50.593,
+    "end": 51.212,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 51.452,
+    "end": 51.54,
+    "prob": 1.0
+  },
+  {
+    "word": "rebellion",
+    "start": 51.553,
+    "end": 52.083,
+    "prob": 1.0
+  },
+  {
+    "word": "collapsed",
+    "start": 52.096,
+    "end": 52.626,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 52.639,
+    "end": 52.74,
+    "prob": 1.0
+  },
+  {
+    "word": "weeks",
+    "start": 52.753,
+    "end": 53.258,
+    "prob": 1.0
+  },
+  {
+    "word": "Google's",
+    "start": 54.129,
+    "end": 54.571,
+    "prob": 1.0
+  },
+  {
+    "word": "in-house",
+    "start": 54.583,
+    "end": 54.974,
+    "prob": 1.0
+  },
+  {
+    "word": "cluster",
+    "start": 54.987,
+    "end": 55.53,
+    "prob": 1.0
+  },
+  {
+    "word": "Still",
+    "start": 56.401,
+    "end": 56.868,
+    "prob": 1.0
+  },
+  {
+    "word": "dependent",
+    "start": 56.881,
+    "end": 57.538,
+    "prob": 1.0
+  },
+  {
+    "word": "Microsoft's",
+    "start": 58.409,
+    "end": 59.116,
+    "prob": 1.0
+  },
+  {
+    "word": "custom",
+    "start": 59.129,
+    "end": 59.533,
+    "prob": 1.0
+  },
+  {
+    "word": "chips",
+    "start": 59.545,
+    "end": 60.075,
+    "prob": 1.0
+  },
+  {
+    "word": "Sidelined",
+    "start": 60.947,
+    "end": 61.856,
+    "prob": 1.0
+  },
+  {
+    "word": "Meta's",
+    "start": 62.715,
+    "end": 63.106,
+    "prob": 1.0
+  },
+  {
+    "word": "solution",
+    "start": 63.119,
+    "end": 63.738,
+    "prob": 1.0
+  },
+  {
+    "word": "Buying",
+    "start": 64.609,
+    "end": 64.988,
+    "prob": 1.0
+  },
+  {
+    "word": "three",
+    "start": 65.0,
+    "end": 65.278,
+    "prob": 1.0
+  },
+  {
+    "word": "hundred",
+    "start": 65.29,
+    "end": 65.568,
+    "prob": 1.0
+  },
+  {
+    "word": "and",
+    "start": 65.581,
+    "end": 65.682,
+    "prob": 1.0
+  },
+  {
+    "word": "fifty",
+    "start": 65.694,
+    "end": 66.048,
+    "prob": 1.0
+  },
+  {
+    "word": "thousand",
+    "start": 66.061,
+    "end": 66.579,
+    "prob": 1.0
+  },
+  {
+    "word": "Nvidia",
+    "start": 66.591,
+    "end": 67.071,
+    "prob": 1.0
+  },
+  {
+    "word": "GPUs",
+    "start": 67.083,
+    "end": 68.005,
+    "prob": 1.0
+  },
+  {
+    "word": "The",
+    "start": 68.876,
+    "end": 69.015,
+    "prob": 1.0
+  },
+  {
+    "word": "companies",
+    "start": 69.028,
+    "end": 69.47,
+    "prob": 1.0
+  },
+  {
+    "word": "worth",
+    "start": 69.482,
+    "end": 69.697,
+    "prob": 1.0
+  },
+  {
+    "word": "fourteen",
+    "start": 69.71,
+    "end": 70.228,
+    "prob": 1.0
+  },
+  {
+    "word": "trillion",
+    "start": 70.24,
+    "end": 70.644,
+    "prob": 1.0
+  },
+  {
+    "word": "dollars",
+    "start": 70.657,
+    "end": 71.061,
+    "prob": 1.0
+  },
+  {
+    "word": "combined",
+    "start": 71.073,
+    "end": 71.578,
+    "prob": 1.0
+  },
+  {
+    "word": "couldn't",
+    "start": 71.591,
+    "end": 71.844,
+    "prob": 1.0
+  },
+  {
+    "word": "escape",
+    "start": 71.856,
+    "end": 72.235,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 72.247,
+    "end": 72.323,
+    "prob": 1.0
+  },
+  {
+    "word": "single",
+    "start": 72.336,
+    "end": 72.727,
+    "prob": 1.0
+  },
+  {
+    "word": "man",
+    "start": 72.74,
+    "end": 73.056,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 73.068,
+    "end": 73.182,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 73.194,
+    "end": 73.245,
+    "prob": 1.0
+  },
+  {
+    "word": "leather",
+    "start": 73.258,
+    "end": 73.523,
+    "prob": 1.0
+  },
+  {
+    "word": "jacket",
+    "start": 73.535,
+    "end": 74.053,
+    "prob": 1.0
+  },
+  {
+    "word": "The",
+    "start": 74.924,
+    "end": 75.063,
+    "prob": 1.0
+  },
+  {
+    "word": "company",
+    "start": 75.076,
+    "end": 75.48,
+    "prob": 1.0
+  },
+  {
+    "word": "that",
+    "start": 75.492,
+    "end": 75.656,
+    "prob": 1.0
+  },
+  {
+    "word": "Wall Street",
+    "start": 75.669,
+    "end": 76.237,
+    "prob": 1.0
+  },
+  {
+    "word": "once",
+    "start": 76.25,
+    "end": 76.553,
+    "prob": 1.0
+  },
+  {
+    "word": "dismissed",
+    "start": 76.566,
+    "end": 77.122,
+    "prob": 1.0
+  },
+  {
+    "word": "as",
+    "start": 77.134,
+    "end": 77.235,
+    "prob": 1.0
+  },
+  {
+    "word": "a",
+    "start": 77.247,
+    "end": 77.298,
+    "prob": 1.0
+  },
+  {
+    "word": "video",
+    "start": 77.311,
+    "end": 77.677,
+    "prob": 1.0
+  },
+  {
+    "word": "game",
+    "start": 77.689,
+    "end": 77.967,
+    "prob": 1.0
+  },
+  {
+    "word": "graphics",
+    "start": 77.98,
+    "end": 78.485,
+    "prob": 1.0
+  },
+  {
+    "word": "vendor",
+    "start": 78.497,
+    "end": 78.964,
+    "prob": 1.0
+  },
+  {
+    "word": "is",
+    "start": 79.836,
+    "end": 80.038,
+    "prob": 1.0
+  },
+  {
+    "word": "now",
+    "start": 80.05,
+    "end": 80.29,
+    "prob": 1.0
+  },
+  {
+    "word": "worth",
+    "start": 80.303,
+    "end": 80.581,
+    "prob": 1.0
+  },
+  {
+    "word": "three",
+    "start": 80.593,
+    "end": 80.846,
+    "prob": 1.0
+  },
+  {
+    "word": "point",
+    "start": 80.859,
+    "end": 81.137,
+    "prob": 1.0
+  },
+  {
+    "word": "four",
+    "start": 81.149,
+    "end": 81.427,
+    "prob": 1.0
+  },
+  {
+    "word": "trillion",
+    "start": 81.439,
+    "end": 81.843,
+    "prob": 1.0
+  },
+  {
+    "word": "dollars",
+    "start": 81.856,
+    "end": 82.437,
+    "prob": 1.0
+  },
+  {
+    "word": "More",
+    "start": 83.308,
+    "end": 83.586,
+    "prob": 1.0
+  },
+  {
+    "word": "than",
+    "start": 83.599,
+    "end": 83.725,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 83.737,
+    "end": 83.8,
+    "prob": 1.0
+  },
+  {
+    "word": "entire",
+    "start": 83.813,
+    "end": 84.318,
+    "prob": 1.0
+  },
+  {
+    "word": "German",
+    "start": 84.331,
+    "end": 84.722,
+    "prob": 1.0
+  },
+  {
+    "word": "stock",
+    "start": 84.735,
+    "end": 85.063,
+    "prob": 1.0
+  },
+  {
+    "word": "exchange",
+    "start": 85.076,
+    "end": 85.821,
+    "prob": 1.0
+  },
+  {
+    "word": "And",
+    "start": 86.692,
+    "end": 86.881,
+    "prob": 1.0
+  },
+  {
+    "word": "tomorrow",
+    "start": 86.894,
+    "end": 87.424,
+    "prob": 1.0
+  },
+  {
+    "word": "they",
+    "start": 87.651,
+    "end": 87.765,
+    "prob": 1.0
+  },
+  {
+    "word": "will",
+    "start": 87.778,
+    "end": 87.942,
+    "prob": 1.0
+  },
+  {
+    "word": "all",
+    "start": 87.955,
+    "end": 88.132,
+    "prob": 1.0
+  },
+  {
+    "word": "write",
+    "start": 88.144,
+    "end": 88.346,
+    "prob": 1.0
+  },
+  {
+    "word": "him",
+    "start": 88.359,
+    "end": 88.485,
+    "prob": 1.0
+  },
+  {
+    "word": "another",
+    "start": 88.497,
+    "end": 88.8,
+    "prob": 1.0
+  },
+  {
+    "word": "check",
+    "start": 88.813,
+    "end": 89.268,
+    "prob": 1.0
+  },
+  {
+    "word": "Because",
+    "start": 90.139,
+    "end": 90.518,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 90.53,
+    "end": 90.631,
+    "prob": 1.0
+  },
+  {
+    "word": "real",
+    "start": 90.644,
+    "end": 90.909,
+    "prob": 1.0
+  },
+  {
+    "word": "power",
+    "start": 90.922,
+    "end": 91.326,
+    "prob": 1.0
+  },
+  {
+    "word": "in",
+    "start": 91.338,
+    "end": 91.489,
+    "prob": 1.0
+  },
+  {
+    "word": "AI",
+    "start": 91.503,
+    "end": 91.995,
+    "prob": 1.0
+  },
+  {
+    "word": "isn't",
+    "start": 92.008,
+    "end": 92.298,
+    "prob": 1.0
+  },
+  {
+    "word": "who",
+    "start": 92.311,
+    "end": 92.437,
+    "prob": 1.0
+  },
+  {
+    "word": "builds",
+    "start": 92.45,
+    "end": 92.829,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 92.841,
+    "end": 92.917,
+    "prob": 1.0
+  },
+  {
+    "word": "intelligence",
+    "start": 92.929,
+    "end": 93.813,
+    "prob": 1.0
+  },
+  {
+    "word": "It's",
+    "start": 94.684,
+    "end": 94.886,
+    "prob": 1.0
+  },
+  {
+    "word": "who",
+    "start": 94.899,
+    "end": 95.101,
+    "prob": 1.0
+  },
+  {
+    "word": "owns",
+    "start": 95.114,
+    "end": 95.43,
+    "prob": 1.0
+  },
+  {
+    "word": "the",
+    "start": 95.442,
+    "end": 95.543,
+    "prob": 1.0
+  },
+  {
+    "word": "toll",
+    "start": 95.556,
+    "end": 95.846,
+    "prob": 1.0
+  },
+  {
+    "word": "booth",
+    "start": 95.859,
+    "end": 96.314,
+    "prob": 1.0
+  }
+]

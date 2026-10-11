@@ -1,0 +1,18 @@
+The most dangerous thing about Jensen Huang isn't that Nvidia makes the fastest chips on earth.
+It's what happens to any tech giant that tries to stop buying them.
+For context, every trillion dollar company in the world is currently trying to kill Nvidia.
+Google built the TPU. Amazon spent billions on Trainium. Microsoft launched Maia.
+On paper, the strategy was obvious: build your own silicon, and cut Jensen out of the margin.
+It was the most coordinated corporate revolt in modern history.
+Except for one fatal mistake they didn't realize until the models started training.
+Jensen didn't build a chip company. In 2006, he spent billions forcing every chip to run a proprietary language called CUDA.
+When the AI race exploded, the rebellion collapsed in weeks.
+Google's in-house cluster? Still dependent.
+Microsoft's custom chips? Sidelined.
+Meta's solution? Buying three hundred and fifty thousand Nvidia GPUs.
+The companies worth fourteen trillion dollars combined couldn't escape a single man in a leather jacket.
+The company that Wall Street once dismissed as a video game graphics vendor...
+is now worth three point four trillion dollars. More than the entire German stock exchange.
+And tomorrow, they will all write him another check.
+Because the real power in AI isn't who builds the intelligence. It's who owns the toll booth.
+

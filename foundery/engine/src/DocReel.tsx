@@ -9,12 +9,22 @@
 import React, { useEffect, useState } from 'react';
 import {
   AbsoluteFill, Sequence, Video, Img, staticFile, useCurrentFrame,
-  interpolate, delayRender, continueRender, useVideoConfig,
+  interpolate, delayRender, continueRender, useVideoConfig, spring,
 } from 'remotion';
 import { theme, f } from './theme';
 import { MechCard, BigText, StatChips } from './ZapKinds';
 
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
+
+// Prompt-Motion spring helper for organic physical bounce & punch
+const kineticSpring = (frame: number, start: number, fps = 24, mass = 0.55, damping = 13, stiffness = 210) => {
+  const relFrame = Math.max(0, frame - start);
+  return spring({
+    frame: relFrame,
+    fps,
+    config: { mass, damping, stiffness },
+  });
+};
 
 /* ---------- Fonts Loader ---------- */
 const useFonts = () => {
@@ -30,27 +40,10 @@ const useFonts = () => {
         document.head.appendChild(link);
       }
     }
-
-    const defs: [string, string, string, string][] = [
-      ['Inter', 'inter-500.woff2', '500', 'normal'],
-      ['Inter', 'inter-600.woff2', '600', 'normal'],
-      ['Inter', 'inter-700.woff2', '700', 'normal'],
-      ['Bebas Neue', 'bebas-neue-400.ttf', '400', 'normal'],
-      ['IBM Plex Mono', 'ibm-plex-mono-400.ttf', '400', 'normal'],
-      ['IBM Plex Mono', 'ibm-plex-mono-500.ttf', '500', 'normal'],
-      ['IBM Plex Mono', 'ibm-plex-mono-600.ttf', '600', 'normal'],
-    ];
-
-    Promise.all(defs.map(([fam, file, w, st]) => {
-      try {
-        const ff = new FontFace(fam, `url(${staticFile(file)})`, { weight: w, style: st });
-        return ff.load().then((l) => { (document as any).fonts.add(l); }).catch(() => {});
-      } catch (e) {
-        return Promise.resolve();
-      }
-    })).then(() => {
-      setTimeout(() => continueRender(handle), 200);
-    }).catch(() => continueRender(handle));
+    const t = setTimeout(() => {
+      continueRender(handle);
+    }, 400);
+    return () => clearTimeout(t);
   }, [handle]);
 };
 
@@ -104,8 +97,11 @@ const labelStyle = (color: string = theme.muted): React.CSSProperties => ({
 });
 
 const pop = (frame: number, start: number, dur = 8) => {
-  const p = interpolate(frame, [start, start + dur], [0, 1], { ...clamp, easing: theme.easeBack });
-  return { p, opacity: interpolate(frame, [start, start + 4], [0, 1], clamp), y: (1 - p) * 34, s: 0.86 + 0.14 * p };
+  const spr = kineticSpring(frame, start, 24, 0.5, 12, 220);
+  const opacity = interpolate(frame, [start, start + 3], [0, 1], clamp);
+  const y = (1 - spr) * 28;
+  const s = 0.85 + 0.15 * spr;
+  return { p: spr, opacity, y, s };
 };
 
 /* ---------- Typewriter Reveal ---------- */
@@ -122,15 +118,24 @@ const Typewriter: React.FC<{ t0: number; text: string; size?: number; color?: st
   );
 };
 
-/* ---------- Multi-Font Word Caption Renderer ---------- */
 const WordCap: React.FC<{ c: any }> = ({ c }) => {
   const frame = useCurrentFrame();
   const g = frame + f(c.t0);
   const words = (c.words as any[]).filter((w) => g >= f(w.t) - 1);
+  const isCenter = c.layout === 'center' || c.pos === 'center';
 
   return (
-    <AbsoluteFill style={{ justifyContent: 'flex-end', alignItems: 'center', paddingBottom: c.pad ?? 230, pointerEvents: 'none' }}>
-      <div style={{ display: 'flex', gap: 24, alignItems: 'baseline', flexWrap: 'wrap', justifyContent: 'center', maxWidth: 1600, padding: '0 40px' }}>
+    <AbsoluteFill style={{
+      justifyContent: isCenter ? 'center' : 'flex-end',
+      alignItems: 'center',
+      paddingBottom: isCenter ? 0 : (c.pad ?? 230),
+      pointerEvents: 'none'
+    }}>
+      <div style={{
+        display: 'flex', gap: 24, alignItems: 'baseline', flexWrap: 'wrap',
+        justifyContent: 'center', maxWidth: 1600, padding: '0 40px',
+        marginTop: isCenter ? '4%' : 0
+      }}>
         {words.map((w, i) => {
           const a = pop(g, f(w.t) - 1, 6);
           const em = !!w.em;
@@ -145,7 +150,7 @@ const WordCap: React.FC<{ c: any }> = ({ c }) => {
           let letterSpacing = 'normal';
           let boxBg: string | undefined = undefined;
 
-          if (fontKind === 'serif' || fontKind === 'serif-italic' || w.style === 'serif-italic') {
+          if (fontKind === 'serif' || fontKind === 'serif-italic' || fontKind === 'serifItalic' || w.style === 'serif-italic') {
             fontFamily = theme.serifItalic;
             fontStyle = 'italic';
             fontWeight = 700;
@@ -227,7 +232,7 @@ const PolaroidCard: React.FC<{ dur: number; shot: any }> = ({ dur, shot }) => {
       <div style={{
         position: 'relative', width: 620, background: '#FFFFFF', padding: '24px 24px 72px 24px',
         boxShadow: '0 30px 60px rgba(0,0,0,0.85), 0 4px 12px rgba(0,0,0,0.5)',
-        transform: `translateY(-40px) rotate(${rot}deg) scale(${scale * enter})`, opacity: enter,
+        transform: `translateY(-120px) rotate(${rot}deg) scale(${scale * enter})`, opacity: enter,
       }}>
         {/* Masking tape piece at top */}
         <div style={{
@@ -294,6 +299,14 @@ const Media: React.FC<{ shot: any; dur: number; shots: any[] }> = ({ shot, dur, 
       {shot.kind === 'video' && <Video src={staticFile(shot.src)} startFrom={f(shot.from ?? 0)} muted style={style} />}
       {shot.kind === 'still' && <Img src={staticFile(shot.src)} style={{ ...style, objectPosition: `${(shot.fx ?? 0.5) * 100}% ${(shot.fy ?? 0.5) * 100}%`, transformOrigin: `${(shot.fx ?? 0.5) * 100}% ${(shot.fy ?? 0.5) * 100}%` }} />}
       {shot.scrim && <AbsoluteFill style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.38) 30%, rgba(0,0,0,0) 52%), linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 22%)' }} />}
+      {shot.crt && (
+        <AbsoluteFill style={{
+          backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.22) 0px, rgba(0,0,0,0.22) 1px, transparent 1px, transparent 3px)',
+          pointerEvents: 'none',
+          mixBlendMode: 'overlay',
+          opacity: 0.85
+        }} />
+      )}
       {shot.flicker && <Flicker />}
     </>
   );
@@ -505,9 +518,15 @@ export const DocReel: React.FC<{ data: any }> = ({ data }) => {
           );
         })}
       </AbsoluteFill>
-      {(E.text as any[]).map((c, i) => (
-        <Sequence key={i} from={f(c.t0)} durationInFrames={f(c.t1) - f(c.t0)} name={`txt ${c.words.map((w: any) => w.w).join(' ')}`}><WordCap c={c} /></Sequence>
-      ))}
+      {(E.text as any[])
+        .filter((c) => {
+          // Do not render bottom captions during stark optical reset slides
+          const cMid = (c.t0 + c.t1) / 2;
+          return !shots.some((s) => s.kind === 'stark' && cMid >= s.t0 && cMid < s.t1);
+        })
+        .map((c, i) => (
+          <Sequence key={i} from={f(c.t0)} durationInFrames={f(c.t1) - f(c.t0)} name={`txt ${c.words.map((w: any) => w.w).join(' ')}`}><WordCap c={c} /></Sequence>
+        ))}
       {((E.annotations ?? []) as any[]).map((a, i) => (
         <Sequence key={`a${i}`} from={f(a.t0)} durationInFrames={f(a.t1) - f(a.t0)} name={`note ${a.text}`}><Annotation a={a} /></Sequence>
       ))}

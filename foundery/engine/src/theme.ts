@@ -23,6 +23,9 @@ export const theme = {
   black: '#0B0B0C',
   sans: '"Inter", "Helvetica Neue", Arial, sans-serif',      // body — Söhne substitute (free)
   serif: '"Inter", "Helvetica Neue", Arial, sans-serif',     // legacy alias, no longer serif in v2
+  serifItalic: '"Playfair Display", Georgia, "Times New Roman", serif',
+  displayCondensed: '"Bebas Neue", "Impact", "Arial Narrow", sans-serif',
+  handwritten: '"Caveat", cursive',
   hero: '"Bebas Neue", "Arial Narrow", sans-serif',          // Druk Condensed substitute (free) — gigantic, compressed
   mono: '"IBM Plex Mono", "Courier New", monospace',         // classified/evidence labels
   easeOut: Easing.out(Easing.cubic),
